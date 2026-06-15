@@ -28,13 +28,13 @@ jobs:
           make engine
           sudo apt-get install -y desktop-file-utils
           mkdir -p build/linux
-          GIT_TAG="git-${GITHUB_SHA:0:7}"
+          GIT_TAG="1.08.2"
           ./packaging/linux/buildpackage.sh "${GIT_TAG}" "${PWD}/build/linux"
 
       - name: Upload AppImage
         uses: actions/upload-artifact@v5
         with:
-          name: CombinedArms-Linux-x86_64
+          name: CombinedArms_Simplified_Chinese-1.08.2-Linux-x86_64
           path: build/linux/*.AppImage
           if-no-files-found: error
 
@@ -54,13 +54,13 @@ jobs:
         run: |
           make engine
           mkdir -p build/macos
-          GIT_TAG="git-${GITHUB_SHA:0:7}"
+          GIT_TAG="1.08.2"
           ./packaging/macos/buildpackage.sh "${GIT_TAG}" "${PWD}/build/macos"
 
       - name: Upload DMG
         uses: actions/upload-artifact@v5
         with:
-          name: CombinedArms-macOS
+          name: CombinedArms_Simplified_Chinese-1.08.2-macOS
           path: build/macos/*.dmg
           if-no-files-found: error
 
@@ -82,12 +82,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y nsis wine64
           mkdir -p build/windows
-          GIT_TAG="git-${GITHUB_SHA:0:7}"
+          GIT_TAG="1.08.2"
           ./packaging/windows/buildpackage.sh "${GIT_TAG}" "${PWD}/build/windows"
 
       - name: Upload Installer
         uses: actions/upload-artifact@v5
         with:
-          name: CombinedArms-Windows
+          name: CombinedArms_Simplified_Chinese-1.08.2-Windows
           path: build/windows/*.exe
           if-no-files-found: error
