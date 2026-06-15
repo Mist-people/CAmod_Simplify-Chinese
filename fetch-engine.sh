@@ -78,6 +78,10 @@ if [ "${AUTOMATIC_ENGINE_MANAGEMENT}" = "True" ]; then
 	# because to do so it would need to define a lot of excess things surrounding resources.
 	rm ${ENGINE_DIRECTORY}/OpenRA.Mods.Common/Lint/CheckFluentReferences.cs
 
+	# Remove -warnaserror to avoid treating upstream StyleCop/Roslynator warnings as errors
+	sed -i.bak 's/-warnaserror//g' "${ENGINE_DIRECTORY}/Makefile"
+	rm -f "${ENGINE_DIRECTORY}/Makefile.bak"
+
 	# Apply patches to engine source
 	cd "${ENGINE_DIRECTORY}" || exit 1
 	if [ -f "${TEMPLATE_ROOT}/engine-cjk-wrap.patch" ]; then

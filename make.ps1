@@ -119,7 +119,7 @@ function Check-Command
 	Write-Host "Compiling $modID in Debug configuration..." -ForegroundColor Cyan
 
 	dotnet clean -c Debug --nologo --verbosity minimal
-	dotnet build -c Debug --nologo -warnaserror -p:TargetPlatform=win-x64
+	dotnet build -c Debug --nologo -p:TargetPlatform=win-x64
 
 	if ($lastexitcode -ne 0)
 	{

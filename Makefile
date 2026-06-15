@@ -181,10 +181,10 @@ check: engine
 ifneq ("$(MOD_SOLUTION_FILES)","")
 	@echo "Compiling in Debug mode..."
 ifeq ($(RUNTIME), mono)
-	@$(MSBUILD) -t:clean\;build -restore -p:Configuration=Debug -warnaserror -p:TargetPlatform=$(TARGETPLATFORM)
+	@$(MSBUILD) -t:clean\;build -restore -p:Configuration=Debug -p:TargetPlatform=$(TARGETPLATFORM)
 else
 	@$(DOTNET) clean -c Debug --nologo --verbosity minimal
-	@$(DOTNET) build -c Debug -nologo -warnaserror -p:TargetPlatform=$(TARGETPLATFORM)
+	@$(DOTNET) build -c Debug -nologo -p:TargetPlatform=$(TARGETPLATFORM)
 endif
 endif
 	@echo "Checking for explicit interface violations..."
