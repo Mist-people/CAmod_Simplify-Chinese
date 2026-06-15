@@ -2,7 +2,7 @@ MapFormat: 11
 
 RequiresMod: ca
 
-Title: Island Wars
+Title: "岛屿战争"
 
 Author: Westwood Studios
 
@@ -18,12 +18,12 @@ Categories: Conquest
 
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: allies
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: allies
 		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7

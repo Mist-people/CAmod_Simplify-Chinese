@@ -1,0 +1,141 @@
+# Simplified Chinese translation by lsxy, 2026.06.
+Background@KICK_CLIENT_DIALOG:
+	Width: PARENT_WIDTH
+	Height: PARENT_HEIGHT
+	Logic: KickClientLogic
+	Background: dialog3
+	Children:
+		Label@TITLE:
+			Y: 41
+			Width: PARENT_WIDTH
+			Height: 25
+			Font: Bold
+			Align: Center
+		Label@TEXTA:
+			Y: 68
+			Width: PARENT_WIDTH
+			Height: 25
+			Font: Regular
+			Align: Center
+			Text: 你也可以施加临时封禁，
+		Label@TEXTB:
+			Y: 86
+			Width: PARENT_WIDTH
+			Height: 25
+			Font: Regular
+			Align: Center
+			Text: 阻止他们在本局游戏剩余时间内重新加入。
+		Checkbox@PREVENT_REJOINING_CHECKBOX:
+			X: (PARENT_WIDTH - WIDTH) / 2
+			Y: 120
+			Width: 150
+			Height: 20
+			Text: 临时封禁
+		Button@OK_BUTTON:
+			X: (PARENT_WIDTH - WIDTH) / 2 + 75
+			Y: 155
+			Width: 120
+			Height: 25
+			Text: 踢出
+			Font: Bold
+		Button@CANCEL_BUTTON:
+			X: (PARENT_WIDTH - WIDTH) / 2 - 75
+			Y: 155
+			Width: 120
+			Height: 25
+			Text: 取消
+			Font: Bold
+
+Background@KICK_SPECTATORS_DIALOG:
+	Width: PARENT_WIDTH
+	Height: PARENT_HEIGHT
+	Logic: KickSpectatorsLogic
+	Background: dialog3
+	Children:
+		Label@TITLE:
+			Y: 41
+			Width: PARENT_WIDTH
+			Height: 25
+			Font: Bold
+			Align: Center
+			Text: 踢出观战者
+		Label@TEXT:
+			Y: 86
+			Width: PARENT_WIDTH
+			Height: 25
+			Font: Regular
+			Align: Center
+		Button@OK_BUTTON:
+			X: (PARENT_WIDTH - WIDTH) / 2 + 75
+			Y: 155
+			Width: 120
+			Height: 25
+			Text: 踢出
+			Font: Bold
+		Button@CANCEL_BUTTON:
+			X: (PARENT_WIDTH - WIDTH) / 2 - 75
+			Y: 155
+			Width: 120
+			Height: 25
+			Text: 取消
+			Font: Bold
+
+Background@FORCE_START_DIALOG:
+	Width: PARENT_WIDTH
+	Height: PARENT_HEIGHT
+	Background: dialog3
+	Children:
+		Label@TITLE:
+			Y: 41
+			Width: PARENT_WIDTH
+			Height: 25
+			Font: Bold
+			Align: Center
+			Text: 开始游戏
+		Label@TEXTA:
+			Y: 68
+			Width: PARENT_WIDTH
+			Height: 25
+			Font: Regular
+			Align: Center
+			Text: 一名或多名玩家尚未准备。
+		Label@TEXTB:
+			Y: 86
+			Width: PARENT_WIDTH
+			Height: 25
+			Font: Regular
+			Align: Center
+			Text: 确定要强制开始游戏吗？
+		Container@KICK_WARNING:
+			Width: PARENT_WIDTH
+			Children:
+				Label@KICK_WARNING_A:
+					X: 0
+					Y: 107
+					Width: PARENT_WIDTH
+					Height: 25
+					Font: Bold
+					Align: Center
+					Text: 一个或多个客户端缺少所选
+				Label@KICK_WARNING_B:
+					X: 0
+					Y: 124
+					Width: PARENT_WIDTH
+					Height: 25
+					Font: Bold
+					Align: Center
+					Text: 地图，将被踢出服务器。
+		Button@OK_BUTTON:
+			X: (PARENT_WIDTH - WIDTH) / 2 + 75
+			Y: 155
+			Width: 120
+			Height: 25
+			Text: 开始
+			Font: Bold
+		Button@CANCEL_BUTTON:
+			X: (PARENT_WIDTH - WIDTH) / 2 - 75
+			Y: 155
+			Width: 120
+			Height: 25
+			Text: 取消
+			Font: Bold

@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 Container@LOBBY_OPTIONS_BIN:
 	Width: PARENT_WIDTH
 	Height: PARENT_HEIGHT
@@ -8,31 +9,31 @@ Container@LOBBY_OPTIONS_BIN:
 			Height: 25
 			Font: Bold
 			Align: Center
-			Text: Map Options
+			Text: 地图选项
 		Button@RESET_OPTIONS:
 			X: PARENT_WIDTH - WIDTH
 			Y: 0 - 26
 			Width: 50
 			Height: 26
-			TooltipText: Reset options to map defaults
+			TooltipText: 重置选项为地图默认
 			TooltipContainer: TOOLTIP_CONTAINER
-			Text: Reset
+			Text: 重置
 		Button@LOAD_OPTIONS:
 			X: PARENT_WIDTH - WIDTH - 50
 			Y: 0 - 26
 			Width: 44
 			Height: 26
-			TooltipText: Load saved options
+			TooltipText: 载入已保存的选项
 			TooltipContainer: TOOLTIP_CONTAINER
-			Text: Load
+			Text: 加载
 		Button@SAVE_OPTIONS:
 			X: PARENT_WIDTH - WIDTH - 50 - 44
 			Y: 0 - 26
 			Width: 44
 			Height: 26
-			TooltipText: Save options
+			TooltipText: 保存选项
 			TooltipContainer: TOOLTIP_CONTAINER
-			Text: Save
+			Text: 保存
 		ScrollPanel:
 			Logic: LobbyOptionsLogicCA, LobbyMissionInfoLogic
 			Width: PARENT_WIDTH
@@ -73,6 +74,7 @@ Container@LOBBY_OPTIONS_BIN:
 									Width: PARENT_WIDTH / 3 - 20
 									Height: 20
 									Visible: False
+									Font: Tiny
 									For: A
 								DropDownButton@A:
 									X: 10
@@ -86,6 +88,7 @@ Container@LOBBY_OPTIONS_BIN:
 									Width: PARENT_WIDTH / 3 - 20
 									Height: 20
 									Visible: False
+									Font: Tiny
 									For: B
 								DropDownButton@B:
 									X: PARENT_WIDTH / 3 + 10
@@ -99,6 +102,7 @@ Container@LOBBY_OPTIONS_BIN:
 									Width: PARENT_WIDTH / 3 - 20
 									Height: 20
 									Visible: False
+									Font: Tiny
 									For: C
 								DropDownButton@C:
 									X: (PARENT_WIDTH / 3) * 2 + 10
@@ -117,4 +121,4 @@ Container@LOBBY_OPTIONS_BIN:
 									Width: PARENT_WIDTH - 20
 									Height: 20
 									Font: Bold
-									Text: Advanced Options
+									Text: 高级选项

@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	PaletteFromFile@terrain-temperat:
 		Filename: alien.pal
@@ -16,12 +17,23 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, purification.lua
 	MissionData:
-		Briefing: The final phase of our mission here begins. I have always known that Tiberium was the key to unlocking humanity's potential, however my understanding was incomplete. The green crystal now so familiar to us is in fact a corrupted abomination.\n\nMillennia ago, the Scrin discovered Tiberium on this world. It heralded a glorious age of progress and peace, as wars over resources and territory faded away. However this earlier form of the crystal did not have the same propensity to grow and spread, and scarcity threatened to undo the progress that had been made.\n\nExperiments to increase the rate at which Tiberium propagates were conducted, and were ultimately successful, but the result was not without its drawbacks. The crystal grew much more rapidly, but emitted a type of radiation that led to changes in Scrin physiology. Exposure led to dependence and addiction.\n\nThere were those who felt the risks were too great, however their voices were silenced. The green crystal allowed Scrin civilization to progress, but there were those who saw its potential as a tool of control. To be deprived of Tiberium would now often mean death to the majority of the Scrin, so those who controlled its production had great power. Eventually, a supreme leader rose to power - the Overlord - who has ruled the Scrin ever since.\n\nPockets of resistance emerged and secret experiments were undertaken to find ways to eliminate the negative effects of the green crystal, however they were mercilessly hunted down. Seeing the futility of their efforts, they decided to hide their research in the hope that one day it would be rediscovered and the Scrin could be liberated.\n\nData storage devices were hastily sent to planets that would be potential future targets for Scrin harvesting operations, along with small samples of Tiberium. A device had been created which could purify Tiberium, but it was completed too late and the rebels did not have sufficient crystal to power it.\n\nAs the Overlord's forces closed in, the rebels hid the device and accepted their fate.\n\nSo we do not come here as conquerors commander, but as saviours. The Overlord and his sycophants have ruled the Scrin for thousands of years, using the population's dependence on Tiberium, and the threat of its supply being interrupted, as an excuse for unlimited control. We now have the means of ending this tyranny.\n\nWe must bring the device to full power. Once enough Scrin have their dependence on Tiberium broken, and the truth has been revealed to them, the choice between freedom and servitude will finally be theirs to make.
-	MapOptions:
-		ShortGameCheckboxEnabled: False
-	MusicPlaylist:
-		StartingMusic: elusive
+		Briefing:  我们在此任务的最后阶段开始了。我一直都知道泰伯利亚是解锁人类潜力的关键，但我的理解并不完整。如今我们如此熟悉的绿色水晶实际上是一种被腐化的畸形产物。
 
+数千年前，思金人在这颗星球上发现了泰伯利亚。它预示着一个辉煌的进步与和平时代，因为资源和领土的战争消失了。然而这种早期形态的水晶并不具备同样的生长和扩散能力，资源稀缺威胁着已取得的进展。
+
+为了加快泰伯利亚传播速度的实验得以进行，并最终取得了成功，但结果并非没有代价。水晶生长得更加迅速，但释放出一种辐射，导致了思金人生理上的变化。接触导致了依赖和成瘾。
+
+有些人认为风险太大，但他们的声音被压制了。绿色水晶让思金文明得以进步，但也有人看到了它作为控制工具的潜力。对大多数思金人来说，失去泰伯利亚往往意味着死亡，因此控制其生产的人拥有了巨大的权力。最终，一位至高领袖崛起——主宰——他从此一直统治着思金人。
+
+零星的反抗出现了，秘密实验也着手寻找消除绿色水晶负面影响的方法，然而他们被无情地追猎消灭。认识到努力的无望后，他们决定隐藏研究成果，希望有朝一日能重见天日，让思金人获得解放。
+
+数据存储设备被匆忙送往可能成为思金人未来收割行动目标的星球，同时送去的还有少量泰伯利亚样本。一种能够净化泰伯利亚的装置已被创造出来，但它完成得太晚了，反抗军没有足够的水晶来为其供能。
+
+随着主宰的大军逼近，反抗军隐藏了装置并接受了他们的命运。
+
+所以指挥官，我们不是作为征服者而来，而是作为救世主。主宰及其谄媚者统治思金人已有数千年之久，利用民众对泰伯利亚的依赖以及供应中断的威胁作为无限控制的借口。我们现在有了终结这种暴政的手段。
+
+我们必须将装置启动至满功率。一旦有足够多的思金人摆脱对泰伯利亚的依赖，真相向他们揭示之后，自由与奴役之间的选择终将由他们自己做出。
 Player:
 	PlayerResources:
 		DefaultCash: 6000

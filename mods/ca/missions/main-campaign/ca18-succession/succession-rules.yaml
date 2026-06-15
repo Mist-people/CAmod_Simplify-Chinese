@@ -1,4 +1,5 @@
 
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TerrainLighting:
 	TintPostProcessEffect:
@@ -11,7 +12,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, succession.lua
 	MissionData:
-		Briefing: Revenge is ours Comrade General! Kane's overconfidence made him careless and Yuri now commands many of his cyborgs.\n\nWhile this is excellent news, Kane is still able to produce cyborgs too fast for Yuri to manage. Research into using Tiberium to enhance Yuri's powers has begun, but it will be some time before significant progress is made.\n\nYou must return to where the cyborgs were first unleashed, where your predecessor failed miserably to contain them. The primary cyborg production facilities are still there, and we must take control of them to prevent Kane from overwhelming us again. With the cyborg factories under our control, nothing will be able to stop us.
+		Briefing: 复仇的时刻到了，将军同志！凯恩的过度自信使他变得大意，尤里现已掌控了他的许多生化人。\n\n尽管这是绝好消息，但凯恩的生化人生产速度仍然太快，尤里难以完全应对。利用泰伯利亚增强尤里力量的研究已经开始，但要取得重大进展仍需时日。\n\n你必须回到生化人首次被释放的地方——你的前任曾在那里惨败，未能遏制住他们。主要的生化人生产设施仍在那里，我们必须夺取控制权，以防凯恩再次压倒我们。一旦生化人工厂落入我们掌控，将无人能挡。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

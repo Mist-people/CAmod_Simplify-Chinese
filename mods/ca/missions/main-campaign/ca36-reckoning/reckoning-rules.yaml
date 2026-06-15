@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	PaletteFromFile@terrain-temperat:
 		Filename: alien.pal
@@ -25,12 +26,17 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, reckoning.lua
 	MissionData:
-		Briefing: The device worked perfectly. Scrin for many miles around are no longer dependent on Tiberium to survive, or have had their dependence significantly reduced. With additional uses of the device, all Scrin can be free of their affliction.\n\nFor us, it means that the Earth can be similarly cleansed, and the tremendous power of Tiberium can be leveraged without side-effects.\n\nNews spread quickly amongst the Scrin of the Overlord's deception. Of course, those willing to trust the word of a human remain a minority, and the effects of the device have not yet spread widely enough to aid in persuading the wider Scrin population.\n\nMany Scrin have risen up against the Overlord's armies however, and we are in the midst of a civil war.\n\nThe Overlord's forces are mobilizing across the planet, so we have precious little time to strike a decisive blow. I have been contacted by a leader amongst the rebels who has indicated where the Overlord's most elite forces are amassing, and it has been suggested that defeating him there will weaken his authority enough to tip the scales in the rebels' favor. At least until the device has made the enormity of what is transpiring evident to all Scrin.\n\nThe rebels have engaged these forces already. Our assistance will be unexpected thanks to our brothers fighting on multiple other fronts, so I want you to take a small force, aid the rebels while our forces accumulate, then destroy the Overlord's primary base in the area before his armies from across the planet arrive.
-	MapOptions:
-		ShortGameCheckboxEnabled: False
-	MusicPlaylist:
-		StartingMusic: gateway
+		Briefing:  装置完美运行。方圆数英里内的思金人已不再依赖泰伯利亚生存，或依赖程度大幅降低。通过进一步使用该装置，所有思金人都可以从这一病痛中解脱。
 
+对我们而言，这意味着地球也能得到类似的净化，泰伯利亚的巨力可以在没有副作用的情况下被利用。
+
+关于主宰欺骗的消息在思金人中迅速传播。当然，愿意相信人类话语的仍然是少数，装置的效果也尚未广泛传播到足以说服更多思金人群体。
+
+然而，许多思金人已经起来反抗主宰的军队，我们正处于一场内战之中。
+
+主宰的部队正在整个星球上集结，我们几乎没有时间发动决定性打击。我已收到反抗军一位领袖的联络，他指出了主宰最精锐部队集结的位置，我们认为在那里击败他将足以削弱其权威，使天平向反抗军倾斜——至少在装置让所有思金人明白事态的严重性之前。
+
+反抗军已经与这些部队交火。得益于我们在多条其他战线上作战的兄弟们，我们的援助将是出其不意的。我希望你带领一支小型部队，在我方主力集结的同时援助反抗军，然后在主宰从星球各地调来的大军抵达之前，摧毁该地区的主宰主要基地。
 Player:
 	PlayerResources:
 		DefaultCash: 6000

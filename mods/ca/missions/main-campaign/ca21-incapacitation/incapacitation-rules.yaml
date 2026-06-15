@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	PaletteFromFile@terrain-temperat:
 		Filename: ca|missions/main-campaign/ca21-incapacitation/incapacitation.pal
@@ -16,7 +17,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, incapacitation.lua
 	MissionData:
-		Briefing: A concentration of aircraft belonging to the same two human factions has been identified in this area and has been evaluated as the next significant threat to be dealt with.\n\nYou have been allocated a small task force with which you must eliminate these aircraft and their landing areas.\n\nYou must also neutralise all anti-aircraft defensive structures. This will ensure our fleet can be redeployed to the central repository with minimal airborne resistance.\n\nAn ion storm has been created to ensure that all hostile aircraft will be confined to the ground for the duration of this mission. The energy required to maintain the storm is substantial; waste no time.
+		Briefing: 该地区发现了两支人类派系的大量航空器集结，已被判定为需要处理的下一个重要威胁。\n\n你已被分配一支小型特遣部队，必须用其消灭这些航空器及其着陆区域。\n\n你还必须摧毁所有防空防御设施。这将确保我们的舰队能够以最小的空中阻力重新部署到中央储藏库。\n\n一场离子风暴已经生成，以确保所有敌方航空器在本任务期间被限制在地面。维持风暴所需的能量巨大；请勿浪费时间。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	ScriptLobbyDropdown@RESPAWN:

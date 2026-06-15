@@ -1,4 +1,5 @@
 
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 
@@ -6,7 +7,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, crossrip.lua
 	MissionData:
-		Briefing: Strange and inexplicable occurrences continue to leave our best scientists dumbfounded.\n\nWe have detected unusual energy readings emanating from a Soviet facility in the area, and there may be a connection.\n\nEstablish a base and investigate.\n\nIf the Soviets put up strong resistance then they must be hiding something of importance, in which case you are authorized to launch a full scale attack.\n\nUnfortunately we can't commit our most advanced equipment or aircraft until we've assessed if there is a significant threat.
+		Briefing: 种种奇怪而无法解释的现象持续让我们最优秀的科学家困惑不已。\n\n我们探测到该地区一座苏联设施发出的异常能量读数，两者之间可能存在关联。\n\n建立基地并进行调查。\n\n如果苏联人进行强烈抵抗，那他们必定在隐藏某些重要事物，届时你被授权发动全面进攻。\n\n遗憾的是，在评估是否存在重大威胁之前，我们无法投入最先进的装备或飞行器。
 		WinVideo: crontest.vqa
 		LossVideo: battle.vqa
 	MapOptions:

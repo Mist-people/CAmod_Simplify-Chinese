@@ -2,7 +2,7 @@ MapFormat: 12
 
 RequiresMod: ca
 
-Title: Composition Tournament
+Title: "编队锦标赛"
 
 Author: Darkademic
 
@@ -18,12 +18,12 @@ Categories: Minigame
 
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: Random
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: Random
 		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7, Multi8, Multi9, Multi10, Multi11, Multi12, Multi13, Multi14, Multi15

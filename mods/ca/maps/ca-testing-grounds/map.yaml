@@ -2,7 +2,7 @@ MapFormat: 12
 
 RequiresMod: ca
 
-Title: Testing Grounds
+Title: "测试场地"
 
 Author: Darkademic
 
@@ -20,12 +20,12 @@ LockPreview: True
 
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: england
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: england
 		Enemies: Dummy, HostileDummy, Multi0

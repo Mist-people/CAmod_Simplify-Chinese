@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 IsCoop = true
 
 ---@type player[]
@@ -290,10 +291,10 @@ end
 
 local function SyncObjectives()
 	local texts = {
-		primary = "Primary",
-		secondary = "Secondary",
-		newPrimary = "New primary objective",
-		newSecondary = "New secondary objective"
+		primary = "主要目标",
+		secondary = "次要目标",
+		newPrimary = "新主要目标",
+		newSecondary = "新次要目标"
 	}
 
 	Trigger.OnObjectiveAdded(MainPlayer, function(_, obid)
@@ -334,7 +335,7 @@ local function SyncObjectives()
 			player.MarkCompletedObjective(obid)
 			if player.IsLocalPlayer then
 				Media.PlaySoundNotification(player, "AlertBleep")
-				Media.DisplayMessage(MainPlayer.GetObjectiveDescription(obid), "Objective completed", HSLColor.LimeGreen)
+				Media.DisplayMessage(MainPlayer.GetObjectiveDescription(obid), "任务完成", HSLColor.LimeGreen)
 			end
 		end)
 	end)
@@ -344,7 +345,7 @@ local function SyncObjectives()
 			player.MarkFailedObjective(obid)
 			if player.IsLocalPlayer then
 				Media.PlaySoundNotification(player, "AlertBleep")
-				Media.DisplayMessage(MainPlayer.GetObjectiveDescription(obid), "Objective failed", HSLColor.Red)
+				Media.DisplayMessage(MainPlayer.GetObjectiveDescription(obid), "任务失败", HSLColor.Red)
 			end
 		end)
 	end)
@@ -368,57 +369,57 @@ PlayerDefeatedOrDisconnected = function(player)
 	end)
 
 	local surrenderMessages = {
-		"PID's not surrenderin'! PID's passed on! This Commander is no more! They have ceased to be! PID's expired and gone to meet their maker! PID's a stiff! Bereft of life, PID rests in peace! If you hadn't nailed them to the playerlist, PID'd be pushing up the daisies! Their metabolic processes are now history! PID's off the twig! PID's kicked the bucket, PID's shuffled off their mortal coil, run down the curtain and joined the bleedin' choir invisible!! THIS IS AN EX-COMMANDER!!",
-		"We noticed that PID went AWOL. All troops under their command will be reassigned.",
-		"We are sad to announce that PID is lost in the Combat Zone. We can't afford a search party. All units, regroup.",
-		"PID has abandoned the operation. Their assets are now under joint command.",
-		"Commander PID has failed to report in. All units will be redistributed.",
-		"PID is MIA. Remaining forces are now reassigned to active commanders.",
-		"Reports confirm that PID is no longer in the fight. Reallocating resources.",
-		"High Command suspects PID was compromised. Their troops are now yours.",
-		"PID pulled out. Their units remain. Use them wisely.",
-		"We've lost contact with PID. Taking control of their remaining forces.",
-		"PID has been deemed unfit for command. Reassigning assets.",
-		"No further transmissions from PID. Their troops now fall under unified command.",
-		"High Command regrets to inform that PID has been silenced. Units are being reassigned.",
-		"Another Commander down: PID. Their legacy continues through their troops.",
-		"PID's command channel went dark. Redirecting all forces to surviving operatives.",
-		"Surrender confirmed from PID. Their units will continue the fight without them.",
-		"PID's resignation has been accepted... by force. Reassigning units.",
-		"Satellite link to PID severed. Their war assets are now at your disposal.",
-		"Combat stress got the better of PID. Picking up the slack.",
-		"Casualty of war: PID. All operable units reassigned to remaining players.",
-		"Command vacancy filled. PID's units will continue under new leadership.",
-		"PID has paid the ultimate price. Their forces are yours to command.",
-		"War spares no one. PID has fallen. Their troops remain.",
-		"PID has been promoted to civilian. By force. Units reassigned.",
-		"PID tripped on a landmine and career-ending shame. Units reassigned.",
-		"PID forgot to pay their command subscription. Reallocating troops.",
-		"PID's command authority revoked. Initiating redistribution of forces.",
-		"Command integrity of PID compromised. Units transferring to secure channels.",
-		"PID's signal is gone. Let their sacrifice not be in vain.",
-		"Command silence from PID. Reallocation of units underway.",
-		"PID fell to the chaos of war. Their forces continue the mission.",
-		"Confirmed KIA: PID. Taking operational control of remaining assets.",
-		"PID's command integrity shattered. Their war effort continues through us.",
-		"Another ghost in the fog: PID. Let their units be our resolve.",
-		"Transmission lost. PID is no more. We fight on.",
-		"PID has ragequit real life. You get their toys.",
-		"PID left the oven on. They've gone home. You're in charge now.",
-		"PID suffered from sudden strategic incompetence. Assets reallocated.",
-		"PID experienced spontaneous desk flipping. Their troops are free real estate.",
-		"Last known words of PID: 'Watch this!' Reassigning units.",
-		"PID achieved a higher state of 'not our problem'. You take it from here.",
-		"Command code: FAIL-STATE. PID's forces now under community management.",
-		"We've promoted PID to field observer. Very, very far from the field.",
-		"PID has been debriefed from active duty. Units reassigned.",
-		"Command slot vacated: PID. Assets redistributed.",
-		"PID no longer reports to HQ. Taking direct control of their forces.",
-		"Operational handover complete for PID. Troops reassigned.",
-		"Command continuity protocol activated. PID's assets now reassigned.",
-		"PID has disengaged. Their units now fall under surviving command.",
-		"Control signal lost from PID. Integrating their forces.",
-		"PID has relinquished control. Remaining assets transferred."
+		"PID已经没在投降了！PID已经过去了！这位指挥官不复存在！他们已经停止了存在！PID过期了，去见造物主了！PID硬了！失去了生命，PID安息了！要不是你把他们钉在玩家列表上，PID早就去推雏菊了！他们的新陈代谢过程已成为历史！PID掉下树枝了！PID踢了水桶，PID离开了凡胎肉体，拉下了帷幕，加入了那该死的隐形合唱团！！这是一位前指挥官！！",
+		"我们注意到PID擅离职守。其指挥下的所有部队将被重新分配。",
+		"我们遗憾地宣布PID在战区失踪。我们负担不起搜索队。所有单位，重新集结。",
+		"PID已放弃行动。其资产现归联合指挥。",
+		"指挥官PID未能报到。所有单位将被重新分配。",
+		"PID失踪。剩余部队现由现役指挥官接管。",
+		"报告确认PID已退出战斗。正在重新分配资源。",
+		"高层指挥部怀疑PID已被渗透。其部队现在归你了。",
+		"PID撤出了。他们的部队还在。好好利用它们。",
+		"我们与PID失去了联系。正在接管其剩余部队。",
+		"PID被认为不适合指挥。正在重新分配资产。",
+		"PID再无音讯。其部队现归统一指挥。",
+		"高层指挥部遗憾通知，PID已被沉默。部队正在重新分配。",
+		"又一位指挥官倒下了：PID。其遗产通过其部队延续。",
+		"PID的指挥频道已静默。将所有部队重定向至幸存特工。",
+		"已确认PID投降。其部队将在没有他们的情况下继续战斗。",
+		"PID的辞呈已被接受……通过武力。正在重新分配部队。",
+		"与PID的卫星链接已切断。其战争资产现在由你支配。",
+		"战斗压力战胜了PID。正在接手。",
+		"战争伤亡：PID。所有可操作单位重新分配给剩余玩家。",
+		"指挥空缺已填补。PID的部队将继续在新的领导下作战。",
+		"PID付出了最终代价。其部队由你指挥。",
+		"战争不饶任何人。PID倒下了。其部队仍在。",
+		"PID已被晋升为平民。通过武力。部队已重新分配。",
+		"PID踩到了地雷和职业生涯终结的耻辱。部队已重新分配。",
+		"PID忘了支付指挥订阅费。正在重新分配部队。",
+		"PID的指挥权已被撤销。启动兵力重新分配。",
+		"PID的指挥完整性受损。部队转移至安全频道。",
+		"PID的信号消失了。愿他们的牺牲不被白费。",
+		"PID指挥静默。资源重新分配进行中。",
+		"PID倒在了战争的混乱中。其部队继续执行任务。",
+		"确认阵亡：PID。正在接管剩余资产的操作控制权。",
+		"PID的指挥完整性破碎。他们的战争努力通过我们继续。",
+		"迷雾中的又一个幽灵：PID。让他们的部队成为我们的决心。",
+		"传输丢失。PID已不复存在。我们继续战斗。",
+		"PID在现实生活中怒退。你得到了他们的玩具。",
+		"PID忘关炉子了。他们已经回家了。现在由你负责。",
+		"PID遭受了突发性战略无能。资产重新分配。",
+		"PID经历了自发性掀桌。他们的部队成了免费的不动产。",
+		"PID最后的话：'看好了！'正在重新分配部队。",
+		"PID达到了'不关我们事'的更高境界。你从这里接手。",
+		"指挥代码：故障状态。PID的部队现由社区管理。",
+		"我们已将PID晋升为战场观察员。非常非常远离战场。",
+		"PID已被解除现役职务。部队已重新分配。",
+		"指挥席位已空出：PID。资产已重新分配。",
+		"PID不再向指挥部报告。正在直接控制其部队。",
+		"PID的行动交接已完成。部队已重新分配。",
+		"指挥连续性协议已激活。PID的资产现重新分配。",
+		"PID已脱离。其部队现归幸存指挥体系。",
+		"来自PID的控制信号丢失。正在整合其部队。",
+		"PID已放弃控制。剩余资产已移交。"
 	}
 
 	--Media.DisplayMessage("Number of Bullshit Messages: " .. #surrenderMessages)
@@ -735,7 +736,7 @@ local function SetExtraMines()
 			Utils.Do(AllSpawners,function(SID)
 				SID.Destroy()
 			end)
-			Media.DisplayMessage("All resource spawners are deleted now. Good luck!")
+			Media.DisplayMessage("所有资源生成器已删除，祝你好运！")
 		end)
 	end
 end

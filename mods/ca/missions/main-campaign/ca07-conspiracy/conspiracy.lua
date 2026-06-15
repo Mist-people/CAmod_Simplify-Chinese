@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca07-conspiracy"
 
 SleeperAwakenTrigger = { LeftBaseTrigger1.Location, LeftBaseTrigger2.Location, LeftBaseTrigger3.Location, LeftBaseTrigger4.Location, LeftBaseTrigger5.Location, LeftBaseTrigger6.Location, LeftBaseTrigger7.Location, RightBaseTrigger1.Location, RightBaseTrigger2.Location, RightBaseTrigger3.Location, RightBaseTrigger4.Location, RightBaseTrigger5.Location, RightBaseTrigger6.Location, RightBaseTrigger7.Location }
@@ -131,11 +132,11 @@ WorldLoaded = function()
 	end
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Tip("Stealth units can be detected by enemy defenses and certain units (see tooltips), as well as all infantry at close range.")
+		Tip("隐形单位可被敌方防御设施和某些单位（见提示）以及所有近距离步兵侦测。")
 	end)
 
-	ObjectiveTakeOverBase = Nod.AddObjective("Take control of the GDI base due south.")
-	UserInterface.SetMissionText("Take control of the GDI base due south.", HSLColor.Yellow)
+	ObjectiveTakeOverBase = Nod.AddObjective("控制正南方的GDI基地。")
+	UserInterface.SetMissionText("控制正南方的GDI基地。", HSLColor.Yellow)
 
 	local startingUnits = Nod.GetActors()
 	Utils.Do(startingUnits, function(a)
@@ -184,10 +185,10 @@ WorldLoaded = function()
 		Trigger.OnEnteredProximityTrigger(researcher.CenterPosition, WDist.New(8 * 1024), function(a, id)
 			if IsMissionPlayer(a.Owner) then
 				Trigger.RemoveProximityTrigger(id)
-				Notification("Researcher located.")
+				Notification("已定位研究员。")
 				MediaCA.PlaySound(MissionDir .. "/n_researcherlocated.aud", 2)
 				if ObjectiveRescueResearchers == nil then
-					ObjectiveRescueResearchers = Nod.AddObjective("Locate and rescue Nod researchers.")
+					ObjectiveRescueResearchers = Nod.AddObjective("找到并营救Nod研究员。")
 				end
 				local researcherCamera = Actor.Create("camera.paradrop", true, { Owner = Nod, Location = researcher.Location })
 				Trigger.AfterDelay(DateTime.Seconds(10), function()
@@ -200,7 +201,7 @@ WorldLoaded = function()
 			if IsMissionPlayer(a.Owner) and a.HasProperty("Move") and not a.HasProperty("Land") then
 				Trigger.RemoveProximityTrigger(id)
 				researcher.Owner = a.Owner
-				Notification("Escort researcher to evacuation point.")
+				Notification("护送研究员至撤离点。")
 				MediaCA.PlaySound(MissionDir .. "/n_escortresearcher.aud", 2)
 				InitEvacSite()
 			end
@@ -227,7 +228,7 @@ WorldLoaded = function()
 				if Researcher1.Owner == EvacPlayer and Researcher2.Owner == EvacPlayer and not EvacStarted then
 					EvacStarted = true
 
-					Notification("Evacuation transport inbound.")
+					Notification("撤离运输机即将抵达。")
 					MediaCA.PlaySound(MissionDir .. "/n_evacinbound.aud", 2)
 
 					Trigger.AfterDelay(DateTime.Seconds(3), function()
@@ -264,7 +265,7 @@ WorldLoaded = function()
 						end)
 					end)
 				else
-					Notification("A researcher has reached the evacuation point. Waiting for the second.")
+					Notification("一名研究员已到达撤离点。等待第二名。")
 				end
 			end)
 		end
@@ -325,10 +326,10 @@ AwakenSleeperCell = function()
 		return
 	end
 	SleeperCellAwakened = true
-	Media.DisplayMessage("The time has come, warriors of Nod.", "Nod Soldier", HSLColor.FromHex("FF0000"))
+	Media.DisplayMessage("时候到了，Nod的战士们。", "Nod Soldier", HSLColor.FromHex("FF0000"))
 	MediaCA.PlaySound(MissionDir .. "/timehascome.aud", 2)
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-		Media.DisplayMessage("Down with GDI!", "Nod Soldier", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("打倒GDI！", "Nod Soldier", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/downwithgdi.aud", 2)
 		Trigger.AfterDelay(15, function()
 			UserInterface.SetMissionText("")
@@ -356,7 +357,7 @@ AwakenSleeperCell = function()
 			end
 
 			if ObjectiveRescueResearchers == nil then
-				ObjectiveRescueResearchers = Nod.AddObjective("Locate and rescue Nod researchers.")
+				ObjectiveRescueResearchers = Nod.AddObjective("找到并营救Nod研究员。")
 			end
 
 			if ObjectiveTakeOverBase ~= nil and not Nod.IsObjectiveCompleted(ObjectiveTakeOverBase) then

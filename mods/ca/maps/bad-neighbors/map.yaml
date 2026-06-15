@@ -2,7 +2,7 @@ MapFormat: 11
 
 RequiresMod: ra
 
-Title: Bad Neighbors
+Title: "恶邻"
 
 Author: Nuke'm Bro.
 
@@ -18,7 +18,7 @@ Categories: Conquest
 
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: allies
@@ -28,7 +28,7 @@ Players:
 		Faction: Random
 		Enemies: Creeps
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: allies
 		Enemies: Multi0, Multi1, Multi2, Multi3

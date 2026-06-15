@@ -1,4 +1,5 @@
 
+-- Simplified Chinese translation by lsxy, 2026.06.
 TimeLimit = {
 	easy = DateTime.Minutes(30),
 	normal = DateTime.Minutes(25),
@@ -15,7 +16,7 @@ RushTimeBonus = {
 	brutal = DateTime.Seconds(3),
 }
 
-DefaultText = "\n\n\n\nTiberium stores remaining: "
+DefaultText = "\n\n\n\n泰伯利亚储存剩余："
 TimerText = ""
 ScoreboardText = "\n---Leaderboard---\n"
 
@@ -122,11 +123,11 @@ end
 
 SetupKeepAliveObjectives = function()
 	if not RespawnEnabled then
-		ObjectiveCommandoSurvive = GDI.AddObjective("All Commandos must survive.")
-		ObjectiveTanyaSurvive = GDI.AddObjective("Tanya must survive.")
+		ObjectiveCommandoSurvive = GDI.AddObjective("所有突击队员必须存活。")
+		ObjectiveTanyaSurvive = GDI.AddObjective("谭雅必须存活。")
 	else
-		ObjectiveCommandoSurvive = GDI.AddSecondaryObjective("Keep all Commandos alive.")
-		ObjectiveTanyaSurvive = GDI.AddSecondaryObjective("Keep Tanya alive.")
+		ObjectiveCommandoSurvive = GDI.AddSecondaryObjective("保持所有突击队员存活。")
+		ObjectiveTanyaSurvive = GDI.AddSecondaryObjective("保持谭雅存活。")
 	end
 end
 
@@ -175,5 +176,5 @@ SiloScoring = function(killer)
 end
 
 SetEscapeText = function()
-	DefaultText = "\n\n\n\nExit the facility."
+	DefaultText = "\n\n\n\n离开设施。"
 end

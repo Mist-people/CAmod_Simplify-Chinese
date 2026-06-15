@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	FlashPostProcessEffect@CHRONO:
 		Type: Chronoshift
@@ -6,7 +7,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, juncture.lua
 	MissionData:
-		Briefing: Critical components and supplies are being transported to a secret staging area. Few in the Brotherhood know the full details of this operation, but all will be revealed in time.\n\nGDI continue to threaten vital transportation routes, and you have been chosen to secure one such route in Egypt.\n\nGDI is blockading the Nile river with their fleet, and this is unacceptably delaying our progress.\n\nEstablish a foothold, then your objective is to destroy the GDI anti-aircraft systems that line the river bank. Once those are out of the way, Kane has a surprise in store for GDI's navy.
+		Briefing: 关键组件和补给正在被运送至一处秘密集结区。兄弟会中鲜有人知晓此行动的全部细节，但一切终将揭晓。\n\n全球防御组织(GDI)持续威胁着重要的运输路线，而你已被选中负责确保埃及境内的一条路线安全。\n\nGDI正以其舰队封锁尼罗河，这已不可接受地延误了我们的进展。\n\n建立立足点，然后你的任务是摧毁沿河岸部署的GDI防空系统。一旦扫清这些障碍，凯恩为GDI海军准备了一份"惊喜"。
 	-ScriptLobbyDropdown@DIFFICULTY:
 	ScriptLobbyDropdown@PROLOGUEDIFFICULTY:
 		ID: prologuedifficulty

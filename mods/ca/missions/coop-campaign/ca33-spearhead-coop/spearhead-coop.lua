@@ -1,4 +1,5 @@
 
+-- Simplified Chinese translation by lsxy, 2026.06.
 SetupPlayers = function()
 	Multi0 = Player.GetPlayer("Multi0")
 	Multi1 = Player.GetPlayer("Multi1")
@@ -26,11 +27,11 @@ end
 
 InitMcv = function()
 	PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-	Notification("Reinforcements have arrived.")
+	Notification("增援已抵达。")
     local exitPath =  { CarryallSpawn.Location }
 	local MCVIterator = 0
 	if #MissionPlayers > 1 then
-		Tip("Building space on this island is limited. Let one player build a Naval Yard and transport your MCVs to the mainland.")
+		Tip("岛上建筑空间有限。让一名玩家建造船坞并将你们的MCV运往大陆。")
 	end
 	Utils.Do(GetMcvPlayers(), function(p)
 		local entryPath = { CarryallSpawn.Location, CarryallDest.Location + CVec.New((MCVIterator-3),(MCVIterator-3)) }

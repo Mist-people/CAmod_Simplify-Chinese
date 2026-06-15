@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	FlashPostProcessEffect@CHRONO:
 		Type: Chronoshift
@@ -6,7 +7,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, relativity.lua
 	MissionData:
-		Briefing: The Soviets have captured one of our most important scientists, Professor Einstein.\n\nHe is currently being held inside a Soviet base not far from the border. It is crucial that he be rescued before he can be transported deeper into Soviet territory.\n\nUsing a small task force led by our special commando Tanya Adams, rescue Einstein and bring him to the extraction point.\n\nThe Soviet base is protected by Tesla Coils. Cutting their power supply will render them inoperative.
+		Briefing: 苏联绑架了我们最重要的科学家之一——爱因斯坦教授。\n\n他目前被关押在边境附近的一座苏联基地内。必须在他被转移至苏联腹地之前将其救出。\n\n率领一支由突击队员谭雅·亚当斯带领的小型特遣队，营救爱因斯坦并将其护送至撤离点。\n\n该苏联基地由特斯拉线圈防护。切断其电力供应即可使其失效。
 	-ScriptLobbyDropdown@DIFFICULTY:
 	ScriptLobbyDropdown@PROLOGUEDIFFICULTY:
 		ID: prologuedifficulty

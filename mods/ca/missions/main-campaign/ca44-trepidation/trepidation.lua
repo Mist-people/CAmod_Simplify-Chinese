@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca44-trepidation"
 
 SuperweaponsEnabledTime = {
@@ -89,14 +90,14 @@ WorldLoaded = function()
 		Actor.Create("optics.upgrade", true, { Owner = p })
 	end)
 
-	ObjectiveExtractSpy = Greece.AddObjective("Get spy to safety.")
+	ObjectiveExtractSpy = Greece.AddObjective("将间谍护送至安全地带。")
 
 	Trigger.AfterDelay(DateTime.Seconds(20), function()
 		CreateSpy()
 		Spy.DisguiseAs(SpyTarget)
 		Spy.Move(SpyDest.Location)
 		MediaCA.PlaySound(MissionDir .. "/r_spydetected.aud", 2)
-		Notification("Allied spy detected. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+		Notification("侦测到盟军间谍。按 [" .. UtilsCA.Hotkey("ToLastEvent") .. "] 查看位置。")
 		Beacon.New(Greece, SpyDest.CenterPosition)
 
 		Trigger.OnKilled(Spy, function()
@@ -143,7 +144,7 @@ OncePerSecondChecks = function()
 
 		if not PlayerHasBuildings(USSR) and not PlayerHasBuildings(Scrin) then
 			if ObjectiveEliminateEnemy == nil then
-				ObjectiveEliminateEnemy = Greece.AddObjective("Eliminate Soviet & Scrin presence.")
+				ObjectiveEliminateEnemy = Greece.AddObjective("消灭苏联与思金势力。")
 			end
 			Greece.MarkCompletedObjective(ObjectiveEliminateEnemy)
 		end
@@ -254,7 +255,7 @@ SpyDeparture = function()
 				Trigger.RemoveFootprintTrigger(id)
 				SpyDeparted = true
 				if ObjectiveEliminateEnemy == nil then
-					ObjectiveEliminateEnemy = Greece.AddObjective("Eliminate Soviet & Scrin presence.")
+					ObjectiveEliminateEnemy = Greece.AddObjective("消灭苏联与思金势力。")
 				end
 				Greece.MarkCompletedObjective(ObjectiveExtractSpy)
 				Spy.Stop()
@@ -267,7 +268,7 @@ SpyDeparture = function()
 				Trigger.AfterDelay(DateTime.Seconds(2), function()
 					Beacon.New(Greece, McvDest.CenterPosition)
 					PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-					Notification("Reinforcements have arrived.")
+					Notification("增援已抵达。")
 					DoMcvArrival()
 					InitUSSRAttacks()
 					InitScrinAttacks()

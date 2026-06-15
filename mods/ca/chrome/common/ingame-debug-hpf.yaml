@@ -1,0 +1,17 @@
+# Simplified Chinese translation by lsxy, 2026.06.
+Container@HPF_OVERLAY:
+	Logic: HierarchicalPathFinderOverlayLogic
+	Width: PARENT_WIDTH
+	Height: 60
+	Children:
+		DropDownButton@HPF_OVERLAY_LOCOMOTOR:
+			Width: PARENT_WIDTH
+			Height: 25
+			Text: 选择移动方式
+			Font: Regular
+		DropDownButton@HPF_OVERLAY_CHECK:
+			Y: 35
+			Width: PARENT_WIDTH
+			Height: 25
+			Text: 选择单位阻挡
+			Font: Regular

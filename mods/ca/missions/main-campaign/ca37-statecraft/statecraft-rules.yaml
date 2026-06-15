@@ -1,4 +1,5 @@
 
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 		Red: 0.95
@@ -18,12 +19,11 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, statecraft.lua
 	MissionData:
-		Briefing: Stalin is gone and the union is in disarray. A number of ambitious generals and high ranking officials are vying for power. We must act quickly to secure our position and restore order. Together we can bring the Soviet Empire back from the brink of total collapse.\n\nTake what few troops we can spare and establish a base, then beat the three most prominent factions into submission.\n\nThe factions are led by General Marinesko, General Krukov and Deputy Chairman Romanov, each of whom favor a particular combat doctrine. Use your best judgement to decide who to deal with first, and be careful not to tip the balance of power too quickly or they may all unite against you.
-	MapOptions:
-		ShortGameCheckboxEnabled: False
-	MusicPlaylist:
-		StartingMusic: twin
+		Briefing:  斯大林已经倒下，联盟陷入混乱。一批野心勃勃的将军和高级官员正在争夺权力。我们必须迅速行动，巩固我们的地位并恢复秩序。让我们携手将苏联帝国从全面崩溃的边缘拉回。
 
+带上我们能抽调出的少量部队建立基地，然后镇压三个最突出的派系。
+
+这三个派系分别由马林涅斯科将军、克鲁科夫将军和罗曼诺夫副主席领导，每个人都有自己的作战风格。运用你的最佳判断来决定先对付谁，但要小心不要过快打破权力平衡，否则他们可能会联合起来对付你。
 Player:
 	PlayerResources:
 		DefaultCash: 6000

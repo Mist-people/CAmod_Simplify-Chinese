@@ -2,7 +2,7 @@ MapFormat: 11
 
 RequiresMod: ra
 
-Title: Snow Town
+Title: "雪镇"
 
 Author: MicroBit
 
@@ -18,7 +18,7 @@ Categories: Conquest
 
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: allies
@@ -28,7 +28,7 @@ Players:
 		Faction: Random
 		Enemies: Creeps
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: allies
 		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5

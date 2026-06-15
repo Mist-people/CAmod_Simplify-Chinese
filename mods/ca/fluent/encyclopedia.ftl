@@ -1,41 +1,42 @@
-encyclopedia-tips-general-description = • Most infantry prone when they are fired upon, which makes them move more slowly but makes them take 50% less damage.
+## Simplified Chinese translation by lsxy, 2026.06.
+encyclopedia-tips-general-description = • 大多数步兵在受到攻击时会匍匐，使其移动速度变慢，但受到的伤害减少 50%。
 
-    • Primary anti-aircraft vehicles (IFV, BTR, Vulcan, Stealth Tank and Gun/Shard Walker) and static anti-aircraft defenses take 50% damage from aircraft.
+    • 主要防空载具（IFV、BTR、火神、隐形坦克和枪/碎片机甲）及固定防空防御受到飞行器的伤害减少 50%。
 
-    • Primary anti-aircraft units and aircraft with air-to-air capability will prioritize firing at aircraft when auto targeting or attack moving.
+    • 主要防空单位和具有空对空能力的飞行器在自动瞄准或移动攻击时会优先攻击飞行器。
 
-    • Most anti-air weapons will deal splash damage in a large radius. This is to increase the diminishing returns of massing aircraft.
+    • 大多数防空武器会在较大范围内造成溅射伤害，这是为了增加大量飞行器的边际递减效应。
 
-    • When low power all production is reduced to half speed.
+    • 低电力时所有生产速度减半。
 
-    • Units will only move to attack in Attack Anything stance.
+    • 单位仅在侵略姿态下会主动移动攻击。
 
-    • Cloaked units can be detected by any adjacent infantry, as well as by scout units and certain other detectors.
+    • 隐形单位可被任何相邻步兵以及侦察单位和某些其他探测器探测到。
 
-    • Helipads/Airfields will repair landed aircraft if they are close to a Service Depot (or its equivalents).
+    • 直升机停机坪/机场会在靠近服务仓库（或等效建筑）时修复降落的飞行器。
 
-    • Many units have abilities that can be used via the deploy key (F by default).
+    • 许多单位具有可通过部署键（默认为 F）使用的技能。
 
-    • You can control the direction of most reinforcement/airstrike support powers by dragging the mouse.
+    • 您可以通过拖动鼠标来控制大多数增援/空袭支援能力的方向。
 
-    • The "Competitive" production type is designed to reduce the effectiveness of tier 1 spam. Each production structure has its own queue, but additional production structures of each type initially cost significantly more than the first, and the cost can then be reduced by building a Radar or Service Depot, and further reduced by building a Tech Center or Allied HQ.
+    • "竞争"生产类型旨在减少 T1 垃圾兵战术的效果。每个生产建筑拥有独立队列，但每种类型的额外生产建筑初始成本远高于第一个，然后可通过建造雷达或服务仓库来降低成本，再通过建造科技中心或盟军总部进一步降低。
 
-    • Transports can be mass loaded using Alt-click. It will cause all selected units to fill the closest transports of the type that was clicked on.
+    • 运输单位可使用 Alt+点击进行批量装载，这将使所有选中的单位填入所点击类型中最近的运输单位。
 
-    • Upgrades with an yellow-orange border are sidegrades, meaning they have negative as well as positive effects.
+    • 具有黄橙色边框的升级为侧升级，意味着它们同时具有负面和正面效果。
 
-    • Upgrades with a "beaker" icon in the top right do not affect existing units, which either need to be upgraded via a Service Depot (or equivalent), or cannot be upgraded.
+    • 右上角有"烧杯"图标的升级不会影响现有单位，这些单位需要通过服务仓库（或等效建筑）升级，或无法升级。
 
-    • Mines and explosives attached to buildings (C4, TNT) can be disarmed by Engineers/Assimilators.
+    • 安装在建筑上的地雷和炸药（C4、TNT）可由工程师/同化者拆除。
 
-    • Bridges can be repaired by Engineers/Assimilators (they are not consumed in the process).
+    • 桥梁可由工程师/同化者修复（此过程不会消耗他们）。
 
-    • Structures that provide support powers, advanced defences, and the Radar Dome (or its equivalents) can be powered down using the power down key (X by default) or using the button in the top right.
+    • 提供支援能力、高级防御和雷达穹顶（或等效建筑）的建筑可使用断电键（默认为 X）或右上角按钮来断电。
 
-    • Neutral structures can be captured by Engineers/Assumilators even after they have been destroyed.
+    • 中立建筑即使被摧毁后仍可由工程师/同化者占领。
 
-    • Service Depot repairs are completely free. Vehicles can be sold while being repaired.
+    • 服务仓库维修完全免费。载具可在维修期间出售。
 
-    • All production times are proportional to cost. The cost to time ratio is lower for Refineries, MCVs and higher for upgrades.
+    • 所有生产时间与成本成正比。精炼厂和 MCV 的成本时间比较低，升级的成本时间比较高。
 
-    • In Single Queue the maximum production speed is 2x, which requires 5 infantry/aircraft production structures, or 4 vehicle/building production structures.
+    • 在单队列模式中，最大生产速度为 2 倍，需要 5 个步兵/飞行器生产建筑，或 4 个载具/建筑生产建筑。

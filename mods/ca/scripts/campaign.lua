@@ -1,4 +1,5 @@
 --[[
+-- Simplified Chinese translation by lsxy, 2026.06.
    Copyright (c) The OpenRA Combined Arms Developers (see CREDITS).
    This file is part of OpenRA Combined Arms, which is free software.
    It is made available to you under the terms of the GNU General Public License
@@ -231,7 +232,9 @@ InitObjectives = function(player)
 				if p.GetObjectiveType(id) ~= "Primary" then
 					colour = HSLColor.Gray
 				end
-				Media.DisplayMessage(p.GetObjectiveDescription(id), "New " .. string.lower(p.GetObjectiveType(id)) .. " objective", colour)
+				local objType = string.lower(p.GetObjectiveType(id))
+					local objTitle = (objType == "primary" and "新主要目标" or "新次要目标")
+					Media.DisplayMessage(p.GetObjectiveDescription(id), objTitle, colour)
 			end)
 		end
 	end)
@@ -239,13 +242,13 @@ InitObjectives = function(player)
 	Trigger.OnObjectiveCompleted(player, function(p, id)
 		if p.IsLocalPlayer then
 			Media.PlaySoundNotification(player, "AlertBleep")
-			Media.DisplayMessage(p.GetObjectiveDescription(id), "Objective completed", HSLColor.LimeGreen)
+			Media.DisplayMessage(p.GetObjectiveDescription(id), "任务完成", HSLColor.LimeGreen)
 		end
 	end)
 
 	Trigger.OnObjectiveFailed(player, function(p, id)
 		if p.IsLocalPlayer then
-			Media.DisplayMessage(p.GetObjectiveDescription(id), "Objective failed", HSLColor.Red)
+			Media.DisplayMessage(p.GetObjectiveDescription(id), "任务失败", HSLColor.Red)
 		end
 	end)
 

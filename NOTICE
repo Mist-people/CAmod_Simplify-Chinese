@@ -1,0 +1,40 @@
+NOTICE 
+====== 
+
+Combined Arms - Simplified Chinese Localization Modification 
+
+This release contains modifications to the Simplified Chinese localization of Combined Arms.
+
+Localization maintained by: lsxy
+Modification date: 2026.06
+
+The following categories of files have been modified (user-visible text translated from English to Simplified Chinese). Due to the large number of files, individual modification notes have not been added to each file:
+
+- `mods/ca/missions/*/map.yaml` (104 mission title/description files)
+- `mods/ca/maps/*/map.yaml` (71 skirmish map title/description files)
+
+The copyright of these files belongs to their respective original authors (see credits within each file). As part of this modified version of Combined Arms, they are distributed under the GNU General Public License v3.0.
+
+For the full license text, see COPYING and LICENSE.md.
+
+---
+
+NOTICE
+======
+
+Combined Arms - 简体中文本地化修改版
+
+本发行版包含对 Combined Arms 的简体中文本地化修改。
+
+汉化维护: 凌水小月
+修改日期: 2026.06
+
+以下类别的文件已修改（用户可见文本由英文翻译为简体中文），但因文件数量过多，未在各文件中单独添加修改说明：
+
+- mods/ca/missions/*/map.yaml（104 个任务标题/描述文件）
+- mods/ca/maps/*/map.yaml（71 个遭遇战地图标题/描述文件）
+
+这些文件的版权归原作者所有（详见各文件内署名），作为本修改版 Combined Arms
+的一部分，以 GNU General Public License v3.0 分发。
+
+完整许可证文本见 COPYING 和 LICENSE.md。

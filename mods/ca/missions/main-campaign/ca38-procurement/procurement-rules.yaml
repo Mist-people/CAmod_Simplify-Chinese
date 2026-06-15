@@ -1,4 +1,5 @@
 
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	PaletteFromFile@terrain-temperat:
 		Filename: ca|missions/main-campaign/ca38-procurement/lush.pal
@@ -12,12 +13,15 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, procurement.lua
 	MissionData:
-		Briefing: With our rivals defeated, we must now begin rebuilding our forces. Our production capacity was crippled by the Scrin so we must look elsewhere for equipment to meet our immediate needs.\n\nThe Chinese have long persisted in their selfish prioritization of their own economic interests, refusing to aid us militarily, however their quiet yet rapid military buildup has caught the eye of GDI who, under the guise of "safeguarding regional stability", have established a large military presence a short distance from the Chinese border.\n\nThis has predictably outraged the Chinese leadership, so we have made an arrangement with them in secret.\n\nYou must take a small force to a depot containing Chinese vehicles near the border. Take these vehicles across the border and destroy the nearest GDI outpost. We can then send in additional forces to establish our own base and eliminate the remaining GDI presence.\n\nThus, GDI will be removed without the Chinese having to involve themselves directly, and the Chinese will get a live test of their new weapons against a peer adversary. In return they have agreed to sell their weapons to us, which will allow us to return to full strength at a greatly accelerated rate.
-	MapOptions:
-		ShortGameCheckboxEnabled: False
-	MusicPlaylist:
-		StartingMusic: blowitup
+		Briefing:  随着我们的对手被击败，我们现在必须开始重建部队。我们的生产能力被思金人摧毁，因此我们必须另寻装备以满足眼前需求。
 
+中国长期以来一直自私地优先考虑自身经济利益，拒绝向我们提供军事援助，然而他们低调而迅速的军事集结引起了全球防御组织(GDI)的注意。GDI以"维护地区稳定"为借口，在中国边境不远处建立了大规模的军事存在。
+
+这不出所料地激怒了中国领导层，因此我们与他们秘密达成了一项协议。
+
+你必须带领一支小部队前往边境附近一个存放中国车辆的仓库。将这些车辆开过边境，摧毁最近的GDI前哨站。然后我们可以派遣增援部队建立我们自己的基地，并消灭剩余的GDI存在。
+
+这样一来，GDI将被清除，而中国无需直接介入，同时中国也能在与同等对手的实战中测试他们的新武器。作为回报，他们同意向我们出售武器，这将使我们能够以极大的加速度恢复到满员战力。
 Player:
 	PlayerResources:
 		DefaultCash: 6000

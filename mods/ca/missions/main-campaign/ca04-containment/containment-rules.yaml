@@ -1,4 +1,5 @@
 
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 	WeatherOverlay@RAIN:
@@ -18,7 +19,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, containment.lua
 	MissionData:
-		Briefing: Intel reports that the Soviets are preparing to strike their ruptured Chronosphere with atomic weapons in an attempt to put an end to the damage that it continues to cause. They don't know what they are dealing with. If they succeed, the consequences could be apocalyptic.\n\nThere isn't enough time to launch a full offensive, so our best option is a small, covert operation to take out their missile silos.\n\nThe bulk of the Soviet forces in the region are busy pushing back the alien invaders, so the bases here are vulnerable to such an attack. If all goes to plan, by the time they realize there's a significant threat it will be too late.\n\nWe have been preparing our own means of containing the Chronosphere, and assuming we succeed in stopping the Soviets from launching, this would be as good a time as any to put it to the test.\n\nFirst, you must take out the three atomic reactors that power the Soviet Tesla Coils so that our team can slip by the remaining defenses.\n\nNext, take out the SAM sites along the shoreline to clear a path for our attempt at containment.\n\nThirdly, destroy the two missile silos that are preparing to launch.\n\nThen we will send in our experimental weapon. Escort it to the Chronosphere and neutralize it.
+		Briefing: 情报报告称，苏联正准备用核武器攻击他们破损的时空传送仪，试图终结其持续造成的破坏。他们根本不知道自己在对付什么。如果他们成功了，后果可能是灾难性的。\n\n我们没有足够的时间发动全面进攻，因此最好的选择是一次小规模的秘密行动，摧毁他们的导弹发射井。\n\n该地区的大部分苏军正忙于击退外星入侵者，因此这里的基地对这样的攻击相当脆弱。如果一切按计划进行，等他们意识到存在重大威胁时，一切为时已晚。\n\n我们一直在准备自己遏制时空传送仪的手段，假设我们成功阻止了苏联的发射，那么现在正是测试它的最佳时机。\n\n首先，你必须摧毁为苏联特斯拉线圈供电的三座原子反应堆，以便我们的突击队能绕过剩余的防御设施。\n\n其次，摧毁沿岸的防空导弹阵地，为我们实施遏制行动扫清道路。\n\n第三，摧毁两座即将发射的导弹发射井。\n\n随后我们将派出实验性武器。护送它到达时空传送仪并将其中和。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	ScriptLobbyDropdown@RESPAWN:

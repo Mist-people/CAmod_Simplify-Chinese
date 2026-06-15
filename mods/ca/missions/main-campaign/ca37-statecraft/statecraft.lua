@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca37-statecraft"
 
 MarineskoHardAndAboveCompositions = {
@@ -234,16 +235,16 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitGenerals()
 
-	ObjectiveEliminateMarinesko = USSR.AddObjective("Defeat General Marinesko's forces.")
-	ObjectiveEliminateRomanov = USSR.AddObjective("Defeat Deputy Chairman Romanov's forces.")
-	ObjectiveEliminateKrukov = USSR.AddObjective("Defeat General Krukov's forces.")
+	ObjectiveEliminateMarinesko = USSR.AddObjective("击败马林斯科将军的部队。")
+	ObjectiveEliminateRomanov = USSR.AddObjective("击败罗曼诺夫副主席的部队。")
+	ObjectiveEliminateKrukov = USSR.AddObjective("击败克鲁科夫将军的部队。")
 
 	Trigger.OnCapture(RomanovIndustrialPlant, function(self, captor, oldOwner, newOwner)
 		Actor.Create("captured.indp", true, { Owner = USSR })
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Media.DisplayMessage("Romanov. Marinesko. Krukov. Comrade General, you must crush these pretenders. The Union must prevail!", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("罗曼诺夫。马林斯科。克鲁科夫。将军同志，你必须粉碎这些僭越者。苏维埃必须胜利！", "查丹科总理", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/cdko_crushtraitors.aud", 2)
 	end)
 

@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca40-conduit"
 
 TimeLimit = {
@@ -111,7 +112,7 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitNod()
 
-	ObjectiveSecureGateway = USSR.AddObjective("Eliminate Nod forces near gateway.")
+	ObjectiveSecureGateway = USSR.AddObjective("消灭传送门附近的Nod部队。")
 
 	Trigger.OnAllKilledOrCaptured({ NodEastAirstrip, NodEastHand }, function()
 		InitNodSouth()
@@ -143,7 +144,7 @@ OncePerSecondChecks = function()
 		if Difficulty ~= "easy" and TimerTicks > 0 then
 			if TimerTicks > 25 then
 				TimerTicks = TimerTicks - 25
-				UserInterface.SetMissionText("Kane's forces will begin returning in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+				UserInterface.SetMissionText("凯恩的部队将在 " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks) .. " 后返回", HSLColor.Yellow)
 			else
 				TimerTicks = 0
 				UserInterface.SetMissionText("")
@@ -228,7 +229,7 @@ end
 InitKaneReturn = function()
 	if not KaneReturnInitiated then
 		KaneReturnInitiated = true
-		Media.DisplayMessage("The Overlord will not be your salvation. Your empire is dead. Surrender, or be destroyed. My return will not be stopped.", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("霸主不会是你们的救星。你们的帝国已经死了。投降吧，否则将被毁灭。我的回归不可阻挡。", "凯恩", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_return.aud", 2.5)
 		DeployCyborgs()
 	end

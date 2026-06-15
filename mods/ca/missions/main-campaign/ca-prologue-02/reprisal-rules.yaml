@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	FlashPostProcessEffect@CHRONO:
 		Type: Chronoshift
@@ -6,7 +7,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, reprisal.lua
 	MissionData:
-		Briefing: While we extracted all the information we needed from Einstein, Comrade Stalin was most displeased to learn of his escape.\n\nThe traitor who informed the Allies of the scientist's whereabouts has been identified, and Stalin demands retribution.\n\nGo to the village the traitor calls home. Wipe it out. Leave no survivors.\n\nThe Allies have set up a base nearby, to protect the village while they prepare to evacuate it. Once the village is destroyed, destroy the Allied base.
+		Briefing: 虽然我们从爱因斯坦那里获取了所需的所有情报，但斯大林同志得知他逃脱后极为不悦。\n\n向盟军透露这位科学家下落的内奸已被确认，斯大林要求实施报复。\n\n前往那个叛徒居住的村庄。将其彻底摧毁。不留活口。\n\n盟军已在附近建立了一座基地，准备在撤离该村庄前提供保护。摧毁村庄后，摧毁盟军基地。
 	-ScriptLobbyDropdown@DIFFICULTY:
 	ScriptLobbyDropdown@PROLOGUEDIFFICULTY:
 		ID: prologuedifficulty

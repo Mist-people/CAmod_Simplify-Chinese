@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca09-salvation"
 
 Wormholes = {
@@ -94,9 +95,9 @@ WorldLoaded = function()
 	InitObjectives(Nod)
 	InitScrin()
 
-	ObjectivePurgeScrin = Nod.AddObjective("Eliminate the Scrin presence.")
+	ObjectivePurgeScrin = Nod.AddObjective("消灭思金存在。")
 	ObjectiveSaveAllCivilians = Nod.AddSecondaryObjective("Allow no civilians to be killed.")
-	Notification("The Scrin are preparing reinforcements, we must eliminate their foothold here quickly.")
+	Notification("思金正在准备增援，我们必须迅速铲除他们在这里的据点。")
 
 	NodCamera1.Destroy()
 	NodCamera2.Destroy()
@@ -230,7 +231,7 @@ SpawnWormhole = function()
 		randomDormantWormhole.SpawnCount = 0
 		local camera = Actor.Create("smallcamera", true, { Owner = Nod, Location = randomLocation })
 		Beacon.New(Nod, randomDormantWormhole.Actor.CenterPosition)
-		Notification("Scrin portal detected. Destroy it before Scrin reinforcements arrive.")
+		Notification("侦测到思金传送门。在思金增援抵达前将其摧毁。")
 		MediaCA.PlaySound(MissionDir .. "/n_scrinportal.aud", 2)
 
 		UpdateScrinCounter()
@@ -322,6 +323,6 @@ UpdateScrinCounter = function()
 			return not a.IsDead and a.HasProperty("Kill") and not string.match(a.Type, "husk")
 		end)
 
-		UserInterface.SetMissionText("Scrin remaining: " .. #scrinRemaining, HSLColor.Yellow)
+		UserInterface.SetMissionText("剩余思金：" .. #scrinRemaining, HSLColor.Yellow)
 	end)
 end

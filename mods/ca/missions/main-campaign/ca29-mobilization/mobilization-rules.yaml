@@ -1,4 +1,5 @@
 
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	PaletteFromFile@terrain-temperat:
 		Filename: ca|missions/main-campaign/ca29-mobilization/dark.pal
@@ -29,7 +30,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, mobilization.lua
 	MissionData:
-		Briefing: The assault on the Tiberium storage facility bought us valuable time, and preparations for our final assault are underway. The troops we freed from Scrin mind control have provided us with vital intel, and it seems that our suspicions were correct. The Scrin are cut off from their homeworld and they seek to open an interstellar gateway. They have been stockpiling Tiberium to provide the vast amount of energy this will require.\n\nThe main Scrin stronghold has been located and we are gathering whatever forces we can. Kane has apparently done one of his disappearing acts, and with Stalin dead the interim Nod and Soviet leaderships have agreed to a truce so that we can defeat the alien threat. Their commanders are attending a joint meeting at a command post near the front line.\n\n[ incoming transmission ]\n\nIt seems the Scrin have become aware of our plans.. Our command post has reported Scrin wormholes appearing throughout the area, and our reinforcements are being cut off.\n\nProtect the command post. Reinforcements will be arriving intermittently, but you'll need to take out these wormholes as quickly as possible or you'll be overwhelmed. Good luck.
+		Briefing: 对泰伯利亚储存设施的攻击为我们赢得了宝贵的时间，最后进攻的准备工作正在进行中。我们从思金人心灵控制下解救出来的部队提供了重要情报，看来我们的怀疑是正确的。思金人与其母星的联系已被切断，他们正在试图打开一座星际传送门。他们一直囤积泰伯利亚，以提供这所需的巨大能量。\n\n思金人的主要大本营已被定位，我们正在集结一切可用的力量。凯恩显然又一次玩起了他的失踪把戏，随着斯大林已死，Nod兄弟会和苏联的临时领导层已同意休战，以便我们共同击败外星威胁。他们的指挥官正在前线附近的一个指挥所参加联席会议。\n\n[ 收到新通信 ]\n\n思金人似乎已经察觉了我们的计划……我们的指挥所报告称思金人的虫洞出现在整个区域，我们的增援正被切断。\n\n保护指挥所。增援部队将间歇性抵达，但你必须尽快摧毁这些虫洞，否则将被压倒。祝你好运。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

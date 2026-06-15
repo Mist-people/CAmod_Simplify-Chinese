@@ -2,7 +2,7 @@ MapFormat: 12
 
 RequiresMod: ca
 
-Title: Composition Tester
+Title: "编队测试"
 
 Author: Darkademic
 
@@ -20,12 +20,12 @@ LockPreview: True
 
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: england
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: england
 		Enemies: Multi0, Multi1
@@ -45,17 +45,17 @@ Players:
 		Spawn: 2
 		Enemies: Creeps
 	PlayerReference@Reset:
-		Name: Reset
+		Name: 重置
 		NonCombatant: True
 		Faction: england
 		Color: FF0000
 	PlayerReference@Save:
-		Name: Save
+		Name: 保存
 		NonCombatant: True
 		Faction: england
 		Color: 00FF00
 	PlayerReference@Restore:
-		Name: Restore
+		Name: 恢复
 		NonCombatant: True
 		Faction: england
 		Color: 00FFFF

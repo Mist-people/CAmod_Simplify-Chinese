@@ -1,7 +1,8 @@
 ## Factions
+## Simplified Chinese translation by lsxy, 2026.06.
 faction-england =
-    .name = England
-    .description = England: Subterfuge
+    .name = 英国
+    .description = 英国：谍战
     Units:
       • Sniper
       • Mirage Tank (replaces Scout Tank)
@@ -17,8 +18,8 @@ faction-england =
       • Fake Buildings
 
 faction-france =
-    .name = France
-    .description = France: Fortification
+    .name = 法国
+    .description = 法国：筑防
     Units:
       • Battle Fortress
       • Grand Cannon (replaces Prism Tower)
@@ -33,8 +34,8 @@ faction-france =
       • Walls & Defenses (10% discount)
 
 faction-germany =
-    .name = Germany
-    .description = Germany: Innovation
+    .name = 德国
+    .description = 德国：创新
     Units:
       • Chrono Prison
       • Tank Destroyer
@@ -51,8 +52,8 @@ faction-germany =
       • Chronosphere (20% discount)
 
 faction-usa =
-    .name = USA
-    .description = USA: Airborne Forces
+    .name = 美国
+    .description = 美国：空降部队
     Units:
       • SEAL
       • Nighthawk (replaces Chinook)
@@ -69,8 +70,8 @@ faction-usa =
       • Airdrop Units
 
 faction-russia =
-    .name = Russia
-    .description = Russia: Tesla Techology
+    .name = 苏俄
+    .description = 苏俄：特斯拉技术
     Units:
       • Tesla Tank
       • Tesla Reactor (replaces Advanced Power Plant)
@@ -88,8 +89,8 @@ faction-russia =
       • Kirov Tesla Bombs
 
 faction-ukraine =
-    .name = Ukraine
-    .description = Ukraine: Demolition
+    .name = 乌克兰
+    .description = 乌克兰：爆破
     Units:
       • V3 Launcher
       • Siege Tank (replaces V2)
@@ -107,8 +108,8 @@ faction-ukraine =
       • Kirov Cluster Bombs
 
 faction-iraq =
-    .name = Iraq
-    .description = Iraq: Nuclear Warfare
+    .name = 伊拉克
+    .description = 伊拉克：核子战争
     Units:
       • Rad Trooper (replaces Shock Trooper)
       • Chem Tower (replaces Flame Tower)
@@ -127,8 +128,8 @@ faction-iraq =
       • Kirov Atom Bombs
 
 faction-yuri =
-    .name = Psi-Corps
-    .description = Psychic Corps: Mind Control & Genetics
+    .name = 心灵军团
+    .description = 心灵军团：心灵控制与基因
     Units:
       • Brute
       • Floating Disc (replaces Kirov)
@@ -144,8 +145,8 @@ faction-yuri =
       • Gattling BTR
 
 faction-talon =
-    .name = Talon
-    .description = Steel Talon: Mech Warfare
+    .name = 钢爪
+    .description = 钢爪：机甲战争
     Units:
       • Wolverine
       • Juggernaut
@@ -164,7 +165,7 @@ faction-talon =
 
 faction-zocom =
     .name = ZOCOM
-    .description = ZOCOM: Experimental Weapons
+    .description = ZOCOM：实验武器
     Units:
       • X-O Powersuit
       • Disruptor
@@ -183,8 +184,8 @@ faction-zocom =
       • Hazmat Suits equipped as standard
 
 faction-eagle =
-    .name = Eagle
-    .description = Eagle Corps: Rapid Reaction Force
+    .name = 鹰军团
+    .description = 鹰军团：快速反应部队
     Units:
       • Pitbull
       • Aurora
@@ -202,7 +203,7 @@ faction-eagle =
 
 faction-arc =
     .name = ARC
-    .description = Advanced Robotics Command: Robotics
+    .description = 高级机器人指挥部：机器人技术
     Units:
       • Mini Drone
       • Jackknife
@@ -223,8 +224,8 @@ faction-arc =
       • Comms. Center emergency backup power
 
 faction-blackh =
-    .name = Black Hand
-    .description = Black Hand: Flame Weaponry
+    .name = 黑手
+    .description = 黑手：火焰武器
     Units:
       • Black Hand Trooper
       • Heavy Flame Tank (replaces Flame Tank)
@@ -241,8 +242,8 @@ faction-blackh =
       • Free Howitzer Upgrade
 
 faction-marked =
-    .name = Marked
-    .description = Marked of Kane: Alien Weaponry
+    .name = 凯恩之印
+    .description = 凯恩之印：异星武器
     Units:
       • Acolyte/Templar
       • Venom (replaces Apache)
@@ -259,8 +260,8 @@ faction-marked =
       • Temple Prime (10% discount)
 
 faction-legion =
-    .name = Legion
-    .description = Legion: Stolen Technology
+    .name = 军团
+    .description = 军团：窃取科技
     Units:
       • Microwave Tank
       • APC
@@ -278,8 +279,8 @@ faction-legion =
       • Hack Satellite (-33% cooldown)
 
 faction-shadow =
-    .name = Shadow
-    .description = Shadow Sect: Stealth Technology
+    .name = 暗影
+    .description = 暗影：隐形技术
     Units:
       • Mobile Stealth Generator
       • Spectre (replaces SSM)
@@ -297,7 +298,7 @@ faction-shadow =
 
 faction-reaper =
     .name = Reaper-17
-    .description = Reaper-17: Frontal Assault
+    .description = Reaper-17：正面突击
     Units:
       • Stormcrawler
       • Reaper Tripod (replaces Annihilator Tripod)
@@ -314,7 +315,7 @@ faction-reaper =
 
 faction-traveler =
     .name = Traveler-59
-    .description = Traveler-59: Fast Attack
+    .description = Traveler-59：快速打击
     Units:
       • Enervator
       • Lacerator (replaces Seeker)
@@ -330,7 +331,7 @@ faction-traveler =
 
 faction-harbinger =
     .name = Harbinger-31
-    .description = Harbinger-31: Heavy Weapons
+    .description = Harbinger-31：重型武器
     Units:
       • Obliterator
       • Marauder (replaces Intruder)
@@ -347,7 +348,7 @@ faction-harbinger =
 
 faction-collector =
     .name = Collector-73
-    .description = Collector-73: Leeching & Degeneration
+    .description = Collector-73：汲取与退化
     Units:
       • Atomizer
       • Leecher (replaces Corrupter)
@@ -363,42 +364,42 @@ faction-collector =
       • Suppression Field (-15% cooldown, +10% duration)
 
 faction-randomallies =
-    .name = Allies
-    .description = Random Allied Faction
-    A random Allied faction will be chosen when the game starts.
+    .name = 盟军
+    .description = 随机盟军阵营
+    游戏开始时会随机选择一个盟军阵营。
 
 faction-randomsoviet =
-    .name = Soviet
-    .description = Random Soviet Faction
-    A random Soviet faction will be chosen when the game starts.
+    .name = 苏联
+    .description = 随机苏联阵营
+    游戏开始时会随机选择一个苏联阵营。
 
 faction-randomgdi =
     .name = GDI
-    .description = Random GDI Faction
-    A random GDI faction will be chosen when the game starts.
+    .description = 随机GDI阵营
+    游戏开始时会随机选择一个GDI阵营。
 
 faction-randomnod =
     .name = Nod
-    .description = Random Nod Faction
-    A random Nod faction will be chosen when the game starts.
+    .description = 随机Nod阵营
+    游戏开始时会随机选择一个Nod阵营。
 
 faction-randomscrin =
-    .name = Scrin
-    .description = Random Scrin Faction
-    A random Scrin faction will be chosen when the game starts.
+    .name = 思金
+    .description = 随机思金阵营
+    游戏开始时会随机选择一个思金阵营。
 
 faction-random =
-    .name = Any
-    .description = Random Faction
-    A random faction will be chosen when the game starts.
+    .name = 随机
+    .description = 随机阵营
+    游戏开始时会随机选择一个阵营。
 
 faction-allies =
-    .name = Allies
-    .description = Allies
+    .name = 盟军
+    .description = 盟军
 
 faction-soviet =
-    .name = Soviet
-    .description = Soviet
+    .name = 苏联
+    .description = 苏联
 
 faction-gdi =
     .name = GDI
@@ -409,5 +410,5 @@ faction-nod =
     .description = Nod
 
 faction-scrin =
-    .name = Scrin
-    .description = Scrin
+    .name = 思金
+    .description = 思金

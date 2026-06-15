@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca10-zenith"
 
 NukeSilos = { NukeSilo1, NukeSilo2, NukeSilo3, NukeSilo4 }
@@ -115,7 +116,7 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitUSSR()
 
-	ObjectiveKillSilos = Nod.AddObjective("Destroy Soviet missile silos before launch.")
+	ObjectiveKillSilos = Nod.AddObjective("在发射前摧毁苏联导弹发射井。")
 	ObjectiveKillReactors = Nod.AddSecondaryObjective("Destroy reactors on north-west of island.")
 	ObjectiveKillAirbase = Nod.AddSecondaryObjective("Destroy airbase on north-east of island.")
 
@@ -155,7 +156,7 @@ WorldLoaded = function()
 			NukeDummy.Destroy()
 			Media.PlaySound("nukelaunch.aud")
 			PlaySpeechNotificationToMissionPlayers("AbombLaunchDetected")
-			Notification("A-Bomb launch detected.")
+			Notification("侦测到原子弹发射。")
 
 			Trigger.AfterDelay(DateTime.Seconds(3), function()
 				if not Nod.IsObjectiveCompleted(ObjectiveKillSilos) then
@@ -251,14 +252,14 @@ InitUSSR = function()
 		end)
 		Nod.MarkCompletedObjective(ObjectiveKillReactors)
 		Trigger.AfterDelay(DateTime.Seconds(2), function()
-			Notification("Excellent! The north-west Tesla Reactors have been neutralised; all Soviet Tesla Coils are now offline.")
+			Notification("太棒了！西北方磁暴反应堆已被瘫痪；所有苏联磁暴线圈现已下线。")
 		end)
 	end)
 
 	Trigger.OnAllKilledOrCaptured(AirbaseStructures, function()
 		Nod.MarkCompletedObjective(ObjectiveKillAirbase)
 		Trigger.AfterDelay(DateTime.Seconds(2), function()
-			Notification("Good work commander! Their airbase has been neutralised, so you no longer have to worry about being attacked from the air.")
+			Notification("干得好指挥官！他们的空军基地已被瘫痪，你再也不用担心来自空中的攻击了。")
 		end)
 	end)
 

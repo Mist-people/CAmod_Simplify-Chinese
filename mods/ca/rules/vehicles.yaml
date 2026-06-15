@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 V2RL:
 	Inherits: ^Vehicle
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
@@ -6,14 +7,14 @@ V2RL:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 180
 		Prerequisites: anyradar, ~vehicles.v2, ~techlevel.medium
-		Description: Long-range rocket artillery with low rate of fire.
+		Description: 射速较低的远程火箭炮。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
+		Weaknesses: • 无法攻击飞行器\n• 难以命中移动目标
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: V2 Rocket Launcher
+		Name: V2火箭发射车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -65,14 +66,14 @@ KATY:
 		BuildPaletteOrder: 130
 		IconPalette: chrometd
 		Prerequisites: ~vehicles.soviet, ~!arty.doctrine, ~techlevel.low
-		Description: Long-range rocket barrage artillery.
+		Description: 远程火箭弹幕火炮。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings, Defenses
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑, 防御建筑
+		Weaknesses: • 无法攻击飞行器\n• 难以命中移动目标
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Katyusha
+		Name: 喀秋莎
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -132,7 +133,7 @@ GRAD:
 		Prerequisites: ~vehicles.soviet, ~arty.doctrine, ~techlevel.medium
 		IconPalette: chrome
 	Tooltip:
-		Name: Grad
+		Name: 冰雹火箭炮
 	Health:
 		HP: 14000
 	-Upgradeable@Grad:
@@ -184,15 +185,15 @@ NUKC:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 243
 		Prerequisites: stek, ~vehicles.soviet, ~arty.doctrine, ~nukc.upgrade, ~techlevel.high
-		Description: Nuclear long-range artillery.
+		Description: 核子远程火炮。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Can crush concrete walls
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
+		Weaknesses: • 无法攻击飞行器\n• 难以命中移动目标
+		Attributes: • 可碾压 混凝土墙
 	Valued:
 		Cost: 2400
 	Tooltip:
-		Name: Nuke Cannon
+		Name: 核子加农炮
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Selectable:
@@ -391,16 +392,16 @@ NUKC.Preview:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 120
 		Prerequisites: ~vehicles.1tnk, ~techlevel.low
-		Description: Fast tank, good for scouting and skirmishes.
+		Description: 快速坦克，适合侦察和小规模战斗。
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
-		Attributes: • Amphibious
+		Strengths: • 擅长对付轻型装甲
+		Weaknesses: • 不擅长对付步兵, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 两栖
 	Valued:
 		Cost: 650
 	Tooltip:
-		Name: Scout Tank
-		GenericName: Tank
+		Name: 侦察坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -460,15 +461,15 @@ NUKC.Preview:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 70
 		Prerequisites: ~vehicles.allies, ~techlevel.low
-		Description: Allied main battle tank.
+		Description: 盟军主战坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Medium Tank
-		GenericName: Tank
+		Name: 中型坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -516,14 +517,14 @@ GTNK:
 	Buildable:
 		Queue: GrizzlyTank
 		-Prerequisites:
-		Description: Allied paradropped battle tank.
+		Description: 盟军空降战斗坦克。
 	Valued:
 		Cost: 875
 	Tooltip:
-		Name: Grizzly Tank
+		Name: 灰熊坦克
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 防御建筑\n• 无法攻击飞行器
 	Mobile:
 		Speed: 100
 		Voice: Move
@@ -565,16 +566,16 @@ GTNK.squad:
 	ScriptTriggers:
 	ProvidesPrerequisite@squadname:
 	Tooltip:
-		Name: Airdrop: Grizzly Tanks
+		Name: 空降：灰熊坦克
 	Buildable:
 		Queue: VehicleSQ, VehicleMQ
 		BuildAtProductionType: ParadropVehicle
 		BuildPaletteOrder: 400
 		Prerequisites: radaroraircraft, ~vehicles.usa, ~techlevel.medium
-		Description: Prepare a pair of  Grizzly Tanks for airdrop.
+		Description: 准备两辆灰熊坦克进行空降。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 1750
 	RenderSprites:
@@ -688,24 +689,24 @@ GTNK.squad:
 	Tooltip:
 		RequiresCondition: france || usa
 	Tooltip@Germany:
-		Name: Tank Destroyer
-		GenericName: Tank
+		Name: 坦克杀手
+		GenericName: 坦克
 		RequiresCondition: germany
 	Tooltip@Mirage:
-		Name: Mirage Tank
-		GenericName: Tank
+		Name: 幻影坦克
+		GenericName: 坦克
 		RequiresCondition: england
 	Tooltip@TD:
-		Name: Battle Tank
-		GenericName: Tank
+		Name: 战斗坦克
+		GenericName: 坦克
 		RequiresCondition: nod || gdi
 	Tooltip@SOVIET:
-		Name: Heavy Tank
-		GenericName: Tank
+		Name: 重型坦克
+		GenericName: 坦克
 		RequiresCondition: soviet
 	Tooltip@SCRIN:
-		Name: Devourer
-		GenericName: Tank
+		Name: 吞噬者
+		GenericName: 坦克
 		RequiresCondition: scrin
 	Turreted:
 		RequiresCondition: !scrin
@@ -809,15 +810,15 @@ GTNK.squad:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 80
 		Prerequisites: ~!atomicengines.upgrade, ~!lasher.upgrade, ~!armor.doctrine, ~vehicles.soviet, ~techlevel.low
-		Description: Soviet main battle tank with dual cannons.
+		Description: 装备双炮管的苏联主战坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Heavy Tank
-		GenericName: Tank
+		Name: 重型坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -900,14 +901,14 @@ GTNK.squad:
 		BuildPaletteOrder: 81
 		Prerequisites: ~atomicengines.upgrade, ~!lasher.upgrade, ~!armor.doctrine, ~vehicles.soviet, ~techlevel.low
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
-		Attributes: • Explodes and leaves radiation on death
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 爆炸 和 留下 辐射 死亡时
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Atomic Heavy Tank
-		GenericName: Tank
+		Name: 原子重型坦克
+		GenericName: 坦克
 	Turreted:
 		Offset: 0,0,20
 	Selectable:
@@ -937,14 +938,14 @@ GTNK.squad:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 84
 		Prerequisites: ~lasher.upgrade, ~!atomicengines.upgrade, ~!armor.doctrine, ~vehicles.soviet, ~techlevel.low
-		Description: Heavy tank with infantry crushing improvements.
+		Description: 具有碾压步兵改进的重型坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
-		Attributes: • Can crush concrete walls
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付 防御建筑\n• 无法攻击飞行器
+		Attributes: • 可碾压 混凝土墙
 	Tooltip:
-		Name: Lasher Tank
-		GenericName: Tank
+		Name: 狂风坦克
+		GenericName: 坦克
 	Health:
 		HP: 57000
 	Selectable:
@@ -1004,14 +1005,14 @@ GTNK.squad:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 85
 		Prerequisites: ~lasher.upgrade, ~atomicengines.upgrade, ~!armor.doctrine, ~vehicles.soviet, ~techlevel.low
-		Description: Heavy tank with infantry crushing improvements.
+		Description: 具有碾压步兵改进的重型坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
-		Attributes: • Can crush concrete walls\n• Explodes and leaves radiation on death
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付 防御建筑\n• 无法攻击飞行器
+		Attributes: • 可碾压 混凝土墙\n• 爆炸 和 留下 辐射 死亡时
 	Tooltip:
-		Name: Atomic Lasher Tank
-		GenericName: Tank
+		Name: 原子狂风坦克
+		GenericName: 坦克
 	Health:
 		HP: 57000
 	Selectable:
@@ -1075,17 +1076,17 @@ GTNK.squad:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 82
 		Prerequisites: ~vehicles.soviet, ~!atomicengines.upgrade, ~!lasher.upgrade, ~armor.doctrine, ~techlevel.low
-		Description: Soviet main battle tank with a single powerful cannon.
+		Description: 装备单门强力火炮的苏联主战坦克。
 	RenderSprites:
 		Image: rhin
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Rhino Heavy Tank
-		GenericName: Tank
+		Name: 犀牛重型坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1170,7 +1171,7 @@ GTNK.squad:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		Name: Rhino Tank
+		Name: 犀牛坦克
 		AdditionalInfo: Requires Armor Doctrine.
 
 3TNK.RHINO.ATOMIC:
@@ -1182,9 +1183,9 @@ GTNK.squad:
 		BuildPaletteOrder: 83
 		Prerequisites: ~atomicengines.upgrade, ~!lasher.upgrade, ~armor.doctrine, ~techlevel.low
 	TooltipExtras:
-		Attributes: • Explodes and leaves radiation on death
+		Attributes: • 爆炸 和 留下 辐射 死亡时
 	Tooltip:
-		Name: Atomic Rhino Heavy Tank
+		Name: 原子犀牛重型坦克
 	Turreted:
 		Offset: 0,0,20
 	Selectable:
@@ -1202,7 +1203,7 @@ GTNK.squad:
 		Actor: 3tnk.rhino.atomicyuri
 	-Upgradeable@ATOMIC:
 	EncyclopediaExtras:
-		Name: Atomic Rhino Tank
+		Name: 原子犀牛坦克
 		VariantOf: 3TNK.RHINO
 
 3TNK.RHINO.YURI:
@@ -1212,11 +1213,11 @@ GTNK.squad:
 	Buildable:
 		BuildPaletteOrder: 86
 		Prerequisites: ~!atomicengines.upgrade, ~lasher.upgrade, ~armor.doctrine, ~techlevel.low
-		Description: Soviet main battle tank with infantry crushing improvements.
+		Description: 具有碾压步兵改进的苏联主战坦克。
 	Tooltip:
-		Name: Thrasher Tank
+		Name: 粉碎者坦克
 	TooltipExtras:
-		Attributes: • Can crush concrete walls
+		Attributes: • 可碾压 混凝土墙
 	Health:
 		HP: 63000
 	Mobile:
@@ -1242,7 +1243,7 @@ GTNK.squad:
 	-SpeedMultiplier@CRUSHSLOW:
 	-Upgradeable@LASHER:
 	EncyclopediaExtras:
-		Name: Thrasher Tank
+		Name: 粉碎者坦克
 		Subfaction: yuri
 
 3TNK.RHINO.ATOMICYURI:
@@ -1252,11 +1253,11 @@ GTNK.squad:
 	Buildable:
 		BuildPaletteOrder: 87
 		Prerequisites: ~atomicengines.upgrade, ~lasher.upgrade, ~armor.doctrine, ~techlevel.low
-		Description: Soviet main battle tank with infantry crushing improvements.
+		Description: 具有碾压步兵改进的苏联主战坦克。
 	Tooltip:
-		Name: Atomic Thrasher Tank
+		Name: 原子粉碎者坦克
 	TooltipExtras:
-		Attributes: • Can crush concrete walls
+		Attributes: • 可碾压 混凝土墙
 	Health:
 		HP: 65000
 	Mobile:
@@ -1280,7 +1281,7 @@ GTNK.squad:
 	-Upgradeable@LASHER:
 	-WithDecoration@UpgradeOverlay:
 	EncyclopediaExtras:
-		Name: Atomic Thrasher Tank
+		Name: 原子粉碎者坦克
 		Subfaction: yuri
 		VariantOf: 3TNK.RHINO.YURI
 
@@ -1296,15 +1297,15 @@ GTNK.squad:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 231
 		Prerequisites: stek, ~vehicles.soviet, ~!erad.upgrade, ~!atomicengines.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
-		Description: Big and slow tank with anti-air capability.
+		Description: 具有防空能力的超重型移动堡垒。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Attributes: • 可碾压 混凝土墙\n• 自我修复 至 50% 脱离战斗
 	Valued:
 		Cost: 1700
 	Tooltip:
-		Name: Mammoth Tank
-		GenericName: Tank
+		Name: 猛犸坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1428,10 +1429,10 @@ GTNK.squad:
 		BuildPaletteOrder: 232
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~!erad.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat\n• Explodes and leaves radiation on death
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Attributes: • 可碾压 混凝土墙\n• 自我修复 至 50% 脱离战斗\n• 爆炸 和 留下 辐射 死亡时
 	Tooltip:
-		Name: Atomic Mammoth Tank
+		Name: 原子猛犸坦克
 	-SpawnActorOnDeath:
 	FireWarheadsOnDeath@ATOMICUPGRADE:
 		Weapon: UnitExplodeIraqTank
@@ -1458,13 +1459,13 @@ GTNK.squad:
 	RenderSprites:
 		Image: 4tnkerad
 	Tooltip:
-		Name: Eradicator
+		Name: 根除者
 	TooltipExtras:
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 可碾压 混凝土墙\n• 自我修复 至 50% 脱离战斗\n• 辐射 载具 造成 它们 至 承受更多伤害, 造成 更少 伤害, 和 伤害 附近 单位
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~!atomicengines.upgrade, ~erad.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
-		Description: Big and slow tank armed with a radiation cannon.
+		Description: 配备辐射炮的又大又慢的坦克。
 		BuildPaletteOrder: 233
 	Armament@PRIMARY:
 		Weapon: RadBeamWeaponHeavy
@@ -1505,13 +1506,13 @@ GTNK.squad:
 	RenderSprites:
 		Image: 4tnkeradi
 	Tooltip:
-		Name: Atomic Eradicator
+		Name: 原子根除者
 	TooltipExtras:
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat\n• Explodes and leaves radiation on death\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 可碾压 混凝土墙\n• 自我修复 至 50% 脱离战斗\n• 爆炸 和 留下 辐射 死亡时\n• 辐射 载具 造成 它们 至 承受更多伤害, 造成 更少 伤害, 和 伤害 附近 单位
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~erad.upgrade, ~!ovld.upgrade, ~!apoc.upgrade, ~techlevel.high
-		Description: Big and slow tank armed with a radiation cannon.
+		Description: 配备辐射炮的又大又慢的坦克。
 		BuildPaletteOrder: 234
 	Selectable:
 		Class: 4tnk.erad
@@ -1552,14 +1553,14 @@ ARTY:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 122
 		Prerequisites: ~vehicles.allies, ~techlevel.low
-		Description: Long-range artillery.
+		Description: 长程火炮。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
+		Weaknesses: • 无法攻击飞行器\n• 难以命中移动目标
 	Valued:
 		Cost: 650
 	Tooltip:
-		Name: Artillery
+		Name: 自行火炮
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1628,7 +1629,7 @@ HOWI:
 	RenderSprites:
 		Image: howi
 	Tooltip:
-		Name: Howitzer
+		Name: 榴弹炮
 	Buildable:
 		BuildPaletteOrder: 152
 		Prerequisites: ~vehicles.nod, ~howi.upgrade, ~techlevel.medium
@@ -1710,10 +1711,10 @@ ARTY.Chrono:
 	Tooltip:
 		RequiresCondition: !scrin && !soviet
 	Tooltip@KATY:
-		Name: Katyusha
+		Name: 喀秋莎
 		RequiresCondition: soviet
 	Tooltip@SCRIN:
-		Name: Gun Walker
+		Name: 机炮行者
 		RequiresCondition: scrin
 	SpeedMultiplier@SCRIN:
 		RequiresCondition: scrin
@@ -1748,15 +1749,15 @@ ISU:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 183
 		Prerequisites: anyradar, ~vehicles.ukraine, ~techlevel.medium
-		Description: Powerful medium-range artillery.
+		Description: 强力中程火炮。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Concussion shells slow enemy movement and rate of fire\n• Can crush concrete walls
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
+		Weaknesses: • 无法攻击飞行器\n• 难以命中移动目标
+		Attributes: • 震荡 炮弹减速敌方 移动 和 速率 的 射击\n• 可碾压 混凝土墙
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Siege Tank
+		Name: 攻城坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1832,14 +1833,14 @@ SPEC:
 		BuildPaletteOrder: 271
 		IconPalette: chrometd
 		Prerequisites: tmpl, ~vehicles.shadow, ~techlevel.high
-		Description: Long-range stealth artillery.
+		Description: 远程隐形火炮。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器\n• 难以命中移动目标
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Spectre
+		Name: 幽灵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1922,14 +1923,14 @@ SAPC:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 272
 		Prerequisites: tmpl, ~vehicles.nod, ~!cust.upgrade, ~techlevel.high
-		Description: Stealth infantry transport.
+		Description: 隐形步兵运输车。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: Stealth APC
+		Name: 隐形装甲运兵车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2049,9 +2050,9 @@ HARV:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 10
 		Prerequisites: anyrefinery, ~vehicles.ra, ~!charv.upgrade, ~techlevel.low
-		Description: Collects Ore, Gems and Tiberium for processing.
+		Description: 采集矿石、宝石和泰伯利亚矿以供精炼。
 	Tooltip:
-		Name: Ore Truck
+		Name: 采矿车
 	Selectable:
 		Priority: 7
 		DecorationBounds: 1792, 1792
@@ -2083,11 +2084,11 @@ HARV.Chrono:
 		BuildPaletteOrder: 11
 		Prerequisites: anyrefinery, ~charv.upgrade, ~vehicles.allies, ~techlevel.high
 	TooltipExtras:
-		Attributes: • Teleports back to refinery
+		Attributes: • 传送 返回精炼厂
 	RenderSprites:
 		Image: charv
 	Tooltip:
-		Name: Chrono Miner
+		Name: 超时空采矿车
 	Mobile:
 		Voice: Move
 	Harvester:
@@ -2129,15 +2130,15 @@ MCV:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 600
 		Prerequisites: vehicles.mcv, ~vehicles.ra, ~techlevel.low
-		Description: Deploys into another Construction Yard.
+		Description: 可部署为另一座建筑工厂。
 		BuildDurationModifier: 50
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Special Ability: Deploy into Construction Yard
+		Weaknesses: • 无武装
+		Attributes: • 特殊能力： 部署 in至 建造厂
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Mobile Construction Vehicle
+		Name: 移动基地车
 	Selectable:
 		Priority: 4
 		DecorationBounds: 1792, 1792
@@ -2184,15 +2185,15 @@ JEEP:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 20
 		Prerequisites: ~vehicles.allies, ~techlevel.low
-		Description: Fast scout & anti-infantry vehicle.
+		Description: 高机动性反步兵侦察载具。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units and spies
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 探测隐形单位 和 间谍
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Ranger
+		Name: 突击侦察车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2307,14 +2308,14 @@ APC:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 121
 		Prerequisites: ~vehicles.allies, ~!aapc.upgrade, ~techlevel.low
-		Description: Tough infantry transport.
+		Description: 重装甲步兵运输载具。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Armored Personnel Carrier
+		Name: 装甲运兵车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2379,24 +2380,24 @@ APC:
 	Encyclopedia:
 		Category: Allies/Vehicles
 	EncyclopediaExtras:
-		Name: APC
+		Name: 装甲运兵车
 
 AAPC:
 	Inherits: APC
 	Buildable:
 		Prerequisites: ~vehicles.allies, ~aapc.upgrade, ~techlevel.medium
-		Description: Tough infantry transport with a target painting radar.
+		Description: 配备目标指示雷达的坚固步兵运输车。
 	Valued:
 		Cost: 800
 	RevealsShroud:
 		Range: 6c0
 	Tooltip:
-		Name: Armored Personnel Carrier (Archer)
+		Name: 弓箭手装甲运兵车
 	TooltipExtras:
-		Description: Tough infantry transport with a target painting radar.
+		Description: 配备目标指示雷达的坚固步兵运输车。
 		-Strengths:
-		Weaknesses: • Unarmed
-		Attributes: • Targets are revealed and take increased damage
+		Weaknesses: • 无武装
+		Attributes: • 目标 范围 暴露并承受额外伤害
 	-AttackFrontal:
 	AttackTurreted:
 		TargetFrozenActors: True
@@ -2415,7 +2416,7 @@ AAPC:
 	-Upgradeable@Archer:
 	-WithDecoration@UpgradeOverlay:
 	EncyclopediaExtras:
-		Name: Archer APC
+		Name: 弓手装甲运兵车
 
 APC.AI:
 	Inherits: APC
@@ -2454,14 +2455,14 @@ MNLY:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 340
 		Prerequisites: repair, ~techlevel.low, ~vehicles.human
-		Description: Lays mines to destroy unwary enemy units.
+		Description: 部署地雷以伏击疏于戒备的敌方单位。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Detects and disarms mines
+		Weaknesses: • 无武装
+		Attributes: • 探测 和 排除地雷
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Minelayer
+		Name: 布雷车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Selectable:
@@ -2527,14 +2528,14 @@ TRUK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 350
 		Prerequisites: ~disabled
-		Description: Transports cash to other players.
+		Description: 向其他玩家运送资金。
 		BuildDurationModifier: 30
 	TooltipExtras:
-		Weaknesses: • Unarmed
+		Weaknesses: • 无武装
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Supply Truck
+		Name: 补给车
 	Selectable:
 		Priority: 6
 	Health:
@@ -2582,13 +2583,13 @@ MGG:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 301
 		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
-		Description: Regenerates the shroud nearby, obscuring enemy vision. Can channel the effect to reduce enemy weapon range and vision.
+		Description: 恢复附近黑幕，遮蔽敌人视野。可引导效果降低敌人武器射程和视野。
 	TooltipExtras:
-		Attributes: • Special Ability: Toggle Gap Generator
+		Attributes: • 特殊能力： 切换裂缝产生器
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Mobile Gap Generator
+		Name: 机动电磁干扰车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2640,17 +2641,17 @@ MRJ:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Mobile Radar Jammer
+		Name: 机动雷达干扰器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 300
 		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
-		Description: Support vehicle that can disrupt enemy targeting systems.
+		Description: 可干扰敌方瞄准系统的支援车辆。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Jamming fields reduce rate of fire and accuracy of enemy vehicles/defenses
+		Weaknesses: • 无武装
+		Attributes: • 干扰场降低 速率 的 射击 和 精度 的 敌方 载具/防御建筑
 	Health:
 		HP: 25000
 	Armor:
@@ -2698,17 +2699,17 @@ MSG:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 330
 		Prerequisites: anyradar, ~vehicles.shadow, ~techlevel.medium
-		Description: Support unit that projects a cloaking field.
+		Description: 投射隐形场的支援单位。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Special Ability: Deploys to cloak nearby units and structures
+		Weaknesses: • 无武装
+		Attributes: • 特殊能力： 部署 至 隐形 附近 单位 和 建筑
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: Mobile Stealth Generator
+		Name: 机动隐形发生器
 		RequiresCondition: !deployed
 	Tooltip@DEPLOYED:
-		Name: Mobile Stealth Generator (deployed)
+		Name: 机动隐形发生器（部署）
 		RequiresCondition: deployed
 	Selectable:
 		DecorationBounds: 1621, 1536, 0, -42
@@ -2781,15 +2782,15 @@ TTRA:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 230
 		Prerequisites: stek, ~vehicles.soviet, ~techlevel.high
-		Description: Half-track with mounted Tesla Coil.
+		Description: 装有磁暴线圈的半履带车。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Weaknesses: • 无法攻击飞行器
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Tesla Track
-		GenericName: Tank
+		Name: 磁暴半履带车
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2850,15 +2851,15 @@ TTNK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 182
 		Prerequisites: tslaorstek, anyradar, ~vehicles.russia, ~techlevel.medium
-		Description: Tank with twin mounted Tesla Coils.
+		Description: 配备双联装磁暴线圈的坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 无法攻击飞行器
 	Valued:
 		Cost: 1200
 	Tooltip:
-		Name: Tesla Tank
-		GenericName: Tank
+		Name: 磁能坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2918,14 +2919,14 @@ DTRK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 312
 		Prerequisites: stek, ~vehicles.soviet, ~techlevel.high
-		Description: Truck carrying nuclear explosives.
+		Description: 搭载核爆炸物的卡车。
 	TooltipExtras:
-		Weaknesses: • Very weak armor
-		Attributes: • Special Ability: Detonate
+		Weaknesses: • 非常 装甲薄弱
+		Attributes: • 特殊能力： 引爆
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Demolition Truck
+		Name: 自爆卡车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2977,16 +2978,16 @@ CTNK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 220
 		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
-		Description: Teleporting tank armed with twin missile launchers.
+		Description: 装备双联导弹发射器的传送坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses, Buildings
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Special Ability: Teleport\n• Teleporting longer distances requires charge up
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑, 建筑
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 特殊能力： 传送\n• 传送 更长 更远距离需要充能准备
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Chrono Tank
-		GenericName: Tank
+		Name: 超时空坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3071,16 +3072,16 @@ QTNK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 310
 		Prerequisites: stek, ~vehicles.qtnk, ~techlevel.high
-		Description: Deals seismic damage to nearby vehicles and structures.
+		Description: 对附近载具和建筑造成地震伤害。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses, Buildings
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Special Ability: Seismic Shockwave
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑, 建筑
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
+		Attributes: • 特殊能力： 地震冲击波
 	Valued:
 		Cost: 1700
 	Tooltip:
-		Name: MAD Tank
-		GenericName: Tank
+		Name: M.A.D.坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3141,15 +3142,15 @@ AMCV:
 		BuildPaletteOrder: 601
 		Prerequisites: vehicles.mcv, ~vehicles.td, ~techlevel.low
 		IconPalette: chrometd
-		Description: Deploys into another Construction Yard.
+		Description: 可部署为另一座建筑工厂。
 		BuildDurationModifier: 50
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Special Ability: Deploy into Construction Yard
+		Weaknesses: • 无武装
+		Attributes: • 特殊能力： 部署 in至 建造厂
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Mobile Construction Vehicle
+		Name: 移动基地车
 	Selectable:
 		Priority: 4
 		Bounds: 1792, 1792
@@ -3199,15 +3200,15 @@ HMMV:
 		BuildPaletteOrder: 40
 		IconPalette: chrometd
 		Prerequisites: ~vehicles.hmmv, ~!tow.upgrade, ~techlevel.low
-		Description: Fast scout & anti-infantry vehicle.
+		Description: 高机动性反步兵侦察载具。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units and spies
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 探测隐形单位 和 间谍
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Hum-Vee
+		Name: 悍马
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3281,17 +3282,17 @@ HMMV.TOW:
 	RenderSprites:
 		Image: hmmv
 	Buildable:
-		Description: Fast scout & anti-infantry vehicle with anti-tank missile launcher.
+		Description: 配备反坦克导弹发射器的快速侦察反步兵车。
 		Prerequisites: ~vehicles.hmmv, ~tow.upgrade, ~techlevel.high
 	Valued:
 		Cost: 575
 	Mobile:
 		Speed: 130
 	Tooltip:
-		Name: TOW Hum-Vee
+		Name: TOW悍马
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 轻型装甲, 重型装甲
+		Weaknesses: • 不擅长对付 防御建筑\n• 无法攻击飞行器
 	Armament@SECONDARY:
 		Name: secondary
 		Weapon: TOW
@@ -3324,15 +3325,15 @@ GDRN:
 		BuildPaletteOrder: 41
 		IconPalette: chrome
 		Prerequisites: ~vehicles.arc, ~!tow.upgrade, ~techlevel.low
-		Description: Fast scout & anti-tank drone.
+		Description: 快速侦察反坦克无人机。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Buildings
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units and spies\n• Immune to mind control\n• XP of losses reclaimed by replacements
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付步兵, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 探测隐形单位 和 间谍\n• 免疫心灵控制\n• 经验 的 损失 回收 增加 替换
 	Valued:
 		Cost: 450
 	Tooltip:
-		Name: Guardian Drone
+		Name: 守护无人机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3416,7 +3417,7 @@ GDRN.TOW:
 	Valued:
 		Cost: 575
 	Tooltip:
-		Name: TOW Guardian Drone
+		Name: TOW守护无人机
 	Mobile:
 		Speed: 118
 	Armament@SECONDARY:
@@ -3454,15 +3455,15 @@ BGGY:
 		BuildPaletteOrder: 50
 		IconPalette: chrometd
 		Prerequisites: ~vehicles.nod, ~!rbug.upgrade, ~techlevel.low
-		Description: Fast scout & anti-infantry vehicle.
+		Description: 高机动性反步兵侦察载具。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units and spies
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 探测隐形单位 和 间谍
 	Valued:
 		Cost: 350
 	Tooltip:
-		Name: Buggy
+		Name: 越野车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3564,7 +3565,7 @@ RBUG:
 	Buildable:
 		Prerequisites: ~vehicles.nod, ~rbug.upgrade, ~techlevel.low
 	Tooltip:
-		Name: Raider Buggy
+		Name: 掠袭越野车
 	Valued:
 		Cost: 400
 	Armament:
@@ -3596,7 +3597,7 @@ RBUG:
 	KillsSelf:
 		RequiresCondition: !active
 	WithTextDecoration@Decoy:
-		Text: Decoy
+		Text: 诱饵
 		ValidRelationships: Ally
 		Font: TinyBold
 		Position: Top
@@ -3721,14 +3722,14 @@ APC2:
 		BuildPaletteOrder: 140
 		Prerequisites: ~vehicles.td, ~!vulcan.upgrade, ~vehicles.apc2, ~techlevel.low
 		IconPalette: chrometd
-		Description: Tough infantry transport.
+		Description: 重装甲步兵运输载具。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Armored Personnel Carrier
+		Name: 装甲运兵车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3795,7 +3796,7 @@ APC2:
 	Encyclopedia:
 		Category: GDI/Vehicles
 	EncyclopediaExtras:
-		Name: APC
+		Name: 装甲运兵车
 
 APC2.Nod.Preview:
 	Inherits: APC2
@@ -3868,14 +3869,14 @@ VULC:
 		BuildPaletteOrder: 141
 		Prerequisites: ~vehicles.gdi, ~vulcan.upgrade, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Tough infantry transport, armed with a powerful chaingun.
+		Description: 配备强力链式机炮的坚固步兵运输车。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
+		Strengths: • 擅长对付飞行器, 步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Vulcan
+		Name: 火神炮车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4019,7 +4020,7 @@ VULC:
 	Encyclopedia:
 		Category: GDI/Vehicles
 	EncyclopediaExtras:
-		Name: Vulcan
+		Name: 火神炮车
 
 VULC.AI:
 	Inherits: VULC
@@ -4064,24 +4065,24 @@ LTNK:
 		BuildPaletteOrder: 100
 		IconPalette: chrometd
 		Prerequisites: ~vehicles.ltnk, ~!lastnk.upgrade, ~techlevel.low
-		Description: Standard front-line tank.
+		Description: 标准前线坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
-		Attributes: • Amphibious
+		Strengths: • 擅长对付轻型装甲
+		Weaknesses: • 不擅长对付步兵, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 两栖
 		RequiresCondition: !lastnk-upgrade
 	TooltipExtras@LaserTank:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
-		Attributes: • Amphibious
+		Strengths: • 擅长对付轻型装甲, 步兵
+		Weaknesses: • 不擅长对付 防御建筑\n• 无法攻击飞行器
+		Attributes: • 两栖
 		RequiresCondition: lastnk-upgrade
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Light Tank
+		Name: 轻型坦克
 		RequiresCondition: !lastnk-upgrade
 	Tooltip@LaserTank:
-		Name: Laser Light Tank
+		Name: 激光轻型坦克
 		RequiresCondition: lastnk-upgrade
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -4194,24 +4195,24 @@ MTNK:
 		BuildPaletteOrder: 90
 		Prerequisites: ~!bdrone.upgrade, ~!lastnk.upgrade, ~vehicles.mtnk, ~techlevel.low
 		IconPalette: chrometd
-		Description: Main battle tank.
+		Description: 主战坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 防御建筑\n• 无法攻击飞行器
 		RequiresCondition: !lastnk-upgrade
 	TooltipExtras@LaserTank:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付轻型装甲, 步兵
+		Weaknesses: • 不擅长对付 防御建筑\n• 无法攻击飞行器
 		RequiresCondition: lastnk-upgrade
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: Battle Tank
-		GenericName: Tank
+		Name: 战斗坦克
+		GenericName: 坦克
 		RequiresCondition: !lastnk-upgrade
 	Tooltip@LaserTank:
-		Name: Laser Battle Tank
-		GenericName: Tank
+		Name: 激光战斗坦克
+		GenericName: 坦克
 		RequiresCondition: lastnk-upgrade
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -4332,12 +4333,12 @@ MTNK.Drone:
 		Queue: VehicleSQ, VehicleMQ
 		Prerequisites: ~bdrone.upgrade, ~vehicles.mtnk, ~techlevel.high
 		IconPalette: chrometd
-		Description: Remotely piloted battle tank.
+		Description: 遥控战斗坦克。
 		BuildPaletteOrder: 91
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
-		Attributes: • Self repairs to 50% out of combat\n• Immune to mind control\n• Requires active radar communication\n• XP of losses reclaimed by replacements
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 自我修复 至 50% 脱离战斗\n• 免疫心灵控制\n• 需要 激活 雷达 通讯\n• 经验 的 损失 回收 增加 替换
 		-RequiresCondition:
 	-Tooltip@LaserTank:
 	-TooltipExtras@LaserTank:
@@ -4346,7 +4347,7 @@ MTNK.Drone:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Battle Drone
+		Name: 战斗无人机
 		-RequiresCondition:
 	Mobile:
 		PauseOnCondition: !radarenabled || being-captured || empdisable || being-warped || driver-dead || notmobile
@@ -4465,16 +4466,16 @@ MDRN:
 	Inherits@HACKABLE: ^Hackable
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Tooltip:
-		Name: Mini Drone
+		Name: 微型无人机
 	Buildable:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 192
 		Prerequisites: anyradar, ~vehicles.arc, ~techlevel.medium
-		Description: Hovering drone with machine gun.
+		Description: 装备机枪的悬浮无人机。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Attaches to vehicles to provide support and repairs\n• Immune to mind control\n• XP of losses reclaimed by replacements
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 附着 至 载具 至 提供支援和 维修\n• 免疫心灵控制\n• 经验 的 损失 回收 增加 替换
 	Valued:
 		Cost: 225
 	UpdatesPlayerStatistics:
@@ -4652,15 +4653,15 @@ HTNK:
 		BuildPaletteOrder: 253
 		IconPalette: chrometd
 		Prerequisites: ~!mdrone.upgrade, gtek, ~vehicles.htnk, ~!ionmam.upgrade, ~!hovermam.upgrade, ~techlevel.high
-		Description: Big and slow tank with anti-air capability.
+		Description: 具有防空能力的超重型移动堡垒。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Attributes: • Can crush concrete walls\n• Self repairs to 50% out of combat
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Attributes: • 可碾压 混凝土墙\n• 自我修复 至 50% 脱离战斗
 	Valued:
 		Cost: 1700
 	Tooltip:
-		Name: Mammoth Tank
-		GenericName: Tank
+		Name: 猛犸坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4754,8 +4755,8 @@ HTNK.Ion:
 		BuildPaletteOrder: 254
 		Prerequisites: gtek, ~vehicles.htnk, ~ionmam.upgrade, ~techlevel.high
 	Tooltip:
-		Name: Ion Mammoth Tank
-		GenericName: Tank
+		Name: 离子猛犸坦克
+		GenericName: 坦克
 	Armament@PRIMARY:
 		Weapon: IonZap
 		LocalOffset: 870,0,360
@@ -4773,14 +4774,14 @@ HTNK.Hover:
 	Inherits: HTNK
 	Inherits@HOVERTRAIL: ^HoverTrail
 	Tooltip:
-		Name: Hover Mammoth Tank
-		GenericName: Tank
+		Name: 悬浮猛犸坦克
+		GenericName: 坦克
 	Buildable:
 		BuildPaletteOrder: 255
 		Prerequisites: gtek, ~vehicles.htnk, ~hovermam.upgrade, ~techlevel.high
-		Description: Big and fairly mobile tank with anti-air capability.
+		Description: 体型庞大且机动性不错的防空坦克。
 	TooltipExtras:
-		Attributes: • Can traverse water\n• Self repairs to 50% out of combat\n• Afterburner ability (with upgrade)
+		Attributes: • 可穿越 水面\n• 自我修复 至 50% 脱离战斗\n• 加力燃烧室 能力 (需升级)
 	Mobile:
 		Speed: 60
 		Locomotor: hover
@@ -4853,17 +4854,17 @@ HTNK.Drone:
 		BuildPaletteOrder: 256
 		IconPalette: chrometd
 		Prerequisites: ~mdrone.upgrade, gtek, ~vehicles.htnk, ~techlevel.high
-		Description: Remotely piloted heavy tank with anti-air capability.
+		Description: 具备防空能力的遥控重型坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Requires active radar communication
-		Attributes: • Can crush concrete walls\n• Self repairs out of combat\n• Immune to mind control\n• XP of losses reclaimed by replacements
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Weaknesses: • 需要 激活 雷达 通讯
+		Attributes: • 可碾压 混凝土墙\n• 自我修复 脱离战斗\n• 免疫心灵控制\n• 经验 的 损失 回收 增加 替换
 	Valued:
 		Cost: 1300
 	Health:
 		HP: 88000
 	Tooltip:
-		Name: Mammoth Drone
+		Name: 猛犸无人机
 	Mobile:
 		PauseOnCondition: !radarenabled || being-captured || empdisable || being-warped || driver-dead || notmobile
 		Voice: Move
@@ -4930,7 +4931,7 @@ MSAM:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: MLRS
+		Name: 多管火箭系统
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -4938,10 +4939,10 @@ MSAM:
 		Prerequisites: anyradar, ~vehicles.msam, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Multiple Launch Rocket System. Long-range guided artillery with anti-air capability.
+		Description: 多管火箭系统。具备防空能力的远程制导火炮。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲
 	Mobile:
 		Speed: 72
 		Voice: Move
@@ -5059,7 +5060,7 @@ MLRS:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: SSM Launcher
+		Name: 地对地导弹发射器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -5067,10 +5068,10 @@ MLRS:
 		Prerequisites: tmpl, ~vehicles.mlrs, ~techlevel.high
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Long-range incendiary missile artillery.
+		Description: 远程燃烧导弹火炮。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Cannot fire while moving
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器\n• 难以命中移动目标\n• 以下情况无法开火： 移动
 	Mobile:
 		Speed: 72
 		PauseOnCondition: aiming || being-captured || empdisable || being-warped || driver-dead || notmobile
@@ -5177,8 +5178,8 @@ STNK.Nod:
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: Stealth Tank
-		GenericName: Tank
+		Name: 隐形坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -5186,11 +5187,11 @@ STNK.Nod:
 		Prerequisites: anyradar, ~vehicles.nod, ~!hstk.upgrade, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Medium-range missile tank that can cloak.
+		Description: 可隐形中程导弹坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor, Aircraft
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Can be spotted by nearby infantry and defense structures
+		Strengths: • 擅长对付 建筑, 防御建筑, 重型装甲, 轻型装甲, 飞行器
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 可 可被探测到 附近 步兵 和 防御 建筑
 	Mobile:
 		Speed: 126
 		Voice: Move
@@ -5297,8 +5298,8 @@ HSTK:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Heavy Stealth Tank
-		GenericName: Tank
+		Name: 重型隐形坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -5306,11 +5307,11 @@ HSTK:
 		Prerequisites: anyradar, ~vehicles.nod, ~hstk.upgrade, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Medium-range missile heavy tank that can cloak.
+		Description: 可隐形中程导弹重型坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor, Aircraft
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Can be spotted by nearby infantry and defense structures
+		Strengths: • 擅长对付 建筑, 防御建筑, 重型装甲, 轻型装甲, 飞行器
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 可 可被探测到 附近 步兵 和 防御 建筑
 	Mobile:
 		Speed: 100
 		Voice: Move
@@ -5406,7 +5407,7 @@ BIKE:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Recon Bike
+		Name: 侦察摩托
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -5414,10 +5415,10 @@ BIKE:
 		Prerequisites: ~vehicles.nod, ~techlevel.low
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Fast scout vehicle armed with rockets.
+		Description: 装备火箭弹的快速侦察车。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Buildings
-		Weaknesses: • Weak vs Infantry, Light Armor
+		Strengths: • 擅长对付重型装甲, 建筑
+		Weaknesses: • 不擅长对付步兵, 轻型装甲
 	Mobile:
 		TurnSpeed: 40
 		Speed: 170
@@ -5488,8 +5489,8 @@ FTNK:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Flame Tank
-		GenericName: Tank
+		Name: 火焰坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -5497,10 +5498,10 @@ FTNK:
 		Prerequisites: anyradar, ~vehicles.ftnk, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Tank armed with dual short-range flamethrowers.
+		Description: 装备双联短程火焰喷射器的坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 建筑, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
 	Mobile:
 		Speed: 76
 	Health:
@@ -5548,15 +5549,15 @@ HFTK:
 		BuildPaletteOrder: 201
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~vehicles.blackh, ~techlevel.medium
-		Description: Heavy tank armed with dual short-range flamethrowers.
+		Description: 装备双联短程火焰喷射器的重型坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 建筑, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: Heavy Flame Tank
-		GenericName: Tank
+		Name: 重型火焰坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -5654,13 +5655,13 @@ HARV.TD:
 	RenderSprites:
 		Image: harv2
 	Tooltip:
-		Name: Harvester
+		Name: 采矿车
 	Buildable:
 		BuildPaletteOrder: 12
 		Prerequisites: ~!sharv.upgrade, anyrefinery, ~vehicles.td, ~techlevel.low
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Collects Ore, Gems and Tiberium for processing.
+		Description: 采集矿石、宝石和泰伯利亚矿以供精炼。
 	Selectable:
 		Priority: 7
 		DecorationBounds: 1536, 1536
@@ -5692,7 +5693,7 @@ HARV.TD.UPG:
 	Health:
 		HP: 65000
 	Tooltip:
-		Name: Stealth Harvester
+		Name: 隐形采矿车
 	Cloak@NORMAL:
 		InitialDelay: 74
 		CloakDelay: 75
@@ -5735,14 +5736,14 @@ BTR:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 30
 		Prerequisites: ~vehicles.soviet, ~!gattling.upgrade, ~techlevel.low
-		Description: Tough infantry transport.
+		Description: 重装甲步兵运输载具。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
+		Strengths: • 擅长对付步兵, 轻型装甲, 飞行器
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑
 	Valued:
 		Cost: 675
 	Tooltip:
-		Name: Armored Personnel Carrier (BTR)
+		Name: BTR装甲运兵车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -5868,12 +5869,12 @@ BTR.YURI:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 31
 		Prerequisites: ~gattling.upgrade, ~vehicles.soviet, ~techlevel.low
-		Description: Tough infantry transport with armament improvements.
+		Description: 武器改进的坚固步兵运输车。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
+		Strengths: • 擅长对付步兵, 轻型装甲, 飞行器
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑
 	Tooltip:
-		Name: Armored Personnel Carrier (Gattling BTR)
+		Name: 盖特机炮BTR
 	Armament@AIR:
 		Weapon: MGatt
 		LocalOffset: 320,50,350, 320,-50,350
@@ -5986,7 +5987,7 @@ BTR.YURI:
 	-Upgradeable@GATTLING:
 	-WithDecoration@UpgradeOverlay:
 	EncyclopediaExtras:
-		Name: Gattling BTR
+		Name: 盖特机炮装甲车
 		Subfaction: yuri
 
 BTR.YURI.AI:
@@ -6016,14 +6017,14 @@ TRPC:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 132
 		Prerequisites: ~vehicles.soviet, ~infantry.doctrine, ~techlevel.medium
-		Description: Tough infantry transport pre-loaded with infantry.
+		Description: 预装步兵的坚固步兵运输车。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Empowers nearby basic infantry\n• Heals all nearby infantry\n• Detects cloaked units and mines
+		Weaknesses: • 无武装
+		Attributes: • 强化 附近 基础 步兵\n• 治疗 所有附近 步兵\n• 探测隐形单位 和 地雷
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Troop Crawler
+		Name: 运兵履带车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: false
 		AddToAssetsValue: false
@@ -6157,244 +6158,244 @@ IFV:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 170
 		Prerequisites: radarorrepair, ~vehicles.allies, ~techlevel.medium
-		Description: Adaptable infantry transport.
+		Description: 可变换武装的步兵运输载具。
 	Tooltip:
-		Name: Infantry Fighting Vehicle
+		Name: 步兵战车
 		RequiresCondition: !full || nochange
 	Tooltip@gunturr:
-		Name: MG IFV
+		Name: 机枪步兵战车
 		RequiresCondition: gunturr
 	Tooltip@fragturr:
-		Name: Grenade IFV
+		Name: 榴弹IFV
 		RequiresCondition: fragturr
 	Tooltip@samturr:
-		Name: Missile IFV
+		Name: 导弹IFV
 		RequiresCondition: samturr
 	Tooltip@engturr:
-		Name: Engineer IFV
+		Name: 工程师IFV
 		RequiresCondition: engturr
 	Tooltip@mechturr:
-		Name: Repair IFV
+		Name: 修理IFV
 		RequiresCondition: mechturr
 	Tooltip@commturr:
-		Name: Commando IFV
+		Name: 英雄IFV
 		RequiresCondition: commturr
 	Tooltip@chemturr:
-		Name: Chemical IFV
+		Name: 化学IFV
 		RequiresCondition: chemturr
 	Tooltip@medturr:
-		Name: Medical IFV
+		Name: 医疗IFV
 		RequiresCondition: medturr
 	Tooltip@ivanturr:
-		Name: Explosive IFV
+		Name: 自爆IFV
 		RequiresCondition: ivanturr
 	Tooltip@flamturr:
-		Name: Flamethrower IFV
+		Name: 火焰IFV
 		RequiresCondition: flamturr
 	Tooltip@spyturr:
-		Name: Spy IFV
+		Name: 间谍IFV
 		RequiresCondition: spyturr
 	Tooltip@sealturr:
-		Name: SEAL IFV
+		Name: 海豹IFV
 		RequiresCondition: sealturr
 	Tooltip@acolturr:
-		Name: Laser IFV
+		Name: 激光IFV
 		RequiresCondition: acolturr
 	Tooltip@snipturr:
-		Name: Sniper IFV
+		Name: 狙击手IFV
 		RequiresCondition: snipturr
 	Tooltip@desoturr:
-		Name: Desolator IFV
+		Name: 辐射IFV
 		RequiresCondition: desoturr
 	Tooltip@testurr:
-		Name: Tesla IFV
+		Name: 磁暴IFV
 		RequiresCondition: testurr
 	Tooltip@rmbcturr:
-		Name: Cyborg Elite IFV
+		Name: 半机械精英IFV
 		RequiresCondition: rmbcturr
 	Tooltip@enliturr:
-		Name: Enlightened IFV
+		Name: 启蒙者IFV
 		RequiresCondition: enliturr
 	Tooltip@bhturr:
-		Name: Black Hand IFV
+		Name: 黑手IFV
 		RequiresCondition: bhturr
 	Tooltip@mortchemturr:
-		Name: Chemical Mortar IFV
+		Name: 化学迫击IFV
 		RequiresCondition: mortchemturr
 	Tooltip@mortcryoturr:
-		Name: Cryo Mortar IFV
+		Name: 冰冻迫击IFV
 		RequiresCondition: mortcryoturr
 	Tooltip@mortsonicturr:
-		Name: Sonic Mortar IFV
+		Name: 声波迫击IFV
 		RequiresCondition: mortsonicturr
 	Tooltip@discturr:
-		Name: Plasma Disc IFV
+		Name: 等离子碟IFV
 		RequiresCondition: discturr
 	Tooltip@sharturr:
-		Name: Shard IFV
+		Name: 裂片IFV
 		RequiresCondition: sharturr
 	Tooltip@ggiturr:
-		Name: GGI IFV
+		Name: 重装大兵IFV
 		RequiresCondition: ggiturr
 	Tooltip@psyturr:
-		Name: Psychic IFV
+		Name: 心灵IFV
 		RequiresCondition: psyturr
 	Tooltip@cryoturr:
-		Name: Cryo IFV
+		Name: 冰冻IFV
 		RequiresCondition: cryoturr
 	Tooltip@enfoturr:
-		Name: Enforcer IFV
+		Name: 执法者IFV
 		RequiresCondition: enfoturr
 	Tooltip@ztrpturr:
-		Name: Zone Trooper IFV
+		Name: 区域骑兵IFV
 		RequiresCondition: ztrpturr
 	Tooltip@zdefturr:
-		Name: Zone Defender IFV
+		Name: 区域防御者IFV
 		RequiresCondition: zdefturr
 	Tooltip@zraiturr:
-		Name: Zone Raider IFV
+		Name: 区域突袭者IFV
 		RequiresCondition: zraiturr
 	Tooltip@tigrturr:
-		Name: Tiger Guard IFV
+		Name: 虎卫IFV
 		RequiresCondition: tigrturr
 	Tooltip@disinturr:
-		Name: Disintegrator IFV
+		Name: 分解者IFV
 		RequiresCondition: disinturr
 	Tooltip@implturr:
-		Name: Impaler IFV
+		Name: 穿刺者IFV
 		RequiresCondition: implturr
 	Tooltip@stlkturr:
-		Name: Stalker IFV
+		Name: 潜行者IFV
 		RequiresCondition: stlkturr
 	Tooltip@hoplturr:
-		Name: Hoplite IFV
+		Name: 重装步兵IFV
 		RequiresCondition: hoplturr
 	Tooltip@cmsrturr:
-		Name: Commissar IFV
+		Name: 政委IFV
 		RequiresCondition: cmsrturr
 	Tooltip@shadturr:
-		Name: Shadow IFV
+		Name: 暗影IFV
 		RequiresCondition: shadturr
 	Tooltip@hackturr:
-		Name: Hacker IFV
+		Name: 黑客IFV
 		RequiresCondition: hackturr
 	Tooltip@confturr:
-		Name: Confessor IFV
+		Name: 告解者IFV
 		RequiresCondition: confturr
 	Tooltip@reapturr:
-		Name: Reaper IFV
+		Name: 收割者IFV
 		RequiresCondition: reapturr
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Weapon/function changes depending on infantry passenger
+		Strengths: • 擅长对付飞行器, 重型装甲
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 武器/功能随...变化： 步兵 乘员
 		RequiresCondition: !full || samturr || ggiturr || disinturr || tigrturr || nochange
 	TooltipExtras@gunturr:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
 		IsStandard: false
 		RequiresCondition: gunturr || enfoturr || shadturr
 	TooltipExtras@fragturr:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
+		Strengths: • 擅长对付 建筑, 防御建筑, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
 		IsStandard: false
 		RequiresCondition: fragturr
 	TooltipExtras@mechturr:
-		Weaknesses: • Unarmed
-		Attributes: • Repairs friendly vehicles
+		Weaknesses: • 无武装
+		Attributes: • 维修 友军载具
 		IsStandard: false
 		RequiresCondition: mechturr
 	TooltipExtras@engturr:
-		Weaknesses: • Unarmed
-		Attributes: • Captures structures
+		Weaknesses: • 无武装
+		Attributes: • 占领 建筑
 		IsStandard: false
 		RequiresCondition: engturr
 	TooltipExtras@commturr:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
+		Strengths: • 擅长对付步兵
+		Weaknesses: • 无法攻击飞行器, 载具, 建筑
 		IsStandard: false
 		RequiresCondition: commturr || sealturr
 	TooltipExtras@medturr:
-		Weaknesses: • Unarmed
-		Attributes: • Heals friendly infantry
+		Weaknesses: • 无武装
+		Attributes: • 治疗 友军步兵
 		IsStandard: false
 		RequiresCondition: medturr
 	TooltipExtras@ivanturr:
-		Strengths: • Strong vs Everything
-		Weaknesses: • Self-destructs
+		Strengths: • 擅长对付 一切
+		Weaknesses: • 自毁
 		IsStandard: false
 		RequiresCondition: ivanturr
 	TooltipExtras@flamturr:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
 		IsStandard: false
 		RequiresCondition: flamturr || chemturr || hoplturr
 	TooltipExtras@spyturr:
-		Weaknesses: • Cannot deal damage
-		Attributes: • Sabotages enemy structures:\n    • Power Plants: Power outage\n    • Barracks/Factory: Infantry/vehicles produced as veteran\n    • Superweapons: Reset timer\n    • Radar: Reset shroud\n    • Helipad: Single-use paratroopers\n    • Airfield/Gravity Stabilizer: Single-use airstrike
+		Weaknesses: • 无法造成伤害
+		Attributes: • 破坏 敌方建筑:\n    • 电力 放置: 电力 中断\n    • 兵营/工厂: 步兵/载具 以老兵等级生产\n    • 超级武器: 重置 时间r\n    • 雷达: 重置 黑幕\n    • 直升机坪: 单一-一次性伞兵\n    • 机场/重力稳定器: 单一- 空中strike
 		IsStandard: false
 		RequiresCondition: spyturr
 	TooltipExtras@rmbcturr:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Weaknesses: • 无法攻击飞行器
 		IsStandard: false
 		RequiresCondition: rmbcturr
 	TooltipExtras@snipturr:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Weak vs Defenses, Buildings\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 轻型装甲, 重型装甲
+		Weaknesses: • 不擅长对付 防御建筑, 建筑\n• 无法攻击飞行器
 		IsStandard: false
 		RequiresCondition: snipturr
 	TooltipExtras@desoturr:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
 		IsStandard: false
 		RequiresCondition: desoturr || acolturr || sharturr || implturr || stlkturr
 	TooltipExtras@testurr:
-		Strengths: • Strong vs Infantry, Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 重型装甲, 轻型装甲
+		Weaknesses: • 无法攻击飞行器
 		IsStandard: false
 		RequiresCondition: testurr
 	TooltipExtras@bhturr:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付 建筑, 防御建筑\n• 无法攻击飞行器
 		IsStandard: false
 		RequiresCondition: bhturr || enliturr
 	TooltipExtras@ztrpturr:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
+		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器
 		IsStandard: false
 		RequiresCondition: ztrpturr || zdefturr
 	TooltipExtras@zraiturr:
-		Strengths: • Strong vs Light Armor, Buildings
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: • 擅长对付轻型装甲, 建筑
+		Weaknesses: • 无法攻击飞行器
 		IsStandard: false
 		RequiresCondition: zraiturr
 	TooltipExtras@psyturr:
-		Strengths: • Strong vs Infantry, Vehicles
-		Weaknesses: • Cannot deal damage\n• Cannot attack Aircraft
-		Attributes: • Can mind control enemy units\n• Control lost if passenger exits
+		Strengths: • 擅长对付步兵, 载具
+		Weaknesses: • 无法造成伤害\n• 无法攻击飞行器
+		Attributes: • 可 心灵控制敌方单位\n• 乘员退出时失去控制
 		IsStandard: false
 		RequiresCondition: psyturr
 	TooltipExtras@hackturr:
-		Strengths: • Strong vs Defenses, Buildings
-		Weaknesses: • Cannot deal damage\n• Control lost if passenger exits
+		Strengths: • 擅长对付 防御建筑, 建筑
+		Weaknesses: • 无法造成伤害\n• 乘员退出时失去控制
 		IsStandard: false
 		RequiresCondition: hackturr
 	TooltipExtras@cryoturr:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Slows enemy units and makes them take increased damage
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付 建筑, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 减速 敌方单位并使其承受更多伤害
 		IsStandard: false
 		RequiresCondition: cryoturr
 	TooltipExtras@reapturr:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付重型装甲
 		IsStandard: false
 		RequiresCondition: reapturr
 	TooltipExtras@confturr:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Explosion causes units to attack indiscriminately
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
+		Attributes: • 爆炸 导致单位无差别攻击
 		IsStandard: false
 		RequiresCondition: confturr
 	Valued:
@@ -7160,7 +7161,7 @@ IFV:
 	Encyclopedia:
 		Category: Allies/Vehicles
 	EncyclopediaExtras:
-		Name: IFV
+		Name: 步兵战车
 
 IFV.AI:
 	Inherits: ^Tank
@@ -7170,24 +7171,24 @@ IFV.AI:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 170
 		Prerequisites: anyradar, ~vehicles.allies, ~botplayer, ~techlevel.medium
-		Description: Adaptable infantry transport.
+		Description: 可变换武装的步兵运输载具。
 	Tooltip:
-		Name: Infantry Fighting Vehicle
+		Name: 步兵战车
 		RequiresCondition: !gunturr && !samturr
 	Tooltip@gunturr:
-		Name: MG IFV
+		Name: 机枪步兵战车
 		RequiresCondition: gunturr
 	Tooltip@samturr:
-		Name: Missile IFV
+		Name: 导弹IFV
 		RequiresCondition: samturr
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Weapon/function changes depending on infantry passenger
+		Strengths: • 擅长对付飞行器, 重型装甲
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 武器/功能随...变化： 步兵 乘员
 		RequiresCondition: defturr || samturr
 	TooltipExtras@gunturr:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
 		IsStandard: false
 		RequiresCondition: gunturr
 	Valued:
@@ -7320,87 +7321,87 @@ RECK:
 		BuildPaletteOrder: 500
 		Prerequisites: radarorrepair, ~vehicles.reck
 	Tooltip:
-		Name: Reckoner
+		Name: 清算者
 	Tooltip@gunturr:
-		Name: MG Reckoner
+		Name: 机枪清算者
 	Tooltip@fragturr:
-		Name: Grenade Reckoner
+		Name: 榴弹运兵车
 	Tooltip@samturr:
-		Name: Missile Reckoner
+		Name: 导弹运兵车
 	Tooltip@mechturr:
-		Name: Repair Reckoner
+		Name: 修理运兵车
 	Tooltip@engturr:
-		Name: Engineer Reckoner
+		Name: 工程师运兵车
 	Tooltip@commturr:
-		Name: Commando Reckoner
+		Name: 英雄运兵车
 	Tooltip@chemturr:
-		Name: Chemical Reckoner
+		Name: 化学运兵车
 	Tooltip@medturr:
-		Name: Medical Reckoner
+		Name: 医疗运兵车
 	Tooltip@ivanturr:
-		Name: Explosive Reckoner
+		Name: 自爆运兵车
 	Tooltip@flamturr:
-		Name: Flamethrower Reckoner
+		Name: 火焰运兵车
 	Tooltip@spyturr:
-		Name: Spy Reckoner
+		Name: 间谍运兵车
 	Tooltip@sealturr:
-		Name: SEAL Reckoner
+		Name: 海豹运兵车
 	Tooltip@acolturr:
-		Name: Laser Reckoner
+		Name: 激光运兵车
 	Tooltip@snipturr:
-		Name: Sniper Reckoner
+		Name: 狙击手运兵车
 	Tooltip@desoturr:
-		Name: Desolator Reckoner
+		Name: 辐射运兵车
 	Tooltip@testurr:
-		Name: Tesla Reckoner
+		Name: 磁暴运兵车
 	Tooltip@rmbcturr:
-		Name: Cyborg Elite Reckoner
+		Name: 半机械精英运兵车
 	Tooltip@enliturr:
-		Name: Enlightened Reckoner
+		Name: 启蒙者运兵车
 	Tooltip@bhturr:
-		Name: Black Hand Reckoner
+		Name: 黑手运兵车
 	Tooltip@mortchemturr:
-		Name: Chemical Mortar Reckoner
+		Name: 化学迫击运兵车
 	Tooltip@mortcryoturr:
-		Name: Cryo Mortar Reckoner
+		Name: 冰冻迫击运兵车
 	Tooltip@mortsonicturr:
-		Name: Sonic Mortar Reckoner
+		Name: 声波迫击运兵车
 	Tooltip@discturr:
-		Name: Plasma Disc Reckoner
+		Name: 等离子碟运兵车
 	Tooltip@sharturr:
-		Name: Shard Reckoner
+		Name: 裂片运兵车
 	Tooltip@ggiturr:
-		Name: GGI Reckoner
+		Name: 重装大兵运兵车
 	Tooltip@psyturr:
-		Name: Psychic Reckoner
+		Name: 心灵运兵车
 	Tooltip@enfoturr:
-		Name: Enforcer Reckoner
+		Name: 执法者运兵车
 	Tooltip@ztrpturr:
-		Name: Zone Trooper Reckoner
+		Name: 区域骑兵运兵车
 	Tooltip@zdefturr:
-		Name: Zone Defender Reckoner
+		Name: 区域防御者运兵车
 	Tooltip@zraiturr:
-		Name: Zone Raider Reckoner
+		Name: 区域突袭者运兵车
 	Tooltip@tigrturr:
-		Name: Tiger Guard Reckoner
+		Name: 虎卫运兵车
 	Tooltip@disinturr:
-		Name: Disintegrator Reckoner
+		Name: 分解者运兵车
 	Tooltip@implturr:
-		Name: Impaler Reckoner
+		Name: 穿刺者运兵车
 	Tooltip@stlkturr:
-		Name: Stalker Reckoner
+		Name: 潜行者运兵车
 	Tooltip@hoplturr:
-		Name: Hoplite Reckoner
+		Name: 重装步兵运兵车
 	Tooltip@cmsrturr:
-		Name: Commissar Reckoner
+		Name: 政委运兵车
 	Tooltip@shadturr:
-		Name: Shadow Reckoner
+		Name: 暗影运兵车
 	Tooltip@hackturr:
-		Name: Hacker Reckoner
+		Name: 黑客运兵车
 	Tooltip@confturr:
-		Name: Confessor Reckoner
+		Name: 告解者运兵车
 	Tooltip@reapturr:
-		Name: Reaper Reckoner
+		Name: 收割者运兵车
 	ReloadDelayMultiplier@CyborgElite:
 		RequiresCondition: rmbcturr
 		Modifier: 80
@@ -7426,17 +7427,17 @@ TITN:
 		BuildPaletteOrder: 257
 		IconPalette: chrometd
 		Prerequisites: gtek, ~vehicles.talon, ~!railgun.upgrade, ~techlevel.high
-		Description: Tough, slow combat battle-mech.
+		Description: 坚固而缓慢的战斗机甲。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Attributes: • 可碾压 更小 载具 和 混凝土墙\n• 自我修复 至 50% 脱离战斗
 	Valued:
 		Cost: 2000
 	Selectable:
 		Bounds: 1280, 1706
 		DecorationBounds: 1280, 1706, 0, -100
 	Tooltip:
-		Name: Titan
+		Name: 泰坦
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -7537,7 +7538,7 @@ TITN:
 TITN.RAIL:
 	Inherits: TITN
 	Tooltip:
-		Name: Railgun Titan
+		Name: 轨道炮泰坦
 	Buildable:
 		BuildPaletteOrder: 258
 		Prerequisites: gtek, ~vehicles.talon, ~railgun.upgrade, ~techlevel.high
@@ -7564,17 +7565,17 @@ JUGG:
 	Inherits@GYRO: ^GyroStabilizers
 	Inherits@HeavyArmor: ^HeavyArmor
 	Tooltip:
-		Name: Juggernaut
+		Name: 神像机甲
 	Buildable:
 		BuildPaletteOrder: 261
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Tough artillery battle-mech.
+		Description: 坚固的火炮机甲。
 		Prerequisites: gtek, ~vehicles.talon, ~techlevel.high
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Cannot fire while moving
-		Attributes: • Can crush smaller vehicles and concrete walls
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
+		Weaknesses: • 无法攻击飞行器\n• 难以命中移动目标\n• 以下情况无法开火： 移动
+		Attributes: • 可碾压 更小 载具 和 混凝土墙
 	Mobile:
 		Locomotor: sheavytracked
 		Speed: 43
@@ -7694,12 +7695,12 @@ TTRK:
 	Buildable:
 		BuildPaletteOrder: 510
 		Prerequisites: techcenter.any, ~vehicles.ttrk, ~techlevel.high
-		Description: Truck carrying a Tiberium bomb.
+		Description: 运载泰伯利亚炸弹的卡车。
 	TooltipExtras:
-		Weaknesses: • Very weak armor
-		Attributes: • Special Ability: Detonate
+		Weaknesses: • 非常 装甲薄弱
+		Attributes: • 特殊能力： 引爆
 	Tooltip:
-		Name: Toxin Truck
+		Name: 毒素卡车
 	FireWarheadsOnDeath:
 		Weapon: UnitExplodeToxinTruck
 		EmptyWeapon: UnitExplodeToxinTruck
@@ -7714,7 +7715,7 @@ DISR:
 	Valued:
 		Cost: 1600
 	Tooltip:
-		Name: Disruptor
+		Name: 扰乱者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -7722,11 +7723,11 @@ DISR:
 		BuildPaletteOrder: 259
 		IconPalette: chrometd
 		Prerequisites: gtek, ~vehicles.zocom, ~techlevel.high
-		Description: Armored high-tech vehicle with medium-range sonic armament.
+		Description: 配备中程声波武器的高科技装甲车。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Slows enemy movement and rate of fire (with upgrade)
+		Strengths: • 擅长对付 建筑, 防御建筑, 轻型装甲, 步兵
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
+		Attributes: • 减速 敌方 移动 和 速率 的 射击 (需升级)
 	Health:
 		HP: 66000
 	Mobile:
@@ -7807,7 +7808,7 @@ HSAM:
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: Hover MLRS
+		Name: 悬浮多管火箭车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -7815,11 +7816,11 @@ HSAM:
 		Prerequisites: anyradar, ~vehicles.eagle, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Prototype Hover Multiple Launch Rocket System. Long-range guided artillery with anti-air capability.
+		Description: 原型悬浮多管火箭系统。具备防空能力的远程制导火炮。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor
-		Attributes: • Can traverse water
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲
+		Attributes: • 可穿越 水面
 	Mobile:
 		Speed: 86
 		Locomotor: hover
@@ -7957,15 +7958,15 @@ RTNK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 120
 		Prerequisites: ~vehicles.england, ~techlevel.low
-		Description: Advanced battle tank that can disguise when stationary.
+		Description: 静止时可伪装的先进战斗坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Heavy Armor
-		Weaknesses: • Weak vs Defenses, Infantry\n• Cannot attack Aircraft
-		Attributes: • Disguised when not moving\n• Deals additional damage firing from disguised state
+		Strengths: • 擅长对付轻型装甲, 重型装甲
+		Weaknesses: • 不擅长对付 防御建筑, 步兵\n• 无法攻击飞行器
+		Attributes: • 伪装 静止时\n• 造成 额外 伤害 开火 来自 伪装状态
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Mirage Tank
+		Name: 幻影坦克
 	Mirage:
 		RequiresCondition: !cloak-force-disabled && !invisibility && !driver-dead && !empdisable && !being-warped
 		RevealOn: Attack, Dock, Move, Damage, Heal
@@ -8068,14 +8069,14 @@ V3RL:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 243
 		Prerequisites: stek, ~vehicles.ukraine, ~techlevel.high
-		Description: Extreme long-range rocket artillery.
+		Description: 极限远程火箭炮。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Rockets can be shot down by static anti-air defenses
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
+		Weaknesses: • 无法攻击飞行器\n• 难以命中移动目标\n• 火箭 可被击落 击落 增加 固定 反-空中 防御建筑
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: V3 Launcher
+		Name: V3火箭发射车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -8150,7 +8151,7 @@ V3:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: V3 Rocket
+		Name: V3火箭
 	Health:
 		HP: 5000
 	BallisticMissile:
@@ -8187,15 +8188,15 @@ TNKD:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 171
 		Prerequisites: ~vehicles.germany, anyradar, ~techlevel.medium
-		Description: German tank destroyer.
+		Description: 德国坦克杀手。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor
-		Weaknesses: • Weak vs Infantry, Buildings, Defenses, Light Armor\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲
+		Weaknesses: • 不擅长对付步兵, 建筑, 防御建筑, 轻型装甲\n• 无法攻击飞行器
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Tank Destroyer
-		GenericName: Tank
+		Name: 坦克杀手
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -8267,10 +8268,10 @@ MSAR:
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: Mobile Sensor Array
+		Name: 机动传感阵列
 		RequiresCondition: !deployed
 	Tooltip@DEPLOYED:
-		Name: Mobile Sensor Array (deployed)
+		Name: 机动传感阵列（部署）
 		RequiresCondition: deployed
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -8279,10 +8280,10 @@ MSAR:
 		BuildPaletteOrder: 321
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~vehicles.gdi, ~techlevel.medium
-		Description: When deployed, detects enemy vehicles, aircraft and structures within a large radius.
+		Description: 部署后探测大范围内的敌方载具、飞行器和建筑。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Detects cloaked units (when deployed)\n• Increases nearby ground unit vision range (when deployed)\n• Special Ability: Activate Sensor Array
+		Weaknesses: • 无武装
+		Attributes: • 探测隐形单位 (当 部署ed)\n• 增加 附近 地面单位视野范围 (当 部署ed)\n• 特殊能力： 激活传感器阵列
 	Health:
 		HP: 24000
 	Armor:
@@ -8366,15 +8367,15 @@ PTNK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 172
 		Prerequisites: anyradar, ~vehicles.allies, ~!pcan.upgrade, ~techlevel.medium
-		Description: Long-range artillery with Prism Tower derived weapon.
+		Description: 使用光棱塔衍生武器的远程火炮。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 建筑, 防御建筑, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Prism Tank
-		GenericName: Tank
+		Name: 光棱坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -8437,9 +8438,9 @@ PCAN:
 	Buildable:
 		BuildPaletteOrder: 173
 		Prerequisites: anyradar, ~vehicles.allies, ~pcan.upgrade, ~techlevel.high
-		Description: A prototype long-range artillery that fires highly focused beams of light.
+		Description: 发射高度聚焦光束的原型远程火炮。
 	Tooltip:
-		Name: Prism Cannon
+		Name: 光棱炮
 	Mobile:
 		Speed: 60
 		TurnSpeed: 12
@@ -8475,16 +8476,16 @@ WTNK:
 		BuildPaletteOrder: 203
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~vehicles.legion, ~techlevel.medium
-		Description: Prototype MGT-1A microwave gun tank.
+		Description: 原型MGT-1A微波炮坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses, Infantry
-		Weaknesses: • Weak vs Buildings\n• Cannot attack Aircraft
-		Attributes: • Briefly disables vehicles/defenses\n• Kills crew of vehicles with less than 50% HP (with upgrade)\n• Crewless vehicles capturable by infantry
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑, 步兵
+		Weaknesses: • 不擅长对付 建筑\n• 无法攻击飞行器
+		Attributes: • 暂时禁用 载具/防御建筑\n• 击杀 乘员 的 载具 生命低于50% (需升级)\n• 无乘员 载具 可被步兵占领
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Microwave Tank
-		GenericName: Tank
+		Name: 微波坦克
+		GenericName: 坦克
 	Health:
 		HP: 20000
 	Armor:
@@ -8561,13 +8562,13 @@ BATF:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 223
 		Prerequisites: atek, ~vehicles.france, ~techlevel.high
-		Description: Tough infantry transport with weapon ports for infantry to fire from.
+		Description: 设有武器射击口供步兵射击的坚固步兵运输车。
 	TooltipExtras:
-		Attributes: • Can crush smaller vehicles and concrete walls
+		Attributes: • 可碾压 更小 载具 和 混凝土墙
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Battle Fortress
+		Name: 战斗要塞
 	Health:
 		HP: 140000
 	Mobile:
@@ -8790,16 +8791,16 @@ MEMP:
 		BuildPaletteOrder: 410
 		IconPalette: chrometd
 		Prerequisites: gtek, ~vehicles.gdi, ~techlevel.high
-		Description: Remotely piloted vehicle, deploys to disable nearby vehicles & structures.
+		Description: 遥控车辆，部署后可瘫痪附近载具和建筑。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses, Buildings
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Special Ability: EMP Shockwave\n• Immune to mind control\n• Requires active radar communication
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑, 建筑
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
+		Attributes: • 特殊能力： 电磁脉冲 冲击波\n• 免疫心灵控制\n• 需要 激活 雷达 通讯
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Mobile E.M.P
-		GenericName: Tank
+		Name: 机动电磁脉冲车
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -8917,15 +8918,15 @@ CDRN:
 		BuildPaletteOrder: 311
 		IconPalette: chrometd
 		Prerequisites: stek, ~vehicles.yuri, ~techlevel.high
-		Description: Drone armed with Chaos Gas which causes units to become frenzied and attack indiscriminately.
+		Description: 搭载混乱毒气的无人机，会使单位陷入狂乱并无差别攻击。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft, Buildings, Defenses
-		Attributes: • Special Ability: Expel Chaos Gas
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Weaknesses: • 无法攻击飞行器, 建筑, 防御建筑
+		Attributes: • 特殊能力： 释放混沌气体
 	Valued:
 		Cost: 850
 	Tooltip:
-		Name: Chaos Drone
+		Name: 混乱无人机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9008,16 +9009,16 @@ CHPR:
 		BuildPaletteOrder: 222
 		IconPalette: chrometd
 		Prerequisites: atek, ~vehicles.germany, ~techlevel.high
-		Description: Advanced heavy tank that can erase targets from existence.
+		Description: 可将目标从存在中抹除的先进重型坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses
-		Weaknesses: • Weak vs Buildings\n• Cannot attack Aircraft
-		Attributes: • Target is disabled while being erased\n• Can crush concrete walls\n• Special Ability: Teleport (with upgrade)
+		Strengths: • 擅长对付重型装甲, 防御建筑
+		Weaknesses: • 不擅长对付 建筑\n• 无法攻击飞行器
+		Attributes: • 目标 被 禁用d 当 被抹除\n• 可碾压 混凝土墙\n• 特殊能力： 传送 (需升级)
 	Valued:
 		Cost: 1550
 	Tooltip:
-		Name: Chrono Prison
-		GenericName: Tank
+		Name: 超时空监狱
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9126,7 +9127,7 @@ CRYO:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Cryo Launcher
+		Name: 冷冻发射器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -9134,11 +9135,11 @@ CRYO:
 		Prerequisites: ~vehicles.allies, alhq, ~sweden.coalition, ~techlevel.high
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Long-range support artillery that slows enemies and makes them take more damage.
+		Description: 减速敌人并使其受到更多伤害的远程支援火炮。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Slows enemy movement and increases damage taken
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 减速 敌方 移动 和 增加受到伤害n
 	Mobile:
 		Speed: 72
 		TurnSpeed: 16
@@ -9192,15 +9193,15 @@ PBUL:
 		BuildPaletteOrder: 252
 		IconPalette: chrometd
 		Prerequisites: gtek, ~vehicles.eagle, ~techlevel.high
-		Description: Fast scout vehicle with rockets that disrupts weapons and vision. Can designates targets, revealing them and increasing the damage they take.
+		Description: 快速侦察车，火箭弹可扰乱武器和视野。可标记目标，揭示其位置并增加受到的伤害。
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Aircraft
-		Weaknesses: • Weak vs Infantry, Buildings, Defenses
-		Attributes: • Detects cloaked units and spies\n• Special Ability: Target Painter
+		Strengths: • 擅长对付轻型装甲, 飞行器
+		Weaknesses: • 不擅长对付步兵, 建筑, 防御建筑
+		Attributes: • 探测隐形单位 和 间谍\n• 特殊能力： 目标标记器
 	Valued:
 		Cost: 850
 	Tooltip:
-		Name: Pitbull
+		Name: 斗牛犬
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9282,15 +9283,15 @@ CYCP:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 501
 		Prerequisites: anyradar, ~vehicles.cycp
-		Description: Light tank with a Tesla Coil derived weapon.
+		Description: 使用磁暴线圈衍生武器的轻型坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Weaknesses: • 无法攻击飞行器
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: Cyclops
-		GenericName: Tank
+		Name: 独眼巨人
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9336,15 +9337,15 @@ BASI:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 502
 		Prerequisites: anyradar, ~vehicles.basi
-		Description: Stealth tank with an EMP wave weapon.
+		Description: 配备电磁脉冲波武器的隐形坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Cannot attack Aircraft\n• No effect on infantry\n• Can be spotted by nearby infantry and defense structures
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
+		Weaknesses: • 无法攻击飞行器\n• 对...无效果 步兵\n• 可 可被探测到 附近 步兵 和 防御 建筑
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Basilisk
-		GenericName: Tank
+		Name: 蛇怪
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9419,12 +9420,12 @@ MANT:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 503
 		Prerequisites: anyradar, ~vehicles.mant
-		Description: Tracked vehicle armed with anti-aircraft laser cannons.
+		Description: 装备防空激光炮的履带车辆。
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft
-		Weaknesses: • Cannot attack ground targets
-		Attributes: • Detects cloaked aircraft
+		Strengths: • 擅长对付飞行器
+		Weaknesses: • 无法攻击 地面目标
+		Attributes: • 探测隐形飞行器
 	Valued:
 		Cost: 1000
 	Selectable:
@@ -9437,7 +9438,7 @@ MANT:
 		Speed: 126
 		TurnSpeed: 30
 	Tooltip:
-		Name: Mantis
+		Name: 螳螂
 	WithMoveAnimation:
 		ValidMovementTypes: Horizontal, Vertical, Turn
 	RevealsShroud:
@@ -9482,15 +9483,15 @@ VIPR:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 504
 		Prerequisites: anyradar, ~stolentech.wsph
-		Description: Medium hover tank.
+		Description: 中型悬浮坦克。
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Buildings, Infantry\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
+		Weaknesses: • 不擅长对付 建筑, 步兵\n• 无法攻击飞行器
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Viper
+		Name: 毒蛇
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -9552,18 +9553,18 @@ WOLV:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 250
 		Prerequisites: gtek, ~vehicles.talon, ~techlevel.medium
-		Description: Compact & durable battle-mech with dual chainguns.
+		Description: 配备双联链式机炮的紧凑耐用战斗机甲。
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 建筑, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 900
 	Selectable:
 		Bounds: 1024, 1024
 		DecorationBounds: 1024, 1024, 0, -100
 	Tooltip:
-		Name: Wolverine
+		Name: 狼獾
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9630,18 +9631,18 @@ XO:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 251
 		Prerequisites: gtek, ~vehicles.zocom, ~techlevel.medium
-		Description: Light battle-mech armed with a laser and a coil-gun. Able to jump short distances using its jump-pack.
+		Description: 配备激光和线圈炮的轻型战斗机甲，可使用跳跃背包进行短距离跳跃。
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Heavy Armor, Buildings
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
-		Attributes: • Special Ability: Jump-Pack
+		Strengths: • 擅长对付轻型装甲, 重型装甲, 建筑
+		Weaknesses: • 不擅长对付 防御建筑\n• 无法攻击飞行器
+		Attributes: • 特殊能力： 跳跃-装载
 	Valued:
 		Cost: 1000
 	Selectable:
 		Bounds: 1024, 1024
 		DecorationBounds: 1024, 1024, 0, -100
 	Tooltip:
-		Name: X-O Powersuit
+		Name: X-O动力装甲
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9759,15 +9760,15 @@ APOC:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 239
 		Prerequisites: stek, ~vehicles.soviet, ~!atomicengines.upgrade, ~!erad.upgrade, ~apoc.upgrade, ~techlevel.high
-		Description: Enormous slow tank with uranium shells and anti-air capability.
+		Description: 使用铀弹并具备防空能力的巨型慢速坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Attributes: • 可碾压 更小 载具 和 混凝土墙\n• 自我修复 至 50% 脱离战斗
 	Valued:
 		Cost: 2600
 	Tooltip:
-		Name: Apocalypse Tank
-		GenericName: Tank
+		Name: 天启坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -9876,15 +9877,15 @@ APOC.ATOMIC:
 	RenderSprites:
 		Image: apoci
 	Tooltip:
-		Name: Atomic Apocalypse Tank
-		GenericName: Tank
+		Name: 原子天启坦克
+		GenericName: 坦克
 	Buildable:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 240
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~!erad.upgrade, ~apoc.upgrade, ~techlevel.high
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Explodes and leaves radiation on death
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Attributes: • 可碾压 更小 载具 和 混凝土墙\n• 自我修复 至 50% 脱离战斗\n• 爆炸 和 留下 辐射 死亡时
 	WithFacingSpriteBody:
 	SpeedMultiplier:
 		Modifier: 125
@@ -9904,15 +9905,15 @@ APOC.ATOMIC:
 APOC.ERAD:
 	Inherits: APOC
 	Tooltip:
-		Name: Apocalyptic Eradicator
+		Name: 天启根除者
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
+		Strengths: • 擅长对付步兵, 轻型装甲, 重型装甲
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 可碾压 更小 载具 和 混凝土墙\n• 自我修复 至 50% 脱离战斗\n• 辐射 载具 造成 它们 至 承受更多伤害, 造成 更少 伤害, 和 伤害 附近 单位
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~!atomicengines.upgrade, ~erad.upgrade, ~apoc.upgrade, ~techlevel.high
 		BuildPaletteOrder: 241
-		Description: Enormous slow tank with twin heavy radiation cannons.
+		Description: 配备双联重型辐射炮的巨型慢速坦克。
 	Armament@PRIMARY:
 		Weapon: ApocRadBeamWeapon
 		MuzzlePalette: caneon
@@ -9949,15 +9950,15 @@ APOC.ERAD.ATOMIC:
 	RenderSprites:
 		Image: apoc.eradi
 	Tooltip:
-		Name: Atomic Apocalyptic Eradicator
+		Name: 原子末日根除者
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Explodes and leaves radiation on death\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
+		Strengths: • 擅长对付步兵, 轻型装甲, 重型装甲
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 可碾压 更小 载具 和 混凝土墙\n• 自我修复 至 50% 脱离战斗\n• 爆炸 和 留下 辐射 死亡时\n• 辐射 载具 造成 它们 至 承受更多伤害, 造成 更少 伤害, 和 伤害 附近 单位
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~atomicengines.upgrade, ~erad.upgrade, ~apoc.upgrade, ~techlevel.high
 		BuildPaletteOrder: 242
-		Description: Enormous slow tank with twin heavy radiation cannons.
+		Description: 配备双联重型辐射炮的巨型慢速坦克。
 	Armament@PRIMARY:
 		Weapon: ApocRadBeamWeapon
 		MuzzlePalette: caneon
@@ -9998,16 +9999,16 @@ OVLD:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 235
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~!erad.upgrade, ~!atomicengines.upgrade, ~techlevel.high
-		Description: Enormous slow tank fitted with a commissar tower which supports infantry in combat.
+		Description: 配备政委塔以支援步兵作战的巨型慢速坦克。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Empowers nearby basic infantry
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 可碾压 更小 载具 和 混凝土墙\n• 自我修复 至 50% 脱离战斗\n• 强化 附近 基础 步兵
 	Valued:
 		Cost: 2350
 	Tooltip:
-		Name: Overlord Tank
-		GenericName: Tank
+		Name: 霸主坦克
+		GenericName: 坦克
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -10118,14 +10119,14 @@ OVLD:
 OVLD.ATOMIC:
 	Inherits: OVLD
 	Tooltip:
-		Name: Atomic Overlord Tank
+		Name: 原子霸主坦克
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~!erad.upgrade, ~atomicengines.upgrade, ~techlevel.high
 		BuildPaletteOrder: 236
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Empowers nearby basic infantry\n• Explodes and leaves radiation on death
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 可碾压 更小 载具 和 混凝土墙\n• 自我修复 至 50% 脱离战斗\n• 强化 附近 基础 步兵\n• 爆炸 和 留下 辐射 死亡时
 	RenderSprites:
 		Image: ovldi
 	ReplacedInQueue:
@@ -10146,14 +10147,14 @@ OVLD.ATOMIC:
 OVLD.ERAD:
 	Inherits: OVLD
 	Tooltip:
-		Name: Overlord Eradicator
+		Name: 霸主根除者
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Empowers nearby basic infantry\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
+		Strengths: • 擅长对付步兵, 轻型装甲, 重型装甲
+		Attributes: • 可碾压 更小 载具 和 混凝土墙\n• 自我修复 至 50% 脱离战斗\n• 强化 附近 基础 步兵\n• 辐射 载具 造成 它们 至 承受更多伤害, 造成 更少 伤害, 和 伤害 附近 单位
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~erad.upgrade, ~!atomicengines.upgrade, ~techlevel.high
 		BuildPaletteOrder: 237
-		Description: Enormous slow tank equipped with radiation cannons and a commissar tower which supports infantry in combat.
+		Description: 配备辐射炮和政委塔以支援步兵作战的巨型慢速坦克。
 	Armament@PRIMARY:
 		Weapon: OverlordRadBeamWeapon
 		MuzzlePalette: caneon
@@ -10184,14 +10185,14 @@ OVLD.ERAD:
 OVLD.ERAD.ATOMIC:
 	Inherits: OVLD.ATOMIC
 	Tooltip:
-		Name: Atomic Overlord Eradicator
+		Name: 原子霸主根除者
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat\n• Empowers nearby basic infantry\n• Explodes and leaves radiation on death\n• Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units
+		Strengths: • 擅长对付步兵, 轻型装甲, 重型装甲
+		Attributes: • 可碾压 更小 载具 和 混凝土墙\n• 自我修复 至 50% 脱离战斗\n• 强化 附近 基础 步兵\n• 爆炸 和 留下 辐射 死亡时\n• 辐射 载具 造成 它们 至 承受更多伤害, 造成 更少 伤害, 和 伤害 附近 单位
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~ovld.upgrade, ~erad.upgrade, ~atomicengines.upgrade, ~techlevel.high
 		BuildPaletteOrder: 238
-		Description: Enormous slow tank equipped with radiation cannons and a commissar tower which supports infantry in combat.
+		Description: 配备辐射炮和政委塔以支援步兵作战的巨型慢速坦克。
 	Armament@PRIMARY:
 		Weapon: OverlordRadBeamWeapon
 		MuzzlePalette: caneon
@@ -10230,7 +10231,7 @@ THWK:
 	Valued:
 		Cost: 1850
 	Tooltip:
-		Name: Tomahawk Launcher
+		Name: 战斧导弹发射车
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -10238,10 +10239,10 @@ THWK:
 		Prerequisites: gtek, ~thwk.upgrade, ~techlevel.high
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: Extreme long-range missile artillery.
+		Description: 极限远程导弹火炮。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Cannot fire while moving\n• Rockets can be shot down by static anti-air defenses
+		Strengths: • 擅长对付 建筑, 防御建筑, 轻型装甲
+		Weaknesses: • 无法攻击飞行器\n• 难以命中移动目标\n• 以下情况无法开火： 移动\n• 火箭 可被击落 击落 增加 固定 反-空中 防御建筑
 	Mobile:
 		Speed: 44
 		Voice: Move
@@ -10319,7 +10320,7 @@ TH:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: Tomahawk Missile
+		Name: 战斧导弹
 	Health:
 		HP: 5000
 	CruiseMissile:
@@ -10357,7 +10358,7 @@ BSKY:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: Black Sky Missile
+		Name: 黑天导弹
 	Health:
 		HP: 5000
 	GuidedMissile:
@@ -10387,17 +10388,17 @@ ZEUS:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Zeus Artillery
+		Name: 宙斯火炮
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 224
 		Prerequisites: ~vehicles.allies, alhq, ~greece.coalition, ~techlevel.high
-		Description: Extreme long range artillery that can generate localized storm clouds.
+		Description: 可制造局部风暴云的极限远程火炮。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Cannot fire while moving
+		Strengths: • 擅长对付 建筑, 防御建筑
+		Weaknesses: • 无法攻击飞行器\n• 难以命中移动目标\n• 以下情况无法开火： 移动
 	Selectable:
 		DecorationBounds: 1280, 1280
 	Health:
@@ -10470,7 +10471,7 @@ MOLE:
 	-Carryable:
 	-GrantCondition@CarriedImmobile:
 	Tooltip:
-		Name: Subterranean APC
+		Name: 地下装甲运兵车
 	Valued:
 		Cost: 2000
 	Armor:
@@ -10566,16 +10567,16 @@ AVTR:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 273
 		Prerequisites: ~vehicles.nod, tmpp, covenant.level3, ~wrath.covenant, ~techlevel.high
-		Description: Heavy mech armed with a powerful laser and a flamethrower.
+		Description: 装备强力激光和火焰喷射器的重型机甲。
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush smaller vehicles and concrete walls\n• Self repairs to 50% out of combat
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 可碾压 更小 载具 和 混凝土墙\n• 自我修复 至 50% 脱离战斗
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Avatar
+		Name: 圣灵机甲
 	Selectable:
 		Bounds: 1280, 1900, 0, -250
 	UpdatesPlayerStatistics:
@@ -10720,16 +10721,16 @@ CUST:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 272
 		Prerequisites: tmpl, ~vehicles.nod, ~cust.upgrade, ~techlevel.high
-		Description: Heavy transport that repairs cyborgs and vehicles and empowers cyborg machine learning.
+		Description: 修复生化人和载具并增强生化人机器学习的重型运输车。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Repairs cyborgs and vehicles\n• Nearby cyborgs gain experience faster
+		Weaknesses: • 无武装
+		Attributes: • 维修 生化人 和 载具\n• 附近 生化人更快获得经验 更快
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Custodian
+		Name: 守护者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: false
 		AddToAssetsValue: false

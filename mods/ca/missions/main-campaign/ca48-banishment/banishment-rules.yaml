@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	PaletteFromFile@terrain-temperat:
 		Filename: ca|missions/main-campaign/ca47-ad-nihilum/dartmoor.pal
@@ -28,7 +29,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, banishment.lua
 	MissionData:
-		Briefing: The Malefic Scrin interstellar gateway has been located. Four of our bases along the Dahme river were overrun and our forces were pushed out of the area.\n\nOur assumption is that if we can drive the Malefic forces back and close this gateway, then the Malefic will no longer have a presence on Earth. We must do this before more of their Void Engines can be sent through.\n\nAn unusually high number of Nerve Centers have been established in the area. All of them must be destroyed for the gateway to be closed.\n\nReclaim our fallen bases by clearing out any Malefic forces and bring them back into operation, then locate and destroy all Scrin Nerve Centers.
+		Briefing: 邪灵思金人的星际传送门已定位。我们在达默河沿岸的四座基地被攻陷，部队被赶出了该区域。\n\n我们的判断是，如果我们能击退邪灵部队并关闭此传送门，邪灵将不再在地球上存在。我们必须在他们派出更多虚空引擎之前完成此任务。\n\n该地区建立了异常多的神经中枢。必须摧毁所有神经中枢才能关闭传送门。\n\n夺回我们失守的基地，清除所有邪灵部队并使其重新运作，然后定位并摧毁所有思金人神经中枢。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

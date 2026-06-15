@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca33-spearhead"
 
 ShardLaunchers = { Shard1, Shard2, Shard3, Shard4, Shard5, Shard6 }
@@ -45,8 +46,8 @@ WorldLoaded = function()
 	InitNod()
 	UpdateMissionText()
 
-	ObjectiveDestroyShardLaunchers = GDI.AddObjective("Destroy Scrin Shard Launchers.")
-    ObjectiveCaptureComms = GDI.AddObjective("Locate and capture Nod Communications Center.")
+	ObjectiveDestroyShardLaunchers = GDI.AddObjective("摧毁思金碎片发射器。")
+    ObjectiveCaptureComms = GDI.AddObjective("找到并占领Nod通讯中心。")
 
 	if IsHardOrBelow() then
 		HardOnlyTripod.Destroy()
@@ -124,7 +125,7 @@ UpdateMissionText = function()
 	ShardLaunchersRemaining = #Utils.Where(ShardLaunchers, function(s) return not s.IsDead end)
 
 	if ShardLaunchersRemaining > 0 then
-		UserInterface.SetMissionText("Shard Launchers remaining: " .. ShardLaunchersRemaining, HSLColor.Yellow)
+		UserInterface.SetMissionText("剩余碎片发射器：" .. ShardLaunchersRemaining, HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end
@@ -148,7 +149,7 @@ end
 
 InitMcv = function()
 	PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-	Notification("Reinforcements have arrived.")
+	Notification("增援已抵达。")
     local entryPath = { CarryallSpawn.Location, CarryallDest.Location }
     local exitPath =  { CarryallSpawn.Location }
     ReinforcementsCA.ReinforceWithTransport(GDI, "ocar.amcv", nil, entryPath, exitPath)

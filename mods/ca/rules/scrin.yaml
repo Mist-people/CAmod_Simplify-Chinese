@@ -1,4 +1,5 @@
 
+# Simplified Chinese translation by lsxy, 2026.06.
 ^ScrinBuilding:
 	Inherits@1: ^Building
 	RenderSprites:
@@ -18,17 +19,17 @@ INFANTRY.SCRIN:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Infantry Production
+		Name: 步兵生产
 	Buildable:
-		Description: Infantry Production
+		Description: 步兵生产
 
 VEHICLES.SCRIN:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Vehicle Production
+		Name: 车辆生产
 	Buildable:
-		Description: Vehicle Production
+		Description: 车辆生产
 
 ^OnResourceConditions:
 	ExternalCondition@RESCONVTIB:
@@ -475,15 +476,15 @@ S1:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 12
 		Prerequisites: ~infantry.scrin
-		Description: General-purpose infantry.
+		Description: 泛用型步兵。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 100
 	Tooltip:
-		Name: Warrior
+		Name: 战士
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -518,14 +519,14 @@ S2:
 		BuildPaletteOrder: 120
 		Prerequisites: anyradar, ~infantry.scrin, ~!evis.upgrade, ~!impl.upgrade, ~!stlk.upgrade, ~techlevel.medium
 		IconPalette: chromes
-		Description: Fast moving anti-personnel infantry.
+		Description: 快速反人员步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 275
 	Tooltip:
-		Name: Ravager
+		Name: 掠夺者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -562,15 +563,15 @@ S3:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 22
 		Prerequisites: ~infantry.scrin
-		Description: Anti-tank/anti-aircraft infantry.
+		Description: 反装甲防空步兵。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
-		Weaknesses: • Weak vs Infantry, Light Armor
+		Strengths: • 擅长对付重型装甲, 飞行器, 建筑, 防御建筑
+		Weaknesses: • 不擅长对付步兵, 轻型装甲
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Disintegrator
+		Name: 分解者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -621,17 +622,17 @@ S4:
 		BuildPaletteOrder: 124
 		Prerequisites: anyradar, ~infantry.intruder, ~techlevel.medium
 		IconPalette: chrome
-		Description: Heavy assault infantry with high burst damage.
+		Description: 高爆发伤害的重型突击步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Special Ability: Teleport (with upgrade)
+		Strengths: • 擅长对付 建筑, 防御建筑, 重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
+		Attributes: • 特殊能力： 传送 (需升级)
 	Mobile:
 		Speed: 54
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Intruder
+		Name: 入侵者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -680,17 +681,17 @@ MRDR:
 		BuildPaletteOrder: 125
 		Prerequisites: anyradar, ~infantry.harbinger, ~techlevel.medium
 		IconPalette: chromes
-		Description: Heavy assault infantry with high burst damage.
+		Description: 高爆发伤害的重型突击步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Damage against vehicles scales with the max health of the target\n• Special Ability: Teleport (with upgrade)
+		Strengths: • 擅长对付 建筑, 防御建筑, 重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
+		Attributes: • 伤害 对抗 载具 随目标最大生命值变化\n• 特殊能力： 传送 (需升级)
 	Mobile:
 		Speed: 46
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Marauder
+		Name: 掠袭者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -739,7 +740,7 @@ S6:
 		Prerequisites: ~infantry.scrin
 		IconPalette: chrome
 	Tooltip:
-		Name: Assimilator
+		Name: 同化者
 	Voiced:
 		VoiceSet: AssimilatorVoice
 
@@ -752,14 +753,14 @@ WCHR:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 126
 		Prerequisites: anyradar, ~infantry.scrin, ~techlevel.medium
-		Description: Infiltration unit used to gain vision of enemies.
+		Description: 用于获取敌人视野的渗透单位。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Watcher
+		Name: 监视者
 	TooltipExtras:
-		Weaknesses: • Cannot deal damage
-		Attributes: • Can attach parasites to enemy vehicles & structures\n• Cloaked when not moving\n• Detects cloaked ground units and spies\n• Special Ability: Teleport (with upgrade)
+		Weaknesses: • 无法造成伤害
+		Attributes: • 可附着 寄生体 至 敌方 载具 & 建筑\n• 隐身 静止时\n• 探测 隐形地面单位 和 间谍\n• 特殊能力： 传送 (需升级)
 	Health:
 		HP: 5000
 	UpdatesPlayerStatistics:
@@ -828,14 +829,14 @@ BRST:
 		BuildPaletteOrder: 160
 		Prerequisites: scrt, ~infantry.scrin, ~techlevel.high
 		IconPalette: chromes
-		Description: Explodes on death or on contact with target.
+		Description: 死亡或接触目标时爆炸。
 	Valued:
 		Cost: 550
 	Tooltip:
-		Name: Burster
+		Name: 爆裂体
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Light Armor
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 建筑, 轻型装甲
+		Weaknesses: • 无法攻击飞行器
 	Health:
 		HP: 5000
 	UpdatesPlayerStatistics:
@@ -880,17 +881,17 @@ EVIS:
 		BuildPaletteOrder: 121
 		Prerequisites: anyradar, ~infantry.scrin, ~evis.upgrade, ~techlevel.medium
 		IconPalette: chromes
-		Description: Durable, fast moving, short-range, anti-personnel infantry.
+		Description: 耐用、快速、短程反人员步兵。
 	Selectable:
 		DecorationBounds: 640, 896, -32, -256
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Eviscerator
+		Name: 剜割者
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Charges a more powerful attack while on resources (with upgrade)
+		Strengths: • 擅长对付轻型装甲, 步兵
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 充能 更多 电力ful 在资源上时攻击 (需升级)
 	Health:
 		HP: 16000
 	UpdatesPlayerStatistics:
@@ -954,17 +955,17 @@ IMPL:
 		BuildPaletteOrder: 122
 		Prerequisites: anyradar, ~infantry.scrin, ~impl.upgrade, ~techlevel.medium
 		IconPalette: chromes
-		Description: Assault infantry with high burst damage. Impales targets, slowing their movement.
+		Description: 高爆发伤害的突击步兵。穿刺目标，降低其移动速度。
 	Selectable:
 		DecorationBounds: 640, 896, -32, -256
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Impaler
+		Name: 穿刺者
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Slows targets
+		Strengths: • 擅长对付轻型装甲, 步兵
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 减速 目标
 	Health:
 		HP: 8000
 	UpdatesPlayerStatistics:
@@ -1001,17 +1002,17 @@ STLK:
 		BuildPaletteOrder: 123
 		Prerequisites: anyradar, ~infantry.scrin, ~stlk.upgrade, ~techlevel.medium
 		IconPalette: chromes
-		Description: Fast moving anti-personnel infantry that can turn invisible temporarily and ambush targets.
+		Description: 快速反人员步兵，可暂时隐身并伏击目标。
 	Selectable:
 		DecorationBounds: 640, 896, -32, -256
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Stalker
+		Name: 潜猎者
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Special Ability: Cloak\n• Moves faster while cloaked\n• Briefly takes greatly reduced damage after decloaking
+		Strengths: • 擅长对付轻型装甲, 步兵
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 特殊能力： 隐身\n• 移动 更快 隐身时\n• 暂时控制 解除隐身后大幅减少伤害
 	Health:
 		HP: 10000
 	UpdatesPlayerStatistics:
@@ -1096,13 +1097,13 @@ SMEDI:
 		Queue: Hospital
 		BuildPaletteOrder: 240
 		IconPalette: chromes
-		Description: Heals nearby life-forms.
+		Description: 治疗附近生命体。
 	TooltipExtras:
-		Weaknesses: • Unarmed
+		Weaknesses: • 无武装
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: Rejuvenator
+		Name: 复苏者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1146,14 +1147,14 @@ ARTI:
 		Queue: Hospital
 		BuildPaletteOrder: 240
 		IconPalette: chromes
-		Description: Repairs nearby vehicles.
+		Description: 维修附近的载具。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Can salvage destroyed vehicles for credits
+		Weaknesses: • 无武装
+		Attributes: • 可回收 被摧毁的载具换取资金
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Artificer
+		Name: 工匠
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1235,7 +1236,7 @@ GSCR:
 		DeathSequencePalette: playerscrin
 	-Buildable:
 	Tooltip:
-		Name: Brutalizer
+		Name: 残虐者
 	-GrantConditionOnTerrain@ONTIB:
 	-GrantStackingCondition@TIBEXPOSED:
 	-DamagedByTerrain@TIBDAMAGE:
@@ -1263,7 +1264,7 @@ GSCR.Mutating:
 	WithDeathAnimation:
 		DeathSequencePalette: playerscrin
 	Tooltip:
-		Name: Brutalizer
+		Name: 残虐者
 
 MAST:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1280,20 +1281,20 @@ MAST:
 		Prerequisites: scrt, ~infantry.scrin, ~techlevel.high
 		BuildLimit: 1
 		IconPalette: chrome
-		Description: Elite specialist infantry able to mind-control enemy units (up to 3, increases with veterancy).
+		Description: 能够心灵控制敌方单位的精英专家步兵（最多 3 个，随老练等级提升）。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Vehicles, Defenses, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Maximum 1 can be trained\n• Detects cloaked ground units and spies\n• Immune to mind control\n• Can capture enemy buildings\n• Shorter range and longer reload against vehicles\n• Special Ability: Mind Spark
+		Strengths: • 擅长对付步兵, 载具, 防御建筑, 建筑
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 最大 1 可训练\n• 探测 隐形地面单位 和 间谍\n• 免疫心灵控制\n• 可占领 敌方建筑\n• 更短 射程 和 更长 对载具装填时间更长\n• 特殊能力： 心灵火花
 	Voiced:
 		VoiceSet: MastermindVoice
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Mastermind
+		Name: 主脑
 		RequiresCondition: !rank-elite
 	Tooltip@PRODIGY:
-		Name: Prodigy
+		Name: 奇才
 		RequiresCondition: rank-elite
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -1404,7 +1405,7 @@ MAST:
 		Voice: Build
 	CaptureManager:
 	Captures:
-		CaptureTypes: building
+		CaptureTypes: 建筑
 		CaptureDelay: 150
 		ConsumedByCapture: false
 		EnterCursor: mc-capture
@@ -1528,15 +1529,15 @@ GUNW:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 60
 		Prerequisites: ~vehicles.scrin, ~!shrw.upgrade, ~techlevel.low
-		Description: Durable light assault walker.
+		Description: 耐用型轻型突击行者。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
+		Strengths: • 擅长对付步兵, 轻型装甲, 飞行器
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Gun Walker
+		Name: 机炮行者
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -1603,7 +1604,7 @@ SHRW:
 	Inherits: GUNW
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Shard Walker
+		Name: 碎片行者
 	Buildable:
 		Prerequisites: ~vehicles.scrin, ~shrw.upgrade, ~techlevel.medium
 		IconPalette: chromes
@@ -1642,7 +1643,7 @@ SEEK:
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Seeker
+		Name: 搜寻者
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -1651,12 +1652,12 @@ SEEK:
 		BuildPaletteOrder: 160
 		Prerequisites: ~vehicles.seek, ~techlevel.low
 		Queue: VehicleSQ, VehicleMQ
-		Description: Light hover tank.
+		Description: 轻型悬浮坦克。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Buildings
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units, spies and submarines\n• Can traverse water
+		Strengths: • 擅长对付重型装甲, 建筑
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
+		Attributes: • 探测隐形单位, 间谍 和 潜艇\n• 可穿越 水面
 	Mobile:
 		Speed: 126
 		Locomotor: lighthover
@@ -1725,7 +1726,7 @@ LACE:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Lacerator
+		Name: 撕裂者
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -1734,12 +1735,12 @@ LACE:
 		BuildPaletteOrder: 161
 		Prerequisites: ~vehicles.traveler, ~techlevel.low
 		Queue: VehicleSQ, VehicleMQ
-		Description: Fast hover tank.
+		Description: 快速悬浮坦克。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Buildings
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units, spies and submarines\n• Can traverse water
+		Strengths: • 擅长对付重型装甲, 建筑
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
+		Attributes: • 探测隐形单位, 间谍 和 潜艇\n• 可穿越 水面
 	Mobile:
 		TurnSpeed: 40
 		Speed: 144
@@ -1818,19 +1819,19 @@ INTL:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Interloper
+		Name: 闯入者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
 		BuildPaletteOrder: 110
 		Prerequisites: ~vehicles.scrin, ~techlevel.low
 		Queue: VehicleSQ, VehicleMQ
-		Description: Heavily armored front-line assault vehicle and troop carrier.
+		Description: 重甲前线突击载具和运兵车。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Defenses\n• Cannot attack Aircraft
-		Attributes: • Can traverse water
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 可穿越 水面
 	Mobile:
 		Speed: 60
 		TurnSpeed: 512
@@ -1965,7 +1966,7 @@ CORR:
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: Corrupter
+		Name: 腐蚀者
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	UpdatesPlayerStatistics:
@@ -1974,11 +1975,11 @@ CORR:
 		BuildPaletteOrder: 210
 		Prerequisites: anyradar, ~vehicles.corr, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
-		Description: Medium-ranged anti-infantry/structure unit.
+		Description: 中程反步兵/建筑单位。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: • 擅长对付步兵, 建筑, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器\n• 难以命中移动目标
 	Mobile:
 		Speed: 72
 		TurnSpeed: 16
@@ -2028,7 +2029,7 @@ LCHR:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Leecher
+		Name: 汲取者
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	UpdatesPlayerStatistics:
@@ -2037,12 +2038,12 @@ LCHR:
 		BuildPaletteOrder: 211
 		Prerequisites: anyradar, ~vehicles.collector, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
-		Description: Medium-ranged anti-infantry/structure unit.
+		Description: 中程反步兵/建筑单位。
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Regenerates health while dealing damage (without upgrade)\n• Disables power plants\n• Regenerates and heals allies when in coalescence form (with upgrade)\n• Special Ability: Coalescence (with upgrade)
+		Strengths: • 擅长对付步兵, 建筑, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 回复 生命值 当 造成ing 伤害 (需out 升级)\n• 禁用 电力 发电厂\n• 回复 和 治疗 在融合范围内时治疗友军  (需升级)\n• 特殊能力： 融合 (需升级)
 	Mobile:
 		Speed: 82
 		TurnSpeed: 20
@@ -2118,9 +2119,9 @@ LCHR.Orb:
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	Tooltip:
-		Name: Leecher Orb
+		Name: 汲取者球体
 	TooltipExtras:
-		Description: Heals nearby allies. Will revive into a Leecher if not destroyed.
+		Description: 治疗附近盟友。若未被摧毁将复活为汲取者。
 	RenderSprites:
 		Image: lchr.orb
 		Palette: caneon
@@ -2210,7 +2211,7 @@ STCR:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Stormcrawler
+		Name: 风暴爬行者
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	UpdatesPlayerStatistics:
@@ -2219,11 +2220,11 @@ STCR:
 		BuildPaletteOrder: 213
 		Prerequisites: anyradar, ~vehicles.reaper, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
-		Description: Slow moving, very durable, short-range assault unit.
+		Description: 移动缓慢、非常耐久的短程突击单位。
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Buildings
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
+		Strengths: • 擅长对付 防御建筑, 建筑
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
 	Mobile:
 		Speed: 46
 		TurnSpeed: 16
@@ -2286,16 +2287,16 @@ DEVO:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 212
 		Prerequisites: anyradar, ~vehicles.scrin, ~techlevel.medium
-		Description: Maneuverable medium-range hover tank.
+		Description: 机动性良好的中程悬浮坦克。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Buildings, Infantry\n• Cannot attack Aircraft
-		Attributes: • Can traverse water
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
+		Weaknesses: • 不擅长对付 建筑, 步兵\n• 无法攻击飞行器
+		Attributes: • 可穿越 水面
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Devourer Tank
+		Name: 吞噬者坦克
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -2380,16 +2381,16 @@ DARK:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 292
 		Prerequisites: scrt, ~vehicles.scrin, ~malefic.allegiance, ~techlevel.high
-		Description: Heavy hover tank armed with a rift cannon.
+		Description: 装备裂隙炮的重型悬浮坦克。
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Buildings, Infantry\n• Cannot attack Aircraft
-		Attributes: • Can traverse water\n• Damage scales with the max health of the target
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
+		Weaknesses: • 不擅长对付 建筑, 步兵\n• 无法攻击飞行器
+		Attributes: • 可穿越 水面\n• 伤害 随目标最大生命值变化
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Darkener Tank
+		Name: 暗化坦克
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -2457,7 +2458,7 @@ RUIN:
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: Ruiner
+		Name: 毁灭者
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -2466,12 +2467,12 @@ RUIN:
 		BuildPaletteOrder: 290
 		Prerequisites: scrt, ~vehicles.scrin, ~loyalist.allegiance, ~techlevel.high
 		Queue: VehicleSQ, VehicleMQ
-		Description: Long-range hover artillery.
+		Description: 远程悬浮火炮。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Can traverse water
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器\n• 难以命中移动目标
+		Attributes: • 可穿越 水面
 	Mobile:
 		Speed: 72
 		TurnSpeed: 512
@@ -2562,7 +2563,7 @@ ATMZ:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Atomizer
+		Name: 原子化者
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -2571,12 +2572,12 @@ ATMZ:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 285
 		Prerequisites: scrt, ~vehicles.collector, ~techlevel.high
-		Description: Lightly armored long-range anti-tank unit that atomizes vehicles and defenses.
+		Description: 轻甲远程反坦克单位，可使载具和防御建筑原子化。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
-		Attributes: • Atomizes up to 4 targets\n• Affected targets take damage over time\n• Affected targets have reduced speed and firepower\n• Can traverse water
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
+		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器
+		Attributes: • 原子化 准备 至 4 目标\n• 受影响的目标 承受 伤害 超过 时间\n• 受影响的目标 拥有 减少 速度 和 火力\n• 可穿越 水面
 	Mobile:
 		Speed: 72
 		Locomotor: lighthover
@@ -2636,12 +2637,12 @@ TPOD:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 281
 		Prerequisites: scrt, ~vehicles.tpod, ~techlevel.high
-		Description: Heavy assault walker with beam weapons.
+		Description: 装备光束武器的重型突击行者。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can crush concrete walls\n• Self repairs on Tiberium or other resources when not in combat
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 可碾压 混凝土墙\n• 自我修复 在泰伯利亚或资源上 当 无法 在 战斗
 	Voiced:
 		VoiceSet: TripodVoice
 	Valued:
@@ -2649,7 +2650,7 @@ TPOD:
 	Selectable:
 		Bounds: 1280, 2218, 0, -426
 	Tooltip:
-		Name: Annihilator Tripod
+		Name: 歼灭者三脚机甲
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2733,11 +2734,11 @@ RTPD:
 		BuildPaletteOrder: 282
 		Prerequisites: scrt, ~vehicles.reaper, ~techlevel.high
 	TooltipExtras:
-		Attributes: • Can crush concrete walls\n• Weapons empowered by Tiberium or other resources\n• Self repairs on Tiberium or other resources when not in combat
+		Attributes: • 可碾压 混凝土墙\n• 武器 在泰伯利亚上强化 或 资源\n• 自我修复 在泰伯利亚或资源上 当 无法 在 战斗
 	Valued:
 		Cost: 2200
 	Tooltip:
-		Name: Reaper Tripod
+		Name: 收割者三脚机甲
 	Health:
 		HP: 102000
 	SpawnActorOnDeath:
@@ -2826,16 +2827,16 @@ OBLT:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 283
 		Prerequisites: scrt, ~vehicles.harbinger, ~techlevel.high
-		Description: Heavy artillery that creates a charged particle stream through which it projects a powerful energy pulse, damaging everything it passes through.
+		Description: 重型火炮，制造带电粒子流并投射强力能量脉冲，摧毁沿途一切。
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Can traverse water
+		Strengths: • 擅长对付 建筑, 防御建筑, 轻型装甲, 步兵
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
+		Attributes: • 可穿越 水面
 	Valued:
 		Cost: 2300
 	Tooltip:
-		Name: Obliterator
+		Name: 抹消者
 	Selectable:
 		DecorationBounds: 1877, 1621, 0, -170
 	UpdatesPlayerStatistics:
@@ -2946,16 +2947,16 @@ NULL:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 291
 		Prerequisites: scrt, ~vehicles.scrin, ~rebel.allegiance, ~techlevel.high
-		Description: Heavy hover tank that disables enemy weapons and vision.
+		Description: 可禁用敌方武器和视野的重型悬浮坦克。
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Disables enemy weapons and vision\n• Can traverse water
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 禁用 敌方 武器s 和 视野\n• 可穿越 水面
 	Valued:
 		Cost: 1600
 	Tooltip:
-		Name: Nullifier
+		Name: 虚无者
 	Selectable:
 		DecorationBounds: 1877, 1621, 0, -170
 	UpdatesPlayerStatistics:
@@ -3024,15 +3025,15 @@ SMCV:
 		BuildPaletteOrder: 602
 		Prerequisites: vehicles.mcv, ~vehicles.scrin
 		IconPalette: chrome
-		Description: Deploys into another Colony Platform.
+		Description: 可展开为另一个殖民平台。
 		BuildDurationModifier: 50
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Special Ability: Deploy into Colony Platform\n• Can traverse water
+		Weaknesses: • 无武装
+		Attributes: • 特殊能力： 部署 in至 殖民地平台\n• 可穿越 水面
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Colony Ship
+		Name: 殖民舰
 	Selectable:
 		Priority: 4
 		Bounds: 1792, 1792
@@ -3090,16 +3091,16 @@ STMR:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 60
 		Prerequisites: ~aircraft.scrin, ~techlevel.medium
-		Description: Durable patrol craft.
+		Description: 耐用型巡逻艇。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings, Aircraft
-		Weaknesses: • Weak vs Defenses
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑, 飞行器
+		Weaknesses: • 不擅长对付 防御建筑
 	Valued:
 		Cost: 1650
 	Tooltip:
-		Name: Stormrider
-		GenericName: Aircraft
+		Name: 风暴骑士
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3229,16 +3230,16 @@ TORM:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 61
 		Prerequisites: ~aircraft.scrin, ~techlevel.medium
-		Description: Small anti-vehicle harrasser aircraft.
+		Description: 小型反载具骚扰飞行器。
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Vehicles, Defenses, Aircraft
-		Weaknesses: • Weak vs Infantry
+		Strengths: • 擅长对付载具, 防御建筑, 飞行器
+		Weaknesses: • 不擅长对付步兵
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: Tormentor
-		GenericName: Aircraft
+		Name: 折磨者
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3372,17 +3373,17 @@ ENRV:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 110
 		Prerequisites: scrt, ~aircraft.traveler, ~techlevel.high
-		Description: Fast attack craft that creates a focused suppression field.
+		Description: 快速攻击艇，可制造聚焦压制场。
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: • Strong vs Vehicles, Defenses, Aircraft
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Slows targets
+		Strengths: • 擅长对付载具, 防御建筑, 飞行器
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 减速 目标
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Enervator
-		GenericName: Aircraft
+		Name: 衰弱者
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3509,18 +3510,18 @@ DEVA:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 111
 		Prerequisites: scrt, ~aircraft.scrin, ~techlevel.high
-		Description: Long-range siege warship.
+		Description: 远程攻城战舰。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器\n• 难以命中移动目标
 	Voiced:
 		VoiceSet: DevastatorVoice
 	Valued:
 		Cost: 2400
 	Tooltip:
-		Name: Devastator Warship
-		GenericName: Aircraft
+		Name: 毁灭者战舰
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3650,19 +3651,19 @@ PAC:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 112
 		Prerequisites: sign, scrt, ~aircraft.scrin, ~techlevel.high
-		Description: Warship that launches a squadron of Invader assault craft.
+		Description: 可发射一队入侵者攻击艇的战舰。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Weak vs Buildings, Defenses
-		Attributes: • Invaders only targetable by static anti-air defenses
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Weaknesses: • 不擅长对付 建筑, 防御建筑
+		Attributes: • 入侵者 专属 目标可 增加 固定 反-空中 防御建筑
 	Voiced:
 		VoiceSet: PlanetaryAssaultCarrierVoice
 	Valued:
 		Cost: 2800
 	Tooltip:
-		Name: Planetary Assault Carrier
-		GenericName: Aircraft
+		Name: 行星突击航母
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3798,7 +3799,7 @@ INVA:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: Invader
+		Name: 入侵者
 	Health:
 		HP: 22000
 	RevealsShroud:
@@ -3885,20 +3886,20 @@ MSHP:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 113
 		Prerequisites: sign, scrt, ~aircraft.scrin, ~techlevel.high
-		Description: Huge craft with powerful anti-structure beam weapon and secondary plasma weapons.
+		Description: 装备强力反建筑光束武器和辅助等离子武器的巨型舰船。
 		IconPalette: chromes
 		BuildLimit: 1
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft\n• Long charge time before firing anti-structure weapon\n• Cannot move while firing
-		Attributes: • Maximum 1 can be built\n• Can create wormholes\n• Can recharge nearby Stormriders/Enervators
+		Strengths: • 擅长对付 建筑, 防御建筑, 重型装甲, 轻型装甲, 步兵
+		Weaknesses: • 无法攻击飞行器\n• 长 充能 时间 之前 开火 反建筑武器\n• 无法移动 当 开火
+		Attributes: • 最多建造1个\n• 可 创造虫洞\n• 可充能 附近 风暴骑士/衰弱者
 	Voiced:
 		VoiceSet: MothershipVoice
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Mothership
-		GenericName: Aircraft
+		Name: 母舰
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4200,7 +4201,7 @@ STMR.Husk:
 	Inherits: ^PlaneHusk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Stormrider
+		Name: 风暴骑士
 	Aircraft:
 		TurnSpeed: 16
 		Speed: 146
@@ -4241,7 +4242,7 @@ TORM.Husk:
 	Inherits: ^PlaneHusk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Tormentor
+		Name: 折磨者
 	Aircraft:
 		TurnSpeed: 28
 		Speed: 201
@@ -4280,8 +4281,8 @@ ENRV.Husk:
 	Inherits: ^HelicopterHusk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Enervator
-		GenericName: Destroyed Aircraft
+		Name: 衰弱者
+		GenericName: 被毁飞行器
 	Aircraft:
 		TurnSpeed: 14
 		Speed: 170
@@ -4322,8 +4323,8 @@ ENRV.Husk.EMP:
 DEVA.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Devastator Warship
-		GenericName: Destroyed Aircraft
+		Name: 毁灭者战舰
+		GenericName: 被毁飞行器
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 35
@@ -4375,8 +4376,8 @@ DEVA.Husk.Ground:
 PAC.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Planetary Assault Carrier
-		GenericName: Destroyed Aircraft
+		Name: 行星突击航母
+		GenericName: 被毁飞行器
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 30
@@ -4431,8 +4432,8 @@ MSHP.Husk:
 	Inherits: ^HelicopterHusk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Mothership
-		GenericName: Destroyed Aircraft
+		Name: 母舰
+		GenericName: 被毁飞行器
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 30
@@ -4505,15 +4506,15 @@ SWAL:
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 30
-		Prerequisites: anypower, ~structures.scrin
-		Description: • Stops units\n• Blocks enemy fire\n• Regenerates over time
+		Prerequisites: anypower, ~建筑s.scrin
+		Description: • 阻挡单位\n• 阻挡敌方火力\n• 随时间再生
 		IconPalette: chromes
 	Valued:
 		Cost: 200
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Biometallic Wall
+		Name: 生物金属墙
 	SoundOnDamageTransition:
 		DamagedSounds: crmble2.aud
 		DestroyedSounds: kaboom30.aud
@@ -4555,7 +4556,7 @@ SFAC:
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
 		IconPalette: chrometd
-		Description: Produces structures.
+		Description: 建造其他建筑。
 	Health:
 		HP: 150000
 	Armor:
@@ -4570,7 +4571,7 @@ SFAC:
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Colony Platform
+		Name: 殖民平台
 	BaseBuilding:
 	Transforms:
 		RequiresCondition: factundeploy
@@ -4601,19 +4602,19 @@ SFAC:
 	ValidFactions:
 		Factions: scrin, reaper, traveler, harbinger, collector
 	ProvidesPrerequisite@scrin:
-		Prerequisite: structures.scrin
+		Prerequisite: 建筑s.scrin
 	ProvidesPrerequisiteValidatedFaction@reaper:
 		Factions: reaper
-		Prerequisite: structures.reaper
+		Prerequisite: 建筑s.reaper
 	ProvidesPrerequisiteValidatedFaction@traveler:
 		Factions: traveler
-		Prerequisite: structures.traveler
+		Prerequisite: 建筑s.traveler
 	ProvidesPrerequisiteValidatedFaction@harbinger:
 		Factions: harbinger
-		Prerequisite: structures.harbinger
+		Prerequisite: 建筑s.harbinger
 	ProvidesPrerequisiteValidatedFaction@collector:
 		Factions: collector
-		Prerequisite: structures.collector
+		Prerequisite: 建筑s.collector
 	ProvidesPrerequisite@anyconyard:
 		Prerequisite: anyconyard
 	BaseProvider:
@@ -4631,7 +4632,7 @@ SFAC:
 		RequiresCondition: !build-incomplete && !chrono-vortex
 	Power:
 		Amount: 0
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@建筑name:
 	ConyardChronoReturn:
 		ReturnOriginalActorOnCondition: build-incomplete
 		Condition: chrono-vortex
@@ -4658,13 +4659,13 @@ REAC:
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 10
-		Prerequisites: ~structures.scrin
+		Prerequisites: ~建筑s.scrin
 		IconPalette: chromes
-		Description: Provides power for other structures.
+		Description: 为基地其他建筑提供电力。
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Reactor
+		Name: 反应堆
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -4683,7 +4684,7 @@ REAC:
 	ScalePowerWithHealth:
 	Sellable:
 		RequiresCondition: !build-incomplete && !c4 && !being-captured && !being-warped && !hacked && !discpowerdrain
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@建筑name:
 	UpdatesBuildOrder:
 		Limit: 2
 
@@ -4700,13 +4701,13 @@ REA2:
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 110
-		Prerequisites: anyradar, ~structures.scrin, ~techlevel.medium
+		Prerequisites: anyradar, ~建筑s.scrin, ~techlevel.medium
 		IconPalette: chrome
-		Description: Provides double the power of a standard Reactor.
+		Description: 提供标准反应堆两倍的电力。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Advanced Reactor
+		Name: 高级反应堆
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -4722,7 +4723,7 @@ REA2:
 	WithBuildingBib:
 	Power:
 		Amount: 200
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@建筑name:
 	ScalePowerWithHealth:
 	Sellable:
 		RequiresCondition: !build-incomplete && !c4 && !being-captured && !being-warped && !hacked && !discpowerdrain
@@ -4748,13 +4749,13 @@ PROC.SCRIN:
 	CustomSellValue:
 		Value: 400
 	Tooltip:
-		Name: Refinery
+		Name: 精炼厂
 	Buildable:
 		BuildPaletteOrder: 60
-		Prerequisites: anypower, ~structures.scrin
+		Prerequisites: anypower, ~建筑s.scrin
 		Queue: BuildingSQ, BuildingMQ
 		IconPalette: chromes
-		Description: Processes raw Tiberium, Ore and Gems into credits.
+		Description: 精炼泰伯利亚矿、矿石和宝石，将其转化为资金。
 		BuildDuration: 1400
 	Building:
 		Footprint: _x_ xxx +++ ===
@@ -4808,7 +4809,7 @@ PROC.SCRIN:
 		Facing: 64
 	Power:
 		Amount: -30
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@建筑name:
 	ProvidesPrerequisite@anyrefinery:
 		Prerequisite: anyrefinery
 	CashHackable:
@@ -4827,13 +4828,13 @@ PORT:
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 20
-		Prerequisites: anypower, ~structures.scrin
+		Prerequisites: anypower, ~建筑s.scrin
 		IconPalette: chromes
-		Description: Produces infantry.
+		Description: 训练步兵单位。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Portal
+		Name: 传送门
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -4891,7 +4892,7 @@ PORT:
 		Prerequisite: infantry.intruder
 	Power:
 		Amount: -20
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@建筑name:
 	Targetable@INFILTRATION:
 		RequiresCondition: !being-warped
 		TargetTypes: VetInfiltrate, StealTechInfiltrate
@@ -4923,13 +4924,13 @@ WSPH:
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 80
-		Prerequisites: proc.scrin, ~structures.scrin, ~techlevel.low
+		Prerequisites: proc.scrin, ~建筑s.scrin, ~techlevel.low
 		IconPalette: chromes
-		Description: Produces vehicles.
+		Description: 建造各类载具。
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Warp Sphere
+		Name: 曲速球体
 	Building:
 		Footprint: xxx xxx +++
 		Dimensions: 3,3
@@ -4983,7 +4984,7 @@ WSPH:
 		TargetTypes: VetInfiltrate, StealTechInfiltrate
 	Power:
 		Amount: -30
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@建筑name:
 	InfiltrateToCreateProxyActor@spy:
 		Proxy: vehicles.upgraded
 		Types: VetInfiltrate
@@ -5018,15 +5019,15 @@ NERV:
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 90
-		Prerequisites: proc.scrin, ~structures.scrin, ~techlevel.medium
-		Description: Provides an overview of the battlefield.
+		Prerequisites: proc.scrin, ~建筑s.scrin, ~techlevel.medium
+		Description: 提供战场视野。
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war
+		Attributes: • 需要电力才能运作\n• 在战争迷雾中探测附近敌方载具、飞行器和建筑
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Nerve Center
+		Name: 神经中心
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -5067,7 +5068,7 @@ NERV:
 		Amount: -40
 	ValidFactions:
 		Factions: scrin, reaper, traveler, harbinger, collector
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@建筑name:
 		RequiresCondition: !tech-locked
 	ProvidesPrerequisite@anyradar:
 		Prerequisite: anyradar
@@ -5123,13 +5124,13 @@ SCRT:
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 150
-		Prerequisites: vehicles.any, anyradar, ~structures.scrin, ~techlevel.high
-		Description: Provides Scrin advanced technologies.
+		Prerequisites: vehicles.any, anyradar, ~建筑s.scrin, ~techlevel.high
+		Description: 提供思金先进科技。
 		IconPalette: chromes
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Scrin Tech Center
+		Name: 思金科技中心
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -5156,7 +5157,7 @@ SCRT:
 		Amount: -150
 	ValidFactions:
 		Factions: scrin, reaper, traveler, harbinger, collector
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@建筑name:
 		RequiresCondition: !tech-locked
 	ProvidesPrerequisite@anytechcenter:
 		Prerequisite: techcenter.any
@@ -5184,13 +5185,13 @@ GRAV:
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 130
-		Prerequisites: radarorrepair, ~structures.scrin, ~techlevel.medium
-		Description: Produces Scrin aircraft.
+		Prerequisites: radarorrepair, ~建筑s.scrin, ~techlevel.medium
+		Description: 生产思金飞行器。
 		IconPalette: chromes
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Gravity Stabilizer
+		Name: 重力稳定器
 	Selectable:
 		Bounds: 3072, 2560, 0, -128
 	Building:
@@ -5226,7 +5227,7 @@ GRAV:
 	SupportPowerChargeBar:
 	Power:
 		Amount: -20
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@建筑name:
 	WithBuildingBib:
 	WithRestartableIdleOverlay@orb:
 		RequiresCondition: !build-incomplete && !resupplying
@@ -5309,12 +5310,12 @@ SIGN:
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
-		Prerequisites: ~structures.scrin, scrt, ~techlevel.high
-		Description: Provides access to the most powerful Scrin units and technology.
+		Prerequisites: ~建筑s.scrin, scrt, ~techlevel.high
+		Description: 提供最强大的思金单位和科技。
 		BuildLimit: 1
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
+		Attributes: • 最多建造1个\n• 无法被占领或黑客入侵
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -5323,7 +5324,7 @@ SIGN:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Signal Transmitter
+		Name: 信号发射器
 	Power:
 		Amount: -150
 	ProvidesPrerequisite@Name:
@@ -5351,15 +5352,15 @@ SREP:
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 100
-		Prerequisites: vehicles.scrin, ~structures.scrin, ~techlevel.low
-		Description: Repairs vehicles and aircraft.
+		Prerequisites: vehicles.scrin, ~建筑s.scrin, ~techlevel.low
+		Description: 维修载具和飞行器。
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: • Nearby helipads/airfields will repair landed aircraft\n• Can retrofit existing units with upgrades
+		Attributes: • 附近停机坪/机场将维修降落的飞行器\n• 可为已有单位加装升级
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Regeneration Bay
+		Name: 再生湾
 	Building:
 		Footprint: _+_ +++ _+_
 		Dimensions: 3,3
@@ -5400,7 +5401,7 @@ SREP:
 		RequiresCondition: !resupplying && !build-incomplete && !c4 && !being-captured && !being-warped && !hacked
 	Power:
 		Amount: -30
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@建筑name:
 	ProvidesPrerequisite@repair:
 		Prerequisite: repair
 	ProvidesPrerequisite@radarorrepair:
@@ -5420,13 +5421,13 @@ SILO.SCRIN:
 	Valued:
 		Cost: 150
 	Tooltip:
-		Name: Silo
+		Name: 矿仓
 	Buildable:
 		BuildPaletteOrder: 35
-		Prerequisites: proc.scrin, ~structures.scrin
+		Prerequisites: proc.scrin, ~建筑s.scrin
 		Queue: DefenseSQ, DefenseMQ
 		IconPalette: chromes
-		Description: Stores processed Tiberium, Ore and Gems.
+		Description: 储存已精炼的泰伯利亚矿、矿石和宝石。
 	-GivesBuildableArea:
 	Health:
 		HP: 30000
@@ -5465,16 +5466,16 @@ MANI:
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 130
-		Prerequisites: scrt, ~structures.scrin, ~techlevel.high
+		Prerequisites: scrt, ~建筑s.scrin, ~techlevel.high
 		BuildLimit: 1
 		IconPalette: chrome
-		Description: Slows enemy unit movement and rate of fire.
+		Description: 降低敌方单位移动速度和射速。
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Suppression Field
+		Attributes: • 最多建造1个\n• 需要电力才能运作\n• 特殊能力： 压制力场
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Field Manipulator
+		Name: 场操纵器
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -5499,7 +5500,7 @@ MANI:
 		Amount: -200
 	MustBeDestroyed:
 		RequiredForShortGame: false
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@建筑name:
 	InfiltrateForSupportPowerReset:
 		Types: ResetSupportPowerInfiltrate
 		InfiltrationNotification: BuildingInfiltrated
@@ -5522,16 +5523,16 @@ RFGN:
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 140
-		Prerequisites: scrt, ~structures.scrin, ~techlevel.unrestricted
+		Prerequisites: scrt, ~建筑s.scrin, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Provides the Rift superweapon power.
+		Description: 提供裂隙超级武器能力。
 		IconPalette: chrome
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Rift
+		Attributes: • 最多建造1个\n• 需要电力才能运作\n• 特殊能力： 裂缝
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Rift Generator
+		Name: 裂隙发生器
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -5564,7 +5565,7 @@ RFGN:
 	SupportPowerChargeBar:
 	Power:
 		Amount: -200
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@建筑name:
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	InfiltrateForSupportPowerReset:
@@ -5586,19 +5587,19 @@ PTUR:
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 60
-		Prerequisites: port, ~structures.scrin, ~techlevel.low
-		Description: Anti-infantry base defense.
+		Prerequisites: port, ~建筑s.scrin, ~techlevel.low
+		Description: 基地反步兵防御建筑。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Detects cloaked units
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 探测隐形单位
 	Valued:
 		Cost: 725
 	CustomSellValue:
 		Value: 250
 	Tooltip:
-		Name: Plasma Cannon
+		Name: 等离子炮
 	Selectable:
 		DecorationBounds: 1024, 1194, 0, -256
 	Building:
@@ -5652,17 +5653,17 @@ SHAR:
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 90
-		Prerequisites: anyradar, ~structures.scrin, ~techlevel.medium
-		Description: Anti-aircraft base defense.
+		Prerequisites: anyradar, ~建筑s.scrin, ~techlevel.medium
+		Description: 基地对空防御建筑。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft
-		Weaknesses: • Cannot attack ground units
-		Attributes: • Requires power to operate\n• Detects cloaked aircraft
+		Strengths: • 擅长对付飞行器
+		Weaknesses: • 无法攻击地面单位
+		Attributes: • 需要电力才能运作\n• 探测隐形飞行器
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Shard Launcher
+		Name: 碎片发射器
 	Selectable:
 		DecorationBounds: 1024, 1877, 0, -469
 	Health:
@@ -5718,17 +5719,17 @@ SCOL:
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 80
-		Prerequisites: anyradar, ~structures.scrin, ~techlevel.medium
-		Description: Advanced base defense.
+		Prerequisites: anyradar, ~建筑s.scrin, ~techlevel.medium
+		Description: 高级基地防御。
 		IconPalette: chrome
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Requires power to operate\n• Detects cloaked units
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 需要电力才能运作\n• 探测隐形单位
 	Valued:
 		Cost: 1400
 	Tooltip:
-		Name: Storm Column
+		Name: 风暴柱
 	Selectable:
 		DecorationBounds: 1280, 2048, 0, -597
 	Health:
@@ -5773,7 +5774,7 @@ STRM:
 	HiddenUnderFog:
 		Type: CenterPosition
 	Tooltip:
-		Name: Ion Storm
+		Name: 离子风暴
 	# required for death animation
 	Health:
 		HP: 1
@@ -5883,7 +5884,7 @@ STRM2:
 SSPK:
 	Inherits: SCOL
 	Tooltip:
-		Name: Storm Spike
+		Name: 风暴尖塔
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	-Sellable:
@@ -5971,10 +5972,10 @@ VSPK:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Voidspike
+		Name: 虚空尖塔
 	TooltipExtras:
-		Attributes: • Corrupts resources\n• Damages nearby enemies over time\n• Direct damage is reflected back to the attacker
-		Description: Gradually transforms nearby resources into Black Tiberium, which is devoid of most of its useful properties.
+		Attributes: • 腐化 资源\n• 伤害 附近 敌人 超过 时间\n• 直接 伤害 反弹回攻击者
+		Description: 逐渐将附近资源转化为失去大部分效用的黑色泰伯利亚。
 	RevealsShroud:
 		MinRange: 6c0
 		Range: 8c0
@@ -6028,10 +6029,10 @@ ISPK:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Ichor Spike
+		Name: 灵液尖塔
 	TooltipExtras:
-		Attributes: • Enriches Tiberium trees\n• Empowers units with Resource Conversion upgrade
-		Description: Enriches nearby Tiberium trees causing them to seed Tiberium more quickly.
+		Attributes: • 富集 泰伯利亚树\n• 强化 单位 需 资源转换 升级
+		Description: 滋养附近的泰伯利亚树，使其更快播撒泰伯利亚。
 	RevealsShroud:
 		MinRange: 6c0
 		Range: 8c0
@@ -6078,10 +6079,10 @@ CSPK:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Colony Spike
+		Name: 殖民尖塔
 	TooltipExtras:
-		Attributes: • Produces non-defense buildings\n• Allows non-defense buildings to be built nearby once fully charged
-		Description: Enables production of non-defense buildings.
+		Attributes: • 生产 非防御建筑\n• 允许非-防御 建筑 至 被 建造 附近 完全充能后
+		Description: 允许生产非防御建筑。
 	RevealsShroud:
 		MinRange: 6c0
 		Range: 8c0
@@ -6094,7 +6095,7 @@ CSPK:
 		TerrainTypes: Clear,Road
 		AllowPlacementOnResources: false
 	GivesBuildableArea:
-		AreaTypes: building
+		AreaTypes: 建筑
 	BaseProvider:
 		Range: 6c0
 		RequiresCondition: charged
@@ -6128,19 +6129,19 @@ CSPK:
 	ProductionBar@MQBLD:
 		ProductionType: BuildingMQ
 	ProvidesPrerequisite@scrin:
-		Prerequisite: structures.scrin
+		Prerequisite: 建筑s.scrin
 	ProvidesPrerequisiteValidatedFaction@reaper:
 		Factions: reaper
-		Prerequisite: structures.reaper
+		Prerequisite: 建筑s.reaper
 	ProvidesPrerequisiteValidatedFaction@traveler:
 		Factions: traveler
-		Prerequisite: structures.traveler
+		Prerequisite: 建筑s.traveler
 	ProvidesPrerequisiteValidatedFaction@harbinger:
 		Factions: harbinger
-		Prerequisite: structures.harbinger
+		Prerequisite: 建筑s.harbinger
 	ProvidesPrerequisiteValidatedFaction@collector:
 		Factions: collector
-		Prerequisite: structures.collector
+		Prerequisite: 建筑s.collector
 
 #
 # ---- misc
@@ -6154,12 +6155,12 @@ BUZZ:
 	HiddenUnderFog:
 		Type: CenterPosition
 	Tooltip:
-		Name: Buzzer Swarm
+		Name: 蜂群
 	TooltipExtras:
-		Description: Swarm of biometallic shards.
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Untargetable\n• Blinds enemies
+		Description: 生物金属碎片群。
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 无法被选中\n• 致盲 敌人
 	RevealsShroud:
 		MinRange: 1c0
 		Range: 6c0
@@ -6230,7 +6231,7 @@ MSPK:
 	Inherits@selection: ^SelectableSupportUnit
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Tooltip:
-		Name: Mind Spark
+		Name: 心灵火花
 	RenderSprites:
 		Palette: caneon
 	WithSpriteBody:
@@ -6282,10 +6283,10 @@ GRCL:
 	HiddenUnderFog:
 		Type: CenterPosition
 	Tooltip:
-		Name: Greater Coalescence
+		Name: 大凝聚
 	TooltipExtras:
-		Description: Pulsing biomass that heals allies and feeds on enemies.
-		Attributes: • Heals nearby allies\n• Slows and drains health from enemies\n• Disables power plants
+		Description: 脉动生物质，治疗盟友并吞噬敌人。
+		Attributes: • 治疗 附近 友军\n• 减速 和 吸取敌人生命值\n• 禁用 电力 发电厂
 	RenderSprites:
 		Palette: caneon
 	WithMakeAnimation:
@@ -6356,9 +6357,9 @@ GRCL:
 TBCL:
 	Inherits: GRCL
 	Tooltip:
-		Name: Tiberium Coalescence
+		Name: 泰伯利亚凝聚体
 	TooltipExtras:
-		Description: Pulsing biomass that damages nearby units.
+		Description: 脉动生物质，伤害附近单位。
 		-Attributes:
 	PeriodicExplosion:
 		Weapon: TiberiumCoalescence
@@ -6558,7 +6559,7 @@ IonSurgeFade:
 	Inherits@2: ^SpriteActor
 	Inherits@shape: ^1x1Shape
 	Tooltip:
-		Name: Wormhole
+		Name: 虫洞
 	RenderSprites:
 		PlayerPalette: playerscrin
 	WithSpriteBody:
@@ -6610,10 +6611,10 @@ REBELGATEWAY:
 	Inherits@SelectableBuilding: ^SelectableBuilding
 	-Interactable:
 	Tooltip:
-		Name: Gateway
+		Name: 传送门
 	TooltipExtras:
-		Attributes: • Can be powered down to disable, or sold to remove\n• Structures must be manually linked for gateway to function
-		Description: Acts as a remote exit for linked ground unit production structures
+		Attributes: • 可被击落 至 禁用, 或出售移除\n• 建筑 需手动连接至网关才能运作
+		Description: 作为连接的地面单位生产建筑的远程出口。
 	RenderSprites:
 		Image: wormholelg
 	Selectable:

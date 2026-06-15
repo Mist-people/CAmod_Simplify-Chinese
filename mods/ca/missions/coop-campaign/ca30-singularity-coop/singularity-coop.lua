@@ -1,4 +1,5 @@
 
+-- Simplified Chinese translation by lsxy, 2026.06.
 SetupPlayers = function()
 	Multi0 = Player.GetPlayer("Multi0")
 	Multi1 = Player.GetPlayer("Multi1")
@@ -53,7 +54,7 @@ FlipSlaveFaction = function(player, killer)
 		if ScrinDefenseBuff1.IsDead and ScrinDefenseBuff2.IsDead then
 			InitHackers(HackersDelay[Difficulty])
 		end
-		Notification("Nod forces have been released from Scrin control.")
+		Notification("Nod部队已从思金控制中解放。")
 		MediaCA.PlaySound(MissionDir .. "/c_nodreleased.aud", 2)
 	elseif player == SovietSlaves then
 		SovietsFreed = true
@@ -61,7 +62,7 @@ FlipSlaveFaction = function(player, killer)
 		attackPath = { WestAttackNode1.Location, WormholeWP.Location }
 		InitAttackSquad(Squads.ScrinWest, Scrin)
 		InitMADTankAttack()
-		Notification("Soviet forces have been released from Scrin control.")
+		Notification("苏联部队已从思金控制中解放。")
 		MediaCA.PlaySound(MissionDir .. "/c_sovietsreleased.aud", 2)
 	elseif player == AlliedSlaves then
 		AlliesFreed = true
@@ -69,7 +70,7 @@ FlipSlaveFaction = function(player, killer)
 		attackPath = { CenterAttackNode1.Location, WormholeWP.Location }
 		InitAttackSquad(Squads.ScrinCenter, Scrin)
 		InitChronoTanks()
-		Notification("Allied forces have been released from Scrin control.")
+		Notification("盟军部队已从思金控制中解放。")
 		MediaCA.PlaySound(MissionDir .. "/c_alliesreleased.aud", 2)
 	end
 

@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 
@@ -5,7 +6,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, treachery.lua
 	MissionData:
-		Briefing: We have been betrayed! Our recent losses were enough for the coward General Yegorov to show his true colours. He, along with an unknown number of troops loyal to him, have defected to the Allies.\n\nHe was not counting on hostilities with the Brotherhood of Nod ending so soon, and must now be feeling very nervous.\n\nHe deserves no mercy. Put an end to the traitor and anyone who tries to protect him.\n\nBoris believes he can kill the traitor by himself. If you don't share his confidence then the safer approach would be to find our abandoned base, build up a force, and overwhelm Yegorov's defenders.
+		Briefing: 我们被出卖了！最近的失利让懦夫叶戈罗夫将军露出了真面目。他与数量不明的追随者一同叛逃到了盟军那边。\n\n他没有料到我们与Nod兄弟会的敌对状态会这么快结束，现在一定感到坐立不安。\n\n他不配得到任何怜悯。消灭这个叛徒以及任何胆敢保护他的人。\n\n鲍里斯相信自己能独自干掉那个叛徒。如果你没有他那么自信，更稳妥的做法是找到我们遗弃的基地，集结兵力，然后碾压叶戈罗夫的守军。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

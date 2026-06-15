@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 	PaletteFromFile@terrain-temperat:
@@ -19,7 +20,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, subjugation.lua
 	MissionData:
-		Briefing: We have located the one known as Yuri. Cloistered and protected by his cybernetic and genetically engineered slaves, he has been using an enriched form of ichor to empower his already considerable psionic powers.\n\nHe must be stopped, but kept alive so that we may learn more of his experiments.\n\nWe believe the enriched ichor will be similarly effective at increasing the power of our Masterminds. To test this theory, capture Yuri's enrichment facilities. The enriched ichor will be consumed by the Mastermind who will then be capable of protecting your other units against Yuri's influence.\n\nOnce all of the available enriched ichor has been consumed, use whatever forces you have remaining, along with any you have enslaved, to assault and capture Yuri's command center.
+		Briefing: 我们已经找到了那个名为尤里的人。他躲藏在由他的机械化与基因工程奴隶的保护之下，一直在使用一种浓缩形式的灵液来增强其本就强大的精神力量。\n\n必须阻止他，但要留活口，以便我们能进一步研究他的实验。\n\n我们相信浓缩灵液同样能有效增强我们主脑的力量。为了验证这一理论，夺取尤里的浓缩设施。浓缩灵液将由主脑吸收，随后主脑将能够保护你的其他部队免受尤里的影响。\n\n一旦所有可用的浓缩灵液被吸收完毕，使用你剩余的全部部队，以及你所奴役的任何单位，进攻并占领尤里的指挥中心。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	ScriptLobbyDropdown@RESPAWN:

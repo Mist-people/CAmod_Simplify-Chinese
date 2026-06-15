@@ -2,58 +2,58 @@ Chrome:
 	ca|chrome.yaml
 
 ChromeLayout:
-	common|chrome/ingame.yaml
-	common|chrome/ingame-chat.yaml
+	ca|chrome/common/ingame.yaml
+	ca|chrome/common/ingame-chat.yaml
 	ca|chrome/ingame-transients.yaml
-	common|chrome/ingame-fmvplayer.yaml
-	common|chrome/ingame-info.yaml
-	common|chrome/ingame-infoscripterror.yaml
-	common|chrome/ingame-infobriefing.yaml
-	common|chrome/ingame-infoobjectives.yaml
+	ca|chrome/common/ingame-fmvplayer.yaml
+	ca|chrome/common/ingame-info.yaml
+	ca|chrome/common/ingame-infoscripterror.yaml
+	ca|chrome/common/ingame-infobriefing.yaml
+	ca|chrome/common/ingame-infoobjectives.yaml
 	ca|chrome/ingame-infostats.yaml
-	common|chrome/ingame-info-lobby-options.yaml
+	ca|chrome/common/ingame-info-lobby-options.yaml
 	ca|chrome/ingame-menu.yaml
 	ca|chrome/ingame-observer.yaml
 	ca|chrome/ingame-player.yaml
-	common|chrome/ingame-perf.yaml
-	common|chrome/ingame-debug.yaml
-	common|chrome/ingame-debuginfo.yaml
-	common|chrome/ingame-infochat.yaml
+	ca|chrome/common/ingame-perf.yaml
+	ca|chrome/common/ingame-debug.yaml
+	ca|chrome/common/ingame-debuginfo.yaml
+	ca|chrome/common/ingame-infochat.yaml
 	ca|chrome/mainmenu.yaml
-	common|chrome/settings.yaml
+	ca|chrome/common/settings.yaml
 	ca|chrome/settings-display.yaml
-	common|chrome/settings-audio.yaml
-	common|chrome/settings-input.yaml
-	common|chrome/settings-hotkeys.yaml
-	common|chrome/settings-advanced.yaml
-	common|chrome/credits.yaml
-	common|chrome/lobby.yaml
-	common|chrome/lobby-mappreview.yaml
-	common|chrome/lobby-players.yaml
+	ca|chrome/common/settings-audio.yaml
+	ca|chrome/common/settings-input.yaml
+	ca|chrome/common/settings-hotkeys.yaml
+	ca|chrome/common/settings-advanced.yaml
+	ca|chrome/common/credits.yaml
+	ca|chrome/common/lobby.yaml
+	ca|chrome/common/lobby-mappreview.yaml
+	ca|chrome/common/lobby-players.yaml
 	ca|chrome/lobby-options.yaml
-	common|chrome/lobby-music.yaml
-	common|chrome/lobby-servers.yaml
-	common|chrome/lobby-kickdialogs.yaml
+	ca|chrome/common/lobby-music.yaml
+	ca|chrome/common/lobby-servers.yaml
+	ca|chrome/common/lobby-kickdialogs.yaml
 	ca|chrome/color-picker.yaml
-	common|chrome/mainmenu-prompts.yaml
-	common|chrome/map-chooser.yaml
-	common|chrome/multiplayer-browser.yaml
-	common|chrome/multiplayer-browserpanels.yaml
-	common|chrome/multiplayer-createserver.yaml
-	common|chrome/multiplayer-directconnect.yaml
-	common|chrome/connection.yaml
-	common|chrome/replaybrowser.yaml
-	common|chrome/gamesave-browser.yaml
+	ca|chrome/common/mainmenu-prompts.yaml
+	ca|chrome/common/map-chooser.yaml
+	ca|chrome/common/multiplayer-browser.yaml
+	ca|chrome/common/multiplayer-browserpanels.yaml
+	ca|chrome/common/multiplayer-createserver.yaml
+	ca|chrome/common/multiplayer-directconnect.yaml
+	ca|chrome/common/connection.yaml
+	ca|chrome/common/replaybrowser.yaml
+	ca|chrome/common/gamesave-browser.yaml
 	ca|chrome/gamesave-loading.yaml
-	common|chrome/dropdowns.yaml
-	common|chrome/musicplayer.yaml
+	ca|chrome/common/dropdowns.yaml
+	ca|chrome/common/musicplayer.yaml
 	ca|chrome/tooltips.yaml
-	common|chrome/assetbrowser.yaml
+	ca|chrome/common/assetbrowser.yaml
 	ca|chrome/missionbrowser.yaml
-	common|chrome/confirmation-dialogs.yaml
-	common|chrome/editor.yaml
-	common|chrome/playerprofile.yaml
-	common|chrome/text-notifications.yaml
+	ca|chrome/common/confirmation-dialogs.yaml
+	ca|chrome/common/editor.yaml
+	ca|chrome/common/playerprofile.yaml
+	ca|chrome/common/text-notifications.yaml
 	ca|chrome/encyclopedia.yaml
 
 ChromeMetrics:
@@ -62,39 +62,39 @@ ChromeMetrics:
 
 Fonts:
 	Tiny:
-		Font: ca|bombardreg.ttf
+		Font: ca|fonts/SourceHanSansSC-Regular.otf
 		Size: 12
 		Ascender: 8
 	TinyBold:
-		Font: ca|bombardreg.ttf
+		Font: ca|fonts/SourceHanSansSC-Regular.otf
 		Size: 12
 		Ascender: 8
 	Small:
-		Font: ca|bombardreg.ttf
+		Font: ca|fonts/SourceHanSansSC-Regular.otf
 		Size: 14
 		Ascender: 9
 	Regular:
-		Font: ca|bombardreg.ttf
+		Font: ca|fonts/SourceHanSansSC-Regular.otf
 		Size: 16
 		Ascender: 11
 	Bold:
-		Font: ca|bombard.ttf
+		Font: ca|fonts/SourceHanSansSC-Medium.otf
 		Size: 18
 		Ascender: 11
 	Medium:
-		Font: ca|bombardreg.ttf
+		Font: ca|fonts/SourceHanSansSC-Regular.otf
 		Size: 20
 		Ascender: 14
 	MediumBold:
-		Font: ca|bombard.ttf
+		Font: ca|fonts/SourceHanSansSC-Medium.otf
 		Size: 20
 		Ascender: 14
 	BigBold:
-		Font: ca|bombard.ttf
+		Font: ca|fonts/SourceHanSansSC-Medium.otf
 		Size: 26
 		Ascender: 18
 	Title:
-		Font: ca|bombard.ttf
+		Font: ca|fonts/SourceHanSansSC-Medium.otf
 		Size: 32
 		Ascender: 26
 

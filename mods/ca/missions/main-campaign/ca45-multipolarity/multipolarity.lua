@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca45-multipolarity"
 
 Utils.Do({ "vhard", "brutal" }, function(k)
@@ -174,10 +175,10 @@ WorldLoaded = function()
 
 	MissionPlayersDefenseValue = 0
 
-	ObjectiveSecureBase = Greece.AddObjective("Secure the decommissioned Allied base.")
+	ObjectiveSecureBase = Greece.AddObjective("确保已废弃的盟军基地安全。")
 
 	Trigger.AfterDelay(DateTime.Seconds(6), function()
-		Media.DisplayMessage("This area is under GDI jurisdiction. Remove your forces immediately commander. If you advance, we will open fire.", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("此区域属GDI管辖。立即撤走你的部队，指挥官。如果你继续前进，我们将开火。", "霍桑将军", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_jurisdiction.aud", 2)
 	end)
 
@@ -201,7 +202,7 @@ WorldLoaded = function()
 				Greece.MarkCompletedObjective(ObjectiveSecureBase)
 
 				Trigger.AfterDelay(DateTime.Seconds(3), function()
-					Media.DisplayMessage("You will pay dearly for this transgression! Prepare to witness the full force of the GDI war machine!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+					Media.DisplayMessage("你将为此越界付出沉重代价！准备见证GDI战争机器的全部力量吧！", "霍桑将军", HSLColor.FromHex("F2CF74"))
 					MediaCA.PlaySound(MissionDir .. "/hth_paydearly.aud", 2)
 				end)
 
@@ -245,7 +246,7 @@ WorldLoaded = function()
 			InitCaptureHQObjective()
 			if not FinalTaunt then
 				FinalTaunt = true
-				Media.DisplayMessage("You will not stop me from bringing Kane and his minions to justice!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+				Media.DisplayMessage("你阻止不了我将凯恩及其走狗绳之以法！", "霍桑将军", HSLColor.FromHex("F2CF74"))
 				MediaCA.PlaySound(MissionDir .. "/hth_notstop.aud", 2)
 			end
 		end
@@ -411,7 +412,7 @@ FlipAlliedBase = function()
 	Trigger.AfterDelay(McvDelayTime[Difficulty], function()
 		Beacon.New(Greece, McvDest.CenterPosition)
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("增援已抵达。")
 		DoMcvArrival()
 
 		Utils.Do(MissionPlayers, function(p)
@@ -503,10 +504,10 @@ HawthorneClaimSovietBase = function()
 	HawthorneClaimedSovietBase = true
 
 	if NodBaseFlipped then
-		Media.DisplayMessage("Two can play that game commander. I think we can put that Soviet equipment to good use!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("这套把戏谁都会，指挥官。我想我们可以好好利用那批苏联装备！", "霍桑将军", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_sovequip.aud", 2)
 	else
-		Media.DisplayMessage("I think it's high time I got some use out of that old Soviet base!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("我想是时候让那个旧苏联基地派上用场了！", "霍桑将军", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_sovequipauto.aud", 2)
 	end
 
@@ -558,10 +559,10 @@ HawthorneClaimNodBase = function()
 	HawthorneClaimedNodBase = true
 
 	if SovietBaseFlipped then
-		Media.DisplayMessage("Two can play that game commander. I think we can put that Nod equipment to good use!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("这套把戏谁都会，指挥官。我想我们可以好好利用那批Nod装备！", "霍桑将军", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_nodequip.aud", 2)
 	else
-		Media.DisplayMessage("That Nod base has been sitting idle for too long. It's time I got some use out of it!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("那个Nod基地闲置太久了。是时候让它派上用场了！", "霍桑将军", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_nodequipauto.aud", 2)
 	end
 
@@ -711,12 +712,12 @@ end
 
 InitCaptureHQObjective = function()
 	if not ObjectiveCaptureHQ then
-		ObjectiveCaptureHQ = Greece.AddObjective("Capture Gen. Hawthorne's Command Center.")
+		ObjectiveCaptureHQ = Greece.AddObjective("占领霍桑将军的指挥中心。")
 	end
 end
 
 DoFinale = function()
-	Media.DisplayMessage("This is far from over! You will regret making an enemy of me!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+	Media.DisplayMessage("这还远未结束！你会后悔与我为敌！", "霍桑将军", HSLColor.FromHex("F2CF74"))
 	MediaCA.PlaySound(MissionDir .. "/hth_farfromover.aud", 2)
 
 	Hawthorne = Actor.Create("xo.hawthorne", true, { Owner = GDI, Location = HawthorneSpawn.Location })

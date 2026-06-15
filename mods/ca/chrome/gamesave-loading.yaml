@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 Container@GAMESAVE_LOADING_SCREEN:
 	Logic: GameSaveLoadingLogic
 	Width: WINDOW_WIDTH
@@ -15,7 +16,7 @@ Container@GAMESAVE_LOADING_SCREEN:
 			Height: 25
 			Font: Bold
 			Align: Center
-			Text: label-gamesave-loading-screen-title
+			Text: 正在载入存档
 		ProgressBar@PROGRESS:
 			X: (WINDOW_WIDTH - 500) / 2
 			Y: 3 * WINDOW_HEIGHT / 4
@@ -29,14 +30,14 @@ Container@GAMESAVE_LOADING_SCREEN:
 			Height: 25
 			Font: Regular
 			Align: Center
-			Text: label-gamesave-loading-screen-desc
+			Text: 按 Escape 取消加载并返回主菜单
 		Label@DESC2:
 			Width: WINDOW_WIDTH
 			Y: 3 * WINDOW_HEIGHT / 4 + 19 + 30
 			Height: 25
 			Font: Small
 			Align: Center
-			Text: label-gamesave-loading-screen-loadtime-line1
+			Text: 加载时间较长，这是因为 OpenRA 引擎处理存档的方式所致。
 			TextColor: 777777
 		Label@DESC3:
 			Width: WINDOW_WIDTH
@@ -44,5 +45,5 @@ Container@GAMESAVE_LOADING_SCREEN:
 			Height: 25
 			Font: Small
 			Align: Center
-			Text: label-gamesave-loading-screen-loadtime-line2
+			Text: 它从游戏开头以最快速度重放——因此游戏越长，加载时间越长。
 			TextColor: 777777

@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 
@@ -5,7 +6,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, domination.lua
 	MissionData:
-		Briefing: Now that the Allies and GDI are no longer on our doorstep and we have begun to replenish our forces, we can turn our attention to the Brotherhood of Nod.\n\nKane cannot be trusted. He thinks that his cyborg army gives him such an advantage, and that we have been so weakened, that we will do his bidding without question. His arrogant overconfidence will be his downfall.\n\nIt is time to make use of our own secret weapon, Yuri. With his psionic powers he can turn our enemies into loyal servants.\n\nThere is but one obstacle. Kane's cyborgs are impervious to Yuri's powers, as their minds are protected by their cybernetic implants.\n\nIn order for Yuri to be able to control the minds of these cyborgs, we must break through the encryption that protects them.\n\nMake use of one of our best thieves to infiltrate a Nod cybernetics lab to steal the encryption algorithms. Without this protection the cyborgs will be vulnerable to Yuri, and we will be able to use Kane's own cyborgs against him.
+		Briefing: 既然盟军和全球防御组织(GDI)已不再兵临城下，我们已开始补充兵力，现在可以将注意力转向Nod兄弟会了。\n\n凯恩不可信任。他以为他的生化人军团占据绝对优势，而我们已被严重削弱，会毫无条件地听命于他。他那傲慢的过度自信必将导致他的覆灭。\n\n是时候动用我们自己的秘密武器——尤里了。凭借他的心灵力量，他可以将我们的敌人变成忠诚的仆从。\n\n但有一个障碍。凯恩的生化人对尤里的能力免疫，因为他们的思维受到赛博植入体的保护。\n\n要让尤里能够控制这些生化人的心智，我们必须破解保护他们的加密系统。\n\n派遣我们最优秀的窃贼潜入Nod的赛博实验室，窃取加密算法。没有了这层保护，生化人将对尤里敞开弱点，我们就能用凯恩自己的生化人军团来对付他。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	ScriptLobbyDropdown@RESPAWN:

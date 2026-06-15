@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca38-procurement"
 
 OutpostStructures = { OutpostConyard, OutpostFactory, OutpostBarracks, OutpostRefinery, OutpostPower1, OutpostPower2, OutpostPower3, OutpostSilo1, OutpostSilo2, OutpostGuardTower1, OutpostGuardTower2, OutpostGuardTower3, OutpostGuardTower4 }
@@ -68,9 +69,9 @@ WorldLoaded = function()
 	InitGDI()
 	InitChina()
 
-	ObjectiveAcquireWeapons = USSR.AddObjective("Acquire Chinese weapons.")
-	ObjectiveExpelGDI = USSR.AddObjective("Remove the GDI presence.")
-	ObjectiveDestroyOutpost = USSR.AddSecondaryObjective("Destroy GDI outpost to receive reinforcements.")
+	ObjectiveAcquireWeapons = USSR.AddObjective("获取中国武器。")
+	ObjectiveExpelGDI = USSR.AddObjective("清除GDI势力。")
+	ObjectiveDestroyOutpost = USSR.AddSecondaryObjective("摧毁GDI前哨以获得增援。")
 
 	if IsHardOrAbove() then
 		NonHardTroopCrawler.Destroy()
@@ -94,7 +95,7 @@ WorldLoaded = function()
 			McvRequested = true
 			Trigger.AfterDelay(DateTime.Seconds(5), function()
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived.")
+				Notification("增援已抵达。")
 				DoMcvArrival()
 				Beacon.New(USSR, McvRally.CenterPosition)
 				McvArrived = true
@@ -252,7 +253,7 @@ InitWeaponsCache = function(withOutpostFlare)
 			Trigger.AfterDelay(DateTime.Seconds(5), function()
 				local outpostFlare = Actor.Create("flare", true, { Owner = USSR, Location = GDIOutpostFlare.Location })
 				PlaySpeechNotificationToMissionPlayers("SignalFlare")
-				Notification("Signal flare detected. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+				Notification("检测到信号弹。按 [" .. UtilsCA.Hotkey("ToLastEvent") .. "] 查看位置。")
 				Beacon.New(USSR, GDIOutpostFlare.CenterPosition)
 
 				Trigger.OnEnteredProximityTrigger(GDIOutpostFlare.CenterPosition, WDist.New(6 * 1024), function(a, id)
@@ -271,9 +272,9 @@ InitCommsCenterObjective = function()
 		return
 	end
 
-	Media.DisplayMessage("Comrade General, we have reason to believe vital information can be found within the GDI comms network. Capture one of their Communications Centers at all costs!", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
+	Media.DisplayMessage("将军同志，我们有理由相信GDI通讯网络中存有重要情报。不惜一切代价占领他们的通讯中心！", "查丹科总理", HSLColor.FromHex("FF0000"))
 
-	ObjectiveCaptureComms = USSR.AddObjective("Capture a GDI Communications Center.")
+	ObjectiveCaptureComms = USSR.AddObjective("占领一座GDI通讯中心。")
 	Media.PlaySound("beacon.aud")
 
 	Utils.Do(CommsCenters, function(c)
@@ -325,7 +326,7 @@ InitChinaRevenge = function()
 
 	ChinaRevengeStarted = true
 
-	Notification("The Chinese are retaliating!")
+	Notification("中国人在反击！")
 
 	local chinaUnits = Utils.Where(China.GetActors(), function(a)
 		return a.HasProperty("Attack") or a.HasProperty("StartBuildingRepairs")

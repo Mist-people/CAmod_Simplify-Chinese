@@ -1,0 +1,288 @@
+# Simplified Chinese translation by lsxy, 2026.06.
+Container@INPUT_PANEL:
+	Logic: InputSettingsLogic
+	Width: PARENT_WIDTH
+	Height: PARENT_HEIGHT
+	Children:
+		ScrollPanel@SETTINGS_SCROLLPANEL:
+			Width: PARENT_WIDTH
+			Height: PARENT_HEIGHT
+			CollapseHiddenChildren: True
+			TopBottomSpacing: 5
+			ItemSpacing: 10
+			Children:
+				Background@INPUT_SECTION_HEADER:
+					X: 5
+					Width: PARENT_WIDTH - 24 - 10
+					Height: 13
+					Background: separator
+					ClickThrough: True
+					Children:
+						Label@LABEL:
+							Width: PARENT_WIDTH
+							Height: PARENT_HEIGHT
+							Font: TinyBold
+							Align: Center
+							Text: 输入
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 50
+					Children:
+						Container@MOUSE_CONTROL_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@MOUSE_CONTROL_LABEL:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 操作方案：
+								DropDownButton@MOUSE_CONTROL_DROPDOWN:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 25
+									Font: Regular
+						Container@ZOOM_MODIFIER_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@ZOOM_MODIFIER_LABEL:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 缩放修饰键：
+								DropDownButton@ZOOM_MODIFIER:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 25
+									Font: Regular
+						Container@MOUSE_CONTROL_DESC_CLASSIC:
+							X: 10
+							Y: 55
+							Width: PARENT_WIDTH
+							Children:
+								LabelWithHighlight@DESC_SELECTION:
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用鼠标<左键>选择单位
+								LabelWithHighlight@DESC_COMMANDS:
+									Y: 17
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用鼠标<左键>命令单位
+								LabelWithHighlight@DESC_BUILDINGS:
+									Y: 34
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用鼠标<左键>放置建筑
+								LabelWithHighlight@DESC_SUPPORT:
+									Y: 51
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用鼠标<左键>瞄准支援能力
+								LabelWithHighlight@DESC_ZOOM:
+									Y: 68
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用<滚轮>缩放战场
+								LabelWithHighlight@DESC_ZOOM_MODIFIER:
+									Y: 68
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用<修饰键 + 滚轮>缩放战场
+								LabelWithHighlight@DESC_SCROLL_RIGHT:
+									Y: 85
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用鼠标<右键>平移战场
+								LabelWithHighlight@DESC_SCROLL_MIDDLE:
+									Y: 85
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用鼠标<中键>平移战场
+								Label@DESC_EDGESCROLL:
+									X: 9
+									Y: 102
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: 或将光标移动到屏幕边缘
+						Container@MOUSE_CONTROL_DESC_MODERN:
+							X: 10
+							Y: 55
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								LabelWithHighlight@DESC_SELECTION:
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用鼠标<左键>选择单位
+								LabelWithHighlight@DESC_COMMANDS:
+									Y: 17
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用鼠标<右键>命令单位
+								LabelWithHighlight@DESC_BUILDINGS:
+									Y: 34
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用鼠标<左键>放置建筑
+								LabelWithHighlight@DESC_SUPPORT:
+									Y: 51
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用鼠标<左键>瞄准支援能力
+								LabelWithHighlight@DESC_ZOOM:
+									Y: 68
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用<滚轮>缩放战场
+								LabelWithHighlight@DESC_ZOOM_MODIFIER:
+									Y: 68
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用<修饰键 + 滚轮>缩放战场
+								LabelWithHighlight@DESC_SCROLL_RIGHT:
+									Y: 85
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用鼠标<右键>平移战场
+								LabelWithHighlight@DESC_SCROLL_MIDDLE:
+									Y: 85
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: - 使用鼠标<中键>平移战场
+								Label@DESC_EDGESCROLL:
+									X: 9
+									Y: 102
+									Width: PARENT_WIDTH
+									Height: 16
+									Font: Small
+									Text: 或将光标移动到屏幕边缘
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 20
+					Children:
+						Container@EDGESCROLL_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@EDGESCROLL_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 屏幕边缘平移
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 20
+					Children:
+						Container@ALTERNATE_SCROLL_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@ALTERNATE_SCROLL_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 备用鼠标平移
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 20
+					Children:
+						Container@LOCKMOUSE_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@LOCKMOUSE_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 锁定鼠标到窗口
+				Container@SPACER:
+					Height: 30
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 50
+					Children:
+						Container@MOUSE_SCROLL_TYPE_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@MOUSE_SCROLL_TYPE_LABEL:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 平移行为：
+								DropDownButton@MOUSE_SCROLL_TYPE_DROPDOWN:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 25
+									Font: Regular
+						Container@SCROLLSPEED_SLIDER_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@SCROLL_SPEED_LABEL:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: 平移速度：
+								Slider@SCROLLSPEED_SLIDER:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 20
+									Ticks: 7
+									MinimumValue: 10
+									MaximumValue: 50
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 50
+					Children:
+						Container@ZOOMSPEED_SLIDER_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@ZOOM_SPEED_LABEL:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: 缩放速度：
+								ExponentialSlider@ZOOMSPEED_SLIDER:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 20
+									Ticks: 7
+									MinimumValue: 0.01
+									MaximumValue: 0.4
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 50
+					Children:
+						Container@UI_SCROLLSPEED_SLIDER_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@UI_SCROLL_SPEED_LABEL:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: UI 滚动速度：
+								Slider@UI_SCROLLSPEED_SLIDER:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 20
+									Ticks: 7
+									MinimumValue: 1
+									MaximumValue: 100

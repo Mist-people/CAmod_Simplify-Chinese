@@ -1,4 +1,5 @@
-firestorm: Firestorm Expansion Disc (English)
+# Simplified Chinese translation by lsxy, 2026.06.
+firestorm: 火线风暴扩展光盘（英文）
 	Type: Disc
 	IDFiles:
 		Install/README.TXT: f2810b540fce8f3880250213ee08c57780d81c20

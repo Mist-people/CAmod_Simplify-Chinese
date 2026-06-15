@@ -1,4 +1,5 @@
-ra-steam: C&C Ultimate Collection RA (Steam version, English)
+# Simplified Chinese translation by lsxy, 2026.06.
+ra-steam: C&C 终极合集 红色警戒（Steam版，英文）
 	Type: Steam
 		AppId: 2229840
 	IDFiles:
@@ -219,7 +220,7 @@ ra-steam: C&C Ultimate Collection RA (Steam version, English)
 					^SupportDir|Content/ca/movies/cronfail.vqa: cronfail.vqa
 				Delete: ^SupportDir|Content/ca/movies2.mix
 
-cnc-steam: C&C Ultimate Collection TD (Steam version, English)
+cnc-steam: C&C 终极合集 泰伯利亚黎明（Steam版，英文）
 	Type: Steam
 		AppId: 2229830
 	IDFiles:
@@ -238,7 +239,7 @@ cnc-steam: C&C Ultimate Collection TD (Steam version, English)
 				Copy: .
 					^SupportDir|Content/ca/cnc/scores.mix: SCORES.MIX
 
-cncr-steam: C&C Remastered Collection (Steam version, English)
+cncr-steam: C&C 重制版合集（Steam版，英文）
 	Type: Steam
 		AppId: 1213210
 	IDFiles:
@@ -410,7 +411,7 @@ cncr-steam: C&C Remastered Collection (Steam version, English)
 				Copy: Data/CNCDATA/TIBERIAN_DAWN/CD3
 					^SupportDir|Content/ca/cnc/scores.mix: SCORES.MIX
 
-ts-steam: C&C Ultimate Collection TS (Steam version, English)
+ts-steam: C&C 终极合集 泰伯利亚之日（Steam版，英文）
 	Type: Steam
 		AppId: 2229880
 	IDFiles:
@@ -439,7 +440,7 @@ ts-steam: C&C Ultimate Collection TS (Steam version, English)
 					^SupportDir|Content/ca/firestorm/slavesys.aud: slavesys.aud
 				Delete: ^SupportDir|Content/ca/firestorm/SCORES01.mix
 
-ra2-steam: C&C Ultimate Collection RA2 (Steam version, English)
+ra2-steam: C&C 终极合集 红色警戒2（Steam版，英文）
 	Type: Steam
 		AppId: 2229850
 	IDFiles:

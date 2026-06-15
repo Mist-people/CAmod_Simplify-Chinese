@@ -162,6 +162,7 @@ Player:
 		LoseNotification: Lose
 		LeaveNotification: Leave
 	ConquestVictoryConditions:
+		Objective: 消灭所有敌人！
 	PowerManager:
 		SpeechNotification: LowPower
 		TextNotification: Low power.
@@ -172,6 +173,8 @@ Player:
 		InsufficientFundsTextNotification: Insufficient funds.
 		CashTickUpNotification: CashTickUp
 		CashTickDownNotification: CashTickDown
+		DefaultCashDropdownLabel: 起始资金
+		DefaultCashDropdownDescription: 玩家开始游戏时的资金数量
 		SelectableCash: 2500, 5000, 6000, 8000, 10000, 20000
 		DefaultCash: 6000
 		DefaultCashDropdownDisplayOrder: 1

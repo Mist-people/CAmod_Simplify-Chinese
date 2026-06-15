@@ -30,6 +30,9 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 		[FluentReference("prerequisites")]
 		const string Requires = "label-requires";
 
+		[FluentReference("factionName")]
+		const string SubfactionOnly = "encyclopedia-subfaction-only";
+
 		readonly World world;
 		readonly ModData modData;
 		readonly Dictionary<ActorInfo, EncyclopediaInfo> info = new();
@@ -570,7 +573,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			var arrowImage = folderHeader.GetOrNull<ImageWidget>("ICON");
 
 			// Set folder name
-			label.GetText = () => $"{node.Name}";
+			label.GetText = () => FluentProvider.GetMessage($"encyclopedia-category-{node.Name.Replace(' ', '-')}");
 			label.Bounds.X = 24 + displayDepth * 15;
 
 			// Update arrow direction based on expanded state
@@ -774,9 +777,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			if (encyclopediaExtrasInfo != null && !string.IsNullOrEmpty(encyclopediaExtrasInfo.Subfaction) && subfactionLabel != null)
 			{
 				subfaction = factions[encyclopediaExtrasInfo.Subfaction];
-				subfactionText = $"{FluentProvider.GetMessage(subfaction.Name)} only.";
-
-				// var subfactionText = FluentProvider.GetMessage(SubfactionOnly, "factionName", FluentProvider.GetMessage(subfaction.Name));
+				subfactionText = FluentProvider.GetMessage(SubfactionOnly, "factionName", FluentProvider.GetMessage(subfaction.Name));
 				subfactionHeight = descriptionFont.Measure(subfactionText).Y;
 			}
 
@@ -872,7 +873,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			variantDropdown.IsDisabled = () => false;
 			variantDropdown.GetText = () => selectedVariant != null
 				? GetActorDisplayName(selectedVariant)
-				: "Select variant...";
+				: "选择变体...";
 
 			variantDropdown.OnMouseDown = _ =>
 			{
@@ -1532,7 +1533,8 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				tabButton.IsHighlighted = () => selectedTopLevelCategory == category.FullPath;
 				tabButton.OnClick = () => SelectTopLevelCategory(category.FullPath);
 				tabButton.IsVisible = () => true;
-				tabButton.GetText = () => category.Name;
+				tabButton.Text = category.Name;
+				tabButton.GetText = () => FluentProvider.GetMessage($"encyclopedia-category-{category.Name.Replace(' ', '-')}");
 
 				// Get the flag image widget
 				var flagImage = tabButton.GetOrNull<ImageWidget>("TAB_FLAG");
@@ -1543,7 +1545,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 					tabButton.GetText = () => "";
 
 					var tabLabel = tabButton.GetOrNull<LabelWidget>("TAB_LABEL");
-					tabLabel.GetText = () => category.Name;
+					tabLabel.GetText = () => FluentProvider.GetMessage($"encyclopedia-category-{category.Name.Replace(' ', '-')}");
 
 					var textWidth = font.Measure(category.Name).X;
 					var flagWidth = 30; // Width of flag as defined in YAML

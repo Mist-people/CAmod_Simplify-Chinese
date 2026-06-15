@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca26-capitulation"
 
 AttackPaths = {
@@ -193,9 +194,9 @@ WorldLoaded = function()
 		end)
 	end
 
-	ObjectiveCaptureOrDestroyBunker = GDI.AddObjective("Capture or destroy Stalin's bunker.")
-	ObjectiveStarveAtomicReactor = GDI.AddSecondaryObjective("Cut supply lines to starve atomic reactor of fuel.")
-	ObjectiveDestroyTeslaReactors = GDI.AddSecondaryObjective("Destroy Tesla reactors on southeastern island.")
+	ObjectiveCaptureOrDestroyBunker = GDI.AddObjective("占领或摧毁斯大林的地堡。")
+	ObjectiveStarveAtomicReactor = GDI.AddSecondaryObjective("切断补给线以使原子反应堆缺乏燃料。")
+	ObjectiveDestroyTeslaReactors = GDI.AddSecondaryObjective("摧毁东南岛屿上的特斯拉反应堆。")
 
 	Trigger.OnKilledOrCaptured(StalinHQ, function()
 		GDI.MarkCompletedObjective(ObjectiveCaptureOrDestroyBunker)
@@ -215,7 +216,7 @@ WorldLoaded = function()
 
 	Trigger.AfterDelay(DateTime.Seconds(13), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("增援已抵达。")
 		DoMcvArrival()
 		McvArrived = true
 	end)
@@ -226,7 +227,7 @@ WorldLoaded = function()
 			if IsMissionPlayer(a.Owner) and a.Type ~= "camera" then
 				Trigger.RemoveProximityTrigger(id)
 				local camera = Actor.Create("camera", true, { Owner = GDI, Location = p.Location })
-				Notification("Fuel supply route identified.")
+				Notification("已识别燃料补给路线。")
 				Beacon.New(GDI, p.CenterPosition)
 				Trigger.AfterDelay(DateTime.Seconds(4), function()
 					camera.Destroy()
@@ -238,12 +239,12 @@ WorldLoaded = function()
 	Spy.DisguiseAs(SpyDisguiseTarget)
 	Trigger.AfterDelay(DateTime.Seconds(4), function()
 		Beacon.New(GDI, Spy.CenterPosition)
-		Media.DisplayMessage("It feels like they're getting suspicious, I'm getting out of here...", "Allied Spy", HSLColor.FromHex("1E90FF"))
+		Media.DisplayMessage("感觉他们开始起疑心了，我得离开这里……", "盟军间谍", HSLColor.FromHex("1E90FF"))
 		MediaCA.PlaySound(MissionDir .. "/suspicious.aud", 2)
 		Spy.Move(SouthDelivery3.Location)
 		SpyKiller.Attack(Spy)
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(12)), function()
-			Media.DisplayMessage("Attention you capitalist dogs! My defenses are impenetrable. Leave at once, or prepare to be crushed!", "Stalin", HSLColor.FromHex("DD0000"))
+			Media.DisplayMessage("注意了，你们这群资本主义走狗！我的防御坚不可摧。立刻离开，否则准备被碾碎！", "斯大林", HSLColor.FromHex("DD0000"))
 			MediaCA.PlaySound(MissionDir .. "/stalin_warning.aud", 2)
 		end)
 	end)
@@ -341,7 +342,7 @@ InitUSSR = function()
 				if TimerTicks > MaxReactorFuelTime then
 					TimerTicks = MaxReactorFuelTime
 				end
-				Notification("A fuel shipment has reached the Soviet reactor.")
+				Notification("一批燃料已到达苏联反应堆。")
 				MediaCA.PlaySound(MissionDir .. "/c_fuelshipment.aud", 2)
 			end
 		end
@@ -396,11 +397,11 @@ ReactorStarved = function()
 			end
 		end)
 
-		local notificationText = "Atomic Reactor shutting down."
+		local notificationText = "原子反应堆正在关闭。"
 		if AreTeslaReactorsOffline then
-			notificationText = notificationText .. ". The Soviet base is now without power."
+			notificationText = notificationText .. "苏联基地现已断电。"
 		else
-			notificationText = notificationText .. ". The Telsa Reactors in the south-east continue to provide the base with power."
+			notificationText = notificationText .. "东南方的特斯拉反应堆继续为基地供电。"
 		end
 		Notification(notificationText)
 		MediaCA.PlaySound(MissionDir .. "/c_atomicshutdown.aud", 2)
@@ -433,11 +434,11 @@ TeslaReactorsOffline = function()
 			end
 		end)
 
-		local notificationText = "Soviet secondary power is offline."
+		local notificationText = "苏联辅助电力已离线。"
 		if IsReactorStarved then
-			notificationText = notificationText .. " The Soviet base is now without power."
+			notificationText = notificationText .. "苏联基地现已断电。"
 		else
-			notificationText = notificationText .. " Tesla Coils are no longer supercharged and some perimeter air defenses are down, however the Atomic Reactor continues to provide the base with power."
+			notificationText = notificationText .. "特斯拉线圈不再超载，部分外围防空已下线，但原子反应堆继续为基地供电。"
 		end
 		Notification(notificationText)
 		MediaCA.PlaySound(MissionDir .. "/c_sovietsecondarypoweroffline.aud", 2)
@@ -454,9 +455,9 @@ end
 UpdateObjectiveText = function()
 	if not GDI.IsObjectiveCompleted(ObjectiveStarveAtomicReactor) then
 		local percentage = math.floor(TimerTicks / MaxReactorFuelTime * 100)
-		UserInterface.SetMissionText("Atomic Reactor fuel level: " .. percentage .. "%", HSLColor.Yellow)
+		UserInterface.SetMissionText("原子反应堆燃料量：" .. percentage .. "%", HSLColor.Yellow)
 	else
-		UserInterface.SetMissionText("Capture or destroy Stalin's bunker.", HSLColor.Yellow)
+		UserInterface.SetMissionText("占领或摧毁斯大林的地堡。", HSLColor.Yellow)
 	end
 end
 

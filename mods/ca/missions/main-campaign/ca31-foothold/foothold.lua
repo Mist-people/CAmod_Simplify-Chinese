@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca31-foothold"
 
 SensorZones = { SensorZone1, SensorZone2, SensorZone3, SensorZone4 }
@@ -100,15 +101,15 @@ WorldLoaded = function()
 	InitScrin()
 	InitTibLifeforms()
 
-	ObjectiveDeploySensorArrays = GDI.AddObjective("Deploy Sensor Arrays at target locations.")
-	ObjectiveCaptureNerveCenter = GDI.AddObjective("Capture Scrin Nerve Center.")
+	ObjectiveDeploySensorArrays = GDI.AddObjective("在目标位置部署传感器阵列。")
+	ObjectiveCaptureNerveCenter = GDI.AddObjective("占领思金神经中枢。")
 	SetupReveals({ Reveal1, Reveal2 })
 	CheckSensors()
 
 	if Difficulty ~= "easy" then
 		Trigger.AfterDelay(DateTime.Seconds(10), function()
 			MediaCA.PlaySound(MissionDir .. "/c_tiblifeforms.aud", 2)
-			Notification("Dangerous Tiberium-based lifeforms detected. Recommend keeping your units at a safe distance.")
+			Notification("侦测到危险的泰伯利亚基生命体。建议保持单位在安全距离。")
 		end)
 	end
 
@@ -147,26 +148,26 @@ WorldLoaded = function()
 			end)
 		end)
 
-		ObjectiveProtectNerveCenter = GDI.AddObjective("Protect the captured Nerve Center.")
-		ObjectiveDestroyScrinBase = GDI.AddObjective("Destroy the Scrin base.")
+		ObjectiveProtectNerveCenter = GDI.AddObjective("保护已占领的神经中枢。")
+		ObjectiveDestroyScrinBase = GDI.AddObjective("摧毁思金基地。")
 		GDI.MarkCompletedObjective(ObjectiveCaptureNerveCenter)
 		BeginScrinAttacks()
 		PeriodicReinforcements()
 
 		Trigger.AfterDelay(DateTime.Seconds(3), function()
 			MediaCA.PlaySound(MissionDir .. "/c_gatewaystabilized.aud", 2)
-			Notification("Interstellar gateway stabilized.")
+			Notification("星际通道已稳定。")
 			GatewayStable = Actor.Create("wormholexl", true, { Owner = GatewayOwner, Location = Gateway.Location })
 			Gateway.Destroy()
 
 			Trigger.AfterDelay(DateTime.Seconds(5), function()
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived.")
+				Notification("增援已抵达。")
 				Beacon.New(GDI, GatewayStable.CenterPosition)
 				DoMcvArrival()
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
 					MediaCA.PlaySound(MissionDir .. "/c_protectnervecenter.aud", 2)
-					Notification("Do not allow the Nerve Center to be destroyed, the gateway must remain stable.")
+					Notification("不得让神经中枢被摧毁，通道必须保持稳定。")
 				end)
 			end)
 		end)
@@ -265,11 +266,11 @@ CheckSensors = function()
 
 			Beacon.New(GDI, NerveCenter1.CenterPosition)
 			MediaCA.PlaySound(MissionDir .. "/c_nervecenterlocated.aud", 2)
-			Notification("Nerve Center located.")
+			Notification("已定位神经中枢。")
 
 			Trigger.AfterDelay(DateTime.Seconds(4), function()
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived.")
+				Notification("增援已抵达。")
 				Beacon.New(GDI, Gateway.CenterPosition)
 				local reinforcements = Reinforcements.Reinforce(GDI, { "n1", "n1", "medi", "n6", "n6", "n2", "n2", "n2" }, { Gateway.Location, PlayerStart.Location }, 6)
 
@@ -288,7 +289,7 @@ CheckSensors = function()
 			Trigger.AfterDelay(DateTime.Seconds(9), function()
 				if not SPower2.IsDead then
 					local powerCamera = Actor.Create("smallcamera", true, { Owner = GDI, Location = SPower2.Location })
-					Notification("The Nerve Center is well protected by Storm Columns. Sensors have detected Scrin reactors to the south-east which are powering these defenses.")
+					Notification("神经中枢被风暴柱严密保护。传感器在东南方侦测到为这些防御设施供电的思金反应堆。")
 					MediaCA.PlaySound(MissionDir .. "/c_nervecenterprotected.aud", 2)
 					Beacon.New(GDI, SPower2.CenterPosition)
 
@@ -299,7 +300,7 @@ CheckSensors = function()
 			end)
 		end)
 	else
-		UserInterface.SetMissionText("Sensor arrays deployed: " .. NumSensorsDeployed .. "/4", HSLColor.Yellow)
+		UserInterface.SetMissionText("传感器阵列已部署：" .. NumSensorsDeployed .. "/4", HSLColor.Yellow)
 	end
 end
 
@@ -374,7 +375,7 @@ PeriodicReinforcements = function()
 	Utils.Do(groups, function(g)
 		Trigger.AfterDelay(groupDelay, function()
 			PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-			Notification("Reinforcements have arrived.")
+			Notification("增援已抵达。")
 			Beacon.New(GDI, GatewayStable.CenterPosition)
 			Reinforcements.Reinforce(GDI, g, { GatewayStable.Location, PlayerStart.Location }, 30)
 		end)

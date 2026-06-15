@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	PaletteFromFile@terrain-temperat:
 		Filename: alien.pal
@@ -14,12 +15,11 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, spearhead.lua
 	MissionData:
-		Briefing: It seems we were not the Scrin fleet's target. Scouts sent in the direction they were heading have located a Nod outpost in a mountainous and relatively sparsely inhabited region. We have thus far been unable to locate the bulk of the Nod forces, but Kane can't be too far away, and the Scrin were clearly trying to get to him. The terrain means it will be some time before we are able to move heavy forces to intercept.\n\nWe need more intel on Kane's whereabouts and intentions to properly plan our movements, and we believe this Nod outpost will be vulnerable to a small rapidly deployed strike team. Resources in the area are limited and there are few suitable locations for a staging area, but the lack of significant Scrin presence and the difficult terrain should mean you'll only face limited resistance.\n\nYour mission is to capture the Nod Communications Center. Anything else is at your discretion.
-	MapOptions:
-		ShortGameCheckboxEnabled: False
-	MusicPlaylist:
-		StartingMusic: heroism
+		Briefing:  看来我们并不是思金人舰队的目标。派往它们行进方向的侦察兵在一处山区且人口相对稀少的区域发现了一个Nod兄弟会的前哨站。我们至今未能定位Nod兄弟会的主力部队，但凯恩不可能离得太远，思金人显然是在试图接近他。地形条件意味着我们还需要一些时间才能调动重型部队进行拦截。
 
+我们需要更多关于凯恩下落和意图的情报来妥善规划行动。我们认为这个Nod兄弟会前哨站容易被一支小型快速突击队攻破。该地区资源有限，适合建立集结区的地点很少，但由于缺乏思金人的大量存在以及地形险峻，你应该只会遇到有限的抵抗。
+
+你的任务是占领Nod兄弟会的通讯中心。其余行动由你自行判断。
 Player:
 	PlayerResources:
 		DefaultCash: 6000

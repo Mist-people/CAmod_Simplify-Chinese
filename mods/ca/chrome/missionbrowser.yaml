@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 Background@MISSIONBROWSER_PANEL:
 	Logic: MissionBrowserLogicCA
 	X: (WINDOW_WIDTH - WIDTH) / 2
@@ -9,7 +10,7 @@ Background@MISSIONBROWSER_PANEL:
 			Y: 21
 			Width: PARENT_WIDTH
 			Height: 25
-			Text: Missions
+			Text: 战役任务
 			Align: Center
 			Font: Bold
 		ScrollPanel@MISSION_LIST:
@@ -89,7 +90,7 @@ Background@MISSIONBROWSER_PANEL:
 									X: 4
 									Width: PARENT_WIDTH - 32
 									VAlign: Top
-									Font: Regular
+									Font: Small
 						ScrollPanel@MISSION_OPTIONS:
 							Height: PARENT_HEIGHT
 							Width: PARENT_WIDTH
@@ -150,55 +151,55 @@ Background@MISSIONBROWSER_PANEL:
 							Y: 25
 							Height: 28
 							Font: Bold
-							Text: Briefing
+							Text: 任务简报
 						Button@OPTIONS_TAB:
 							X: PARENT_WIDTH / 2
 							Width: PARENT_WIDTH / 2
 							Y: 25
 							Height: 28
 							Font: Bold
-							Text: Options
+							Text: 选项
 		Button@START_BRIEFING_VIDEO_BUTTON:
 			X: 20
 			Y: PARENT_HEIGHT - 45
 			Width: 130
 			Height: 25
-			Text: Watch Briefing
+			Text: 观看简报
 			Font: Bold
 		Button@STOP_BRIEFING_VIDEO_BUTTON:
 			X: 20
 			Y: PARENT_HEIGHT - 45
 			Width: 130
 			Height: 25
-			Text: Stop Briefing
+			Text: 停止简报
 			Font: Bold
 		Button@START_INFO_VIDEO_BUTTON:
 			X: 160
 			Y: PARENT_HEIGHT - 45
 			Width: 130
 			Height: 25
-			Text: Watch Info Video
+			Text: 观看介绍视频
 			Font: Bold
 		Button@STOP_INFO_VIDEO_BUTTON:
 			X: 160
 			Y: PARENT_HEIGHT - 45
 			Width: 130
 			Height: 25
-			Text: Stop Info Video
+			Text: 停止介绍视频
 			Font: Bold
 		Button@STARTGAME_BUTTON:
 			X: PARENT_WIDTH - 140 - 130
 			Y: PARENT_HEIGHT - 45
 			Width: 120
 			Height: 25
-			Text: Play
+			Text: 开始
 			Font: Bold
 		Button@BACK_BUTTON:
 			X: PARENT_WIDTH - 140
 			Y: PARENT_HEIGHT - 45
 			Width: 120
 			Height: 25
-			Text: Back
+			Text: 返回
 			Font: Bold
 			Key: escape
 		Background@MISSION_BIN:

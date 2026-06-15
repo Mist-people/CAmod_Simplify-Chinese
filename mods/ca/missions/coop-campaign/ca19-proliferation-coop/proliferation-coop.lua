@@ -1,4 +1,5 @@
 
+-- Simplified Chinese translation by lsxy, 2026.06.
 if CoopAttackStrengthMultiplier ~= nil and RaidInterval ~= nil and RaidInterval[Difficulty] ~= nil then
 	RaidInterval[Difficulty] = math.max(RaidInterval[Difficulty] / CoopAttackStrengthMultiplier, 25)
 end
@@ -52,9 +53,9 @@ end
 
 UpdateObjectiveMessage = function()
 	if FieldsClearedAndBeingHarvested == 6 then
-		UserInterface.SetMissionText("6 of 6 fields occupied.\n   Maintain for " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Lime)
+		UserInterface.SetMissionText("6/6矿田已占据。\n   维持" .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Lime)
 	else
-		local missionText = FieldsClearedAndBeingHarvested .. " of 6 fields occupied  -  Next reinforcement threshold: $" .. TotalFundsDisplay .. "/" .. NextReinforcementThreshold
+		local missionText = FieldsClearedAndBeingHarvested .. "/6矿田已占据  -  下次增援门槛：$" .. TotalFundsDisplay .. "/" .. NextReinforcementThreshold
 		UserInterface.SetMissionText(missionText, HSLColor.Yellow)
 	end
 end
@@ -91,7 +92,7 @@ CheckColonyPlatform = function()
 				Trigger.AfterDelay(DateTime.Seconds(1), function()
 					if p.IsLocalPlayer then
 						Media.PlaySpeechNotification(p, "ReinforcementsArrived")
-						Notification("Reinforcements have arrived.")
+						Notification("增援已抵达。")
 						Beacon.New(p, McvReplace.CenterPosition)
 					end
 					Reinforcements.Reinforce(p, { "smcv" }, { McvReplace.Location })

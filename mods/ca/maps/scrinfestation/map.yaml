@@ -2,7 +2,7 @@ MapFormat: 12
 
 RequiresMod: ca
 
-Title: Scrinfestation
+Title: "思金侵扰"
 
 Author: Darkademic
 
@@ -20,17 +20,17 @@ LockPreview: True
 
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: england
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: england
 		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7, Multi8, Multi9
 	PlayerReference@Scrin:
-		Name: Scrin
+		Name: 思金
 		Faction: reaper
 		Color: B83DFF
 		Enemies: GDI, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7, Multi8, Multi9

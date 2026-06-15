@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 		Red: 0.80
@@ -102,9 +103,9 @@ RMBO:
 		BuildDuration: 500
 		BuildDurationModifier: 100
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Maximum 1 can be trained\n• Detects cloaked units\n• Immune to mind control\n• Voiced by Frank Klepacki
+		Strengths: • 擅长对付步兵
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • Maximum 1 can be trained\n• 探测隐形单位\n• 免疫心灵控制\n• Voiced by Frank Klepacki
 	-Armament@sapper:
 	-GrantConditionOnPrerequisite@HAZMATZOCOM:
 	SpawnActorOnDeath@ONEDEATH:
@@ -160,7 +161,7 @@ RMBOSPAWN:
 	Inherits: CAMERA
 	Inherits@PROD: ^ProducesInfantry
 	Tooltip:
-		Name: Spawn Point
+		Name: 出生点
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	Exit:

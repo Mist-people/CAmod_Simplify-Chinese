@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 Container@OBSERVER_WIDGETS:
 	Logic: MenuButtonsChromeLogic, LoadIngameChatLogic
 	Children:
@@ -81,7 +82,7 @@ Container@OBSERVER_WIDGETS:
 					Width: PARENT_WIDTH - 30
 					Height: 25
 					Align: Right
-					Text: label-mute-indicator
+					Text: 已静音
 					Contrast: true
 		LogicKeyListener@OBSERVER_KEY_LISTENER:
 		MenuButton@OPTIONS_BUTTON:
@@ -89,7 +90,7 @@ Container@OBSERVER_WIDGETS:
 			Y: 5
 			Width: 160
 			Height: 25
-			Text: Options (Esc)
+			Text: 选项 (Esc)
 			Font: Bold
 			Key: escape
 			DisableWorldSounds: true
@@ -177,7 +178,7 @@ Container@OBSERVER_WIDGETS:
 							Width: 26
 							Height: 26
 							Key: Pause
-							TooltipText: Pause
+							TooltipText: 暂停
 							TooltipContainer: TOOLTIP_CONTAINER
 							IgnoreChildMouseOver: true
 							Children:
@@ -193,7 +194,7 @@ Container@OBSERVER_WIDGETS:
 							Height: 26
 							Key: Pause
 							IgnoreChildMouseOver: true
-							TooltipText: Play
+							TooltipText: 播放
 							TooltipContainer: TOOLTIP_CONTAINER
 							Children:
 								Image@IMAGE_PLAY:
@@ -207,9 +208,9 @@ Container@OBSERVER_WIDGETS:
 							Width: 34
 							Height: 20
 							Key: ReplaySpeedSlow
-							TooltipText: 50% speed
+							TooltipText: 50% 速度
 							TooltipContainer: TOOLTIP_CONTAINER
-							Text: 0.5x
+							Text: 0.5倍
 							Font: TinyBold
 						Button@BUTTON_REGULAR:
 							X: 52 + 36
@@ -217,7 +218,7 @@ Container@OBSERVER_WIDGETS:
 							Width: 34
 							Height: 20
 							Key: ReplaySpeedRegular
-							TooltipText: 100% speed
+							TooltipText: 100% 速度
 							TooltipContainer: TOOLTIP_CONTAINER
 							Text: 1x
 							Font: TinyBold
@@ -227,17 +228,17 @@ Container@OBSERVER_WIDGETS:
 							Width: 34
 							Height: 20
 							Key: ReplaySpeedFast
-							TooltipText: 133% speed
+							TooltipText: 133% 速度
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
-							Text: 1.33x
+							Text: 1.33倍
 							Font: TinyBold
 						Button@BUTTON_FASTER:
 							X: 52 + 36 * 3
 							Y: 13
 							Width: 34
 							Height: 20
-							TooltipText: 200% speed
+							TooltipText: 200% 速度
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Text: 2x
@@ -248,9 +249,9 @@ Container@OBSERVER_WIDGETS:
 							Width: 38
 							Height: 20
 							Key: ReplaySpeedMax
-							TooltipText: Maximum speed
+							TooltipText: 最大速度
 							TooltipContainer: TOOLTIP_CONTAINER
-							Text: MAX
+							Text: 最大
 							Font: TinyBold
 				ObserverArmyValues:
 					X: WINDOW_WIDTH - WIDTH - 10
@@ -312,7 +313,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Player
+									Text: 玩家
 									Align: Left
 									Shadow: True
 								Label@CASH_HEADER:
@@ -321,7 +322,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Cash
+									Text: 现金
 									Align: Right
 									Shadow: True
 								Label@POWER_HEADER:
@@ -330,7 +331,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Power
+									Text: 电力
 									Align: Center
 									Shadow: True
 								Label@KILLS_HEADER:
@@ -339,7 +340,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 40
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Kills
+									Text: 击杀
 									Align: Right
 									Shadow: True
 								Label@DEATHS_HEADER:
@@ -348,7 +349,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 60
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Deaths
+									Text: 阵亡
 									Align: Right
 									Shadow: True
 								Label@ASSETS_DESTROYED_HEADER:
@@ -357,7 +358,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Destroyed
+									Text: 摧毁
 									Align: Right
 									Shadow: True
 								Label@ASSETS_LOST_HEADER:
@@ -366,7 +367,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Lost
+									Text: 损失
 									Align: Right
 									Shadow: True
 								Label@EXPERIENCE_HEADER:
@@ -375,7 +376,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 60
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Score
+									Text: 得分
 									Align: Right
 									Shadow: True
 								Label@ACTIONS_MIN_HEADER:
@@ -411,14 +412,14 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Player
+									Text: 玩家
 									Shadow: True
 								Label@CASH_HEADER:
 									X: 155
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Cash
+									Text: 现金
 									Align: Right
 									Shadow: True
 								Label@INCOME_HEADER:
@@ -426,7 +427,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Income
+									Text: 收入
 									Align: Right
 									Shadow: True
 								Label@ASSETS_HEADER:
@@ -434,7 +435,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Assets
+									Text: 资产
 									Align: Right
 									Shadow: True
 								Label@EARNED_HEADER:
@@ -442,7 +443,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Earned
+									Text: 赚取
 									Align: Right
 									Shadow: True
 								Label@SPENT_HEADER:
@@ -450,7 +451,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Spent
+									Text: 花费
 									Align: Right
 									Shadow: True
 								Label@HARVESTERS_HEADER:
@@ -458,7 +459,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Harvs
+									Text: 矿车
 									Align: Right
 									Shadow: True
 								Label@BOUNTY_HEADER:
@@ -466,7 +467,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 60
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Bounty
+									Text: 赏金
 									Align: Right
 									Shadow: True
 						Container@PRODUCTION_STATS_HEADERS:
@@ -494,7 +495,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Player
+									Text: 玩家
 									Align: Left
 									Shadow: True
 								Label@PRODUCTION_HEADER:
@@ -503,7 +504,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 100
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Production
+									Text: 生产
 									Shadow: True
 						Container@SUPPORT_POWERS_HEADERS:
 							X: 0
@@ -530,7 +531,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Player
+									Text: 玩家
 									Align: Left
 									Shadow: True
 								Label@SUPPORT_POWERS_HEADER:
@@ -539,7 +540,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 100
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Support Powers
+									Text: 支援能力
 									Shadow: True
 						Container@ARMY_HEADERS:
 							X: 0
@@ -566,7 +567,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Player
+									Text: 玩家
 									Align: Left
 									Shadow: True
 								Label@ARMY_HEADER:
@@ -575,7 +576,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 100
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Army
+									Text: 军队
 									Shadow: True
 						Container@UPGRADES_HEADERS:
 							X: 0
@@ -602,7 +603,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Player
+									Text: 玩家
 									Align: Left
 									Shadow: True
 								Label@UPGRADES_HEADER:
@@ -611,7 +612,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 100
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Upgrades
+									Text: 升级
 									Shadow: True
 						Container@BUILD_ORDER_HEADERS:
 							X: 0
@@ -638,7 +639,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Player
+									Text: 玩家
 									Align: Left
 									Shadow: True
 								Label@BUILD_ORDER_HEADER:
@@ -647,7 +648,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 100
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Initial Build Order
+									Text: 初始建造顺序
 									Shadow: True
 						Container@UNITS_PRODUCED_HEADERS:
 							X: 0
@@ -674,7 +675,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Player
+									Text: 玩家
 									Align: Left
 									Shadow: True
 								Label@UNITS_PRODUCED_HEADER:
@@ -683,7 +684,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 100
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Units Produced
+									Text: 单位生产
 									Shadow: True
 						Container@COMBAT_STATS_HEADERS:
 							X: 0
@@ -710,7 +711,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 120
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Player
+									Text: 玩家
 									Align: Left
 									Shadow: True
 								Label@ASSETS_DESTROYED_HEADER:
@@ -719,7 +720,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 75
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Destroyed
+									Text: 摧毁
 									Align: Right
 									Shadow: True
 								Label@ASSETS_LOST_HEADER:
@@ -728,7 +729,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 75
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Lost
+									Text: 损失
 									Align: Right
 									Shadow: True
 								Label@UNITS_KILLED_HEADER:
@@ -737,7 +738,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 90
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Units Killed
+									Text: 击杀单位
 									Align: Right
 									Shadow: True
 								Label@UNITS_DEAD_HEADER:
@@ -746,7 +747,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Units Lost
+									Text: 损失单位
 									Align: Right
 									Shadow: True
 								Label@BUILDINGS_KILLED_HEADER:
@@ -755,7 +756,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 85
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Bldg Killed
+									Text: 摧毁建筑
 									Align: Right
 									Shadow: True
 								Label@BUILDINGS_DEAD_HEADER:
@@ -764,7 +765,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 80
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Bldg Lost
+									Text: 损失建筑
 									Align: Right
 									Shadow: True
 								Label@ARMY_VALUE_HEADER:
@@ -773,7 +774,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 90
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Army Value
+									Text: 军队价值
 									Align: Right
 									Shadow: True
 								Label@VISION_HEADER:
@@ -782,7 +783,7 @@ Container@OBSERVER_WIDGETS:
 									Width: 60
 									Height: PARENT_HEIGHT
 									Font: Bold
-									Text: Vision
+									Text: 视野
 									Align: Right
 									Shadow: True
 				ScrollPanel@PLAYER_STATS_PANEL:

@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca18-succession"
 
 SuperweaponsEnabledTime = {
@@ -107,9 +108,9 @@ WorldLoaded = function()
 		spyPlaneDummy1.Destroy()
 	end)
 
-    ObjectiveCaptureTemplePrime = USSR.AddObjective("Capture Temple Prime.")
-    ObjectiveCaptureFactories = USSR.AddObjective("Capture all four cyborg manufacturing facilities.")
-	ObjectiveYuriMustSurvive = USSR.AddSecondaryObjective("Protect Yuri.")
+    ObjectiveCaptureTemplePrime = USSR.AddObjective("占领主神庙。")
+    ObjectiveCaptureFactories = USSR.AddObjective("占领所有四座半机械制造设施。")
+	ObjectiveYuriMustSurvive = USSR.AddSecondaryObjective("保护尤里。")
 
     local factories = { CyborgFactory1, CyborgFactory2, CyborgFactory3, CyborgFactory4 }
     Utils.Do(factories, function(f)
@@ -149,12 +150,12 @@ WorldLoaded = function()
 		if not USSR.IsObjectiveCompleted(ObjectiveYuriMustSurvive) then
 			USSR.MarkFailedObjective(ObjectiveYuriMustSurvive)
 		end
-		Notification("Yuri used his psionic powers to cheat death and has fled the battlefield to recuperate.")
+		Notification("尤里使用心灵力量逃过一劫，已逃离战场休整。")
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(5), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("增援已抵达。")
 		SendKirovs()
 	end)
 

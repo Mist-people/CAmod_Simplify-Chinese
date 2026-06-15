@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Vehicle-NOUPG:
 	Tooltip:
 		GenericVisibility: Enemy
@@ -81,7 +82,7 @@ GNRL:
 
 ^WormholeBase:
 	Tooltip:
-		GenericName: Wormhole
+		GenericName: 虫洞
 		GenericVisibility: Enemy
 		ShowOwnerRow: false
 

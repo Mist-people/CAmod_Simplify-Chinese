@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 Container@PLAYER_WIDGETS:
 	Logic: LoadIngameChatLogic
 	Children:
@@ -126,7 +127,7 @@ Container@PLAYER_WIDGETS:
 					Background: commandbar-button
 					Key: AttackMove
 					DisableKeySound: true
-					TooltipText: button-command-bar-attack-move.tooltip
+					TooltipText: 移动攻击
 					TooltipDesc: button-command-bar-attack-move.tooltipdesc
 					TooltipContainer: TOOLTIP_CONTAINER
 					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
@@ -144,7 +145,7 @@ Container@PLAYER_WIDGETS:
 					VisualHeight: 0
 					Background: commandbar-button
 					DisableKeySound: true
-					TooltipText: button-command-bar-force-move.tooltip
+					TooltipText: 强制移动
 					TooltipDesc: button-command-bar-force-move.tooltipdesc
 					TooltipContainer: TOOLTIP_CONTAINER
 					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
@@ -162,7 +163,7 @@ Container@PLAYER_WIDGETS:
 					VisualHeight: 0
 					Background: commandbar-button
 					DisableKeySound: true
-					TooltipText: button-command-bar-force-attack.tooltip
+					TooltipText: 强制攻击
 					TooltipDesc: button-command-bar-force-attack.tooltipdesc
 					TooltipContainer: TOOLTIP_CONTAINER
 					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
@@ -181,9 +182,10 @@ Container@PLAYER_WIDGETS:
 					Background: commandbar-button
 					Key: Guard
 					DisableKeySound: true
-					TooltipText: button-command-bar-guard.tooltip
+					TooltipText: 守卫
 					TooltipDesc: button-command-bar-guard.tooltipdesc
 					TooltipContainer: TOOLTIP_CONTAINER
+					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
 					Children:
 						Image@ICON:
 							X: 5
@@ -200,9 +202,10 @@ Container@PLAYER_WIDGETS:
 					Key: Deploy
 					DisableKeyRepeat: true
 					DisableKeySound: true
-					TooltipText: button-command-bar-deploy.tooltip
+					TooltipText: 部署
 					TooltipDesc: button-command-bar-deploy.tooltipdesc
 					TooltipContainer: TOOLTIP_CONTAINER
+					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
 					Children:
 						Image@ICON:
 							X: 5
@@ -219,9 +222,10 @@ Container@PLAYER_WIDGETS:
 					Key: Scatter
 					DisableKeyRepeat: true
 					DisableKeySound: true
-					TooltipText: button-command-bar-scatter.tooltip
+					TooltipText: 分散
 					TooltipDesc: button-command-bar-scatter.tooltipdesc
 					TooltipContainer: TOOLTIP_CONTAINER
+					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
 					Children:
 						Image@ICON:
 							X: 5
@@ -238,9 +242,10 @@ Container@PLAYER_WIDGETS:
 					Key: Stop
 					DisableKeyRepeat: true
 					DisableKeySound: true
-					TooltipText: button-command-bar-stop.tooltip
+					TooltipText: 停止
 					TooltipDesc: button-command-bar-stop.tooltipdesc
 					TooltipContainer: TOOLTIP_CONTAINER
+					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
 					Children:
 						Image@ICON:
 							X: 5
@@ -255,7 +260,7 @@ Container@PLAYER_WIDGETS:
 					VisualHeight: 0
 					Background: commandbar-button
 					DisableKeySound: true
-					TooltipText: button-command-bar-queue-orders.tooltip
+					TooltipText: 路径点模式
 					TooltipDesc: button-command-bar-queue-orders.tooltipdesc
 					TooltipContainer: TOOLTIP_CONTAINER
 					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
@@ -281,9 +286,10 @@ Container@PLAYER_WIDGETS:
 					Key: StanceAttackAnything
 					DisableKeyRepeat: true
 					DisableKeySound: true
-					TooltipText: button-stance-bar-attackanything.tooltip
+					TooltipText: 侵略姿态
 					TooltipDesc: button-stance-bar-attackanything.tooltipdesc
 					TooltipContainer: TOOLTIP_CONTAINER
+					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
 					Children:
 						Image@ICON:
 							X: 9
@@ -300,9 +306,10 @@ Container@PLAYER_WIDGETS:
 					Key: StanceDefend
 					DisableKeyRepeat: true
 					DisableKeySound: true
-					TooltipText: button-stance-bar-defend.tooltip
+					TooltipText: 防御姿态
 					TooltipDesc: button-stance-bar-defend.tooltipdesc
 					TooltipContainer: TOOLTIP_CONTAINER
+					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
 					Children:
 						Image@ICON:
 							X: 9
@@ -319,9 +326,10 @@ Container@PLAYER_WIDGETS:
 					Key: StanceReturnFire
 					DisableKeyRepeat: true
 					DisableKeySound: true
-					TooltipText: button-stance-bar-returnfire.tooltip
+					TooltipText: 固守姿态
 					TooltipDesc: button-stance-bar-returnfire.tooltipdesc
 					TooltipContainer: TOOLTIP_CONTAINER
+					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
 					Children:
 						Image@ICON:
 							X: 9
@@ -338,9 +346,10 @@ Container@PLAYER_WIDGETS:
 					Key: StanceHoldFire
 					DisableKeyRepeat: true
 					DisableKeySound: true
-					TooltipText: button-stance-bar-holdfire.tooltip
+					TooltipText: 停火姿态
 					TooltipDesc: button-stance-bar-holdfire.tooltipdesc
 					TooltipContainer: TOOLTIP_CONTAINER
+					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
 					Children:
 						Image@ICON:
 							X: 9
@@ -365,7 +374,7 @@ Container@PLAYER_WIDGETS:
 					Width: PARENT_WIDTH - 30
 					Height: 25
 					Align: Right
-					Text: Audio Muted
+					Text: 已静音
 					Contrast: true
 		Image@SIDEBAR_BACKGROUND:
 			Logic: AddFactionSuffixLogic
@@ -388,7 +397,7 @@ Container@PLAYER_WIDGETS:
 							Height: 24
 							Background: sidebar-top-button
 							Key: PlaceBeacon
-							TooltipText: Place Beacon
+							TooltipText: 放置信标
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Children:
@@ -403,7 +412,7 @@ Container@PLAYER_WIDGETS:
 							Height: 24
 							Background: sidebar-top-button
 							Key: Sell
-							TooltipText: Sell
+							TooltipText: 出售
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Children:
@@ -418,7 +427,7 @@ Container@PLAYER_WIDGETS:
 							Height: 24
 							Background: sidebar-top-button
 							Key: PowerDown
-							TooltipText: Power Down
+							TooltipText: 断电
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Children:
@@ -433,7 +442,7 @@ Container@PLAYER_WIDGETS:
 							Height: 24
 							Background: sidebar-top-button
 							Key: Repair
-							TooltipText: Repair
+							TooltipText: 维修
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Children:
@@ -448,7 +457,7 @@ Container@PLAYER_WIDGETS:
 							Height: 24
 							Background: sidebar-top-button
 							Key: Upgrade
-							TooltipText: Upgrade
+							TooltipText: 升级
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Children:
@@ -463,7 +472,7 @@ Container@PLAYER_WIDGETS:
 							Height: 24
 							Background: sidebar-top-button
 							Key: escape
-							TooltipText: Options
+							TooltipText: 选项
 							TooltipContainer: TOOLTIP_CONTAINER
 							DisableWorldSounds: true
 							VisualHeight: 0
@@ -603,7 +612,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Buildings
+									TooltipText: 建筑
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Building
 									Key: ProductionTypeBuilding
@@ -619,7 +628,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Defense
+									TooltipText: 防御
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Defense
 									Key: ProductionTypeDefense
@@ -635,7 +644,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Infantry
+									TooltipText: 步兵
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Infantry
 									Key: ProductionTypeInfantry
@@ -651,7 +660,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Vehicles
+									TooltipText: 载具
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Vehicle
 									Key: ProductionTypeVehicle
@@ -667,7 +676,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Aircraft
+									TooltipText: 飞行器
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Aircraft
 									Key: ProductionTypeAircraft
@@ -683,7 +692,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Naval
+									TooltipText: 海军
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Ship
 									Key: ProductionTypeNaval
@@ -699,7 +708,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Upgrades
+									TooltipText: 升级
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Upgrade
 									Key: ProductionTypeUpgrade
@@ -716,7 +725,7 @@ Container@PLAYER_WIDGETS:
 									Height: 18
 									VisualHeight: 0
 									Background: sidebar-scrollup-button
-									TooltipText: Scroll up
+									TooltipText: 上滚
 									TooltipContainer: TOOLTIP_CONTAINER
 								Button@SCROLL_DOWN_BUTTON:
 									Logic: AddFactionSuffixLogic
@@ -726,7 +735,7 @@ Container@PLAYER_WIDGETS:
 									Height: 18
 									VisualHeight: 0
 									Background: sidebar-scrolldown-button
-									TooltipText: Scroll down
+									TooltipText: 下滚
 									TooltipContainer: TOOLTIP_CONTAINER
 				ProductionTabsCA@PRODUCTION_TABS:
 					RightButton: sidebar-production-tab-right-button
@@ -856,11 +865,11 @@ Container@PLAYER_WIDGETS:
 				DropDownButton@HPF_OVERLAY_LOCOMOTOR:
 					Width: PARENT_WIDTH
 					Height: 25
-					Text: Select Locomotor
+					Text: 选择移动方式
 					Font: Regular
 				DropDownButton@HPF_OVERLAY_CHECK:
 					Y: 0 + 35
 					Width: PARENT_WIDTH
 					Height: 25
-					Text: Select BlockedByActor
+					Text: 选择阻挡单位
 					Font: Regular

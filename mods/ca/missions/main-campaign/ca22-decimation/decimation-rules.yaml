@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 
@@ -5,7 +6,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, decimation.lua
 	MissionData:
-		Briefing: Another of the human factions, the Soviets, have recently turned the tide in their favour.\n\nTheir numbers include one named Yuri who possesses substantial psionic power, which has enabled the Soviets to assert control over a large portion of Kane's cybernetically enhanced troops.\n\nThe Soviets are now in the process of rebuilding their armies which had suffered significant losses, and if left unchecked they could threaten us.\n\nUltimately we seek to usurp Yuri's domination of the cyborgs, but it is critical that the already sizeable Soviet armies are not bolstered further.\n\nYour mission is to launch a full scale attack against the Soviet industrial heartland. Numerous factories are located here which are rapidly producing new equipment. Many of their vehicles are without crews, pending final maintenance and preparations.\n\nThey must be destroyed along with the factories that produced them.
+		Briefing: 另一个人族派系——苏联，最近扭转了战局，形势对他们有利。\n\n他们之中有一个名叫尤里的人，拥有强大的精神力量，这使得苏联得以控制凯恩的大批机械化强化部队。\n\n苏联目前正在重建他们遭受重创的军队，若不加以遏制，他们可能威胁到我们。\n\n我们的最终目标是夺取尤里对生化人的控制权，但关键在于不能让已经规模庞大的苏联军队进一步壮大。\n\n你的任务是向苏联的工业心脏地带发动全面进攻。这里的大量工厂正在快速生产新装备。许多载具尚未配备操作人员，正在等待最后的维护和准备工作。\n\n它们必须连同生产它们的工厂一起被摧毁。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

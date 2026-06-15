@@ -58,7 +58,7 @@ if [ "${AUTOMATIC_ENGINE_MANAGEMENT}" = "True" ]; then
 
 	echo "Downloading engine..."
 	if command -v curl > /dev/null 2>&1; then
-		curl -s -L -o "${AUTOMATIC_ENGINE_TEMP_ARCHIVE_NAME}" -O "${AUTOMATIC_ENGINE_SOURCE}" || exit 3
+		curl -s -L -o "${AUTOMATIC_ENGINE_TEMP_ARCHIVE_NAME}" "${AUTOMATIC_ENGINE_SOURCE}" || exit 3
 	else
 		wget -cq "${AUTOMATIC_ENGINE_SOURCE}" -O "${AUTOMATIC_ENGINE_TEMP_ARCHIVE_NAME}" || exit 3
 	fi
@@ -77,6 +77,14 @@ if [ "${AUTOMATIC_ENGINE_MANAGEMENT}" = "True" ]; then
 	# HACK: Remove bogus lint check that the Example mod can't possibly pass
 	# because to do so it would need to define a lot of excess things surrounding resources.
 	rm ${ENGINE_DIRECTORY}/OpenRA.Mods.Common/Lint/CheckFluentReferences.cs
+
+	# Simplified Chinese localization: Apply CJK line-wrapping patch
+	if [ -f "${TEMPLATE_ROOT}/engine-cjk-wrap.patch" ]; then
+		echo "Applying CJK line-wrapping patch..."
+		cd "${ENGINE_DIRECTORY}" || exit 1
+		patch -p1 < "${TEMPLATE_ROOT}/engine-cjk-wrap.patch" || exit 1
+		cd "${TEMPLATE_ROOT}" || exit 1
+	fi
 
 	echo "Compiling engine..."
 	cd "${ENGINE_DIRECTORY}" || exit 1

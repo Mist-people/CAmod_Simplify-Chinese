@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca32-convergence"
 
 MaxBreakthroughs = {
@@ -133,9 +134,9 @@ WorldLoaded = function()
 
 	Trigger.AfterDelay(DateTime.Seconds(10), function()
 		if IsHardOrAbove() then
-			Tip("Scrin fleet vessels will be pinged on the minimap when entering the area.")
+			Tip("思金舰队舰艇进入区域时会在小地图上标出。")
 		else
-			Tip("Scrin fleet vessels will be pinged on the minimap when entering the area and their paths will be visible as long as you have an active radar.")
+			Tip("思金舰队舰艇进入区域时会在小地图上标出，且只要你拥有启动的雷达，其路径将可见。")
 		end
 	end)
 
@@ -143,7 +144,7 @@ WorldLoaded = function()
 		SendFleetWave()
 
 		Trigger.AfterDelay(DateTime.Seconds(120), function()
-			Notification("The area across the river is infested with Tiberium lifeforms. You will need to use aicraft to intercept Scrin fleet vessels attempting to break through there.")
+			Notification("河对岸区域充斥着泰伯利亚生命体。你需要使用飞行器拦截试图从那里突破的思金舰队舰艇。")
 			MediaCA.PlaySound(MissionDir .. "/c_acrossriver.aud", 2)
 			Beacon.New(GDI, AcrossRiver.CenterPosition)
 			local acrossRiverCamera = Actor.Create("camera", true, { Owner = GDI, Location = AcrossRiver.Location })
@@ -154,9 +155,9 @@ WorldLoaded = function()
 	end)
 
 	if IsHardOrAbove() then
-		ObjectiveStopFleet = GDI.AddObjective("Prevent any Scrin fleet vessels breaking through.")
+		ObjectiveStopFleet = GDI.AddObjective("阻止任何思金舰队舰艇突破。")
 	else
-		ObjectiveStopFleet = GDI.AddObjective("Allow no more than " .. MaxBreakthroughs[Difficulty] .. " fleet vessels through.")
+		ObjectiveStopFleet = GDI.AddObjective("允许突破不超过 " .. MaxBreakthroughs[Difficulty] .. " 艘舰队舰艇。")
 	end
 
 	BottomOfMap = { }
@@ -265,7 +266,7 @@ IonStorm = function()
 end
 
 SendFleetWave = function()
-	Notification("Scrin fleet vessels approaching.")
+	Notification("思金舰队舰艇接近中。")
 	MediaCA.PlaySound(MissionDir .. "/c_scrinfleetvessels.aud", 2)
 	local currentWave = NextWave
 	local interval = 1
@@ -317,7 +318,7 @@ SendFleetWave = function()
 				self.Destroy()
 				NumBreakthroughs = NumBreakthroughs + 1
 				Media.PlaySoundNotification(nil, "AlertBuzzer")
-				Notification("A Scrin fleet vessel has broken through.")
+				Notification("一艘思金舰队舰艇已突破。")
 			end)
 			if IsNormalOrBelow() then
 				local pathRenderer = Actor.Create("pathRenderer", true, { Owner = GDI, Location = entry })
@@ -354,10 +355,10 @@ SendFleetWave = function()
 end
 
 UpdateMissionText = function()
-	local missionText = "Waves remaining: " .. WavesRemaining
+	local missionText = "剩余波次：" .. WavesRemaining
 
 	if IsNormalOrBelow() then
-		missionText = missionText .. " -- Fleet vessels escaped: " .. NumBreakthroughs .. "/" .. MaxBreakthroughs[Difficulty]
+		missionText = missionText .. " -- 已逃离舰队舰艇：" .. NumBreakthroughs .. "/" .. MaxBreakthroughs[Difficulty]
 	end
 
 	local color = HSLColor.Yellow

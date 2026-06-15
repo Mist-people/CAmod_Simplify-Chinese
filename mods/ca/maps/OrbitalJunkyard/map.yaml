@@ -1,6 +1,6 @@
 MapFormat: 11
 RequiresMod: ca
-Title: Orbital Junkyard
+Title: "轨道垃圾场"
 Author: Violetnred
 Tileset: INTERIOR
 MapSize: 130,130
@@ -9,12 +9,12 @@ Visibility: Lobby
 Categories: Conquest
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: england
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: england
 		Enemies: Multi0, Multi1, Multi2, Multi3

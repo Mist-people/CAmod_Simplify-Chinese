@@ -1,4 +1,5 @@
 
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 
@@ -9,12 +10,17 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, conduit.lua
 	MissionData:
-		Briefing: Much to our surprise, a Scrin creature of immense psionic power—the so-called Prodigy who usurped our control of Kane's cyborgs—had been imprisoned alongside Yuri.\n\nWhile incarcerated, Yuri was able to communicate with this creature and he believes that joining forces with its master, the Scrin Overlord, could be of great mutual benefit.\n\nIf GDI sources are to be believed, the terrorist Kane has caused the Overlord much grief; inciting a civil war and threatening the Overlord's millennia long grip on power. Our assistance at this pivotal moment would make the Overlord indebted to us, and we would surely be greatly rewarded.\n\nKane's delusional crusade must be stopped. We must seize this opportunity, and bring peace and stability back to not one, but two civilizations. With the Overlord's support, we will have the power to destroy our enemies once and for all, and an era of Soviet supremacy will finally be upon us.\n\nAs multiple gateways to their homeworld remain open, the Scrin Prodigy has been able to communicate with his master. The loyalists have suffered a major defeat, and it seems Kane is preparing to return to Earth with his vast cyborg army, while the Scrin rebels continue to eat away at the Overlord's remaining forces.\n\nOur goal is simple; assault the Nod base where the gateway has been prepared for Kane's return, and cut off his escape route. In the meantime, preparations are underway for our own forces to travel through the gateway, so that we may turn the tide of the war in the Overlord's favour.
-	MapOptions:
-		ShortGameCheckboxEnabled: False
-	MusicPlaylist:
-		StartingMusic: indeep
+		Briefing:  令我们大为惊讶的是，一个拥有巨大灵能力的思金生物——那个所谓的神童，曾夺取了我们对凯恩生化人的控制权——与尤里关押在同一处监狱。
 
+在监禁期间，尤里得以与这个生物交流，他认为与其主人——思金人的主宰——联手可能带来巨大的互利。
+
+如果GDI的消息来源可信，恐怖分子凯恩给主宰带来了巨大麻烦：煽动内战，威胁主宰持续数千年的权力掌控。我们在这个关键时刻提供援助将使主宰欠我们人情，我们必将获得丰厚的回报。
+
+凯恩妄想般的圣战必须被阻止。我们必须抓住这个机会，不仅为一个文明，而是为两个文明带来和平与稳定。有了主宰的支持，我们将拥有彻底消灭敌人的力量，苏联至上的时代终将到来。
+
+由于通往他们母星的多个传送门仍然敞开，思金神童得以与他的主人保持通讯。忠臣部队遭受了重大失败，凯恩似乎正准备率领他庞大的生化人大军返回地球，而思金反抗军则继续蚕食主宰的剩余部队。
+
+我们的目标很简单：攻击Nod兄弟会的基地——那里已为凯恩的回归准备好了传送门——切断他的退路。与此同时，我方部队正在准备通过传送门，以便我们能够扭转战局，使局势朝着有利于主宰的方向发展。
 Player:
 	PlayerResources:
 		DefaultCash: 6000

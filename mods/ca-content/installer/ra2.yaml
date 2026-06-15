@@ -1,4 +1,5 @@
-ra2: Red Alert 2 (Allied or Soviet Disc, English)
+# Simplified Chinese translation by lsxy, 2026.06.
+ra2: 红色警戒2（盟军或苏联光盘，英文）
 	Type: Disc
 	IDFiles:
 		README.txt: e125e2742509d73b20dc4aa65b22497c805cd6f5

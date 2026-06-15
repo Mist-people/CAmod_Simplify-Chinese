@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca46-intervention"
 
 SuperweaponsEnabledTime = {
@@ -86,7 +87,7 @@ WorldLoaded = function()
 	InitNod()
 	SetupLightning()
 
-	ObjectiveDestroySilos = Greece.AddObjective("Capture or destroy all Nod Tiberium Silos.")
+	ObjectiveDestroySilos = Greece.AddObjective("占领或摧毁所有Nod泰伯利亚储存仓。")
 
 	if IsHardOrAbove() then
 		InitialTree.Destroy()
@@ -154,7 +155,7 @@ UpdateMissionText = function()
 	local siloCount = #Nod.GetActorsByType("silo.td")
 
 	if siloCount > 0 then
-		UserInterface.SetMissionText(siloCount .. " silos remaining.", HSLColor.Yellow)
+		UserInterface.SetMissionText("剩余 " .. siloCount .. " 座储存仓。", HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end

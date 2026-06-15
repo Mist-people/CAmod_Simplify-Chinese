@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca15-ironclad"
 
 
@@ -87,8 +88,8 @@ WorldLoaded = function()
 		EMPMissile.Destroy()
 	end
 
-	ObjectiveDestroyBases = USSR.AddObjective("Break the siege and destroy the enemy bases.")
-	ObjectiveProtectIronCurtain = USSR.AddObjective("Do not lose the Iron Curtain.")
+	ObjectiveDestroyBases = USSR.AddObjective("打破围城并摧毁敌方基地。")
+	ObjectiveProtectIronCurtain = USSR.AddObjective("不得失去铁幕装置。")
 	EngineerDrop()
 
 	Trigger.AfterDelay(5, function()
@@ -220,7 +221,7 @@ EngineerDrop = function()
 	local haloDropUnits = { "e6", "e6", "e6", "e6", "e6", "e6", "e6", "e6" }
 
 	Trigger.AfterDelay(DateTime.Seconds(2), function()
-		Notification("Engineering team inbound.")
+		Notification("工程队即将抵达。")
 		MediaCA.PlaySound(MissionDir .. "/r2_engineeringteam.aud", 2)
 	end)
 

@@ -1,10 +1,11 @@
 # For encyclopedia entries not tied to specific units etc.
 
+# Simplified Chinese translation by lsxy, 2026.06.
 encyclopedia.tips.general:
 	Interactable:
 	AlwaysVisible:
 	Tooltip:
-		Name: General
+		Name: 将军
 	Encyclopedia:
 		Category: Other/Tips
 	EncyclopediaExtras:
@@ -58,11 +59,11 @@ encyclopedia.power.veilofwar:
 		Prerequisites: anyradar
 		BuildDuration: 7500
 	Tooltip:
-		Name: Veil of War
+		Name: 战争帷幕
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Creates an expanding area of shroud, reducing the vision and weapon range of enemy units and defenses.
+		Description: 生成一片不断扩张的黑幕，降低敌方单位与防御建筑的视野和武器射程。
 		Subfaction: england
 
 encyclopedia.power.clustermines:
@@ -72,11 +73,11 @@ encyclopedia.power.clustermines:
 		Prerequisites: anyradar
 		BuildDuration: 6750
 	Tooltip:
-		Name: Cluster Mines
+		Name: 集束地雷
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Sends a cargo plane to drop a minefield at the target location.
+		Description: 派遣运输机在目标位置投放雷区。
 		Subfaction: france
 
 encyclopedia.power.strafe:
@@ -86,11 +87,11 @@ encyclopedia.power.strafe:
 		Prerequisites: hpad
 		BuildDuration: 7500
 	Tooltip:
-		Name: Strafing Run
+		Name: 低空扫射
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in P51 ground attack planes to perform strafing runs on the target.
+		Description: 呼叫 P-51 对目标执行低空扫射。
 		Subfaction: usa
 
 encyclopedia.power.cryostorm:
@@ -100,11 +101,11 @@ encyclopedia.power.cryostorm:
 		Prerequisites: alhq
 		BuildDuration: 8250
 	Tooltip:
-		Name: Cryostorm
+		Name: 冷冻风暴
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Creates a turbulent area of extreme cold, reducing movement speed and increasing damage taken.
+		Description: 制造一片极度寒冷的湍流区域，降低移动速度并增加受到伤害。
 		AdditionalInfo: Requires Sweden Coalition.
 
 encyclopedia.power.heliosbomb:
@@ -115,11 +116,11 @@ encyclopedia.power.heliosbomb:
 		Prerequisites: alhq
 		BuildDuration: 10500
 	Tooltip:
-		Name: Helios Bomb
+		Name: 赫利俄斯炸弹
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a bomber which drops a Helios bomb, blinding units in a large area.
+		Description: 呼叫轰炸机投下赫利俄斯炸弹，使大范围单位致盲。
 		AdditionalInfo: Requires Greece Coalition.
 
 encyclopedia.power.bsky:
@@ -129,11 +130,11 @@ encyclopedia.power.bsky:
 		Prerequisites: alhq
 		BuildDuration: 9000
 	Tooltip:
-		Name: Black Sky Strike
+		Name: 黑天打击
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Fires long range guided missiles at multiple ground targets prioritized by value. Tracking can be lost if targets move far enough from their initial location.
+		Description: 向多个地面目标发射远程制导导弹，按价值排序。若目标移动过远，跟踪可能丢失。
 		AdditionalInfo: Requires Korea Coalition.
 
 encyclopedia.power.spysatellite:
@@ -143,11 +144,11 @@ encyclopedia.power.spysatellite:
 		Prerequisites: atek
 		BuildDuration: 5250
 	Tooltip:
-		Name: Spy Satellite
+		Name: 间谍卫星
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Periodically reveals the entire map for a short time (activated automatically).
+		Description: 周期性短暂揭示整张地图（自动触发）。
 
 encyclopedia.power.tempinc:
 	Inherits: ^SupportPowerPreview
@@ -156,11 +157,11 @@ encyclopedia.power.tempinc:
 		Prerequisites: pdox
 		BuildDuration: 7500
 	Tooltip:
-		Name: Temporal Incursion
+		Name: 时空突袭
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Summons reinforcements from the future. Units return to their origin time after a short time.
+		Description: 从未来召唤增援。单位会在短时间后返回原本的时间线。
 		Subfaction: germany
 
 encyclopedia.power.timewarp:
@@ -170,11 +171,11 @@ encyclopedia.power.timewarp:
 		Prerequisites: pdox
 		BuildDuration: 4500
 	Tooltip:
-		Name: Time Warp
+		Name: 时间扭曲
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Disrupts time and space at the target location. Affected units & structures are frozen in time, unable to act, but immune to damage.
+		Description: 受影响的单位与建筑会被冻结在时间中，无法行动，但免疫伤害。
 		Subfaction: germany
 
 encyclopedia.power.chronoshift:
@@ -184,11 +185,11 @@ encyclopedia.power.chronoshift:
 		Prerequisites: pdox
 		BuildDuration: 4500
 	Tooltip:
-		Name: Chronoshift
+		Name: 超时空传送
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Teleports up to 9 selected vehicles to a targeted location, returning them to their original location after a short time.\n\n• If killed, units are returned with 20% health\n• Units with larger health pools take additional damage\n• Passengers cannot be unloaded\n• Enemy units are teleported for reduced duration
+		Description: 将最多9个选中的载具传送到目标位置，短时间后返回原位。\n\n• 如果被摧毁，单位以20%生命值返回\n• 生命值更高的单位会受到额外伤害\n• 乘员无法卸载\n• 敌方单位传送持续时间更短
 
 encyclopedia.power.lightningstorm:
 	Inherits: ^SupportPowerPreview
@@ -197,11 +198,11 @@ encyclopedia.power.lightningstorm:
 		Prerequisites: weat
 		BuildDuration: 13500
 	Tooltip:
-		Name: Lightning Storm
+		Name: 闪电风暴
 	Encyclopedia:
 		Category: Allies/Support Powers
 	EncyclopediaExtras:
-		Description: Initiate a Lightning Storm which deals heavy damage over a large area.
+		Description: 发动闪电风暴，对大范围区域造成重创。
 
 # Soviet Support Powers
 
@@ -212,24 +213,24 @@ encyclopedia.power.spyplane:
 		Prerequisites: anyradar
 		BuildDuration: 3750
 	Tooltip:
-		Name: Spy Plane
+		Name: 侦察机
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Dispatches a spy plane that reveals the target location for a limited time.
+		Description: 派出侦察机，短时间揭示目标位置。
 
-encyclopedia.power.paratroopers:
+encyclopedia.power.伞兵:
 	Inherits: ^SupportPowerPreview
 	Buildable:
-		Icon: paratroopers
+		Icon: 伞兵
 		Prerequisites: anyradar
 		BuildDuration: 7500
 	Tooltip:
-		Name: Paratroopers
+		Name: 伞兵
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Dispatches a Halo transport to drop a squad of infantry anywhere on the map.
+		Description: 派遣 Halo 运输机，将一队步兵空降到地图任意位置。
 
 encyclopedia.power.stormtroopers:
 	Inherits: ^SupportPowerPreview
@@ -238,11 +239,11 @@ encyclopedia.power.stormtroopers:
 		Prerequisites: anyradar
 		BuildDuration: 9000
 	Tooltip:
-		Name: Storm-troopers
+		Name: 震电突击队空降
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Dispatches a Halo transport to drop a squad of Shock Troopers anywhere on the map.
+		Description: 派遣光环运输机向地图任意位置空投一队震电突击兵。
 		Subfaction: russia
 
 encyclopedia.power.parabombs:
@@ -252,11 +253,11 @@ encyclopedia.power.parabombs:
 		Prerequisites: afld
 		BuildDuration: 7500
 	Tooltip:
-		Name: Parabombs
+		Name: 伞降炸弹
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a Badger bomber which drops parachuted bombs on your target.
+		Description: 呼叫獾式轰炸机，在目标上空投下伞降炸弹。
 
 encyclopedia.power.carpetbomb:
 	Inherits: ^SupportPowerPreview
@@ -265,11 +266,11 @@ encyclopedia.power.carpetbomb:
 		Prerequisites: afld
 		BuildDuration: 10500
 	Tooltip:
-		Name: Carpet Bomb
+		Name: 地毯式轰炸
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a squad of Badgers which drop bombs on your target.
+		Description: 呼叫一队獾式轰炸机向目标投弹。
 		Subfaction: ukraine
 
 encyclopedia.power.atomicbombair:
@@ -279,11 +280,11 @@ encyclopedia.power.atomicbombair:
 		Prerequisites: afld
 		BuildDuration: 10500
 	Tooltip:
-		Name: Atomic Bomb (Air)
+		Name: 原子弹（空投）
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a Badger bomber which drops an atom bomb on your target.
+		Description: 呼叫獾式轰炸机，在目标上投下一枚原子弹。
 		Subfaction: iraq
 
 encyclopedia.power.mutabomb:
@@ -294,11 +295,11 @@ encyclopedia.power.mutabomb:
 		Prerequisites: anyradar
 		BuildDuration: 6750
 	Tooltip:
-		Name: Muta Bomb
+		Name: 突变炸弹
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a Badger bomber which drops a genetic mutation bomb on your target, transforming infantry into Brutes under your control.
+		Description: 呼叫獾式轰炸机在目标上投下基因突变炸弹，将步兵变为受你控制的狂兽人。
 		Subfaction: yuri
 
 encyclopedia.power.chaosbombs:
@@ -308,11 +309,11 @@ encyclopedia.power.chaosbombs:
 		Prerequisites: afld
 		BuildDuration: 8250
 	Tooltip:
-		Name: Chaos Bombs
+		Name: 混乱炸弹
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a Badger bomber which drops parachuted chaos bombs on your target.
+		Description: 呼叫獾式轰炸机向目标投放伞降混乱炸弹。
 		Subfaction: yuri
 
 encyclopedia.power.atomicammo:
@@ -322,11 +323,11 @@ encyclopedia.power.atomicammo:
 		Prerequisites: npwr
 		BuildDuration: 4500
 	Tooltip:
-		Name: Atomic Shells
+		Name: 原子炮弹
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Grants tanks a limited supply of atomic shells (also for a limited duration).\n\nAffects Soviet tanks only (Heavy/Rhino Tank, Lasher/Thrasher Tank, Siege Tank, Mammoth Tank, Overlord Tank, Apocalypse Tank, Nuke Cannon)
+		Description: 为坦克提供有限数量的原子炮弹，并且只持续一段时间。
 
 encyclopedia.power.heroes:
 	Inherits: ^SupportPowerPreview
@@ -334,11 +335,11 @@ encyclopedia.power.heroes:
 		Icon: heroes
 		BuildDuration: 6000
 	Tooltip:
-		Name: Heroes of the Union
+		Name: 联盟英雄
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Targeted basic infantry units become Heroes of the Union, significantly increasing their damage, speed, range and resilience.\n\nCan affect Rifle Infantry, Rocket Soldiers, Grenadiers and Flamethrowers.
+		Description: 目标基础步兵会成为联盟英雄，大幅提升伤害、速度、射程和生存能力。
 		AdditionalInfo: Requires Infantry Doctrine.
 
 encyclopedia.power.tankdrop:
@@ -347,11 +348,11 @@ encyclopedia.power.tankdrop:
 		Icon: tankdrop
 		BuildDuration: 13500
 	Tooltip:
-		Name: Tank Drop
+		Name: 坦克空投
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Dispatches cargo planes to air drop tanks at the target location.
+		Description: 派遣运输机向目标位置空投坦克。
 		AdditionalInfo: Requires Armor Doctrine.
 
 encyclopedia.power.killzone:
@@ -360,11 +361,11 @@ encyclopedia.power.killzone:
 		Icon: killzone
 		BuildDuration: 4500
 	Tooltip:
-		Name: Kill Zone
+		Name: 杀伤区域
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Calls in a Spy Plane which marks a target area. Any enemy units within it take increased damage.
+		Description: 区域内的任何敌方单位都会受到更多伤害。
 		AdditionalInfo: Requires Artillery Doctrine.
 
 encyclopedia.power.ironcurtain:
@@ -374,11 +375,11 @@ encyclopedia.power.ironcurtain:
 		Prerequisites: iron
 		BuildDuration: 4500
 	Tooltip:
-		Name: Iron Curtain
+		Name: 铁幕装置
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Makes selected friendly vehicles temporarily invulnerable.
+		Description: 使选定友方载具暂时无敌。
 
 encyclopedia.power.atombomb:
 	Inherits: ^SupportPowerPreview
@@ -387,11 +388,11 @@ encyclopedia.power.atombomb:
 		Prerequisites: mslo
 		BuildDuration: 13500
 	Tooltip:
-		Name: Atom Bomb
+		Name: 原子弹
 	Encyclopedia:
 		Category: Soviets/Support Powers
 	EncyclopediaExtras:
-		Description: Launches a devastating atomic bomb at the target location, dealing heavy damage over a large area.
+		Description: 向目标位置发射毁灭性的原子弹，对大范围区域造成重创。
 
 # GDI Support Powers
 
@@ -402,11 +403,11 @@ encyclopedia.power.recondrone:
 		Prerequisites: anyradar
 		BuildDuration: 3750
 	Tooltip:
-		Name: Recon Drone
+		Name: 侦察无人机
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: A drone flies across the map, revealing the area as it passes.\n\nDetects cloaked units.
+		Description: 无人机飞越地图，揭示沿途区域。\n\n侦测隐形单位。
 
 encyclopedia.power.xodrop:
 	Inherits: ^SupportPowerPreview
@@ -415,11 +416,11 @@ encyclopedia.power.xodrop:
 		Prerequisites: anyradar
 		BuildDuration: 9750
 	Tooltip:
-		Name: X-O Drop
+		Name: X-O空降
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: An Orca transport drops a squad of X-O Powersuits at the target location.
+		Description: 奥卡运输机向目标位置空投一队X-O动力装甲。
 		Subfaction: talon
 
 encyclopedia.power.droppods:
@@ -430,11 +431,11 @@ encyclopedia.power.droppods:
 		Prerequisites: anyradar
 		BuildDuration: 4500
 	Tooltip:
-		Name: Drop Pods
+		Name: 空降舱
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Instantly deploys a small team of elite soldiers at the target location via orbital drop pods.
+		Description: 通过轨道空降舱向目标位置即刻部署一支精英士兵小队。
 		Subfaction: zocom
 
 encyclopedia.power.reinforcements:
@@ -445,11 +446,11 @@ encyclopedia.power.reinforcements:
 		Prerequisites: anyradar
 		BuildDuration: 6000
 	Tooltip:
-		Name: Reinforcements
+		Name: 增援
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: An Orca Carryall drops an APC containing an infantry squad at the target location.
+		Description: 奥卡运输机向目标位置空投一辆载有步兵班的装甲运兵车。
 		Subfaction: eagle
 
 encyclopedia.power.interceptors:
@@ -459,11 +460,11 @@ encyclopedia.power.interceptors:
 		Prerequisites: afld.gdi
 		BuildDuration: 10500
 	Tooltip:
-		Name: Interceptors
+		Name: 截击机
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: A squadron of Interceptors provides air cover over the target area, engaging any enemy aircraft within range.
+		Description: 一队截击机在目标区域提供空中掩护，与范围内的敌方飞行器交战。
 
 encyclopedia.power.naniterepair:
 	Inherits: ^SupportPowerPreview
@@ -472,11 +473,11 @@ encyclopedia.power.naniterepair:
 		Prerequisites: gtek
 		BuildDuration: 6750
 	Tooltip:
-		Name: Nanite Repair
+		Name: 纳米修复
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Repairs selected damaged vehicles over time.
+		Description: 持续修复选定的受损载具。
 		Subfaction: arc
 
 encyclopedia.power.surgicalstrike:
@@ -487,11 +488,11 @@ encyclopedia.power.surgicalstrike:
 		Prerequisites: eye
 		BuildDuration: 6000
 	Tooltip:
-		Name: Surgical Strike
+		Name: 外科打击
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Initiate an precision Ion Cannon strike which deals instant damage to a small area.
+		Description: 发动精确离子炮打击，对小范围区域造成瞬间伤害。
 		Subfaction: zocom
 
 encyclopedia.power.firestorm:
@@ -502,11 +503,11 @@ encyclopedia.power.firestorm:
 		Prerequisites: upgc
 		BuildDuration: 7500
 	Tooltip:
-		Name: Firestorm
+		Name: 烈焰风暴
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Fires a barrage of rockets at the target area.
+		Description: 向目标区域发射一轮火箭弹幕。
 		AdditionalInfo: Requires Bombardment Strategy.
 
 encyclopedia.power.advancedradar:
@@ -517,11 +518,11 @@ encyclopedia.power.advancedradar:
 		Prerequisites: upgc
 		BuildDuration: 4500
 	Tooltip:
-		Name: Advanced Radar
+		Name: 先进雷达
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Reveals the location of enemy structures & units through the fog of war.
+		Description: 透过战争迷雾揭示敌方建筑与单位的位置。
 		AdditionalInfo: Requires Seek & Destroy Strategy.
 
 encyclopedia.power.naniteshield:
@@ -531,11 +532,11 @@ encyclopedia.power.naniteshield:
 		Prerequisites: upgc
 		BuildDuration: 6000
 	Tooltip:
-		Name: Nanite Shield
+		Name: 纳米护盾
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Reduces the damage taken by all vehicles in the target area.
+		Description: 降低目标区域内所有载具受到的伤害。
 		AdditionalInfo: Requires Hold the Line Strategy.
 
 encyclopedia.power.empmissile:
@@ -545,11 +546,11 @@ encyclopedia.power.empmissile:
 		Prerequisites: patr
 		BuildDuration: 4500
 	Tooltip:
-		Name: EMP Missile
+		Name: 电磁脉冲导弹
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Launches an EMP missile that disables vehicles and structures in the target area.
+		Description: 发射电磁脉冲导弹，瘫痪目标区域的载具和建筑。
 
 encyclopedia.power.ioncannon:
 	Inherits: ^SupportPowerPreview
@@ -558,11 +559,11 @@ encyclopedia.power.ioncannon:
 		Prerequisites: eye
 		BuildDuration: 13500
 	Tooltip:
-		Name: Ion Cannon
+		Name: 离子炮
 	Encyclopedia:
 		Category: GDI/Support Powers
 	EncyclopediaExtras:
-		Description: Fires a devastating ion cannon beam at the target location.
+		Description: 向目标位置发射毁灭性的离子炮光束。
 
 # Nod Support Powers
 
@@ -573,11 +574,11 @@ encyclopedia.power.hacksat:
 		Prerequisites: anyradar
 		BuildDuration: 4500
 	Tooltip:
-		Name: Hack Satellite
+		Name: 入侵卫星
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Reveals the targeted area for a short time.
+		Description: 短时间揭示目标区域。
 
 encyclopedia.power.airdrop:
 	Inherits: ^SupportPowerPreview
@@ -586,11 +587,11 @@ encyclopedia.power.airdrop:
 		Prerequisites: airs
 		BuildDuration: 13500
 	Tooltip:
-		Name: Air Drop
+		Name: 空投
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Dispatches cargo planes to air drop tanks at the target location. Units dependent on subfaction.
+		Description: 派遣运输机向目标位置空投坦克。
 
 encyclopedia.power.substrike:
 	Inherits: ^SupportPowerPreview
@@ -599,11 +600,11 @@ encyclopedia.power.substrike:
 		Prerequisites: weap.td
 		BuildDuration: 12000
 	Tooltip:
-		Name: Subterranean Strike
+		Name: 地下突袭
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Deploys a squad of infantry via Subterranean APC.
+		Description: 通过地下装甲运兵车部署一队步兵。
 		Subfaction: marked
 
 encyclopedia.power.infbomb:
@@ -614,11 +615,11 @@ encyclopedia.power.infbomb:
 		Prerequisites: anyradar
 		BuildDuration: 9750
 	Tooltip:
-		Name: Inferno Bomb
+		Name: 炼狱炸弹
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: A B2 Stealth Bomber drops inferno bombs on your target.
+		Description: B2隐形轰炸机在目标上投下炼狱炸弹。
 		Subfaction: blackh
 
 encyclopedia.power.cashhack:
@@ -628,11 +629,11 @@ encyclopedia.power.cashhack:
 		Prerequisites: anyradar
 		BuildDuration: 6000
 	Tooltip:
-		Name: Cash Hack
+		Name: 资金劫持
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Steal up to $2000 credits from a targeted enemy Refinery.
+		Description: 从目标敌方精炼厂窃取最多 $2000 资金。
 		Subfaction: legion
 
 encyclopedia.power.shadowteam:
@@ -642,11 +643,11 @@ encyclopedia.power.shadowteam:
 		Prerequisites: anyradar
 		BuildDuration: 6750
 	Tooltip:
-		Name: Shadow Team
+		Name: 暗影小组
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Calls for a Shadow Team; three stealth infantry that arrive via glider armed with grenades and a machine pistol.\n\nOperatives can be ordered to land via the deploy command.
+		Description: 呼叫暗影小队；三名装备手榴弹和冲锋手枪的隐形步兵通过滑翔机抵达。\n\n可通过部署命令命令特工降落。
 		Subfaction: shadow
 
 encyclopedia.power.frenzy:
@@ -656,11 +657,11 @@ encyclopedia.power.frenzy:
 		Prerequisites: tmpl
 		BuildDuration: 6750
 	Tooltip:
-		Name: Frenzy
+		Name: 狂热
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Increases the movement speed and rate of fire of targeted units for a limited time.\n\nWarning: Units are weakened for a short time after frenzy wears off.
+		Description: 在一段时间内提升目标单位的移动速度和射速。
 		Subfaction: marked
 
 encyclopedia.power.techhack:
@@ -670,11 +671,11 @@ encyclopedia.power.techhack:
 		Prerequisites: tmpl
 		BuildDuration: 18000
 	Tooltip:
-		Name: Tech Hack
+		Name: 技术劫持
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Hack the targeted enemy production structure, providing access to a unit developed using enemy technology.\n\nFor infantry, vehicle and air production respectively: \n\n• Allies: Cryo Mortar, Reckoner, Phantom\n• Soviets: Cyberdog, Cyclops, Kamov\n• GDI: Sonic Mortar, Basilisk, Shade\n• Nod: Chem Mortar, Mantis, Vertigo\n• Scrin: Cyberscrin, Viper, Manticore
+		Description: 骇入敌方生产建筑，获取使用敌方技术开发的单位。\n\n步兵、载具和飞行器生产建筑分别对应：\n\n• 盟军：冷冻迫击炮、清算者、幽灵\n• 苏联：赛博格犬、独眼巨人、卡莫夫\n• GDI：声波迫击炮、蛇怪、暗影\n• 无d：化学迫击炮、螳螂、眩晕\n• 思金：赛博思金、蝰蛇、狮蝎
 		Subfaction: legion
 
 encyclopedia.power.assassinsquad:
@@ -684,11 +685,11 @@ encyclopedia.power.assassinsquad:
 		IconPalette: chrometd
 		BuildDuration: 6000
 	Tooltip:
-		Name: Assassin Squad
+		Name: 刺客小队
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Deploy a squad of Assassins that can snipe infantry from long range and destroy buildings with C4.\n\nTarget infantry production structure to deploy.
+		Description: 部署一队可远程狙击步兵并使用C4摧毁建筑的刺客。\n\n目标为步兵生产建筑以进行部署。
 		AdditionalInfo: Requires Wrath Covenant.
 
 encyclopedia.power.hackercell:
@@ -697,11 +698,11 @@ encyclopedia.power.hackercell:
 		Icon: hackercell
 		BuildDuration: 6000
 	Tooltip:
-		Name: Hacker Cell
+		Name: 黑客小组
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Deploy a squad of Hackers that can remotely capture buildings and take control of defenses.\n\nTarget infantry production structure to deploy.
+		Description: 部署一队可远程占领建筑并控制防御设施的黑客。\n\n目标为步兵生产建筑以进行部署。
 		AdditionalInfo: Requires Unity Covenant.
 
 encyclopedia.power.confessorcabal:
@@ -711,11 +712,11 @@ encyclopedia.power.confessorcabal:
 		IconPalette: chrometd
 		BuildDuration: 6000
 	Tooltip:
-		Name: Confessor Cabal
+		Name: 忏悔者集团
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Deploy a Confessor Cabal which is able to construct Idols of Kane that buffs allies and debuffs enemies.\n\nTarget infantry production structure to deploy.
+		Description: 部署告解师密谋团，可建造凯恩神像，为盟友提供增益并为敌人施加减益。\n\n目标为步兵生产建筑以进行部署。
 		AdditionalInfo: Requires Zeal Covenant.
 
 encyclopedia.power.clustermissile:
@@ -726,11 +727,11 @@ encyclopedia.power.clustermissile:
 		Prerequisites: tmpl
 		BuildDuration: 10500
 	Tooltip:
-		Name: Cluster Missile
+		Name: 集束导弹
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Launches a Cluster Missile which deals heavy damage at the target location.
+		Description: 发射集束导弹，对目标位置造成重创。
 
 encyclopedia.power.tibstealth:
 	Inherits: ^SupportPowerPreview
@@ -740,11 +741,11 @@ encyclopedia.power.tibstealth:
 		Prerequisites: sgen
 		BuildDuration: 4500
 	Tooltip:
-		Name: Tiberium Stealth
+		Name: 泰伯利亚隐形
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Makes selected vehicles and structures temporarily invisible.\n\nWarning: Harmful to non-cyborg infantry.\n\nHazmat Suits upgrade makes allies immune to damage and enemies take 50% damage.
+		Description: 使选中的载具和建筑暂时隐形。\n\n警告：对非生化人步兵有害。\n\n防化服升级使盟友免疫伤害，敌人受到50%伤害。
 
 encyclopedia.power.chemmissile:
 	Inherits: ^SupportPowerPreview
@@ -754,11 +755,11 @@ encyclopedia.power.chemmissile:
 		Prerequisites: mslo.nod
 		BuildDuration: 13500
 	Tooltip:
-		Name: Chemical Missile
+		Name: 化学导弹
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: Launches an deadly Chemical Missile. Deals heavy damage and creates toxic clouds which are extremely harmful to infantry.\n
+		Description: 发射致命的化学导弹。造成大量伤害并制造对步兵极有害的有毒云团。
 
 # Scrin Support Powers
 
@@ -770,11 +771,11 @@ encyclopedia.power.resourcescan:
 		Prerequisites: anyradar
 		BuildDuration: 7500
 	Tooltip:
-		Name: Resource Scan
+		Name: 资源扫描
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Reveals the area surrounding all resources on the map.
+		Description: 揭示地图上所有资源周围的区域。
 
 encyclopedia.power.ichorspike:
 	Inherits: ^SupportPowerPreview
@@ -783,11 +784,11 @@ encyclopedia.power.ichorspike:
 		IconPalette: chromes
 		BuildDuration: 6000
 	Tooltip:
-		Name: Ichor Spike
+		Name: 灵液尖塔
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description:  Creates an Ichor Spike at the target location. Resources within its area of influence grow and spread faster.\n\nAlso empowers units with Resource Conversion upgrade.
+		Description: 在目标位置创建灵液尖刺。影响范围内的资源生长和扩散速度加快。\n\n同时强化具有资源转换升级的单位。
 		AdditionalInfo: Requires Loyalist Allegiance.
 
 encyclopedia.power.colonyspike:
@@ -797,11 +798,11 @@ encyclopedia.power.colonyspike:
 		IconPalette: chromes
 		BuildDuration: 7500
 	Tooltip:
-		Name: Colony Spike
+		Name: 殖民尖塔
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Creates a Colony Spike at the target location. Enables production of non-defensive structures.\n\nWhen fully charged allows non-defensive structures to be built nearby.\n\nMust be built within range of a Colony Platform.
+		Description: 在目标位置创建殖民尖刺。允许生产非防御建筑。\n\n完全充能后允许在附近建造非防御建筑。\n\n必须在殖民平台的范围内建造。
 		AdditionalInfo: Requires Rebel Allegiance.
 
 encyclopedia.power.voidspike:
@@ -811,11 +812,11 @@ encyclopedia.power.voidspike:
 		IconPalette: chromes
 		BuildDuration: 6000
 	Tooltip:
-		Name: Voidspike
+		Name: 虚空尖塔
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Creates a Voidspike at the target location. Gradually transforms nearby resources into Black Tiberium which is devoid of most of its useful properties.\n\nDamages nearby enemy units.
+		Description: 在目标位置创建虚空尖刺。逐渐将附近的资源转化为失去了大部分有用属性的黑色泰伯利亚。\n\n伤害附近的敌方单位。
 		AdditionalInfo: Requires Malefic Allegiance.
 
 encyclopedia.power.ionsurge:
@@ -826,11 +827,11 @@ encyclopedia.power.ionsurge:
 		Prerequisites: anyradar
 		BuildDuration: 6750
 	Tooltip:
-		Name: Ion Surge
+		Name: 离子涌动
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Increases the movement speed of all friendly units passing through the target area.
+		Description: 提升所有经过目标区域的友方单位的移动速度。
 		Subfaction: traveler
 
 encyclopedia.power.stormspikepower:
@@ -841,11 +842,11 @@ encyclopedia.power.stormspikepower:
 		Prerequisites: anyradar
 		BuildDuration: 7500
 	Tooltip:
-		Name: Storm Spike
+		Name: 风暴尖塔
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Creates a temporary Storm Column defensive structure at the target location.
+		Description: 在目标位置建造临时风暴柱防御建筑。
 		Subfaction: reaper
 
 encyclopedia.power.buzzerswarm:
@@ -856,11 +857,11 @@ encyclopedia.power.buzzerswarm:
 		Prerequisites: anyradar
 		BuildDuration: 7500
 	Tooltip:
-		Name: Buzzer Swarm
+		Name: 蜂群
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Spawns a controllable swarm which blinds and damages anything nearby; particularly harmful to infantry.
+		Description: 生成一群可控蜂群，致盲并伤害附近一切；对步兵尤为致命。
 		Subfaction: harbinger
 
 encyclopedia.power.ichorseed:
@@ -870,11 +871,11 @@ encyclopedia.power.ichorseed:
 		Prerequisites: scrt
 		BuildDuration: 6000
 	Tooltip:
-		Name: Ichor Seed
+		Name: 灵液之种
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Grows Tiberium at selected location.
+		Description: 在所选位置催生泰伯利亚。
 
 encyclopedia.power.greatercoalescence:
 	Inherits: ^SupportPowerPreview
@@ -883,11 +884,11 @@ encyclopedia.power.greatercoalescence:
 		Prerequisites: scrt
 		BuildDuration: 6000
 	Tooltip:
-		Name: Greater Coalescence
+		Name: 大凝聚
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Spawns a controllable biomass which heals nearby allies and sustains itself by feeding off enemies.\n\nFeeding from power plants will shut them down temporarily.
+		Description: 生成可控生物质，治疗附近盟友并通过吞噬敌人维持自身。\n\n从发电厂汲取能量将使其暂时停止运转。
 		Subfaction: collector
 
 encyclopedia.power.gateway:
@@ -898,11 +899,11 @@ encyclopedia.power.gateway:
 		Prerequisites: scrt
 		BuildDuration: 6000
 	Tooltip:
-		Name: Gateway
+		Name: 传送门
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Creates a Gateway at the target location. Acts as the exit for any\n   targeted infantry or vehicle production structure.\n\nRequires target location to be within vision.
+		Description: 在目标位置创建传送门。作为任意选中步兵或载具生产建筑的出口。\n\n目标位置需在视野范围内。
 		AdditionalInfo: Requires Rebel Allegiance.
 
 encyclopedia.power.anathemapower:
@@ -913,11 +914,11 @@ encyclopedia.power.anathemapower:
 		Prerequisites: scrt
 		BuildDuration: 3000
 	Tooltip:
-		Name: Anathema
+		Name: 咒逐
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Targeted vehicle greatly increases in power over time. After 30 seconds the unit explodes.
+		Description: 目标载具的力量随时间急剧增长。30秒后单位自爆。
 		AdditionalInfo: Requires Malefic Allegiance.
 
 encyclopedia.power.owrath:
@@ -928,11 +929,11 @@ encyclopedia.power.owrath:
 		Prerequisites: scrt
 		BuildDuration: 10500
 	Tooltip:
-		Name: Overlord's Wrath
+		Name: 霸主之怒
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: A Tiberium meteor strikes the target location dealing heavy damage and creating a patch of Tiberium.
+		Description: 泰伯利亚陨石击中目标位置，造成重创并产生一片泰伯利亚。
 		AdditionalInfo: Requires Loyalist Allegiance.
 
 encyclopedia.power.fleetrecall:
@@ -943,11 +944,11 @@ encyclopedia.power.fleetrecall:
 		Prerequisites: sign
 		BuildDuration: 5250
 	Tooltip:
-		Name: Fleet Recall
+		Name: 舰队召回
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Recalls all selected Scrin fleet vessels back to the Signal Transmitter.\n\nApplies to: Mothership, Planetary Assault Carrier, Devastator
+		Description: 将所有选定的思金舰队舰船召回信号发射器。
 
 encyclopedia.power.suppression:
 	Inherits: ^SupportPowerPreview
@@ -956,11 +957,11 @@ encyclopedia.power.suppression:
 		Prerequisites: mani
 		BuildDuration: 4500
 	Tooltip:
-		Name: Suppression
+		Name: 压制
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Applies a suppression field to the target area, slowing unit movement and rate of fire.
+		Description: 对目标区域施加压制场，降低单位移动速度和射速。
 
 encyclopedia.power.rift:
 	Inherits: ^SupportPowerPreview
@@ -969,11 +970,11 @@ encyclopedia.power.rift:
 		Prerequisites: rfgn
 		BuildDuration: 13500
 	Tooltip:
-		Name: Rift
+		Name: 裂隙
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	EncyclopediaExtras:
-		Description: Initiate a Rift which deals heavy damage over time to a large area.
+		Description: 发动裂隙，对大范围区域持续造成重创。
 
 encyclopedia.power.forceshield:
 	Inherits: ^SupportPowerPreview
@@ -982,11 +983,11 @@ encyclopedia.power.forceshield:
 		Prerequisites: techcenter.any
 		BuildDuration: 7500
 	Tooltip:
-		Name: Force Shield
+		Name: 力场护盾
 	Encyclopedia:
 		Category: Other/Shared Support Powers
 	EncyclopediaExtras:
-		Description: Makes selected friendly structures temporarily invulnerable.\n\nWarning: Causes power failure.
+		Description: 使选定友方建筑暂时无敌。
 
 encyclopedia.power.sendcash:
 	Inherits: ^SupportPowerPreview
@@ -995,11 +996,11 @@ encyclopedia.power.sendcash:
 		Prerequisites: anyrefinery
 		BuildDuration: 0
 	Tooltip:
-		Name: Send Cash
+		Name: 发送资金
 	Encyclopedia:
 		Category: Other/Shared Support Powers
 	EncyclopediaExtras:
-		Description: Available in team games and co-op. Sends $1000 credits to targeted ally.
+		Description: 在组队游戏和合作模式中可用。向目标盟友发送$1000资金。
 
 # IFV Variants
 ^IFVVariantPreview:
@@ -1018,56 +1019,56 @@ encyclopedia.ifv.missile:
 	WithSpriteTurret:
 		Sequence: turret-rocket
 	Tooltip:
-		Name: Missile IFV
+		Name: 导弹IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Rocket Soldier. Fires anti-air/anti-armor missiles.
+		Description: 步兵战车搭载火箭兵。发射防空/反装甲导弹。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Rocket Soldier
+		Strengths: • 擅长对付飞行器, 重型装甲
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 乘员: 火箭兵
 
 encyclopedia.ifv.mg:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: Machine Gun IFV
+		Name: 机枪IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Rifle Infantry. Fires a rapid machine gun.
+		Description: 步兵战车搭载步枪兵。快速机枪射击。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Rifle Infantry
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 步枪 步兵
 
 encyclopedia.ifv.engi:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-engi
 	Tooltip:
-		Name: Engineer IFV
+		Name: 工程师IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with an Engineer. Can capture enemy structures.
+		Description: 步兵战车搭载工程师。可占领敌方建筑。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Captures structures\n• Passenger: Engineer
+		Weaknesses: • 无武装
+		Attributes: • 占领建筑\n• 乘员: 工程师
 
 encyclopedia.ifv.med:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: Medical IFV
+		Name: 医疗IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Medic. Heals nearby friendly infantry.
+		Description: 步兵战车搭载医疗兵。治疗附近友军步兵。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Heals friendly infantry\n• Passenger: Medic
+		Weaknesses: • 无武装
+		Attributes: • 治疗 友军步兵\n• 乘员: 医护兵
 	-WithSpriteTurret:
 	WithIdleOverlay@MEDIC:
 		Sequence: medic
@@ -1079,26 +1080,26 @@ encyclopedia.ifv.mech:
 	WithSpriteTurret:
 		Sequence: turret-mech
 	Tooltip:
-		Name: Repair IFV
+		Name: 修理IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Mechanic. Repairs nearby friendly vehicles.
+		Description: 步兵战车搭载机械师。维修附近友军载具。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Repairs friendly vehicles\n• Passenger: Mechanic
+		Weaknesses: • 无武装
+		Attributes: • 维修 友军载具\n• 乘员: 机械师
 
 encyclopedia.ifv.spy:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: Spy IFV
+		Name: 间谍IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Spy. Can sabotage enemy structures and detect cloaked units.
+		Description: 步兵战车搭载间谍。可破坏敌方建筑并侦测隐形单位。
 	TooltipExtras:
-		Weaknesses: • Cannot deal damage
-		Attributes: • Sabotages enemy structures:\n    • Power Plants: Power outage\n    • Barracks/Factory: Infantry/vehicles produced as veteran\n    • Superweapons: Reset timer\n    • Radar: Reset shroud\n    • Helipad: Single-use paratroopers\n    • Airfield/Gravity Stabilizer: Single-use airstrike\n• Passenger: Spy
+		Weaknesses: • 无法造成伤害
+		Attributes: • 破坏 敌方建筑:\n    • 电力 放置: 电力中断\n    • 兵营/工厂: 步兵/载具 以老兵等级生产\n    • 超级武器: 重置计时器\n    • 雷达: 重置黑幕\n    • 直升机坪: 一次性伞兵\n    • 机场/重力稳定器: 一次性空袭\n• 乘员: 间谍
 	-WithSpriteTurret:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
@@ -1109,193 +1110,193 @@ encyclopedia.ifv.snip:
 	WithSpriteTurret:
 		Sequence: turret-snip
 	Tooltip:
-		Name: Sniper IFV
+		Name: 狙击手IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Sniper. Fires long-range sniper rounds.
+		Description: 步兵战车搭载狙击手。发射远程狙击弹。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Weak vs Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Sniper
+		Strengths: • 擅长对付步兵, 轻型装甲, 重型装甲
+		Weaknesses: • 不擅长对付 防御建筑, 建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 狙击手
 
 encyclopedia.ifv.enfo:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-enfo
 	Tooltip:
-		Name: Enforcer IFV
+		Name: 执法者IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with an Enforcer. Fires double shotgun blasts.
+		Description: 步兵战车搭载执法者。发射双管霰弹。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Enforcer
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 执法官
 
 encyclopedia.ifv.ggi:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-ggi
 	Tooltip:
-		Name: GGI IFV
+		Name: 重装大兵IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Guardian GI. Fires powerful anti-armor rounds.
+		Description: 步兵战车搭载守护者重装兵。发射强力反装甲弹。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Guardian GI
+		Strengths: • 擅长对付飞行器, 重型装甲
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 乘员: 守护者 GI
 
 encyclopedia.ifv.seal:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-cmdo
 	Tooltip:
-		Name: SEAL IFV
+		Name: 海豹IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Navy SEAL. Fires heavy anti-infantry rounds.
+		Description: 步兵战车搭载海豹突击队。发射重型反步兵弹。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
-		Attributes: • Passenger: Navy SEAL
+		Strengths: • 擅长对付步兵
+		Weaknesses: • 无法攻击飞行器, 载具, 建筑
+		Attributes: • 乘员: 海豹部队
 
 encyclopedia.ifv.cryo:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-cryo
 	Tooltip:
-		Name: Cryo IFV
+		Name: 冰冻IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Cryo Trooper. Fires freezing blasts.
+		Description: 步兵战车搭载冷冻士兵。发射冷冻冲击。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Slows enemy units and makes them take increased damage\n• Passenger: Cryo Trooper
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付 建筑, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 减速 敌方单位并使其承受更多伤害\n• 乘员: 冰冻兵
 
 encyclopedia.ifv.tigr:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-tigr
 	Tooltip:
-		Name: Tiger Guard IFV
+		Name: 虎卫IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Tiger Guard. Fires long range missiles.
+		Description: 步兵战车搭载虎卫。发射远程导弹。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Tiger Guard
+		Strengths: • 擅长对付飞行器, 重型装甲
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 乘员: 虎卫
 
 encyclopedia.ifv.hopl:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-hopl
 	Tooltip:
-		Name: Hoplite IFV
+		Name: 重装步兵IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Hoplite. Fires a prism beam.
+		Description: 步兵战车搭载重装步兵。发射棱镜光束。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Hoplite
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
+		Attributes: • 乘员: 重装步兵
 
 encyclopedia.ifv.cmdo:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-cmdo
 	Tooltip:
-		Name: Commando IFV
+		Name: 英雄IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV loaded with a Commando (Tanya/Boris/Commando). Fires rapid and powerful sniper bursts with high damage per shot.
+		Description: 步兵战车搭载突击队员（谭雅/鲍里斯/突击队员）。发射快速强力狙击连射，单发伤害极高。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
-		Attributes: • Passenger: Tanya, Boris, Commando
+		Strengths: • 擅长对付步兵
+		Weaknesses: • 无法攻击飞行器, 载具, 建筑
+		Attributes: • 乘员: 谭雅, 鲍里斯, 突击队员
 
 encyclopedia.ifv.grenade:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-frag
 	Tooltip:
-		Name: Grenade IFV
+		Name: 榴弹IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Grenadier. Launches fragmentation grenades.
+		Description: 步兵战车搭载手榴弹兵。发射破片榴弹。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Grenadier
+		Strengths: • 擅长对付 建筑, 防御建筑, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
+		Attributes: • 乘员: 掷弹兵
 
 encyclopedia.ifv.flame:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-flame
 	Tooltip:
-		Name: Flamethrower IFV
+		Name: 火焰IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Flamethrower. Projects devastating flames.
+		Description: 步兵战车搭载火焰喷射兵。喷射毁灭烈焰。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Flamethrower
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
+		Attributes: • 乘员: 火焰兵
 
 encyclopedia.ifv.chem:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-chem
 	Tooltip:
-		Name: Chemical IFV
+		Name: 化学IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Toxin Soldier. Sprays toxic chemicals.
+		Description: 步兵战车搭载毒素兵。喷洒有毒化学物。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Chem Warrior
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
+		Attributes: • 乘员: 化学战士
 
 encyclopedia.ifv.rad:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-rad
 	Tooltip:
-		Name: Desolator IFV
+		Name: 辐射IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Desolator. Fires a radiation beam.
+		Description: 步兵战车搭载辐射工兵。发射辐射光束。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Desolator, Rad Trooper
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 辐射工兵, 辐射兵
 
 encyclopedia.ifv.ivan:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: Explosive IFV
+		Name: 自爆IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Crazy Ivan. Self-destructs on contact with the target, dealing massive damage.
+		Description: 步兵战车搭载疯狂伊文。接触目标时自爆并造成大量伤害。
 	TooltipExtras:
-		Strengths: • Strong vs Everything
-		Weaknesses: • Self-destructs
-		Attributes: • Passengers: Crazy Ivan, Burster, Terror Dog
+		Strengths: • 擅长对付 一切
+		Weaknesses: • 自毁
+		Attributes: • 乘员: 疯狂伊文, 爆裂者, 恐怖狗
 	-WithSpriteTurret:
 	WithIdleOverlay@IVAN:
 		Sequence: nuke
@@ -1304,15 +1305,15 @@ encyclopedia.ifv.ivan:
 encyclopedia.ifv.tes:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: Tesla IFV
+		Name: 磁暴IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Shock Trooper or Tesla Trooper. Fires a powerful tesla bolt.
+		Description: 步兵战车搭载震电突击兵或磁暴步兵。发射强力磁暴电弧。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Passenger: Shock Trooper, Tesla Trooper
+		Strengths: • 擅长对付步兵, 重型装甲, 轻型装甲
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 乘员: 震击兵, 磁暴步兵
 	-WithSpriteTurret:
 	WithIdleOverlay@TESLA:
 		Sequence: tesla
@@ -1320,15 +1321,15 @@ encyclopedia.ifv.tes:
 encyclopedia.ifv.psy:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: Psychic IFV
+		Name: 心灵IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with Yuri or a Mastermind. Can mind control enemy units. Control is lost if passenger exits.
+		Description: 步兵战车搭载尤里或心灵之主。可心灵控制敌方单位。乘员离开后失去控制。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Vehicles
-		Weaknesses: • Cannot deal damage\n• Cannot attack Aircraft
-		Attributes: • Can mind control enemy units\n• Control lost if passenger exits\n• Passenger: Yuri, Mastermind
+		Strengths: • 擅长对付步兵, 载具
+		Weaknesses: • 无法造成伤害\n• 无法攻击飞行器
+		Attributes: • 可 心灵控制敌方单位\n• 乘员退出时失去控制\n• 乘员: 尤里, 尤里X
 	-WithSpriteTurret:
 	WithIdleOverlay@PSYCHIC:
 		Sequence: psy
@@ -1339,15 +1340,15 @@ encyclopedia.ifv.cmsr:
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: Commissar IFV
+		Name: 政委IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Commissar. Inspires nearby friendly infantry, boosting their combat effectiveness.
+		Description: 步兵战车搭载政委。激励附近友军步兵，提升其战斗力。
 	TooltipExtras:
-		Strengths: Inspires nearby allies
-		Weaknesses: Unarmed
-		Attributes: • Passenger: Commissar
+		Strengths: 激励附近友军
+		Weaknesses: 无武装
+		Attributes: • 乘员: 政委
 	WithPreviewDecoration@CMSR:
 		Image: pips
 		Sequence: pip-cmsr
@@ -1358,117 +1359,117 @@ encyclopedia.ifv.laser:
 	WithSpriteTurret:
 		Sequence: turret-laser
 	Tooltip:
-		Name: Laser IFV
+		Name: 激光IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with an Acolyte or Templar. Fires a powerful laser beam.
+		Description: 步兵战车搭载侍僧或圣殿骑士。发射强力激光束。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Acolyte, Templar
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 侍僧, 圣殿骑士
 
 encyclopedia.ifv.enli:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-enli
 	Tooltip:
-		Name: Enlightened IFV
+		Name: 启蒙者IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with an Enlightened. Fires a powerful particle beam.
+		Description: 步兵战车搭载觉醒者。发射强力粒子束。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Passenger: Enlightened
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
+		Attributes: • 乘员: 启蒙者
 
 encyclopedia.ifv.rmbc:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-rmbc
 	Tooltip:
-		Name: Cyborg Elite IFV
+		Name: 半机械精英IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Cyborg Elite. Fires a plasma cannon.
+		Description: 步兵战车搭载生化人精英。发射等离子炮。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Weaknesses: • 无法攻击飞行器
 
 encyclopedia.ifv.bh:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-bh
 	Tooltip:
-		Name: Black Hand IFV
+		Name: 黑手IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Black Hand. Projects devastating anti-vehicle flames.
+		Description: 步兵战车搭载黑手士兵。喷射毁灭性反载具烈焰。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Black Hand
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付 建筑, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 黑手
 
 encyclopedia.ifv.conf:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-conf
 	Tooltip:
-		Name: Confessor IFV
+		Name: 告解者IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Confessor. Fires hallucinogenic rounds.
+		Description: 步兵战车搭载告解师。发射致幻弹。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Explosion causes units to attack indiscriminately\n• Passenger: Confessor
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
+		Attributes: • 爆炸 导致单位 至 无差别攻击\n• 乘员: 忏悔者
 
 encyclopedia.ifv.reap:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-reap
 	Tooltip:
-		Name: Reaper IFV
+		Name: 收割者IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Cyborg Reaper. Fires anti-personnel missiles.
+		Description: 步兵战车搭载生化人收割者。发射人员杀伤导弹。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor
-		Attributes: • Passenger: Reaper
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付重型装甲
+		Attributes: • 乘员: 收割者
 
 encyclopedia.ifv.shad:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: Shadow IFV
+		Name: 暗影IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Shadow Operative. Armed with a heavy machinegun and able to cloak.
+		Description: 步兵战车搭载暗影特工。配备重机枪并可隐形。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Shadow Operative
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 暗影特工
 
 encyclopedia.ifv.hack:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: Hacker IFV
+		Name: 黑客IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Hacker. Can hack enemy defenses and buildings. Control is lost if passenger exits.
+		Description: 步兵战车搭载黑客。可骇入敌方防御和建筑。乘员离开后失去控制。
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Buildings
-		Weaknesses: • Cannot deal damage\n• Control lost if passenger exits
-		Attributes: • Passenger: Hacker
+		Strengths: • 擅长对付 防御建筑, 建筑
+		Weaknesses: • 无法造成伤害\n• 乘员退出时失去控制
+		Attributes: • 乘员: 黑客
 	-WithSpriteTurret:
 	WithIdleOverlay@HACK:
 		Sequence: hack
@@ -1478,105 +1479,105 @@ encyclopedia.ifv.ztrp:
 	WithSpriteTurret:
 		Sequence: turret-ztrp
 	Tooltip:
-		Name: Zone Trooper IFV
+		Name: 区域骑兵IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Zone Trooper. Fires powerful railgun shots.
+		Description: 步兵战车搭载区域突击兵。发射强力轨道炮弹。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Zone Trooper
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
+		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 区域兵
 
 encyclopedia.ifv.zdef:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-zdef
 	Tooltip:
-		Name: Zone Defender IFV
+		Name: 区域防御者IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Zone Defender. Fires ion blasts.
+		Description: 步兵战车搭载区域防御者。发射离子爆破。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Zone Defender
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
+		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 区域防御兵
 
 encyclopedia.ifv.zrai:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-zrai
 	Tooltip:
-		Name: Zone Raider IFV
+		Name: 区域突袭者IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Zone Raider. Fires sonic grenades.
+		Description: 步兵战车搭载区域突袭者。发射声波榴弹。
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Passenger: Zone Raider
+		Strengths: • 擅长对付轻型装甲, 建筑
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 乘员: 区域突袭兵
 
 encyclopedia.ifv.disin:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-disin
 	Tooltip:
-		Name: Disintegrator IFV
+		Name: 分解者IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Disintegrator. Fires disintegration beams.
+		Description: 步兵战车搭载粉碎者。发射粉碎光束。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Disintegrator (Scrin)
+		Strengths: • 擅长对付飞行器, 重型装甲
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 乘员: 粉碎者 (思金人)
 
 encyclopedia.ifv.shard:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-shard
 	Tooltip:
-		Name: Shard IFV
+		Name: 裂片IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Ravager or Eviscerator. Fires Tiberium shards.
+		Description: 步兵战车搭载掠夺者或剔骨者。发射泰伯利亚碎片。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Ravager, Eviscerator
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 毁灭者, 开膛手
 
 encyclopedia.ifv.pdisc:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-pdisc
 	Tooltip:
-		Name: Plasma Disc IFV
+		Name: 等离子碟IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: Fires plasma discs.
+		Description: 发射等离子圆盘。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Passenger: Intruder, Marauder
+		Strengths: • 擅长对付 建筑, 防御建筑, 重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
+		Attributes: • 乘员: 入侵者, 掠夺者
 
 encyclopedia.ifv.impl:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-impl
 	Tooltip:
-		Name: Impaler IFV
+		Name: 穿刺者IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with an Impaler. Fires long range impaling projectiles.
+		Description: 步兵战车搭载穿刺者。发射远程穿刺弹。
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Impaler
+		Strengths: • 擅长对付轻型装甲, 步兵
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 穿刺者
 
 encyclopedia.ifv.stlk:
 	Inherits: ^IFVVariantPreview
@@ -1586,60 +1587,60 @@ encyclopedia.ifv.stlk:
 		Sequence: turret-stlk
 		Palette: playerscrin
 	Tooltip:
-		Name: Stalker IFV
+		Name: 潜行者IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Stalker. Fires anti-infantry plasma darts and can cloak.
+		Description: 步兵战车搭载潜行者。发射反步兵等离子飞镖，可隐形。
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Stalker
+		Strengths: • 擅长对付轻型装甲, 步兵
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 潜行者
 
 encyclopedia.ifv.mortchem:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: Chemical Mortar IFV
+		Name: 化学迫击IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Chemical Mortar Infantry. Fires chemical mortar rounds that leave toxic residue.
+		Description: 步兵战车搭载化学迫击炮兵。发射化学迫击炮弹，留下有毒残留物。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Passenger: Chemical Mortar
+		Strengths: • 擅长对付步兵, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器\n• 难以命中移动目标
+		Attributes: • 乘员: 化学迫击炮
 
 encyclopedia.ifv.mortcryo:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: Cryo Mortar IFV
+		Name: 冰冻迫击IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Cryo Mortar Infantry. Fires cryo mortar rounds that slow and freeze enemies.
+		Description: 步兵战车搭载冷冻迫击炮兵。发射冷冻迫击炮弹，减速并冻结敌人。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Passenger: Cryo Mortar
+		Strengths: • 擅长对付步兵, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器\n• 难以命中移动目标
+		Attributes: • 乘员: 冰冻迫击炮
 
 encyclopedia.ifv.mortsonic:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: Sonic Mortar IFV
+		Name: 声波迫击IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV loaded with a Sonic Mortar Infantry. Fires sonic mortar rounds that cause concussion.
+		Description: 步兵战车搭载声波迫击炮兵。发射声波迫击炮弹，造成震荡。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Passenger: Sonic Mortar
+		Strengths: • 擅长对付步兵, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器\n• 难以命中移动目标
+		Attributes: • 乘员: 声波迫击炮
 
 # Reckoner Variants
 ^ReckonerVariantPreview:
@@ -1658,56 +1659,56 @@ encyclopedia.reck.missile:
 	WithSpriteTurret:
 		Sequence: turret-rocket
 	Tooltip:
-		Name: Missile Reckoner
+		Name: 导弹运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Rocket Soldier. Fires anti-air/anti-armor missiles.
+		Description: 清算者搭载火箭兵。发射防空/反装甲导弹。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Rocket Soldier
+		Strengths: • 擅长对付飞行器, 重型装甲
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 乘员: 火箭兵
 
 encyclopedia.reck.mg:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: Machine Gun Reckoner
+		Name: 机枪运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Rifle Infantry. Fires a rapid machine gun.
+		Description: 清算者搭载步枪兵。快速机枪射击。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Rifle Infantry
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 步枪 步兵
 
 encyclopedia.reck.engi:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-engi
 	Tooltip:
-		Name: Engineer Reckoner
+		Name: 工程师运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with an Engineer. Can capture enemy structures.
+		Description: 清算者搭载工程师。可占领敌方建筑。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Captures structures\n• Passenger: Engineer
+		Weaknesses: • 无武装
+		Attributes: • 占领建筑\n• 乘员: 工程师
 
 encyclopedia.reck.med:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: Medical Reckoner
+		Name: 医疗运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Medic. Heals nearby friendly infantry.
+		Description: 清算者搭载医疗兵。治疗附近友军步兵。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Heals friendly infantry\n• Passenger: Medic
+		Weaknesses: • 无武装
+		Attributes: • 治疗 友军步兵\n• 乘员: 医护兵
 	-WithSpriteTurret:
 	WithIdleOverlay@MEDIC:
 		Sequence: medic
@@ -1719,26 +1720,26 @@ encyclopedia.reck.mech:
 	WithSpriteTurret:
 		Sequence: turret-mech
 	Tooltip:
-		Name: Repair Reckoner
+		Name: 修理运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Mechanic. Repairs nearby friendly vehicles.
+		Description: 清算者搭载机械师。维修附近友军载具。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Repairs friendly vehicles\n• Passenger: Mechanic
+		Weaknesses: • 无武装
+		Attributes: • 维修 友军载具\n• 乘员: 机械师
 
 encyclopedia.reck.spy:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: Spy Reckoner
+		Name: 间谍运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Spy. Can sabotage enemy structures and detect cloaked units.
+		Description: 清算者搭载间谍。可破坏敌方建筑并侦测隐形单位。
 	TooltipExtras:
-		Weaknesses: • Cannot deal damage
-		Attributes: • Sabotages enemy structures:\n    • Power Plants: Power outage\n    • Barracks/Factory: Infantry/vehicles produced as veteran\n    • Superweapons: Reset timer\n    • Radar: Reset shroud\n    • Helipad: Single-use paratroopers\n    • Airfield/Gravity Stabilizer: Single-use airstrike\n• Passenger: Spy
+		Weaknesses: • 无法造成伤害
+		Attributes: • 破坏 敌方建筑:\n    • 电力 放置: 电力中断\n    • 兵营/工厂: 步兵/载具 以老兵等级生产\n    • 超级武器: 重置计时器\n    • 雷达: 重置黑幕\n    • 直升机坪: 一次性伞兵\n    • 机场/重力稳定器: 一次性空袭\n• 乘员: 间谍
 	-WithSpriteTurret:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
@@ -1749,193 +1750,193 @@ encyclopedia.reck.snip:
 	WithSpriteTurret:
 		Sequence: turret-snip
 	Tooltip:
-		Name: Sniper Reckoner
+		Name: 狙击手运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Sniper. Fires long-range sniper rounds.
+		Description: 清算者搭载狙击手。发射远程狙击弹。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Weak vs Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Sniper
+		Strengths: • 擅长对付步兵, 轻型装甲, 重型装甲
+		Weaknesses: • 不擅长对付 防御建筑, 建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 狙击手
 
 encyclopedia.reck.enfo:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-enfo
 	Tooltip:
-		Name: Enforcer Reckoner
+		Name: 执法者运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with an Enforcer. Fires double shotgun blasts.
+		Description: 清算者搭载执法者。发射双管霰弹。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Enforcer
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 执法官
 
 encyclopedia.reck.ggi:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-ggi
 	Tooltip:
-		Name: GGI Reckoner
+		Name: 重装大兵运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Guardian GI. Fires powerful anti-armor rounds.
+		Description: 清算者搭载守护者重装兵。发射强力反装甲弹。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Guardian GI
+		Strengths: • 擅长对付飞行器, 重型装甲
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 乘员: 守护者 GI
 
 encyclopedia.reck.seal:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-cmdo
 	Tooltip:
-		Name: SEAL Reckoner
+		Name: 海豹运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Navy SEAL. Fires heavy anti-infantry rounds.
+		Description: 清算者搭载海豹突击队。发射重型反步兵弹。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
-		Attributes: • Passenger: Navy SEAL
+		Strengths: • 擅长对付步兵
+		Weaknesses: • 无法攻击飞行器, 载具, 建筑
+		Attributes: • 乘员: 海豹部队
 
 encyclopedia.reck.cryo:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-cryo
 	Tooltip:
-		Name: Cryo Reckoner
+		Name: 冰冻运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Cryo Trooper. Fires freezing blasts.
+		Description: 清算者搭载冷冻士兵。发射冷冻冲击。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Slows enemy units and makes them take increased damage\n• Passenger: Cryo Trooper
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付 建筑, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 减速 敌方单位并使其承受更多伤害\n• 乘员: 冰冻兵
 
 encyclopedia.reck.tigr:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-tigr
 	Tooltip:
-		Name: Tiger Guard Reckoner
+		Name: 虎卫运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Tiger Guard. Fires long range missiles.
+		Description: 清算者搭载虎卫。发射远程导弹。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Tiger Guard
+		Strengths: • 擅长对付飞行器, 重型装甲
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 乘员: 虎卫
 
 encyclopedia.reck.hopl:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-hopl
 	Tooltip:
-		Name: Hoplite Reckoner
+		Name: 重装步兵运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Hoplite. Fires a prism beam.
+		Description: 清算者搭载重装步兵。发射棱镜光束。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Hoplite
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
+		Attributes: • 乘员: 重装步兵
 
 encyclopedia.reck.cmdo:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-cmdo
 	Tooltip:
-		Name: Commando Reckoner
+		Name: 英雄运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: Reckoner loaded with a Commando (Tanya/Boris/Commando). Fires rapid and powerful sniper bursts with high damage per shot.
+		Description: 清算者搭载突击队员（谭雅/鲍里斯/突击队员）。发射快速强力狙击连射，单发伤害极高。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Cannot attack Aircraft, Vehicles, Buildings
-		Attributes: • Passenger: Tanya, Boris, Commando
+		Strengths: • 擅长对付步兵
+		Weaknesses: • 无法攻击飞行器, 载具, 建筑
+		Attributes: • 乘员: 谭雅, 鲍里斯, 突击队员
 
 encyclopedia.reck.grenade:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-frag
 	Tooltip:
-		Name: Grenade Reckoner
+		Name: 榴弹运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Grenadier. Launches fragmentation grenades.
+		Description: 清算者搭载手榴弹兵。发射破片榴弹。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Grenadier
+		Strengths: • 擅长对付 建筑, 防御建筑, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
+		Attributes: • 乘员: 掷弹兵
 
 encyclopedia.reck.flame:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-flame
 	Tooltip:
-		Name: Flamethrower Reckoner
+		Name: 火焰运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Flamethrower. Projects devastating flames.
+		Description: 清算者搭载火焰喷射兵。喷射毁灭烈焰。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Flamethrower
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
+		Attributes: • 乘员: 火焰兵
 
 encyclopedia.reck.chem:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-chem
 	Tooltip:
-		Name: Chemical Reckoner
+		Name: 化学运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Toxin Soldier. Sprays toxic chemicals.
+		Description: 清算者搭载毒素兵。喷洒有毒化学物。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Passenger: Chem Warrior
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
+		Attributes: • 乘员: 化学战士
 
 encyclopedia.reck.rad:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-rad
 	Tooltip:
-		Name: Desolator Reckoner
+		Name: 辐射运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Desolator. Fires a radiation beam.
+		Description: 清算者搭载辐射工兵。发射辐射光束。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Desolator, Rad Trooper
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 辐射工兵, 辐射兵
 
 encyclopedia.reck.ivan:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: Explosive Reckoner
+		Name: 自爆运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Crazy Ivan. Self-destructs on contact with the target, dealing massive damage.
+		Description: 清算者搭载疯狂伊文。接触目标时自爆并造成大量伤害。
 	TooltipExtras:
-		Strengths: • Strong vs Everything
-		Weaknesses: • Self-destructs
-		Attributes: • Passengers: Crazy Ivan, Burster, Terror Dog
+		Strengths: • 擅长对付 一切
+		Weaknesses: • 自毁
+		Attributes: • 乘员: 疯狂伊文, 爆裂者, 恐怖狗
 	-WithSpriteTurret:
 	WithIdleOverlay@IVAN:
 		Sequence: nuke
@@ -1944,15 +1945,15 @@ encyclopedia.reck.ivan:
 encyclopedia.reck.tes:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: Tesla Reckoner
+		Name: 磁暴运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Shock Trooper or Tesla Trooper. Fires a powerful tesla bolt.
+		Description: 清算者搭载震电突击兵或磁暴步兵。发射强力磁暴电弧。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Heavy Armor, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Passenger: Shock Trooper, Tesla Trooper
+		Strengths: • 擅长对付步兵, 重型装甲, 轻型装甲
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 乘员: 震击兵, 磁暴步兵
 	-WithSpriteTurret:
 	WithIdleOverlay@TESLA:
 		Sequence: tesla
@@ -1960,15 +1961,15 @@ encyclopedia.reck.tes:
 encyclopedia.reck.psy:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: Psychic Reckoner
+		Name: 心灵运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with Yuri or a Mastermind. Can mind control enemy units. Control is lost if passenger exits.
+		Description: 清算者搭载尤里或心灵之主。可心灵控制敌方单位。乘员离开后失去控制。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Vehicles
-		Weaknesses: • Cannot deal damage\n• Cannot attack Aircraft
-		Attributes: • Can mind control enemy units\n• Control lost if passenger exits\n• Passenger: Yuri, Mastermind
+		Strengths: • 擅长对付步兵, 载具
+		Weaknesses: • 无法造成伤害\n• 无法攻击飞行器
+		Attributes: • 可 心灵控制敌方单位\n• 乘员退出时失去控制\n• 乘员: 尤里, 尤里X
 	-WithSpriteTurret:
 	WithIdleOverlay@PSYCHIC:
 		Sequence: psy
@@ -1979,15 +1980,15 @@ encyclopedia.reck.cmsr:
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: Commissar Reckoner
+		Name: 政委运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Commissar. Inspires nearby friendly infantry, boosting their combat effectiveness.
+		Description: 清算者搭载政委。激励附近友军步兵，提升其战斗力。
 	TooltipExtras:
-		Strengths: Inspires nearby allies
-		Weaknesses: Unarmed
-		Attributes: • Passenger: Commissar
+		Strengths: 激励附近友军
+		Weaknesses: 无武装
+		Attributes: • 乘员: 政委
 	WithPreviewDecoration@CMSR:
 		Image: pips
 		Sequence: pip-cmsr
@@ -1998,117 +1999,117 @@ encyclopedia.reck.laser:
 	WithSpriteTurret:
 		Sequence: turret-laser
 	Tooltip:
-		Name: Laser Reckoner
+		Name: 激光运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with an Acolyte or Templar. Fires a powerful laser beam.
+		Description: 清算者搭载侍僧或圣殿骑士。发射强力激光束。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Acolyte, Templar
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 侍僧, 圣殿骑士
 
 encyclopedia.reck.enli:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-enli
 	Tooltip:
-		Name: Enlightened Reckoner
+		Name: 启蒙者运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with an Enlightened. Fires a powerful particle beam.
+		Description: 清算者搭载觉醒者。发射强力粒子束。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Passenger: Enlightened
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
+		Attributes: • 乘员: 启蒙者
 
 encyclopedia.reck.rmbc:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-rmbc
 	Tooltip:
-		Name: Cyborg Elite Reckoner
+		Name: 半机械精英运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Cyborg Elite. Fires a plasma cannon.
+		Description: 清算者搭载生化人精英。发射等离子炮。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
+		Weaknesses: • 无法攻击飞行器
 
 encyclopedia.reck.bh:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-bh
 	Tooltip:
-		Name: Black Hand Reckoner
+		Name: 黑手运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Black Hand. Projects devastating anti-vehicle flames.
+		Description: 清算者搭载黑手士兵。喷射毁灭性反载具烈焰。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Black Hand
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付 建筑, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 黑手
 
 encyclopedia.reck.conf:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-conf
 	Tooltip:
-		Name: Confessor Reckoner
+		Name: 告解者运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Confessor. Fires hallucinogenic rounds.
+		Description: 清算者搭载告解师。发射致幻弹。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Explosion causes units to attack indiscriminately\n• Passenger: Confessor
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
+		Attributes: • 爆炸 导致单位 至 无差别攻击\n• 乘员: 忏悔者
 
 encyclopedia.reck.reap:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-reap
 	Tooltip:
-		Name: Reaper Reckoner
+		Name: 收割者运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Cyborg Reaper. Fires anti-personnel missiles.
+		Description: 清算者搭载生化人收割者。发射人员杀伤导弹。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor
-		Attributes: • Passenger: Reaper
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付重型装甲
+		Attributes: • 乘员: 收割者
 
 encyclopedia.reck.shad:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: Shadow Reckoner
+		Name: 暗影运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Shadow Operative. Armed with a heavy machinegun and able to cloak.
+		Description: 清算者搭载暗影特工。配备重机枪并可隐形。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Shadow Operative
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 暗影特工
 
 encyclopedia.reck.hack:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: Hacker Reckoner
+		Name: 黑客运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Hacker. Can hack enemy defenses and buildings. Control is lost if passenger exits.
+		Description: 清算者搭载黑客。可骇入敌方防御和建筑。乘员离开后失去控制。
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Buildings
-		Weaknesses: • Cannot deal damage\n• Control lost if passenger exits
-		Attributes: • Passenger: Hacker
+		Strengths: • 擅长对付 防御建筑, 建筑
+		Weaknesses: • 无法造成伤害\n• 乘员退出时失去控制
+		Attributes: • 乘员: 黑客
 	-WithSpriteTurret:
 	WithIdleOverlay@HACK:
 		Sequence: hack
@@ -2118,105 +2119,105 @@ encyclopedia.reck.ztrp:
 	WithSpriteTurret:
 		Sequence: turret-ztrp
 	Tooltip:
-		Name: Zone Trooper Reckoner
+		Name: 区域骑兵运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Zone Trooper. Fires powerful railgun shots.
+		Description: 清算者搭载区域突击兵。发射强力轨道炮弹。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Zone Trooper
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
+		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 区域兵
 
 encyclopedia.reck.zdef:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-zdef
 	Tooltip:
-		Name: Zone Defender Reckoner
+		Name: 区域防御者运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Zone Defender. Fires ion blasts.
+		Description: 清算者搭载区域防御者。发射离子爆破。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Zone Defender
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
+		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 区域防御兵
 
 encyclopedia.reck.zrai:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-zrai
 	Tooltip:
-		Name: Zone Raider Reckoner
+		Name: 区域突袭者运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Zone Raider. Fires sonic grenades.
+		Description: 清算者搭载区域突袭者。发射声波榴弹。
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Passenger: Zone Raider
+		Strengths: • 擅长对付轻型装甲, 建筑
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 乘员: 区域突袭兵
 
 encyclopedia.reck.disin:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-disin
 	Tooltip:
-		Name: Disintegrator Reckoner
+		Name: 分解者运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Disintegrator. Fires disintegration beams.
+		Description: 清算者搭载粉碎者。发射粉碎光束。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Passenger: Disintegrator (Scrin)
+		Strengths: • 擅长对付飞行器, 重型装甲
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 乘员: 粉碎者 (思金人)
 
 encyclopedia.reck.shard:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-shard
 	Tooltip:
-		Name: Shard Reckoner
+		Name: 裂片运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Ravager or Eviscerator. Fires Tiberium shards.
+		Description: 清算者搭载掠夺者或剔骨者。发射泰伯利亚碎片。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Passenger: Ravager, Eviscerator
+		Strengths: • 擅长对付步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 毁灭者, 开膛手
 
 encyclopedia.reck.pdisc:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-pdisc
 	Tooltip:
-		Name: Plasma Disc Reckoner
+		Name: 等离子碟运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Fires plasma discs.
+		Description: 发射等离子圆盘。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Passenger: Intruder, Marauder
+		Strengths: • 擅长对付 建筑, 防御建筑, 重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
+		Attributes: • 乘员: 入侵者, 掠夺者
 
 encyclopedia.reck.impl:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-impl
 	Tooltip:
-		Name: Impaler Reckoner
+		Name: 穿刺者运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with an Impaler. Fires long range impaling projectiles.
+		Description: 清算者搭载穿刺者。发射远程穿刺弹。
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Impaler
+		Strengths: • 擅长对付轻型装甲, 步兵
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 穿刺者
 
 encyclopedia.reck.stlk:
 	Inherits: ^ReckonerVariantPreview
@@ -2226,72 +2227,72 @@ encyclopedia.reck.stlk:
 		Sequence: turret-stlk
 		Palette: playerscrin
 	Tooltip:
-		Name: Stalker Reckoner
+		Name: 潜行者运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Stalker. Fires anti-infantry plasma darts and can cloak.
+		Description: 清算者搭载潜行者。发射反步兵等离子飞镖，可隐形。
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Passenger: Stalker
+		Strengths: • 擅长对付轻型装甲, 步兵
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
+		Attributes: • 乘员: 潜行者
 
 encyclopedia.reck.mortchem:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: Chemical Mortar Reckoner
+		Name: 化学迫击运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Chemical Mortar Infantry. Fires chemical mortar rounds that leave toxic residue.
+		Description: 清算者搭载化学迫击炮兵。发射化学迫击炮弹，留下有毒残留物。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Passenger: Chemical Mortar
+		Strengths: • 擅长对付步兵, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器\n• 难以命中移动目标
+		Attributes: • 乘员: 化学迫击炮
 
 encyclopedia.reck.mortcryo:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: Cryo Mortar Reckoner
+		Name: 冰冻迫击运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Cryo Mortar Infantry. Fires cryo mortar rounds that slow and freeze enemies.
+		Description: 清算者搭载冷冻迫击炮兵。发射冷冻迫击炮弹，减速并冻结敌人。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Passenger: Cryo Mortar
+		Strengths: • 擅长对付步兵, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器\n• 难以命中移动目标
+		Attributes: • 乘员: 冰冻迫击炮
 
 encyclopedia.reck.mortsonic:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: Sonic Mortar Reckoner
+		Name: 声波迫击运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: Reckoner loaded with a Sonic Mortar Infantry. Fires sonic mortar rounds that cause concussion.
+		Description: 清算者搭载声波迫击炮兵。发射声波迫击炮弹，造成震荡。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Passenger: Sonic Mortar
+		Strengths: • 擅长对付步兵, 建筑
+		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器\n• 难以命中移动目标
+		Attributes: • 乘员: 声波迫击炮
 
 encyclopedia.buffs.anathema:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Anathema
+		Name: 咒逐
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: A Malefic Scrin support power effect which gradually increases damage output and speed over 30 seconds, but unit is destroyed once the effect ends. Bonus firepower scales inversely with the value of the affected unit.
+		Description: 恶毒思金支援能力效果，在30秒内逐渐提升伤害输出和速度，但效果结束后单位自毁。额外火力加成与受影响单位的价值成反比。
 	TooltipExtras:
-		Strengths: • Gains firepower, rate of fire and speed gradually over 30 seconds
-		Weaknesses: • Destroyed once effect ends
+		Strengths: • 30秒内逐渐提升火力、射速和速度
+		Weaknesses: • 效果结束后单位被摧毁
 	WithIdleOverlay@Anathema:
 		Sequence: idle
 		Image: anathema
@@ -2304,13 +2305,13 @@ encyclopedia.buffs.anathema:
 encyclopedia.buffs.defensematrix:
 	Inherits: ^InfantryEffectPreview
 	Tooltip:
-		Name: Defense Matrix
+		Name: 防御矩阵
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Granted by GDI Zone Defenders to nearby allied infantry, increasing their effective health.
+		Description: GDI区域防御者赋予附近友军步兵。提升其有效生命值。
 	TooltipExtras:
-		Strengths: • Increased effective health by 1250 per stack (up to 6 stacks)
+		Strengths: • 每层增加1250有效生命值（最多6层）
 	WithIdleOverlay@ZoneDefenderShield:
 		Sequence: idle
 		Image: zdefshield-overlay
@@ -2320,14 +2321,14 @@ encyclopedia.buffs.defensematrix:
 encyclopedia.buffs.frenzy:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Frenzy
+		Name: 狂热
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Granted by the eponymous Marked of Kane support power. Increases rate of fire and movement speed, but reduces them once the effect ends.
+		Description: 凯恩之印同名支援能力赋予。提升射速和移动速度，效果结束后降低。
 	TooltipExtras:
-		Strengths: +33% rate of fire\n+25% movement speed
-		Weaknesses: -15% rate of fire after effect ends\n-15% movement speed after effect ends
+		Strengths: +33%射速\n+25%移动速度
+		Weaknesses: -15%射速（效果结束后）\n-15%移动速度（效果结束后）
 	WithPalettedOverlay@FRENZY:
 		Palette: frenzy
 		ShowInPreview: true
@@ -2347,14 +2348,14 @@ encyclopedia.buffs.gyro:
 	WithFacingSpriteBody:
 		Sequence: stand
 	Tooltip:
-		Name: Gyro Stabilizers
+		Name: 陀螺稳定器
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: An effect granted by activating the Gyro Stabilizers ability available via upgrade to Talon mechs which increases weapon range but reduces rate of fire.
+		Description: 通过升级钢爪机甲获得的陀螺稳定器能力激活时赋予的效果。提升武器射程但降低射速。
 	TooltipExtras:
-		Strengths: +33% weapon range
-		Weaknesses: -25% rate of fire
+		Strengths: +33%武器射程
+		Weaknesses: -25%射速
 	WithPalettedOverlay@GYRO:
 		Palette: gyro
 		ShowInPreview: true
@@ -2362,13 +2363,13 @@ encyclopedia.buffs.gyro:
 encyclopedia.buffs.hotu:
 	Inherits: ^InfantryEffectPreview
 	Tooltip:
-		Name: Hero of the Union
+		Name: 联盟英雄
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Granted by the Heroes of the Union support power available to the Soviets after adopting the Infantry Doctrine. Increases effective health, speed, rate of fire and range.
+		Description: 苏联采用步兵教条后获得的苏联英雄支援能力赋予。提升有效生命值、速度、射速和射程。
 	TooltipExtras:
-		Strengths: Effective health boosted to 28k\n+20% movement speed\n+50% range\n+50% rate of fire
+		Strengths: 有效生命值提升至28000\n+20%移动速度\n+50%射程\n+50%射速
 	WithIdleOverlay@HeroOfTheUnionCrest:
 		Sequence: star
 		Image: hero-overlay
@@ -2385,14 +2386,14 @@ encyclopedia.buffs.hypercharge:
 	RenderSprites:
 		Image: seek
 	Tooltip:
-		Name: Hypercharge
+		Name: 超充能
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: An effect granted by activating the Hypercharge ability available via upgrade to Scrin Seekers and Lacerators. Allows the unit to fire continuously for a short duration while taking increased damage. After the effect ends the unit has reduced speed, damage and rate of fire for a short time.
+		Description: 通过升级思金探索者和撕裂者获得的超能能力激活时赋予的效果。允许单位短时间内连续射击但受到更多伤害。效果结束后单位短时间内速度、伤害和射速降低。
 	TooltipExtras:
-		Strengths: • Continuous fire
-		Weaknesses: +20% increased damage taken
+		Strengths: • 持续射击
+		Weaknesses: +20%受到额外伤害
 	WithPalettedOverlay@HYPERCHARGE:
 		Palette: hypercharge
 		ShowInPreview: true
@@ -2404,13 +2405,13 @@ encyclopedia.buffs.hypercharge:
 encyclopedia.buffs.inspiration:
 	Inherits: ^InfantryEffectPreview
 	Tooltip:
-		Name: Inspiration I
+		Name: 激励 I
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Applied to basic infantry within range of a Soviet Commissar, Troop Crawler or Overlord Tank. Increases movement speed and rate of fire.
+		Description: 对苏联政委、步兵运输爬行者或霸主坦克范围内的基础步兵施加。提升移动速度和射速。
 	TooltipExtras:
-		Strengths: +30% movement speed\n+10% rate of fire
+		Strengths: +30%移动速度\n+10%射速
 	WithIdleOverlay@Inspiration1:
 		Image: ussrstar
 		Sequence: idle-overlay1
@@ -2420,13 +2421,13 @@ encyclopedia.buffs.inspiration:
 encyclopedia.buffs.inspiration2:
 	Inherits: ^InfantryEffectPreview
 	Tooltip:
-		Name: Inspiration II
+		Name: 激励 II
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Applied to basic infantry within range of two or more different units that apply the Inspiration effect. Further increases movement speed and rate of fire.
+		Description: 对两个或以上施加激励效果的不同单位范围内基础步兵施加。进一步提升移动速度和射速。
 	TooltipExtras:
-		Strengths: +40% movement speed\n+20% rate of fire
+		Strengths: +40% 移动速度\n+20% 速率 的 射击
 	WithIdleOverlay@Inspiration2:
 		Image: ussrstar
 		Sequence: idle-overlay2
@@ -2436,13 +2437,13 @@ encyclopedia.buffs.inspiration2:
 encyclopedia.buffs.ionsurge:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Ion Surge
+		Name: 离子涌动
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Effect granted by a Traveler-59 support power which increases movement speed.
+		Description: 旅行者-59支援能力赋予的效果。提升移动速度。
 	TooltipExtras:
-		Strengths: +50% movement speed
+		Strengths: +50% 移动速度
 	WithColoredOverlayCA@IONSURGE:
 		Color: bd70ff23
 		ShowInPreview: true
@@ -2455,14 +2456,14 @@ encyclopedia.buffs.ionsurge:
 encyclopedia.buffs.ironcurtain:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Iron Curtain
+		Name: 铁幕装置
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Soviet minor superweapon effect which grants temporary invulnerability.
+		Description: 苏联次级超级武器效果。赋予临时无敌状态。
 	TooltipExtras:
-		Strengths: • Immune to all damage
-		Weaknesses: • Speed capped to Heavy Tank speed
+		Strengths: • 免疫所有伤害
+		Weaknesses: • 速度上限同重型坦克
 	WithPalettedOverlay@IRONCURTAIN:
 		Palette: invuln
 		ShowInPreview: true
@@ -2470,13 +2471,13 @@ encyclopedia.buffs.ironcurtain:
 encyclopedia.buffs.naniterepair:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Nanite Repair
+		Name: 纳米修复
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Applied by an ARC support power. Repairs vehicles over time.
+		Description: ARC支援能力施加。随时间维修载具。
 	TooltipExtras:
-		Strengths: • Repairs 5% health per second
+		Strengths: • 每秒维修5%生命值
 	WithPalettedOverlay@NREPAIR:
 		Palette: nrepair
 		ShowInPreview: true
@@ -2489,13 +2490,13 @@ encyclopedia.buffs.naniterepair:
 encyclopedia.buffs.naniteshield:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Nanite Shield
+		Name: 纳米护盾
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Granted by the support power available with the third level of GDI's Hold the Line Strategy. Absorbs a portion of incoming damage.
+		Description: GDI固守战略第三级解锁的支援能力赋予。吸收部分来袭伤害。
 	TooltipExtras:
-		Strengths: • Absorbs 50% of incoming damage
+		Strengths: • 吸收 50% 的 受到伤害
 	WithIdleOverlay@NSHIELD:
 		Sequence: idle
 		Image: nshield-overlay
@@ -2507,25 +2508,25 @@ encyclopedia.buffs.tibstealth:
 	RenderSprites:
 		Palette: cloakgreen
 	Tooltip:
-		Name: Tiberium Stealth
+		Name: 泰伯利亚隐形
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: Applied by the minor superweapon power granted by Nod's Stealth Generator. Makes units invisible to enemies until it attacks or is attacked, and reduces damage taken.
+		Description: 无d隐形发生器赋予的次级超级武器能力施加。使单位对敌人隐形直到攻击或被攻击，并减少受到伤害。
 	TooltipExtras:
-		Strengths: • Invisible to enemies\n-10% damage taken
+		Strengths: • 对敌人不可见\n-10% 受到伤害
 
 encyclopedia.debuffs.atomized:
 	Inherits: ^VehicleEffectPreview
 	Inherits@Atomizable: ^Atomizable
 	Tooltip:
-		Name: Atomized
+		Name: 原子化
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: An effect that can only be applied Collector-73's Atomizer unit. Deals damage over time and reduces movement speed and firepower.
+		Description: 仅可由采集者-73的雾化器单位施加的效果。造成持续伤害并降低移动速度和火力。
 	TooltipExtras:
-		Weaknesses: • Deals periodic damage\n-33% movement speed\n-33% damage dealt
+		Weaknesses: • 造成周期性伤害\n-33% 移动速度\n-33% 造成伤害
 	WithIdleOverlay@ATOMIZED:
 		-RequiresCondition:
 
@@ -2533,27 +2534,27 @@ encyclopedia.debuffs.berserk:
 	Inherits: ^VehicleEffectPreview
 	Inherits@Berserk: ^Berserk
 	Tooltip:
-		Name: Berserk
+		Name: 狂暴
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied via Yuri's Chaos Gas, or the Rage Generator ability of Nod Idols of Kane. Causes affected units to uncontrollably attack nearby units.
+		Description: 尤里混乱气体或无d凯恩神像的激怒发生器能力施加。导致受影响单位失控攻击附近单位。
 	TooltipExtras:
-		Weaknesses: • Attacks units indiscriminately
-		Attributes: +25% movement speed\n+100% rate of fire
+		Weaknesses: • 攻击单位无差别地
+		Attributes: +25%移动速度\n+100%射速
 	WithPalettedOverlay@BERSERK:
 		ShowInPreview: true
 
 encyclopedia.debuffs.blinded:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Blinded
+		Name: 致盲
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Disables unit vision and weapons.
+		Description: 禁用单位视野和武器。
 	TooltipExtras:
-		Weaknesses: • Vision disabled\n• Weapons disabled
+		Weaknesses: • 视野已禁用\n• 武器已禁用
 	WithPreviewDecoration@Blinded:
 		Image: blinded
 		Sequence: idle
@@ -2564,14 +2565,14 @@ encyclopedia.debuffs.blinded:
 encyclopedia.debuffs.chill:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Chilled
+		Name: 冰冻
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by Allied cryo weaponry. Reduces movement speed and makes affected units take more damage.
+		Description: 盟军冷冻武器施加。降低移动速度并使受影响单位受到更多伤害。
 	TooltipExtras:
-		Attributes: • Stacks up to 10 times
-		Weaknesses: -25/35/43/50/56/59/62/65/68/70% movement speed\n+10% damage received per stack
+		Attributes: • 可叠加最多10层
+		Weaknesses: -25/35/43/50/56/59/62/65/68/70% 移动速度\n+10% 受到伤害 每层
 	WithColoredOverlayCA@chilled5:
 		Color: 51aeda68
 		ShowInPreview: true
@@ -2579,13 +2580,13 @@ encyclopedia.debuffs.chill:
 encyclopedia.debuffs.concussion:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Concussed
+		Name: 震荡
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Reduces rate of fire and movement speed.
+		Description: 降低射速和移动速度。
 	TooltipExtras:
-		Weaknesses: -25% movement speed\n-50% rate of fire
+		Weaknesses: -25% 移动速度\n-50%射速
 	WithPreviewDecoration:
 		Image: pips
 		Sequence: pip-conc
@@ -2597,13 +2598,13 @@ encyclopedia.debuffs.concussion:
 encyclopedia.debuffs.emp:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: EMP
+		Name: 电磁脉冲
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Completely incapacitates vehicles, heavy cyborgs and defenses. Causes unshielded aircraft to crash.
+		Description: 完全瘫痪载具、重型生化人和防御建筑。未受护盾保护的飞行器坠毁。
 	TooltipExtras:
-		Weaknesses: • Movement disabled\n• Weapons disabled\n• Abilities disabled\n• Unshielded aircraft crash to ground
+		Weaknesses: • 移动已禁用\n• 武器已禁用\n• 能力已禁用\n• 无护盾飞行器将坠毁
 	WithColoredOverlayCA@EMPDISABLE:
 		Color: 000000b4
 		ShowInPreview: true
@@ -2616,13 +2617,13 @@ encyclopedia.debuffs.irradiated:
 	Inherits: ^VehicleEffectPreview
 	Inherits@Irradiatable: ^Irradiatable
 	Tooltip:
-		Name: Irradiated
+		Name: 辐射
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by Iraqi Desolators and Eradicators. Causes periodic AoE damage, reduces outgoing damage and increases incoming damage.
+		Description: 伊拉克辐射工兵和根除者施加。造成周期性范围伤害，降低输出伤害并增加受到伤害。
 	TooltipExtras:
-		Weaknesses: • Deals periodic damage to nearby units\n• Irradiates the ground\n-10% damage dealt\n+10% damage received
+		Weaknesses: • 造成周期性伤害 至 附近 单位\n• 污染地面\n-10% 造成伤害\n+10% 受到伤害
 	WithPalettedOverlay@IRRADIATABLE:
 		ShowInPreview: true
 
@@ -2630,26 +2631,26 @@ encyclopedia.debuffs.jammed:
 	Inherits: ^VehicleEffectPreview
 	Inherits@WeaponJammable: ^WeaponJammable
 	Tooltip:
-		Name: Jammed
+		Name: 干扰
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by Allied Radar Jammers. Reduces vehicle weapon damage and rate of fire.
+		Description: 盟军雷达干扰器施加。降低载具武器伤害和射速。
 	TooltipExtras:
-		Weaknesses: -10% damage dealt\n-20% rate of fire
+		Weaknesses: -10% 造成伤害\n-20% 速率 的 射击
 	WithIdleOverlay@WEAPJAMMED:
 		-RequiresCondition:
 
 encyclopedia.debuffs.targetpainted:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Target Painted
+		Name: 目标标记
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Increases damage received and reveals the unit to enemies.
+		Description: 增加受到的伤害并向敌人暴露该单位。
 	TooltipExtras:
-		Weaknesses: Revealed to enemies\n+10% damage received
+		Weaknesses: 对敌人暴露\n+10% 受到伤害
 	WithPreviewDecoration:
 		Image: targetpainter
 		Sequence: idle
@@ -2661,13 +2662,13 @@ encyclopedia.debuffs.reapersnared:
 	Inherits: ^InfantryEffectPreview
 	Inherits@ReaperSnareable: ^ReaperSnareable
 	Tooltip:
-		Name: Reaper Snared
+		Name: 收割者诱捕
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by Nod Cyborg Reapers' snare ability. Completely incapacitates infantry.
+		Description: 无d生化人收割者的束缚能力施加。完全瘫痪步兵。
 	TooltipExtras:
-		Weaknesses: • Movement disabled\n• Weapons disabled\n• Abilities disabled
+		Weaknesses: • 移动已禁用\n• 武器已禁用\n• 能力已禁用
 	WithIdleOverlay@ReaperSnare:
 		-RequiresCondition:
 	WithInfantryBody:
@@ -2678,13 +2679,13 @@ encyclopedia.debuffs.suppression:
 	Inherits: ^VehicleEffectPreview
 	Inherits@Suppressable: ^Suppressable
 	Tooltip:
-		Name: Suppressed
+		Name: 压制
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: An effect applied by the Scrin Suppression power, Masterminds and Enervators. Reduces movement speed and rate of fire.
+		Description: 思金压制能力、心灵之主和衰竭者施加的效果。降低移动速度和射速。
 	TooltipExtras:
-		Weaknesses: -60% movement speed\n-20% rate of fire
+		Weaknesses: -60% 移动速度\n-20% 速率 的 射击
 	WithPalettedOverlay@SUPPRESSION:
 		ShowInPreview: true
 
@@ -2692,13 +2693,13 @@ encyclopedia.debuffs.veiled:
 	Inherits: ^VehicleEffectPreview
 	Inherits@Veilable: ^Veilable
 	Tooltip:
-		Name: Veiled
+		Name: 遮蔽
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by Allied Gap Generators, Black Eagles, Tiger Guards, and England's Veil of War support power. Reduces weapon and vision range.
+		Description: 盟军裂缝产生器、黑鹰、虎卫和英国战争帷幕支援能力施加。降低武器射程和视野范围。
 	TooltipExtras:
-		Weaknesses: -20% weapon range\n-20% vision range
+		Weaknesses: -20% 武器射程\n-20%视野范围
 	WithIdleOverlay@VEILED:
 		-RequiresCondition:
 
@@ -2708,14 +2709,14 @@ encyclopedia.debuffs.warped:
 	-Warpable:
 	-FireWarheadsOnDeath@TEMPORAL:
 	Tooltip:
-		Name: Warped
+		Name: 扭曲
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Applied by Allied Chrono Prisons and Germany's Time Warp ability. Completely incapacitates the target, but makes it immune to non-warping damage.
+		Description: 盟军时空监狱和德国时间扭曲能力施加。完全瘫痪目标，但使其免疫非扭曲伤害。
 	TooltipExtras:
-		Strengths: • Immune to non-warping damage
-		Weaknesses: • Movement disabled\n• Weapons disabled\n• Abilities disabled
+		Strengths: • 免疫非扭曲伤害
+		Weaknesses: • 移动已禁用\n• 武器已禁用\n• 能力已禁用
 	WithPalettedOverlay@TEMPORALl:
 		ShowInPreview: true
 	WithIdleOverlay@TEMPORAL:
@@ -2724,13 +2725,13 @@ encyclopedia.debuffs.warped:
 encyclopedia.debuffs.watched:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: Watched
+		Name: 监视
 	Encyclopedia:
 		Category: Other/Debuffs
 	EncyclopediaExtras:
-		Description: Revealed to enemies.
+		Description: 向敌人暴露。
 	TooltipExtras:
-		Weaknesses: • Revealed to enemies
+		Weaknesses: • 对敌人暴露
 	WithPreviewDecoration:
 		Image: watched
 		Sequence: idle

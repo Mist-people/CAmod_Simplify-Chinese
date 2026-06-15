@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^ExistsInWorld:
 	AppearsOnRadar:
 	CombatDebugOverlay:
@@ -73,7 +74,7 @@
 	Mobile:
 		Locomotor: foot
 	Tooltip:
-		Name: Preview
+		Name: 预览
 	Armament:
 		Weapon: DummyWeapon
 	AttackFrontal:
@@ -1435,7 +1436,7 @@
 		TargetTypes: NoCrew
 		RequiresCondition: driver-dead
 	TooltipDescription@DRIVER_DEAD:
-		Description: Crewless. Capturable by infantry.
+		Description: 无乘员。可被步兵占领。
 		RequiresCondition: driver-dead
 
 ^CanCaptureDriverlessVehicles:
@@ -1660,11 +1661,11 @@
 	Inherits@HeavyArmor: ^HeavyArmor
 	Inherits@NodCovenantTarget: ^NodCovenantTarget
 	TooltipExtras:
-		Weaknesses: • Unarmed\n• Resistant to mind control
+		Weaknesses: • 无武装\n• 抵抗 精神控制
 	Valued:
 		Cost: 1400
 	Tooltip:
-		GenericName: Harvester
+		GenericName: 采矿车
 	Health:
 		HP: 75000
 	Mobile:
@@ -2436,7 +2437,7 @@
 	Guard:
 	Guardable:
 	Tooltip:
-		GenericName: Vehicle
+		GenericName: 载具
 	CaptureManager:
 		BeingCapturedCondition: being-captured
 	Capturable:
@@ -2717,7 +2718,7 @@
 	Guard:
 	Guardable:
 	Tooltip:
-		GenericName: Soldier
+		GenericName: 士兵
 	DeathSounds@NORMAL:
 		Voice: Die
 		DeathTypes: DefaultDeath, BulletDeath, SmallExplosionDeath, ExplosionDeath, FrozenDeath
@@ -2964,7 +2965,7 @@
 	Valued:
 		Cost: 10
 	Tooltip:
-		Name: Civilian
+		Name: 平民
 		ShowOwnerRow: false
 	RevealsShroud:
 		Range: 3c0
@@ -2985,7 +2986,7 @@
 	Tooltip:
 		RequiresCondition: !owned-by-combatant
 	Tooltip@COMBATANT:
-		Name: Technician
+		Name: 技师
 		RequiresCondition: owned-by-combatant
 	GrantConditionOnCombatantOwner@COMBATANT:
 		Condition: owned-by-combatant
@@ -3086,7 +3087,7 @@
 	Guard:
 	Guardable:
 	Tooltip:
-		GenericName: Ship
+		GenericName: 舰船
 	MustBeDestroyed:
 	MapEditorData:
 		ExcludeTilesets: INTERIOR
@@ -3230,7 +3231,7 @@
 		Notification: AirUnitLost
 		TextNotification: Airborne unit lost.
 	Tooltip:
-		GenericName: Plane
+		GenericName: 飞机
 	WithShadow:
 		Offset: 43, 128, 0
 		ZOffset: -129
@@ -3367,7 +3368,7 @@
 ^Helicopter:
 	Inherits: ^Plane
 	Tooltip:
-		GenericName: Helicopter
+		GenericName: 直升机
 	Aircraft:
 		CanHover: True
 		WaitDistanceFromResupplyBase: 4c0
@@ -3406,7 +3407,7 @@
 		Weapon: BarrelExplode
 		Type: Footprint
 	Tooltip:
-		Name: Explosive Barrel
+		Name: 炸药桶
 		ShowOwnerRow: False
 	Armor:
 		Type: None
@@ -3465,7 +3466,7 @@
 	FrozenUnderFogUpdatedByGpsRadar:
 	EdibleByLeap:
 	Tooltip:
-		GenericName: Structure
+		GenericName: 建筑
 	MapEditorData:
 		Categories: Building
 	CommandBarBlacklist:
@@ -3791,7 +3792,7 @@
 	Armor:
 		Type: Wood
 	Tooltip:
-		Name: Civilian Building
+		Name: 平民建筑
 		GenericVisibility: None
 	MapEditorData:
 		Categories: Tech building
@@ -3846,7 +3847,7 @@
 	MapEditorData:
 		Categories: Fake
 	TooltipExtras:
-		Attributes: • Can be detonated remotely
+		Attributes: • 可远程引爆
 	FireWarheadsOnDeath@FAKE:
 		Weapon: FakeBuildingExplode
 		DamageThreshold: 70
@@ -3895,7 +3896,7 @@
 	FireWarheadsOnDeath:
 		Weapon: UnitExplode
 	Tooltip:
-		Name: Ammo Box
+		Name: 弹药箱
 		GenericVisibility: None
 	Targetable:
 		TargetTypes: Ground, Structure, NoAutoTarget
@@ -3914,7 +3915,7 @@
 	Armor:
 		Type: Wood
 	Tooltip:
-		Name: Civilian Building
+		Name: 平民建筑
 		GenericVisibility: None
 	RenderSprites:
 		Palette: player
@@ -3944,7 +3945,7 @@
 	-Selectable:
 	-SelectionDecorations:
 	Tooltip:
-		Name: Field
+		Name: 野外
 	-Targetable:
 	Interactable:
 
@@ -3984,7 +3985,7 @@
 	Inherits@ResourceNode: ^ResourceNode
 	Interactable:
 	Tooltip:
-		Name: Blossom Tree
+		Name: 开花树
 		ShowOwnerRow: false
 	RenderSprites:
 		Palette: temptd
@@ -4011,7 +4012,7 @@
 	Inherits@shape: ^1x1Shape
 	Interactable:
 	Tooltip:
-		Name: Tree
+		Name: 树
 		ShowOwnerRow: false
 	RenderSprites:
 		Palette: terrain
@@ -4071,7 +4072,7 @@
 		Dimensions: 1,1
 	WithSpriteBody:
 	Tooltip:
-		Name: Tree (Burnt)
+		Name: 枯树
 		ShowOwnerRow: false
 	HiddenUnderShroud:
 	ScriptTriggers:
@@ -4085,7 +4086,7 @@
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Boxes
+		Name: 箱子
 	MapEditorData:
 		-ExcludeTilesets:
 		Categories: Decoration
@@ -4145,7 +4146,7 @@
 		TargetTypes: Ground, Husk, NoAutoTarget
 		RequiresForceFire: true
 	Tooltip:
-		GenericName: Destroyed Vehicle
+		GenericName: 被毁载具
 	FireWarheadsOnDeath:
 		Weapon: VisualExplodeHusk
 		EmptyWeapon: VisualExplodeHusk
@@ -4174,7 +4175,7 @@
 		Offset: 43, 128, 0
 		ZOffset: -129
 	Tooltip:
-		GenericName: Destroyed Plane
+		GenericName: 被毁飞机
 	Aircraft:
 	FallsToEarth:
 		MaximumSpinSpeed: 0
@@ -4210,7 +4211,7 @@
 		Offset: 43, 128, 0
 		ZOffset: -129
 	Tooltip:
-		GenericName: Destroyed Helicopter
+		GenericName: 被毁直升机
 	Aircraft:
 		CanHover: True
 		VTOL: true
@@ -4252,7 +4253,7 @@
 	TransformOnCapture:
 		ForceHealthPercentage: 25
 	Tooltip:
-		GenericName: Destroyed Building
+		GenericName: 被毁建筑
 	FireWarheadsOnDeath@NORMAL:
 		Type: Footprint
 		Weapon: BuildingExplode
@@ -4262,7 +4263,7 @@
 	Inherits@shape: ^1x1Shape
 	AlwaysVisible:
 	Tooltip:
-		Name: Bridge
+		Name: 桥梁
 		ShowOwnerRow: false
 	Targetable:
 		TargetTypes: Ground, Water, Bridge
@@ -4289,7 +4290,7 @@
 	Inherits@1: ^SpriteActor
 	Interactable:
 	Tooltip:
-		Name: Rock
+		Name: 岩石
 		ShowOwnerRow: false
 	RenderSprites:
 		Palette: desert
@@ -4322,8 +4323,8 @@
 		Bounds: 1024, 1024
 	HiddenUnderFog:
 	Tooltip:
-		Name: Crate
-		GenericName: Crate
+		Name: 箱子
+		GenericName: 箱子
 		ShowOwnerRow: false
 	CrateCA:
 		Duration: 4500
@@ -4371,7 +4372,7 @@
 		DetectionTypes: Mine
 		InitialDelay: 0
 	Tooltip:
-		Name: Mine
+		Name: 地雷
 	Targetable:
 		TargetTypes: Ground, Mine
 	Targetable@ONWATER:
@@ -4569,10 +4570,10 @@
 	Buildable:
 		Queue: InfantrySQ, InfantryMQ
 		BuildAtProductionType: Soldier
-		Description: Utility infantry used for capturing/repairing structures.
+		Description: 用于占领/修复建筑的工程步兵。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Captures enemy buildings\n• Repairs friendly structures & bridges\n• Defuses mines and bombs
+		Weaknesses: • 无武装
+		Attributes: • 占领 敌方建筑\n• 维修 己方建筑 & 桥梁\n• 拆除 地雷和炸弹
 	Valued:
 		Cost: 400
 	Passenger:
@@ -4669,7 +4670,7 @@
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Visceroid
+		Name: 内脏石油怪
 	Armament:
 		Weapon: Chemspray
 		LocalOffset: 384,0,0
@@ -4708,8 +4709,8 @@
 	HiddenUnderFog:
 		Type: GroundPosition
 	Tooltip:
-		Name: Missile
-		GenericName: Missile
+		Name: 导弹
+		GenericName: 导弹
 		ShowOwnerRow: false
 	HitShape:
 	RejectsOrders:

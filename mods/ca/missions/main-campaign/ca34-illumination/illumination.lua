@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca34-illumination"
 
 Caves = {
@@ -105,8 +106,8 @@ WorldLoaded = function()
 	InitObjectives(Nod)
 	InitScrin()
 
-	ObjectiveFindFragments = Nod.AddObjective("Find the six hidden artifact fragments.")
-	ObjectiveKaneSurvives = Nod.AddObjective("Kane must survive.")
+	ObjectiveFindFragments = Nod.AddObjective("找到六个隐藏的遗物碎片。")
+	ObjectiveKaneSurvives = Nod.AddObjective("凯恩必须存活。")
 
 	local fragments = TibLifeforms.GetActorsByType("fragment")
 
@@ -127,10 +128,10 @@ WorldLoaded = function()
 	end
 
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-		Media.DisplayMessage("There are six fragments of an artifact hidden within these caverns. Only I have the ability to detect them. Once we have them all, the assembled artifact will lead us to our goal.", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("这些洞穴中隐藏着一件遗物的六块碎片。只有我能够感应到它们。当我们集齐所有碎片，组合后的遗物将指引我们前往目标。", "凯恩", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_findfragments.aud", 2)
 		Trigger.AfterDelay(DateTime.Seconds(4), function()
-			Tip("Kane is able to create wormholes which can be used to travel between neighboring chambers. Only Kane can detect the hidden artifact fragments.")
+			Tip("凯恩能制造虫洞，用于在相邻洞穴之间穿行。只有凯恩能感应到隐藏的遗物碎片。")
 		end)
 	end)
 
@@ -144,11 +145,11 @@ WorldLoaded = function()
 				if not FirstFragmentFound then
 					FirstFragmentFound = true
 					Beacon.New(Nod, pos)
-					Media.DisplayMessage("There! We have already found the first fragment.", "Kane", HSLColor.FromHex("FF0000"))
+					Media.DisplayMessage("看！我们已经找到了第一块碎片。", "凯恩", HSLColor.FromHex("FF0000"))
 					MediaCA.PlaySound(MissionDir .. "/kane_firstfragment.aud", 2)
 				elseif FragmentsDetected[fragmentId] == nil then
 					Beacon.New(Nod, pos)
-					Notification("Artifact fragment detected.")
+					Notification("检测到遗物碎片。")
 					Media.PlaySound("beacon.aud")
 				end
 
@@ -163,7 +164,7 @@ WorldLoaded = function()
 				FragmentsAcquired[tostring(fragment)] = true
 				FragmentsAcquiredCount = FragmentsAcquiredCount + 1
 				Media.PlaySound("fragment.aud")
-				Notification("Artifact fragment acquired.")
+				Notification("已获取遗物碎片。")
 				UpdateMissionText()
 
 				if FragmentsAcquiredCount == 6 then
@@ -178,8 +179,8 @@ WorldLoaded = function()
 						CaveShroud6.Destroy()
 						CaveShroud7.Destroy()
 						Beacon.New(Nod, HiddenChamberEntrance.CenterPosition)
-						Notification("A hidden chamber has been revealed.")
-						ObjectiveExploreHiddenChamber = Nod.AddObjective("Explore the hidden chamber.")
+						Notification("隐藏密室已显现。")
+						ObjectiveExploreHiddenChamber = Nod.AddObjective("探索隐藏密室。")
 
 						local chamberCamera = Actor.Create("camera", true, { Owner = Nod, Location = HiddenChamberEntrance.Location })
 						Trigger.AfterDelay(DateTime.Seconds(10), function()
@@ -187,7 +188,7 @@ WorldLoaded = function()
 						end)
 
 						Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(1)), function()
-							Media.DisplayMessage("With the fragments combined the path to our goal is revealed. Now we must get to the chamber before the Scrin.", "Kane", HSLColor.FromHex("FF0000"))
+							Media.DisplayMessage("碎片组合后，通往目标的道路已经显现。现在我们必须在思金之前赶到密室。", "凯恩", HSLColor.FromHex("FF0000"))
 							MediaCA.PlaySound(MissionDir .. "/kane_fragmentscombined.aud", 2)
 						end)
 					end)
@@ -210,11 +211,11 @@ WorldLoaded = function()
 		Media.PlaySound("purification.aud")
 		Nod.MarkCompletedObjective(ObjectiveActivatePurifier)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Media.DisplayMessage("The Scrin have no doubt located us by now. Protect the device!", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("思金无疑已经发现了我们的位置。保护好装置！", "凯恩", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/kane_protect.aud", 2)
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
-				ObjectiveDefendPurifier = Nod.AddObjective("Protect the ancient device.")
-				ObjectiveDestroyWormholes = Nod.AddObjective("Destroy Scrin wormholes.")
+				ObjectiveDefendPurifier = Nod.AddObjective("保护远古装置。")
+				ObjectiveDestroyWormholes = Nod.AddObjective("摧毁思金虫洞。")
 				InitFinalBattle()
 			end)
 		end)
@@ -229,9 +230,9 @@ WorldLoaded = function()
 			PurifierFound = true
 			Trigger.RemoveProximityTrigger(id)
 			Beacon.New(Nod, Purifier.CenterPosition)
-			ObjectiveActivatePurifier = Nod.AddObjective("Activate the ancient device.")
+			ObjectiveActivatePurifier = Nod.AddObjective("激活远古装置。")
 			Nod.MarkCompletedObjective(ObjectiveExploreHiddenChamber)
-			Media.DisplayMessage("We found it! The Scrin rulers believed it to be destroyed long ago, but its creators hid it well. Quickly, let us activate it, we must make sure it still functions.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("我们找到了！思金统治者以为它早已被摧毁，但它的创造者把它藏得很好。快，让我们激活它，我们必须确认它还能运作。", "凯恩", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/kane_foundit.aud", 2)
 		end
 	end)
@@ -257,7 +258,7 @@ OncePerFiveSecondChecks = function()
 			local finalScrinUnits = Map.ActorsInCircle(HiddenChamberCenter.CenterPosition, WDist.New(12 * 1024), function(a) return a.Owner == Scrin and (a.HasProperty("Move") or a.Type == "scrinwormhole") end)
 			if #finalScrinUnits == 0 then
 				DoFinalBattleChecks = false
-				Media.DisplayMessage("Our forces on the surface have triumphed. The device is ours, and soon it will be ready to do what had been intended for it millennia ago. Excellent work commander, our ultimate victory draws ever closer.", "Kane", HSLColor.FromHex("FF0000"))
+				Media.DisplayMessage("我们在地表的部队已经胜利。装置是我们的了，很快它就能实现数千年前被赋予的使命。干得好，指挥官，我们的最终胜利越来越近了。", "凯恩", HSLColor.FromHex("FF0000"))
 				MediaCA.PlaySound(MissionDir .. "/kane_victory.aud", 2)
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(12)), function()
 					Nod.MarkCompletedObjective(ObjectiveDefendPurifier)
@@ -273,7 +274,7 @@ UpdateMissionText = function()
 	if FragmentsAcquiredCount == 6 then
 		UserInterface.SetMissionText("")
 	else
-		UserInterface.SetMissionText("Artifact fragments collected: " .. FragmentsAcquiredCount .. "/6", HSLColor.Yellow)
+		UserInterface.SetMissionText("已收集遗物碎片：" .. FragmentsAcquiredCount .. "/6", HSLColor.Yellow)
 	end
 end
 

@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 C1:
 	Inherits@1: ^ArmedCivilian
 	Inherits@CREW: ^CanCaptureDriverlessVehicles
@@ -41,7 +42,7 @@ TECN:
 	RenderSprites:
 		Image: c1
 	Tooltip:
-		Name: Technician
+		Name: 技师
 
 FCOM:
 	Inherits: ^TechBuilding
@@ -59,14 +60,14 @@ FCOM:
 	Armor:
 		Type: Wood
 	Tooltip:
-		Name: Forward Command
+		Name: 前进指挥部
 	TooltipExtras:
-		Description: Provides buildable area.
+		Description: 提供可建造区域。
 	TooltipDescription@ally:
-		Description: Provides buildable area.
+		Description: 提供可建造区域。
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture to give buildable area.
+		Description: 占领以获得可建造区域。
 		ValidRelationships: Neutral, Enemy
 	RevealsShroud:
 		Range: 5c0
@@ -113,14 +114,14 @@ HOSP:
 	CapturableProgressBlink:
 	InstantlyRepairable:
 	Tooltip:
-		Name: Hospital
+		Name: 医院
 	TooltipExtras:
-		Description: Heals nearby infantry and trains two Medics/Rejuvenators every two minutes.
+		Description: 治疗附近步兵，每两分钟训练两名医疗兵/复苏者。
 	TooltipDescription@ally:
-		Description: Heals nearby infantry and trains two Medics/Rejuvenators every two minutes.
+		Description: 治疗附近步兵，每两分钟训练两名医疗兵/复苏者。
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture to heal nearby infantry and train two Medics/Rejuvenators every two minutes.
+		Description: 占领后治疗附近步兵，每两分钟训练两名医疗兵/复苏者。
 		ValidRelationships: Neutral, Enemy
 	RevealsShroud:
 		Range: 4c0
@@ -209,14 +210,14 @@ MACS:
 	CapturableProgressBlink:
 	InstantlyRepairable:
 	Tooltip:
-		Name: Machine Shop
+		Name: 机械维修厂
 	TooltipExtras:
-		Description: Repairs nearby vehicles and trains two Mechanics/Artificers every two minutes.
+		Description: 维修附近载具，每两分钟训练两名机械师/工匠。
 	TooltipDescription@ally:
-		Description: Repairs nearby vehicles and trains two Mechanics/Artificers every two minutes.
+		Description: 维修附近载具，每两分钟训练两名机械师/工匠。
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture to repair nearby vehicles and train two Mechanics/Artificers every two minutes.
+		Description: 占领后维修附近载具，每两分钟训练两名机械师/工匠。
 		ValidRelationships: Neutral, Enemy
 	RevealsShroud:
 		Range: 4c0
@@ -291,7 +292,7 @@ V01:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Church
+		Name: 教堂
 	RevealsShroud:
 		Range: 10c0
 	MapEditorData:
@@ -443,7 +444,7 @@ V19:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Oil Pump
+		Name: 油泵
 	SpawnActorOnDeath:
 		Actor: V19.Husk
 	Targetable:
@@ -454,7 +455,7 @@ V19.Husk:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Husk (Oil Pump)
+		Name: 残骸（油泵）
 	WithSpriteBody:
 	WithIdleOverlay:
 		StartSequence: fire-start
@@ -507,14 +508,14 @@ MISS:
 	Armor:
 		Type: Wood
 	Tooltip:
-		Name: Communications Center
+		Name: 通讯中心
 	TooltipExtras:
-		Description: Provides vision of the surrounding area.
+		Description: 提供周围区域的视野。
 	TooltipDescription@ally:
-		Description: Provides vision of the surrounding area.
+		Description: 提供周围区域的视野。
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture to provide vision of surrounding area.
+		Description: 占领后提供周围区域的视野。
 		ValidRelationships: Neutral, Enemy
 	WithBuildingBib:
 	CaptureManager:
@@ -551,14 +552,14 @@ BIO:
 	CapturableProgressBar:
 	InstantlyRepairable:
 	Tooltip:
-		Name: Biological Lab
+		Name: 生物实验室
 	TooltipExtras:
-		Description: Provides access to the toxin truck and chem mortar units.
+		Description: 提供毒素卡车和化学迫击炮单位。
 	TooltipDescription@ally:
-		Description: Provides access to the toxin truck and chem mortar units.
+		Description: 提供毒素卡车和化学迫击炮单位。
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture for access to the toxin truck and chem mortar units.
+		Description: 占领后获得毒素卡车和化学迫击炮单位。
 		ValidRelationships: Neutral, Enemy
 	WithDeathAnimation:
 		DeathSequence: dead
@@ -611,15 +612,15 @@ OILB:
 	DummyConditionConsumer@Tick:
 		Condition: tick
 	Tooltip:
-		Name: Oil Derrick
+		Name: 油井
 	TooltipExtras:
-		Description: Provides additional funds.
-		Attributes: • Gives $125 every 15 seconds.\n• Gives $400 on first capture.
+		Description: 提供额外资金。
+		Attributes: • 给予 $125 每 15 秒.\n• 给予 $400 首次占领时.
 	TooltipDescription@ally:
-		Description: Provides additional funds.
+		Description: 提供额外资金。
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture to receive additional funds.
+		Description: 占领以获取额外资金。
 		ValidRelationships: Neutral, Enemy
 	FireWarheadsOnDeath:
 		Weapon: BarrelExplode
@@ -681,14 +682,14 @@ OILR:
 	CapturableProgressBlink:
 	InstantlyRepairable:
 	Tooltip:
-		Name: Oil Refinery
+		Name: 炼油厂
 	TooltipExtras:
-		Description: Provides 10% discount on all unit production.
+		Description: 所有单位生产享受 10% 折扣。
 	TooltipDescription@ally:
-		Description: Provides 10% discount on all unit production.
+		Description: 所有单位生产享受 10% 折扣。
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: Capture to receive a 10% discount on all unit production.
+		Description: 占领后所有单位生产享受10%折扣。
 		ValidRelationships: Neutral, Enemy
 	FireWarheadsOnDeath:
 		Weapon: BarrelExplode
@@ -779,7 +780,7 @@ V25:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Church
+		Name: 教堂
 	RevealsShroud:
 		Range: 10c0
 	HitShape:
@@ -922,7 +923,7 @@ LHUS:
 	Selectable:
 		Bounds: 1024, 2048, 0, -682
 	Tooltip:
-		Name: Lighthouse
+		Name: 灯塔
 	Building:
 		Footprint: x
 		Dimensions: 1,1
@@ -936,7 +937,7 @@ WINDMILL:
 		DecorationBounds: 1536, 1536, 0, -597
 	SelectionDecorations:
 	Tooltip:
-		Name: Windmill
+		Name: 风车
 	Building:
 		Footprint: x
 		Dimensions: 1,1
@@ -949,5 +950,5 @@ ARCO:
 		Footprint: xx
 		Dimensions: 2,1
 	Tooltip:
-		Name: Oil Pump
+		Name: 油泵
 		ShowOwnerRow: True

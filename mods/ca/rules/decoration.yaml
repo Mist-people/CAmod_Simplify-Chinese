@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 T01:
 	Inherits: ^Tree
 	Building:
@@ -228,7 +229,7 @@ BOXES01:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Boxes
+		Name: 箱子
 	MapEditorData:
 		Categories: Decoration
 	MirageTarget:
@@ -238,7 +239,7 @@ BOXES02:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Boxes
+		Name: 箱子
 	MapEditorData:
 		Categories: Decoration
 	MirageTarget:
@@ -248,7 +249,7 @@ BOXES03:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Boxes
+		Name: 箱子
 	MapEditorData:
 		Categories: Decoration
 	MirageTarget:
@@ -258,7 +259,7 @@ BOXES04:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Boxes
+		Name: 箱子
 	MapEditorData:
 		Categories: Decoration
 	MirageTarget:
@@ -268,7 +269,7 @@ BOXES05:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Boxes
+		Name: 箱子
 	MapEditorData:
 		Categories: Decoration
 	MirageTarget:
@@ -278,7 +279,7 @@ BOXES06:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Boxes
+		Name: 箱子
 	MapEditorData:
 		Categories: Decoration
 	MirageTarget:
@@ -288,7 +289,7 @@ BOXES07:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Boxes
+		Name: 箱子
 	MapEditorData:
 		Categories: Decoration
 	MirageTarget:
@@ -298,7 +299,7 @@ BOXES08:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Boxes
+		Name: 箱子
 	MapEditorData:
 		Categories: Decoration
 	MirageTarget:
@@ -308,7 +309,7 @@ BOXES09:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Boxes
+		Name: 箱子
 	MapEditorData:
 		Categories: Decoration
 	MirageTarget:
@@ -321,7 +322,7 @@ ICE01:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Ice Floe
+		Name: 浮冰
 	MapEditorData:
 		RequireTilesets: TEMPERAT, WINTER, SNOW, BARREN
 		Categories: Decoration
@@ -334,7 +335,7 @@ ICE02:
 		Footprint: x x
 		Dimensions: 1,2
 	Tooltip:
-		Name: Ice Floe
+		Name: 浮冰
 	MapEditorData:
 		RequireTilesets: TEMPERAT, WINTER, SNOW, BARREN
 		Categories: Decoration
@@ -347,7 +348,7 @@ ICE03:
 		Footprint: xx
 		Dimensions: 2,1
 	Tooltip:
-		Name: Ice Floe
+		Name: 浮冰
 	MapEditorData:
 		RequireTilesets: TEMPERAT, WINTER, SNOW, BARREN
 		Categories: Decoration
@@ -357,7 +358,7 @@ ICE04:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Ice Floe
+		Name: 浮冰
 	MapEditorData:
 		RequireTilesets: TEMPERAT, WINTER, SNOW, BARREN
 		Categories: Decoration
@@ -367,7 +368,7 @@ ICE05:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Ice Floe
+		Name: 浮冰
 	MapEditorData:
 		RequireTilesets: TEMPERAT, WINTER, SNOW, BARREN
 		Categories: Decoration
@@ -419,7 +420,7 @@ UTILPOL1:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Utility Pole
+		Name: 电线杆
 	MapEditorData:
 		Categories: Decoration
 
@@ -428,7 +429,7 @@ UTILPOL2:
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Utility Pole
+		Name: 电线杆
 	MapEditorData:
 		Categories: Decoration
 
@@ -440,7 +441,7 @@ TANKTRAP1:
 		Footprint: x
 		Dimensions: 1,1
 	Tooltip:
-		Name: Tank Trap
+		Name: 坦克陷阱
 	MapEditorData:
 		RequireTilesets: TEMPERAT, SNOW, DESERT, INTERIOR, BARREN, WINTER, JUNGLE
 
@@ -452,7 +453,7 @@ TANKTRAP2:
 		Footprint: x
 		Dimensions: 1,1
 	Tooltip:
-		Name: Tank Trap
+		Name: 坦克陷阱
 	MapEditorData:
 		RequireTilesets: TEMPERAT, SNOW, DESERT, INTERIOR, BARREN, WINTER, JUNGLE
 

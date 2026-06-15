@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	PaletteFromFile@terrain-temperat:
 		Filename: alien.pal
@@ -20,12 +21,27 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, illumination.lua
 	MissionData:
-		Briefing: ———[    Nod Introduction    ]———\n\nKane's cyborgs poured from the gateway on the Scrin homeworld. Kane's manipulation of the timeline meant that the Scrin were completely unprepared, however it would not take long for them to mobilize.\n\nThe gateway's exit was shifted to present the Scrin with an additional front to contend with, then using cloaked transports Kane accompanied a contingent of his most elite cyborgs, leaving the bulk of his army to prepare for the inevitable arrival of Scrin forces.\n\nHis destination had been revealed to him by the Tacitus—an artifact containing ancient knowledge—which after painstaking efforts had finally revealed its true purpose.\n\n———[    Mission Briefing (Nod)   ]———\n\nWe have arrived. Soon our great purpose here will become clear, but we must proceed quickly.\n\nThe Scrin will no doubt have been alerted to our presence, and simply by being here we threaten them in a way they have not been for millennia.\n\nSomewhere within the caves before us are remnants of a great project that was violently ended and buried long ago by those who still rule the Scrin to this day.\n\nA great conflict ended here, and its embers lie beneath our feet. I intend to reignite those embers.\n\nIf we are successful, it will herald the dawn of a new age for both the Scrin and mankind.\n\nTake command. Lead us through the caves. I have brought with me a means of navigating them, and a means of recovering the knowledge that the Scrin rulers thought they had wiped from existence.
-	MapOptions:
-		ShortGameCheckboxEnabled: False
-	MusicPlaylist:
-		StartingMusic: nodcrush
+		Briefing:  ———[    Nod兄弟会引言    ]———
 
+凯恩的生化人从思金人母星上的传送门中涌出。凯恩对时间线的操纵意味着思金人完全措手不及，然而它们不会花太长时间就能完成动员。
+
+传送门的出口被移动，迫使思金人不得不应对一条额外的战线。随后，凯恩利用隐形运输舰，率领一支最精锐的生化人分队，留下主力部队准备应对思金人大军的必然到来。
+
+他的目的地是由塔西图斯——一件蕴含远古知识的神器——向他揭示的，经过艰苦卓绝的努力，它终于展现出了真正的用途。
+
+———[    任务简报(Nod兄弟会)   ]———
+
+我们已抵达。很快，我们在此的伟大目标就会变得清晰，但我们必须迅速行动。
+
+思金人无疑已经察觉到了我们的存在，而仅仅是我们出现在这里，就以数千年来未曾有过的方式威胁着它们。
+
+在我们面前的洞穴深处，埋藏着一个伟大项目的遗迹——该项目在很久以前被如今仍在统治思金人的那些暴君暴力终结并掩埋了。
+
+一场伟大的冲突在此终结，余烬就在我们脚下。我打算重新点燃这些余烬。
+
+如果我们成功，这将为思金人和人类双方预示一个新时代的黎明。
+
+接管指挥权。带领我们穿过洞穴。我带来了穿越它们的方法，以及找回思金人统治者自以为已从世间抹去的知识的方法。
 Player:
 	PlayerResources:
 		DefaultCash: 0

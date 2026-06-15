@@ -1,0 +1,40 @@
+# Simplified Chinese translation by lsxy, 2026.06.
+Container@SCRIPT_ERROR_PANEL:
+	Height: PARENT_HEIGHT
+	Width: PARENT_WIDTH
+	Logic: ScriptErrorLogic
+	Children:
+		Label@DESCA:
+			X: 15
+			Y: 16
+			Width: PARENT_WIDTH - 30
+			Height: 20
+			Font: Bold
+			Align: Center
+			Text: 地图脚本遇到致命错误
+		Label@DESCB:
+			X: 15
+			Y: 46
+			Width: PARENT_WIDTH - 30
+			Height: 20
+			Font: Regular
+			Align: Center
+			Text: 错误详情已保存到日志目录中的 lua.log。
+		Label@DESCC:
+			X: 15
+			Y: 66
+			Width: PARENT_WIDTH - 30
+			Height: 20
+			Font: Regular
+			Align: Center
+			Text: 请将此文件发送给地图作者以便修复此问题。
+		ScrollPanel@SCRIPT_ERROR_MESSAGE_PANEL:
+			X: 20
+			Y: 96
+			Width: PARENT_WIDTH - 40
+			Height: 300
+			Children:
+				Label@SCRIPT_ERROR_MESSAGE:
+					X: 4
+					Y: 2
+					Width: PARENT_WIDTH - 32

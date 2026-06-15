@@ -1,0 +1,361 @@
+# Simplified Chinese translation by lsxy, 2026.06.
+Container@DISPLAY_PANEL:
+	Logic: DisplaySettingsLogic
+	Width: PARENT_WIDTH
+	Height: PARENT_HEIGHT
+	Children:
+		ScrollPanel@SETTINGS_SCROLLPANEL:
+			Width: PARENT_WIDTH
+			Height: PARENT_HEIGHT
+			CollapseHiddenChildren: True
+			TopBottomSpacing: 5
+			ItemSpacing: 10
+			Children:
+				Background@PROFILE_SECTION_HEADER:
+					X: 5
+					Width: PARENT_WIDTH - 24 - 10
+					Height: 13
+					Background: separator
+					ClickThrough: True
+					Children:
+						Label@LABEL:
+							Width: PARENT_WIDTH
+							Height: PARENT_HEIGHT
+							Font: TinyBold
+							Align: Center
+							Text: 个人资料
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 50
+					Children:
+						Container@PLAYER_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								LabelForInput@PLAYER:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: 玩家名称：
+									For: PLAYERNAME
+								TextField@PLAYERNAME:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 25
+									MaxLength: 16
+									Text: 名称
+						Container@PLAYERCOLOR_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								LabelForInput@COLOR:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: 首选颜色：
+									For: PLAYERCOLOR
+								DropDownButton@PLAYERCOLOR:
+									Y: 25
+									Width: 75
+									Height: 25
+									IgnoreChildMouseOver: true
+									PanelAlign: Right
+									Children:
+										ColorBlock@COLORBLOCK:
+											X: 5
+											Y: 6
+											Width: PARENT_WIDTH - 35
+											Height: PARENT_HEIGHT - 12
+				Container@SPACER:
+				Background@DISPLAY_SECTION_HEADER:
+					X: 5
+					Width: PARENT_WIDTH - 24 - 10
+					Height: 13
+					Background: separator
+					ClickThrough: True
+					Children:
+						Label@LABEL:
+							Width: PARENT_WIDTH
+							Height: PARENT_HEIGHT
+							Font: TinyBold
+							Align: Center
+							Text: 显示
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 50
+					Children:
+						Container@BATTLEFIELD_CAMERA_DROPDOWN_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@BATTLEFIELD_CAMERA:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: 战场视角：
+								DropDownButton@BATTLEFIELD_CAMERA_DROPDOWN:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 25
+									Font: Regular
+						Container@TARGET_LINES_DROPDOWN_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@TARGET_LINES:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: 目标线：
+								DropDownButton@TARGET_LINES_DROPDOWN:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 25
+									Font: Regular
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 50
+					Children:
+						Container@UI_SCALE_DROPDOWN_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								LabelForInput@UI_SCALE:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: UI 缩放：
+									For: UI_SCALE_DROPDOWN
+								DropDownButton@UI_SCALE_DROPDOWN:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 25
+									Font: Regular
+						Container@STATUS_BAR_DROPDOWN_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@STATUS_BARS:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: 状态条：
+								DropDownButton@STATUS_BAR_DROPDOWN:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 25
+									Font: Regular
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 20
+					Children:
+						Container@CURSORDOUBLE_CHECKBOX_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@CURSORDOUBLE_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 增大光标尺寸
+						Container@PLAYER_STANCE_COLORS_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@PLAYER_STANCE_COLORS_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 玩家关系颜色
+									TooltipText: 根据关系更改玩家颜色（己方、敌方、盟友、中立）
+									TooltipContainer: SETTINGS_TOOLTIP_CONTAINER
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 20
+					Children:
+						Container@UI_FEEDBACK_CHECKBOX_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 10
+							Children:
+								Checkbox@UI_FEEDBACK_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 显示UI反馈通知
+									TooltipText: 显示UI事件的临时文本通知
+									TooltipContainer: SETTINGS_TOOLTIP_CONTAINER
+						Container@TRANSIENTS_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@TRANSIENTS_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 显示游戏事件通知
+									TooltipText: 显示游戏事件的临时文本通知
+									TooltipContainer: SETTINGS_TOOLTIP_CONTAINER
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 20
+					Children:
+						Container@PAUSE_SHELLMAP_CHECKBOX_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 10
+							Children:
+								Checkbox@PAUSE_SHELLMAP_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 暂停菜单背景
+						Container@HIDE_REPLAY_CHAT_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 10
+							Children:
+								Checkbox@HIDE_REPLAY_CHAT_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 在录像中隐藏聊天
+				Container@SPACER:
+				Background@VIDEO_SECTION_HEADER:
+					X: 5
+					Width: PARENT_WIDTH - 24 - 10
+					Height: 13
+					Background: separator
+					ClickThrough: True
+					Children:
+						Label@LABEL:
+							Width: PARENT_WIDTH
+							Height: PARENT_HEIGHT
+							Font: TinyBold
+							Align: Center
+							Text: 视频
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 50
+					Children:
+						Container@VIDEO_MODE_DROPDOWN_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@VIDEO_MODE:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: 视频模式：
+								DropDownButton@MODE_DROPDOWN:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 25
+									Font: Regular
+									Text: 视频模式
+						Container@WINDOW_RESOLUTION_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@WINDOW_SIZE:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: 窗口大小：
+								TextField@WINDOW_WIDTH:
+									Y: 25
+									Width: 55
+									Height: 25
+									MaxLength: 5
+									Type: Integer
+								Label@X:
+									X: 55
+									Y: 25
+									Text: x
+									Font: Bold
+									Height: 25
+									Width: 15
+									Align: Center
+								TextField@WINDOW_HEIGHT:
+									X: 70
+									Y: 25
+									Width: 55
+									Height: 25
+									MaxLength: 5
+									Type: Integer
+						Container@DISPLAY_SELECTION_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@DISPLAY_SELECTION_LABEL:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: 选择显示器：
+								DropDownButton@DISPLAY_SELECTION_DROPDOWN:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 25
+									Font: Regular
+									Text: 选择显示器
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 50
+					Children:
+						Container@FRAME_LIMIT_CHECKBOX_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@FRAME_LIMIT_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+						Container@FRAME_LIMIT_SLIDER_CONTAINER:
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Slider@FRAME_LIMIT_SLIDER:
+									X: 20
+									Y: 25
+									Width: PARENT_WIDTH - 20
+									Height: 20
+									Ticks: 20
+									MinimumValue: 50
+									MaximumValue: 240
+						Container@VSYNC_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@VSYNC_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 启用垂直同步
+						Container@FRAME_LIMIT_GAMESPEED_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Y: 25
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@FRAME_LIMIT_GAMESPEED_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 将帧率限制为游戏 Tick 速率
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 50
+					Children:
+						Container@GL_PROFILE_DROPDOWN_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Label@GL_PROFILE:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: OpenGL 配置：
+								DropDownButton@GL_PROFILE_DROPDOWN:
+									Y: 25
+									Width: PARENT_WIDTH
+									Height: 25
+									Font: Regular
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 30
+					Children:
+						Container@RESTART_REQUIRED_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH - 20
+							Children:
+								Label@VIDEO_RESTART_REQUIRED_DESC:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Tiny
+									Text: 显示和 OpenGL 更改需要重启
+									Align: Center

@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca42-schism"
 
 PurificationInterval = DateTime.Minutes(3)
@@ -147,7 +148,7 @@ WorldLoaded = function()
 		Actor.Create("hazmatsoviet.upgrade", true, { Owner = p })
 	end)
 
-	ObjectiveSecurePurifier = USSR.AddObjective("Use the Exterminator Tripod to secure\nthe purification device.")
+	ObjectiveSecurePurifier = USSR.AddObjective("使用歼灭者三足机甲确保\n净化装置安全。")
 	UpdateMissionText()
 
 	local spyPlaneDummy1 = Actor.Create("spy.plane.dummy", true, { Owner = SpyPlaneProvider })
@@ -173,17 +174,17 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(4), function()
-		Media.DisplayMessage("Stop this madness. You have no idea what you are dealing with. You will be the end of us all!", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("停止这疯狂。你根本不知道自己在面对什么。你会成为我们所有人的终结！", "凯恩", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_stopmadness.aud", 2)
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(7)), function()
-			Media.DisplayMessage("Your foolish quest ends here Kane. The Overlord will have your head.", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("你愚蠢的远征到此结束，凯恩。霸主将取下你的人头。", "查丹科总理", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/cdko_quest.aud", 2)
 			Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(7)), function()
 				spyPlaneDummy1.TargetAirstrike(Purifier.CenterPosition, Angle.NorthEast)
 				spyPlaneDummy1.Destroy()
 
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived.")
+				Notification("增援已抵达。")
 				Reinforcements.Reinforce(USSR, { "kiro" }, { KirovSpawn1.Location, KirovRally1.Location })
 				Reinforcements.Reinforce(USSR, { "kiro" }, { KirovSpawn2.Location, KirovRally2.Location })
 				DoMcvArrival()
@@ -195,7 +196,7 @@ WorldLoaded = function()
 				end)
 
 				Trigger.AfterDelay(DateTime.Seconds(5), function()
-					Tip("The Iron Curtain must be intact and powered to shield the Exterminator Tripod from purification waves.")
+					Tip("铁幕装置必须完好且通电，以保护歼灭者三足机甲免受净化之波。")
 				end)
 			end)
 		end)
@@ -247,7 +248,7 @@ OncePerSecondChecks = function()
 				TimerTicks = DefendDuration[Difficulty]
 
 				if ObjectiveDefendPurifier == nil then
-					ObjectiveDefendPurifier = USSR.AddObjective("Defend the purification device.")
+					ObjectiveDefendPurifier = USSR.AddObjective("保卫净化装置。")
 				end
 
 				USSR.MarkCompletedObjective(ObjectiveSecurePurifier)
@@ -290,21 +291,21 @@ end
 UpdateMissionText = function()
 
 	if USSR.IsObjectiveCompleted(ObjectiveSecurePurifier) then
-		UserInterface.SetMissionText("Purifier teleportation in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+		UserInterface.SetMissionText("净化者传送倒计时：" .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
 	else
 		if not Purifier.IsDead and Purifier.Owner == ScrinRebels then
 			local color = HSLColor.Yellow
 			if TimerTicks <= 125 then
 				color = HSLColor.Red
 			end
-			local text = "Purification wave in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks)
+			local text = "净化之波倒计时：" .. UtilsCA.FormatTimeForGameSpeed(TimerTicks)
 
 			if Difficulty == "brutal" then
 				if IronCurtainIntegrityTicksRemaining > 0 then
-					text = text .. " -- Iron Curtain integrity failure in " .. UtilsCA.FormatTimeForGameSpeed(IronCurtainIntegrityTicksRemaining)
+					text = text .. " -- 铁幕完整性失效倒计时：" .. UtilsCA.FormatTimeForGameSpeed(IronCurtainIntegrityTicksRemaining)
 				else
 					color = HSLColor.Red
-					text = text .. " -- Iron Curtain destroyed"
+					text = text .. " -- 铁幕已摧毁"
 				end
 			end
 
@@ -395,7 +396,7 @@ MaleficInit = function()
 
 		MediaCA.PlaySound("malefic.aud", 2)
 		Trigger.AfterDelay(DateTime.Seconds(8), function()
-			Media.DisplayMessage("Impossible! These Scrin are not..  Do not allow the device to be destroyed!", "Scrin Overlord", HSLColor.FromHex("7700FF"))
+			Media.DisplayMessage("不可能！这些思金并不……不要让装置被摧毁！", "思金霸主", HSLColor.FromHex("7700FF"))
 			MediaCA.PlaySound(MissionDir .. "/ovld_impossible.aud", 2)
 
 			Trigger.AfterDelay(DateTime.Seconds(8), function()

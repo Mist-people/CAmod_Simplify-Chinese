@@ -1,4 +1,5 @@
 
+# Simplified Chinese translation by lsxy, 2026.06.
 World:
 	-SpawnStartingUnits:
 	MapBuildRadius:
@@ -79,8 +80,8 @@ Player:
 			global.singlequeue: options-queuetype.singlequeue
 	LobbyPrerequisiteCheckbox@FREEUPGRADES:
 		ID: freeupgrades
-		Label: Free Upgrades
-		Description: Upgrades are free
+		Label: 免费升级
+		Description: 升级免费
 		Enabled: True
 		DisplayOrder: 999
 		Prerequisites: global.freeupgrades

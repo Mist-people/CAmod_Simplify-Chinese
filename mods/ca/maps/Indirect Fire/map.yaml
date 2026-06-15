@@ -1,6 +1,6 @@
 MapFormat: 11
 RequiresMod: ca
-Title: Indirect Fire
+Title: "间接火力"
 Author: Westwood Studios
 Tileset: TEMPERAT
 MapSize: 128,128
@@ -9,12 +9,12 @@ Visibility: Lobby
 Categories: Conquest
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: england
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: england
 		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7

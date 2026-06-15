@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	FlashPostProcessEffect@LIGHTNINGSTRIKE:
 		Type: LightningStrike
@@ -24,7 +25,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, abasement.lua
 	MissionData:
-		Briefing: Comrade General, our forces were too late to stop the madman Kane from unleashing his new army of cyborgs. Our forces suffered a catastrophic defeat as a result.\n\nThe situation is grim on all fronts. The Allies and their GDI friends have resumed their assaults on our western territories, and the alien invaders continue to pour through their wormholes wherever Tiberium is found.\n\nKane's army unexpectedly halted their advance and we have been presented with an offer. If we assist the Brotherhood in retaking territory they have lost to the Scrin and capture one of their Signal Transmitters, Kane promises to cease hostilities against us.\n\nFor now, we have little choice.\n\nEstablish a base in former Nod territory now occupied by the Scrin. Nod will provide reinforcements if we can secure their abandoned bases. Build up your forces and capture the Signal Transmitter that we know has been built in the area.
+		Briefing: 将军同志，我们的部队未能及时阻止疯子凯恩释放他的新型生化人军团。我军因此遭受了灾难性的失败。\n\n各条战线形势严峻。盟军及其全球防御组织(GDI)盟友已恢复对我国西部领土的进攻，而外星入侵者继续通过虫洞在泰伯利亚矿藏处涌现。\n\n凯恩的军队出人意料地停止了推进，我们收到了一个提议。如果我们协助兄弟会夺回被思金人占领的领土并缴获一座信号发射器，凯恩承诺停止对我国的敌对行动。\n\n目前，我们别无选择。\n\n在被思金人占领的原Nod领土上建立基地。如果我们能夺取他们废弃的基地，Nod将提供增援。集结你的部队，夺取已知建在此区域的信号发射器。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	PaletteFromFile@terrain-temperat:
 		Filename: ca|missions/main-campaign/ca19-proliferation/charred.pal
@@ -11,7 +12,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, proliferation.lua
 	MissionData:
-		Briefing: We have yet to re-establish communication with the homeworld so we must maximise preservation of our remaining forces here. To that end, the supervisor seeks to make changes to the operational command structure. You have been identified as having potential, and must now demonstrate your command effectiveness.\n\nAn area rich in blue ichor has been identified which is currently controlled by the indigenous faction led by the one known as Kane.\n\nUsing the outpost we have established, take control of all blue ichor fields and begin harvesting operations at each of them. Human harvesting operations must be removed.\n\nThe Supervisor is coordinating the allocation of all planetary forces. Reinforcements will be provided that are proportional to the value of your harvesting operation, and the surplus ichor you harvest will be diverted to the central repository.
+		Briefing: 我们尚未与母星重建通讯，因此必须最大限度地保存此地的残余部队。为此，监督者寻求对作战指挥结构进行调整。你已被认定具有潜力，现在必须证明你的指挥效能。\n\n已发现一片富含蓝色灵液的区域，目前由一个名为凯恩的本土派系控制。\n\n利用我们已经建立的前哨站，夺取所有蓝色灵液矿场并在每处开始采集作业。人类的采集活动必须清除。\n\n监督者正在协调所有行星部队的调配。增援力量将与你的采集作业价值成正比，所采集的多余灵液将被输送至中央储存库。
 	MapOptions:
 		ShortGameCheckboxEnabled: True
 	MusicPlaylist:

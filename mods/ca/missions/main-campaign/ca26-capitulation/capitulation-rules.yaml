@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 		Red: 0.85
@@ -17,7 +18,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, capitulation.lua
 	MissionData:
-		Briefing: The path to the Scrin stronghold is now clear and preparations for our assault are underway. Stalin is a wildcard that we cannot ignore, and we have decided it would be best to remove him from the equation.\n\nHe has retreated to a heavily fortified compound in Siberia and surrounded himself with his most loyal and experienced troops. Soviet ground forces suffered huge losses as a result of recent Scrin incursions, however their air force is still largely intact, so expect Stalin to make heavy use of it.\n\nHis stronghold is very heavily defended and key structures are protected by an Iron Curtain device that must be hidden underground.\n\nAn Atomic Reactor is the primary source of power for the base. Allied spies have reported to us that the reactor requires a constant supply of fuel to keep up with the base's enormous power consumption, so if we can cut their supply lines and prevent additional fuel from reaching the reactor, it would only be a matter of time before it is forced to shut down.\n\nThe base also has a secondary source of power in the form of a bank of Tesla Reactors on a nearby island. These reactors enable the base's Tesla Coils to be supercharged and should be destroyed before an attack on the main stronghold is attempted.\n\nOur last attempt to besiege a Soviet base with an Iron Curtain device did not end well; let's hope that Allied intel is accurate.
+		Briefing: 通往思金人大本营的道路现已畅通，我们正在准备发动总攻。斯大林是一颗无法忽视的变数，我们已决定最好将他从棋局中清除。\n\n他已撤退至西伯利亚一处重兵设防的基地，身边环绕着他最忠诚、最有经验的部队。由于近期思金人的入侵，苏联地面部队损失惨重，但他们的空军基本完好无损，因此预计斯大林会大量使用空中力量。\n\n他的大本营防卫极其严密，关键建筑受到一台必须隐藏在地下的铁幕装置的保护。\n\n一座原子反应堆是该基地的主要电力来源。盟军间谍报告称，该反应堆需要持续的燃料供应才能满足基地巨大的电力消耗，因此如果我们能切断其补给线，阻止额外燃料运达反应堆，它被迫关闭只是时间问题。\n\n该基地还有一个备用电源，形式为附近一座岛屿上的一组特斯拉反应堆。这些反应堆能使基地的特斯拉线圈超载充能，在进攻主基地之前应将其摧毁。\n\n我们上一次围攻拥有铁幕装置的苏联基地时结局并不美好；希望盟军的情报是准确的。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

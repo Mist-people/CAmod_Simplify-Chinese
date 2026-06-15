@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^ForceShieldPower:
 	GrantExternalConditionPowerCA@FSHIELD:
 		OrderName: fshield
@@ -10,8 +11,8 @@
 		ExplosionWeapon: ForceShield
 		ExplosionDelay: 5
 		AllowMultiple: false
-		Name: Force Shield
-		Description: Makes selected friendly structures temporarily invulnerable.\n\nWarning: Causes power failure.
+		Name: 力场护盾
+		Description: 使选定友方建筑暂时无敌。
 		OnFireSound: forceon.aud
 		DisplayTimerRelationships: Ally
 		SelectTargetSpeechNotification: SelectTarget
@@ -35,8 +36,8 @@
 		OrderName: sendcash
 		Icon: sendcash
 		ChargeInterval: 1
-		Name: Send Cash
-		Description: Sends up to $1000 to the owner of the target allied unit or structure.\n\n20% is deducted from the amount received.
+		Name: 发送资金
+		Description: 向目标友方单位或建筑的拥有者转移最多 $1000。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		Cursor: ability
@@ -52,8 +53,8 @@
 		Type: TimeSkip
 		ChargeInterval: 125
 		StartFullyCharged: true
-		Name: Time Skip
-		Description: Allocate funding for precise temporal manipulation to progress Allied technological and organizational advancement.\n\nAdvances influence progress by 1:00.
+		Name: 时间跳跃
+		Description: 分配资金进行精确的时间操控，以推进盟军的科技与组织进步。\n\n推进影响力进度1:00。
 		Actors: timeskip
 		SupportPowerPaletteOrder: 0
 		SelectProducer: false
@@ -69,8 +70,8 @@
 		Prerequisites: ~radar.england
 		ChargeInterval: 7500
 		LifeTime: -1
-		Name: Veil of War
-		Description: Creates an expanding area of shroud, reducing the vision and weapon range of enemy units and defenses.
+		Name: 战争帷幕
+		Description: 生成一片不断扩张的黑幕，降低敌方单位与防御建筑的视野和武器射程。
 		LaunchSound: sscrambl.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -92,8 +93,8 @@
 	AirstrikePowerCA@clustermines:
 		ChargeInterval: 6750
 		Prerequisites: ~radar.france
-		Name: Cluster Mines
-		Description: Sends a cargo plane to drop a minefield at the target location.
+		Name: 集束地雷
+		Description: 派遣运输机在目标位置投放雷区。
 		OrderName: clustermine
 		UnitType: c17.clustermines
 		CameraActor: camera.paradrop
@@ -122,9 +123,9 @@
 		Icon: tempinc
 		Cursor: ability
 		ChargeInterval: 7500
-		Name: Temporal Incursion
+		Name: 时空突袭
 		ActivationDelay: 25
-		Description: Summons reinforcements from the future. Units return to their origin time after a short time.
+		Description: 从未来召唤增援。单位会在短时间后返回原本的时间线。
 		Weapon: TemporalIncursion
 		AirburstAltitude: 0c0
 		AllowMultiple: false
@@ -164,8 +165,8 @@
 		Prerequisites: ~aircraft.usa
 		Icon: strafe
 		ChargeInterval: 7500
-		Name: Strafing Run
-		Description: Calls in P51 ground attack planes to perform strafing runs on the target.
+		Name: 低空扫射
+		Description: 呼叫 P-51 对目标执行低空扫射。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: StrafingRunReady
@@ -211,8 +212,8 @@
 	ProduceActorPowerCA@InitialSatelliteScan:
 		PauseOnCondition: disabled || empdisable || being-warped
 		Prerequisites: anyradar, ~!gps.satellite.firstscan, ~fogenabled
-		Name: Spy Satellite
-		Description: Periodically reveals the entire map for a short time (activated automatically).
+		Name: 间谍卫星
+		Description: 周期性短暂揭示整张地图（自动触发）。
 		Icon: gps
 		Actors: camera.satscan, gps.satellite.firstscan
 		Type: SpySatellite
@@ -225,8 +226,8 @@
 	ProduceActorPowerCA@SatelliteScan:
 		PauseOnCondition: disabled || empdisable || being-warped
 		Prerequisites: anyradar, ~gps.satellite, ~gps.satellite.firstscan, ~fogenabled
-		Name: Spy Satellite
-		Description: Periodically reveals the entire map for a short time (activated automatically).
+		Name: 间谍卫星
+		Description: 周期性短暂揭示整张地图（自动触发）。
 		Icon: gps
 		Actors: camera.satscan
 		Type: SpySatellite
@@ -238,8 +239,8 @@
 	ProduceActorPowerCA@SatelliteScanNoFog:
 		PauseOnCondition: disabled || empdisable || being-warped
 		Prerequisites: anyradar, ~!fogenabled
-		Name: Spy Satellite
-		Description: Permanently reveals the entire map (activated automatically).
+		Name: 间谍卫星
+		Description: 永久揭示整张地图（自动触发）。
 		Icon: gps
 		Actors: camera.satscan.oneshot
 		Type: SpySatellite
@@ -257,8 +258,8 @@
 		Prerequisites: pdox.germany
 		Cursor: ability
 		ChargeInterval: 4500
-		Name: Time Warp
-		Description: Disrupts time and space at the target location. Affected units & structures are frozen in time, unable to act, but immune to damage.
+		Name: 时间扭曲
+		Description: 受影响的单位与建筑会被冻结在时间中，无法行动，但免疫伤害。
 		ExplosionWeapon: TimeWarp
 		Condition: being-warped
 		Duration: 375
@@ -294,8 +295,8 @@
 		Prerequisites: ~sweden.coalition, ~alhq
 		ChargeInterval: 8250
 		LifeTime: -1
-		Name: Cryostorm
-		Description: Creates a turbulent area of extreme cold, reducing movement speed and increasing damage taken.
+		Name: 冷冻风暴
+		Description: 制造一片极度寒冷的湍流区域，降低移动速度并增加受到伤害。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -328,8 +329,8 @@
 		Icon: heliosbomb
 		IconPalette: caneon
 		ChargeInterval: 10500
-		Name: Helios Bomb
-		Description: Calls in a bomber which drops a Helios bomb, blinding units in a large area.
+		Name: 赫利俄斯炸弹
+		Description: 呼叫轰炸机投下赫利俄斯炸弹，使大范围单位致盲。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: HeliosBombReady
@@ -362,8 +363,8 @@
 		Icon: bsky
 		IconPalette: chrome
 		ChargeInterval: 9000
-		Name: Black Sky Strike
-		Description: Fires long range guided missiles at multiple ground targets prioritized by value. Tracking can be lost if targets move far enough from their initial location.
+		Name: 黑天打击
+		Description: 向多个地面目标发射远程制导导弹，按价值排序。若目标移动过远，跟踪可能丢失。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: BlackSkyStrikeReady
@@ -397,8 +398,8 @@
 		EnemyDuration: 400
 		Icon: chrono
 		ChargeInterval: 4500
-		Name: Chronoshift
-		Description: Teleports up to 9 selected vehicles to a targeted location, returning them to their original location after a short time.\n\n• If killed, units are returned with 20% health\n• Units with larger health pools take additional damage\n• Passengers cannot be unloaded\n• Enemy units are teleported for reduced duration
+		Name: 超时空传送
+		Description: 将最多9个选中的载具传送到目标位置，短时间后返回原位。\n\n• 如果被摧毁，单位以20%生命值返回\n• 生命值更高的单位会受到额外伤害\n• 乘员无法卸载\n• 敌方单位传送持续时间更短
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -431,9 +432,9 @@
 		Icon: chrono
 		Cursor: ability
 		ChargeInterval: 7000
-		Name: Chronoshift
+		Name: 超时空传送
 		ActivationDelay: 25
-		Description: Teleports up to 9 selected vehicles to a targeted location, returning them to their original location after a short time.\n\n• If killed, units are returned with 20% health\n• Units with larger health pools take additional damage\n• Passengers cannot be unloaded\n• Enemy units are teleported for reduced duration
+		Description: 将最多9个选中的载具传送到目标位置，短时间后返回原位。\n\n• 如果被摧毁，单位以20%生命值返回\n• 生命值更高的单位会受到额外伤害\n• 乘员无法卸载\n• 敌方单位传送持续时间更短
 		Weapon: ChronoAI
 		AirburstAltitude: 0c0
 		AllowMultiple: false
@@ -458,9 +459,9 @@
 		Icon: storm
 		Cursor: ability
 		ChargeInterval: 13500
-		Name: Lightning Storm
+		Name: 闪电风暴
 		ActivationDelay: 50
-		Description: Initiate a Lightning Storm which deals heavy damage over a large area.
+		Description: 发动闪电风暴，对大范围区域造成重创。
 		Weapon: WeatherStormInit
 		AirburstAltitude: 5c768
 		AllowMultiple: false
@@ -496,8 +497,8 @@
 		Prerequisites: ~radar.soviet
 		PauseOnCondition: disabled || empdisable || being-warped
 		ChargeInterval: 3000
-		Name: Spy Plane
-		Description: Dispatches a spy plane that reveals the target location for a limited time.
+		Name: 侦察机
+		Description: 派出侦察机，短时间揭示目标位置。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: SpyPlaneReady
@@ -526,8 +527,8 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: paratroopers
 		ChargeInterval: 7500
-		Name: Paratroopers
-		Description: Dispatches a Halo transport to drop a squad of infantry anywhere on the map.
+		Name: 伞兵
+		Description: 派遣 Halo 运输机，将一队步兵空降到地图任意位置。
 		SquadSize: 1
 		SquadOffset: 0,1792,0
 		DropItems: E1,E1,E2,E3,E3,E1,E1,E1
@@ -560,8 +561,8 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: stormtroopers
 		ChargeInterval: 9000
-		Name: Storm-troopers
-		Description: Dispatches a Halo transport to drop a squad of Shock Troopers anywhere on the map.
+		Name: 震电突击队空降
+		Description: 派遣光环运输机向地图任意位置空投一队震电突击兵。
 		SquadSize: 1
 		SquadOffset: 0,1792,0
 		DropItems: SHOK,SHOK,SHOK,SHOK,SHOK
@@ -598,8 +599,8 @@
 		PauseOnCondition: empdisable || being-warped
 		Icon: parabombs
 		ChargeInterval: 7500
-		Name: Parabombs
-		Description: Calls in a Badger bomber which drops parachuted bombs on your target.
+		Name: 伞降炸弹
+		Description: 呼叫獾式轰炸机，在目标上空投下伞降炸弹。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: ParabombsReady
@@ -626,8 +627,8 @@
 		PauseOnCondition: empdisable || being-warped
 		Icon: carpetbomb
 		ChargeInterval: 10500
-		Name: Carpet Bomb
-		Description: Calls in a squad of Badgers which drop bombs on your target.
+		Name: 地毯式轰炸
+		Description: 呼叫一队獾式轰炸机向目标投弹。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: CarpetBombReady
@@ -655,7 +656,7 @@
 		Icon: abombair
 		ChargeInterval: 10500
 		Name: Atomic Bomb
-		Description: Calls in a Badger bomber which drops an atom bomb on your target.
+		Description: 呼叫獾式轰炸机，在目标上投下一枚原子弹。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: AtomicBombReady
@@ -683,8 +684,8 @@
 		Icon: mutabomb
 		IconPalette: chromes
 		ChargeInterval: 6750
-		Name: Genetic Mutation Bomb
-		Description: Calls in a Badger bomber which drops a genetic mutation bomb on your target, transforming infantry into Brutes under your control.
+		Name: 基因突变炸弹
+		Description: 呼叫獾式轰炸机在目标上投下基因突变炸弹，将步兵变为受你控制的狂兽人。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: GeneticMutationBombReady
@@ -712,8 +713,8 @@
 		PauseOnCondition: empdisable || being-warped
 		Icon: chaosbombs
 		ChargeInterval: 8250
-		Name: Chaos Bombs
-		Description: Calls in a Badger bomber which drops parachuted chaos bombs on your target.
+		Name: 混乱炸弹
+		Description: 呼叫獾式轰炸机向目标投放伞降混乱炸弹。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: ChaosBombsReady
@@ -757,7 +758,7 @@
 		OrderName: atomicammo
 		Icon: atomicammo
 		ChargeInterval: 4500
-		Name: Atomic Shells
+		Name: 原子炮弹
 		Condition: atomic-ammo
 		Range: 4c0
 		MaxTargets: 5
@@ -765,7 +766,7 @@
 		ValidTargets: Vehicle
 		Duration: 1
 		AllowMultiple: false
-		Description: Grants tanks a limited supply of atomic shells (also for a limited duration).\n\nAffects Soviet tanks only (Heavy/Rhino Tank, Lasher/Thrasher Tank, Siege Tank, Mammoth Tank, Overlord Tank, Apocalypse Tank, Nuke Cannon)\n\nNuke Cannon gains a neutron shell that kills vehicle crews.
+		Description: 为坦克提供有限数量的原子炮弹，并且只持续一段时间。
 		OnFireSound: atomshell.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -788,7 +789,7 @@
 		OrderName: atomicammoiraq
 		Icon: atomicammo
 		ChargeInterval: 4500
-		Name: Atomic Shells
+		Name: 原子炮弹
 		Condition: atomic-ammo
 		Range: 4c0
 		MaxTargets: 5
@@ -796,7 +797,7 @@
 		ValidTargets: Vehicle
 		Duration: 1
 		AllowMultiple: false
-		Description: Grants tanks a limited supply of atomic shells (also for a limited duration).\n\nAffects Soviet tanks only (Heavy/Rhino Tank, Lasher/Thrasher Tank, Siege Tank, Mammoth Tank, Overlord Tank, Apocalypse Tank, Nuke Cannon)\n\nNuke Cannon gains a neutron shell that kills vehicle crews.
+		Description: 为坦克提供有限数量的原子炮弹，并且只持续一段时间。
 		OnFireSound: atomshell.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -820,7 +821,7 @@
 		OrderName: heroesofunion
 		Icon: heroes
 		ChargeInterval: 6000
-		Name: Heroes of the Union
+		Name: 联盟英雄
 		Condition: herooftheunion
 		Range: 3c512
 		MaxTargets: 5
@@ -828,7 +829,7 @@
 		ValidTargets: HeroOfUnionTargetable
 		Duration: 0
 		AllowMultiple: false
-		Description: Targeted basic infantry units become Heroes of the Union, significantly increasing their damage, speed, range and resilience.\n\nCan affect Rifle Infantry, Rocket Soldiers, Grenadiers and Flamethrowers.
+		Description: 目标基础步兵会成为联盟英雄，大幅提升伤害、速度、射程和生存能力。
 		Prerequisites: ~infantry.doctrine, playerxp.level2
 		OnFireSound: heroes.aud
 		SelectTargetSpeechNotification: SelectTarget
@@ -853,8 +854,8 @@
 		UnitType: anto
 		Icon: tankdrop
 		ChargeInterval: 13500
-		Name: Tank Drop
-		Description: Dispatches cargo planes to air drop tanks at the target location.
+		Name: 坦克空投
+		Description: 派遣运输机向目标位置空投坦克。
 		DropItems: 3tnk, 3tnk, 3tnk
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -897,8 +898,8 @@
 		Prerequisites: ~arty.doctrine, playerxp.level2
 		Icon: killzone
 		ChargeInterval: 4500
-		Name: Kill Zone
-		Description: Calls in a Spy Plane which marks a target area. Any enemy units within it take increased damage.
+		Name: 杀伤区域
+		Description: 区域内的任何敌方单位都会受到更多伤害。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: KillZoneReady
@@ -936,7 +937,7 @@
 		InvalidTargets: IronCurtainImmune
 		Duration: 550
 		AllowMultiple: false
-		Description: supportpower-ironcurtain.desc
+			Description: 使目标区域的单位暂时无敌。
 		OnFireSound: ironcur9.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -959,8 +960,8 @@
 		Cursor: nuke
 		Icon: abomb
 		ChargeInterval: 13500
-		Name: Atom Bomb
-		Description: Launches a devastating atomic bomb at the target location, dealing heavy damage over a large area.
+		Name: 原子弹
+		Description: 向目标位置发射毁灭性的原子弹，对大范围区域造成重创。
 		BeginChargeSpeechNotification: AbombPrepping
 		EndChargeSpeechNotification: AbombReady
 		EndChargeTextNotification: A-bomb ready.
@@ -999,8 +1000,8 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: uavicon
 		ChargeInterval: 3750
-		Name: Recon Drone
-		Description: A drone flies across the map, revealing the area as it passes.\n\nDetects cloaked units.
+		Name: 侦察无人机
+		Description: 无人机飞越地图，揭示沿途区域。\n\n侦测隐形单位。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: ReconDroneReady
@@ -1023,8 +1024,8 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: uavicon
 		ChargeInterval: 3000
-		Name: Recon Drone
-		Description: A drone flies across the map, revealing the area as it passes.\n\nDetects cloaked units.
+		Name: 侦察无人机
+		Description: 无人机飞越地图，揭示沿途区域。\n\n侦测隐形单位。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: ReconDroneReady
@@ -1049,9 +1050,9 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: xodrop
 		ChargeInterval: 9750
-		Name: X-O Drop
+		Name: X-O空降
 		UnitType: ocar.xo
-		Description: An Orca transport drops a squad of X-O Powersuits at the target location.
+		Description: 奥卡运输机向目标位置空投一队X-O动力装甲。
 		SquadSize: 1
 		SquadOffset: 0,1792,0
 		DropItems: XO,XO,XO
@@ -1080,8 +1081,8 @@
 		PauseOnCondition: disabled || empdisable || being-warped
 		Icon: droppods
 		IconPalette: chrometd
-		Name: Drop Pods
-		Description: Instantly deploys a small team of elite soldiers at the target location via orbital drop pods.
+		Name: 空降舱
+		Description: 通过轨道空降舱向目标位置即刻部署一支精英士兵小队。
 		EndChargeSpeechNotification: DropPodsAvailable
 		EndChargeTextNotification: Drop Pods ready.
 		SelectTargetSpeechNotification: SelectTarget
@@ -1107,8 +1108,8 @@
 		Icon: orcaca
 		IconPalette: chrometd
 		ChargeInterval: 6000
-		Name: Reinforcements
-		Description: An Orca Carryall drops an APC containing an infantry squad at the target location.
+		Name: 增援
+		Description: 奥卡运输机向目标位置空投一辆载有步兵班的装甲运兵车。
 		EndChargeSpeechNotification: Reinforce
 		EndChargeTextNotification: Reinforcements ready.
 		LaunchSpeechNotification: ReinforcementsArrived
@@ -1133,8 +1134,8 @@
 		PauseOnCondition: empdisable || being-warped
 		Icon: airsupport
 		ChargeInterval: 10500
-		Name: Interceptors
-		Description: A squadron of Interceptors provides air cover over the target area, engaging any enemy aircraft within range.
+		Name: 截击机
+		Description: 一队截击机在目标区域提供空中掩护，与范围内的敌方飞行器交战。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: InterceptorsReady
@@ -1172,8 +1173,8 @@
 		ExplosionWeapon: RepairFlash
 		ExplosionDelay: 5
 		AllowMultiple: false
-		Name: Nanite Repair
-		Description: Repairs selected damaged vehicles over time.
+		Name: 纳米修复
+		Description: 持续修复选定的受损载具。
 		OnFireSound: srepaira.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1198,8 +1199,8 @@
 		Icon: fstorm
 		IconPalette: chrometd
 		ChargeInterval: 7500
-		Name: Firestorm
-		Description: Fires a barrage of rockets at the target area.
+		Name: 烈焰风暴
+		Description: 向目标区域发射一轮火箭弹幕。
 		BeginChargeSpeechNotification: FireStormOffline
 		EndChargeSpeechNotification: FireStormReady
 		EndChargeTextNotification: Firestorm Missiles ready.
@@ -1233,8 +1234,8 @@
 		ChargeInterval: 4500
 		Icon: arscan
 		IconPalette: chrometd
-		Name: Advanced Radar Scan
-		Description: Reveals the location of enemy structures & units through the fog of war.
+		Name: 先进雷达扫描
+		Description: 透过战争迷雾揭示敌方建筑与单位的位置。
 		RequiresCondition: tower-radar
 		PauseOnCondition: !radar-active || disabled || being-warped
 		LaunchSound: gradarup.aud
@@ -1255,8 +1256,8 @@
 		Prerequisites: ~techlevel.high
 		ChargeInterval: 6000
 		LifeTime: 375
-		Name: Nanite Shield
-		Description: Reduces the damage taken by all vehicles in the target area.
+		Name: 纳米护盾
+		Description: 降低目标区域内所有载具受到的伤害。
 		LaunchSound: srepaira.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1283,8 +1284,8 @@
 		Cursor: empmissile
 		Icon: empmissile
 		ChargeInterval: 4500
-		Name: E.M. Missile
-		Description: Fires a Tomahawk missile which disables all mechanical units and structures on impact.
+		Name: 电磁脉冲导弹
+		Description: 发射一枚战斧导弹，命中时瘫痪所有机械单位与建筑。
 		BeginChargeSpeechNotification: EMMissilePrepping
 		EndChargeSpeechNotification: EMMissileReady
 		EndChargeTextNotification: E.M. Missile ready.
@@ -1315,9 +1316,9 @@
 		IconPalette: chrometd
 		ChargeInterval: 6000
 		WeaponDelay: 3
-		Name: Surgical Strike
+		Name: 外科打击
 		EffectPalette: tdeffect-ignore-lighting-alpha85
-		Description: Initiate an precision Ion Cannon strike which deals instant damage to a small area.
+		Description: 发动精确离子炮打击，对小范围区域造成瞬间伤害。
 		EndChargeSpeechNotification: SurgicalStrikeReady
 		EndChargeTextNotification: Surgical Strike ready.
 		IncomingSound: ion2.aud
@@ -1342,9 +1343,9 @@
 		Icon: ioncannon
 		Cursor: ioncannon
 		ChargeInterval: 13500
-		Name: Ion Cannon
+		Name: 离子炮
 		ActivationDelay: 50
-		Description: Initiate an Ion Cannon strike which deals heavy damage over a large area.
+		Description: 发动离子炮打击，对大范围区域造成重创。
 		Weapon: IonStormInit
 		AirburstAltitude: 4c512
 		AllowMultiple: false
@@ -1380,8 +1381,8 @@
 		UnitType: c17
 		Icon: airdropicon
 		ChargeInterval: 13500
-		Name: Air Drop
-		Description: Dispatches cargo planes to air drop tanks at the target location.
+		Name: 空投
+		Description: 派遣运输机向目标位置空投坦克。
 		DropItems: ltnk, ftnk, ltnk
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1408,8 +1409,8 @@
 		UnitType: c17
 		Icon: airdropicon
 		ChargeInterval: 13500
-		Name: Air Drop
-		Description: Dispatches cargo planes to air drop flame tanks at the target location.
+		Name: 空投
+		Description: 派遣运输机向目标位置空降火焰坦克。
 		DropItems: hftk, hftk
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1436,9 +1437,9 @@
 		Prerequisites: vehicles.marked
 		Cursor: ability
 		ChargeInterval: 12000
-		Name: Subterranean Strike
+		Name: 地下突袭
 		ActivationDelay: 250
-		Description: Deploys a squad of Acolytes/Templar via Subterranean APC.
+		Description: 通过地下装甲运兵车部署一队侍僧/圣殿骑士。
 		LaunchSound: subrumble.aud
 		Weapon: SubterraneanStrikeSpawner
 		AirburstAltitude: 0c0
@@ -1465,8 +1466,8 @@
 		UnitType: c17
 		Icon: airdropicon
 		ChargeInterval: 13500
-		Name: Air Drop
-		Description: Dispatches cargo planes to air drop stealth tanks at the target location.
+		Name: 空投
+		Description: 派遣运输机向目标位置空降隐形坦克。
 		DropItems: stnk.nod, stnk.nod
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1498,8 +1499,8 @@
 		OrderName: sathack
 		Icon: hacksat
 		ChargeInterval: 4500
-		Name: Hack Satellite Uplink
-		Description: Reveals the targeted area for a short time.
+		Name: 入侵卫星上行链路
+		Description: 短时间揭示目标区域。
 		LaunchSound: hacksat.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1519,8 +1520,8 @@
 		OrderName: sathacklegion
 		Icon: hacksat
 		ChargeInterval: 3000
-		Name: Hack Satellite Uplink
-		Description: Reveals the targeted area for a short time.
+		Name: 入侵卫星上行链路
+		Description: 短时间揭示目标区域。
 		LaunchSound: hacksat.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1541,8 +1542,8 @@
 		Icon: infbomb
 		IconPalette: chrometd
 		ChargeInterval: 9750
-		Name: Inferno Bomb
-		Description: A B2 Stealth Bomber drops inferno bombs on your target.
+		Name: 炼狱炸弹
+		Description: B2隐形轰炸机在目标上投下炼狱炸弹。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: InfernoBombReady
@@ -1573,8 +1574,8 @@
 		Maximum: 2000
 		Prerequisites: ~radar.legion
 		AllowMultiple: false
-		Name: Cash Hack
-		Description: Steal up to $2000 credits from a targeted enemy Refinery.
+		Name: 资金劫持
+		Description: 从目标敌方精炼厂窃取最多 $2000 资金。
 		OnFireSound: scashhac.aud
 		Notification: CreditsStolen
 		SelectTargetSpeechNotification: SelectTarget
@@ -1593,8 +1594,8 @@
 		Prerequisites: ~radar.shadow
 		Icon: shadteam
 		ChargeInterval: 6750
-		Name: Shadow Team
-		Description: Calls for a Shadow Team; three stealth infantry that arrive via glider armed with grenades and a machine pistol.\n\nOperatives can be ordered to land via the deploy command.
+		Name: 暗影小组
+		Description: 呼叫暗影小队；三名装备手榴弹和冲锋手枪的隐形步兵通过滑翔机抵达。\n\n可通过部署命令命令特工降落。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		LaunchSpeechNotification: ReinforcementsArrived
@@ -1618,8 +1619,8 @@
 		Prerequisites: ~techlevel.high
 		Cursor: ability
 		ChargeInterval: 10500
-		Name: Cluster Missile
-		Description: Launches a Cluster Missile which deals heavy damage at the target location.
+		Name: 集束导弹
+		Description: 发射集束导弹，对目标位置造成重创。
 		EndChargeSpeechNotification: ClusMissileReady
 		EndChargeTextNotification: Cluster Missile ready.
 		SelectTargetSpeechNotification: SelectTarget
@@ -1663,14 +1664,14 @@
 		Prerequisites: ~tmpl.marked
 		ChargeInterval: 6750
 		ExplosionWeapon: Frenzy
-		Name: Frenzy
+		Name: 狂热
 		Condition: frenzyinit
 		Range: 2c512
 		ValidRelationships: Ally
 		Duration: 750
 		ActiveSequence: false-active
 		AllowMultiple: false
-		Description: Increases the movement speed and rate of fire of targeted units for a limited time.\n\nWarning: Units are weakened for a short time after frenzy wears off.
+		Description: 在一段时间内提升目标单位的移动速度和射速。
 		OnFireSound: nodfrenzy.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1691,8 +1692,8 @@
 		OrderName: techhack
 		Icon: techhack
 		ChargeInterval: 18000
-		Name: Technology Hack
-		Description: Hack the targeted enemy production structure, providing access to a unit developed using enemy technology.\n\nFor infantry, vehicle and air production respectively: \n\n• Allies: Cryo Mortar, Reckoner, Phantom\n• Soviets: Cyberdog, Cyclops, Kamov\n• GDI: Sonic Mortar, Basilisk, Shade\n• Nod: Chem Mortar, Mantis, Vertigo\n• Scrin: Cyberscrin, Viper, Manticore
+		Name: 技术劫持
+		Description: 骇入敌方生产建筑，获取使用敌方技术开发的单位。\n\n步兵、载具和飞行器生产建筑分别对应：\n\n• 盟军：冷冻迫击炮、清算者、幽灵\n• 苏联：赛博格犬、独眼巨人、卡莫夫\n• GDI：声波迫击炮、蛇怪、暗影\n• 无d：化学迫击炮、螳螂、眩晕\n• 思金：赛博思金、蝰蛇、狮蝎
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -1713,8 +1714,8 @@
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		ChargeInterval: 6000
-		Name: Assassin Squad
-		Description: Deploy a squad of Assassins that can snipe infantry from long range and destroy buildings with C4.\n\nTarget infantry production structure to deploy.
+		Name: 刺客小队
+		Description: 部署一队可远程狙击步兵并使用C4摧毁建筑的刺客。\n\n目标为步兵生产建筑以进行部署。
 		Actors: assa, assa, assa
 		LaunchSpeechNotification: ReinforcementsArrived
 		EndChargeSpeechNotification: AssassinSquadReady
@@ -1728,7 +1729,7 @@
 		Type: ParadropInfantry
 		ChargeInterval: 6000
 		Name: Assassin Squad (AI)
-		Description: Deploy a squad of Assassins that can destroy buildings and salvage technology.
+		Description: 部署一队可摧毁建筑并打捞科技的刺客。
 		Actors: assa, assa, assa
 		SupportPowerPaletteOrder: 50
 
@@ -1741,8 +1742,8 @@
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		ChargeInterval: 6000
-		Name: Hacker Cell
-		Description: Deploy a squad of Hackers that can remotely capture buildings and take control of defenses.\n\nTarget infantry production structure to deploy.
+		Name: 黑客小组
+		Description: 部署一队可远程占领建筑并控制防御设施的黑客。\n\n目标为步兵生产建筑以进行部署。
 		Actors: hack, hack, hack
 		LaunchSpeechNotification: ReinforcementsArrived
 		EndChargeSpeechNotification: HackerCellReady
@@ -1755,7 +1756,7 @@
 		Type: ParadropInfantry
 		ChargeInterval: 6000
 		Name: Hacker Cell (AI)
-		Description: Deploy a squad of Hackers that can remotely capture buildings and take control of defenses.
+		Description: 部署一队可远程占领建筑并控制防御设施的黑客。
 		Actors: hack, hack, hack
 		SupportPowerPaletteOrder: 50
 		SelectProducer: false
@@ -1770,8 +1771,8 @@
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		ChargeInterval: 6000
-		Name: Confessor Cabal
-		Description: Deploy a Confessor Cabal which is able to construct Idols of Kane that buffs allies and debuffs enemies.\n\nTarget infantry production structure to deploy.
+		Name: 忏悔者集团
+		Description: 部署告解师密谋团，可建造凯恩神像，为盟友提供增益并为敌人施加减益。\n\n目标为步兵生产建筑以进行部署。
 		Actors: conf, conf, conf
 		LaunchSound: conf-create.aud
 		EndChargeSpeechNotification: ConfessorCabalReady
@@ -1785,7 +1786,7 @@
 		Type: ParadropInfantry
 		ChargeInterval: 6000
 		Name: Confessor Cabal (AI)
-		Description: Deploy a Confessor Cabal which is able to construct Idols of Kane that buffs allies and debuffs enemies.
+		Description: 部署告解师密谋团，可建造凯恩神像，为盟友提供增益并为敌人施加减益。
 		Actors: conf, conf, conf
 		SupportPowerPaletteOrder: 50
 		SelectProducer: false
@@ -1797,14 +1798,14 @@
 		IconPalette: chrometd
 		ChargeInterval: 4500
 		ExplosionWeapon: StealthBubble
-		Name: Tiberium Stealth
+		Name: 泰伯利亚隐形
 		Condition: tibstealth
 		ValidRelationships: Ally, Neutral, Enemy
 		Range: 3c512
 		Duration: 600
 		MaxAltitude: 1
 		AllowMultiple: false
-		Description: Makes selected vehicles and structures temporarily invisible.\n\nWarning: Harmful to non-cyborg infantry.\n\nHazmat Suits upgrade makes allies immune to damage and enemies take 50% damage.
+		Description: 使选中的载具和建筑暂时隐形。\n\n警告：对非生化人步兵有害。\n\n防化服升级使盟友免疫伤害，敌人受到50%伤害。
 		OnFireSound: cloak6.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1829,8 +1830,8 @@
 		IconPalette: chrometd
 		Cursor: chemmissile
 		ChargeInterval: 13500
-		Name: Chemical Missile
-		Description: Launches an deadly Chemical Missile. Deals heavy damage and creates toxic clouds which are extremely harmful to infantry.\n
+		Name: 化学导弹
+		Description: 发射致命的化学导弹。造成大量伤害并制造对步兵极有害的有毒云团。
 		EndChargeSpeechNotification: ChemMissileReady
 		EndChargeTextNotification: Chemical Missile ready.
 		SelectTargetSpeechNotification: SelectTarget
@@ -1872,9 +1873,9 @@
 		Prerequisites: loyalist.allegiance
 		Cursor: ability
 		ChargeInterval: 6000
-		Name: Ichor Spike
+		Name: 灵液尖塔
 		ActivationDelay: 1
-		Description: Creates an Ichor Spike at the target location. Resources within its area of influence grow and spread faster.\n\nAlso empowers units with Resource Conversion upgrade.
+		Description: 在目标位置创建灵液尖刺。影响范围内的资源生长和扩散速度加快。\n\n同时强化具有资源转换升级的单位。
 		LaunchSound: scrinbuild.aud
 		Weapon: IchorSpikeSpawner
 		AirburstAltitude: 0c0
@@ -1897,9 +1898,9 @@
 		Prerequisites: rebel.allegiance
 		Cursor: ability
 		ChargeInterval: 7500
-		Name: Colony Spike
+		Name: 殖民尖塔
 		ActivationDelay: 1
-		Description: Creates a Colony Spike at the target location. Enables production of non-defensive structures.\n\nWhen fully charged allows non-defensive structures to be built nearby.\n\nMust be built within range of a Colony Platform.
+		Description: 在目标位置创建殖民尖刺。允许生产非防御建筑。\n\n完全充能后允许在附近建造非防御建筑。\n\n必须在殖民平台的范围内建造。
 		LaunchSound: cspk.aud
 		IncomingSound: cspk.aud
 		Weapon: ColonySpikeSpawner
@@ -1924,9 +1925,9 @@
 		Prerequisites: malefic.allegiance
 		Cursor: ability
 		ChargeInterval: 6000
-		Name: Voidspike
+		Name: 虚空尖塔
 		ActivationDelay: 1
-		Description: Creates a Voidspike at the target location. Gradually transforms nearby resources into Black Tiberium which is devoid of most of its useful properties.\n\nDamages nearby enemy units.
+		Description: 在目标位置创建虚空尖刺。逐渐将附近的资源转化为失去了大部分有用属性的黑色泰伯利亚。\n\n伤害附近的敌方单位。
 		LaunchSound: scrinbuild.aud
 		Weapon: VoidSpikeSpawner
 		AirburstAltitude: 0c0
@@ -1950,8 +1951,8 @@
 		OrderName: resourcescan
 		Icon: rescanpower
 		ChargeInterval: 7500
-		Name: Resource Scan
-		Description: Reveals the area surrounding all resources on the map.
+		Name: 资源扫描
+		Description: 揭示地图上所有资源周围的区域。
 		LaunchSound: tibscan.aud
 		PauseOnCondition: disabled || empdisable || being-warped
 		EffectImage: empty
@@ -1969,9 +1970,9 @@
 		Prerequisites: radar.reaper
 		Cursor: ability
 		ChargeInterval: 7500
-		Name: Storm Spike
+		Name: 风暴尖塔
 		ActivationDelay: 1
-		Description: Creates a temporary Storm Column defensive structure at the target location.
+		Description: 在目标位置建造临时风暴柱防御建筑。
 		LaunchSound: scrinbuild.aud
 		Weapon: StormSpikeSpawner
 		AirburstAltitude: 0c0
@@ -1995,9 +1996,9 @@
 		Prerequisites: radar.harbinger, !botplayer
 		Cursor: ability
 		ChargeInterval: 7500
-		Name: Buzzer Swarm
+		Name: 蜂群
 		ActivationDelay: 1
-		Description: Spawns a controllable swarm which blinds and damages anything nearby; particularly harmful to infantry.
+		Description: 生成一群可控蜂群，致盲并伤害附近一切；对步兵尤为致命。
 		LaunchSound: buzzers-create.aud
 		Weapon: BuzzerSpawner
 		AirburstAltitude: 0c0
@@ -2019,7 +2020,7 @@
 		ChargeInterval: 7500
 		Name: Buzzer Swarm (AI)
 		ActivationDelay: 1
-		Description: Spawns a controllable swarm which damages anything nearby; particularly harmful to infantry.
+		Description: 生成可控虫群，伤害附近一切目标；对步兵尤其致命。
 		LaunchSound: buzzers-create.aud
 		Weapon: BuzzerSpawnerAI
 		AirburstAltitude: 0c0
@@ -2041,9 +2042,9 @@
 		Prerequisites: radar.traveler
 		Cursor: ability
 		ChargeInterval: 6750
-		Name: Ion Surge
+		Name: 离子涌动
 		ActivationDelay: 1
-		Description: Increases the movement speed of all friendly units passing through the target area.
+		Description: 提升所有经过目标区域的友方单位的移动速度。
 		LaunchSound: ionsurge.aud
 		Weapon: IonSurgeSpawner
 		AirburstAltitude: 0c0
@@ -2066,10 +2067,10 @@
 		Actor: ichorseeder
 		Prerequisites: ~!player.reaper
 		ChargeInterval: 6000
-		Name: Ichor Seed
+		Name: 灵液之种
 		LifeTime: -1
 		AllowMultiple: false
-		Description: Grows Tiberium at selected location.
+		Description: 在所选位置催生泰伯利亚。
 		LaunchSound: ichorseed.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -2088,10 +2089,10 @@
 		Actor: ichorseeder
 		Prerequisites: ~player.reaper
 		ChargeInterval: 4800
-		Name: Ichor Seed
+		Name: 灵液之种
 		LifeTime: -1
 		AllowMultiple: false
-		Description: Grows Tiberium at selected location.
+		Description: 在所选位置催生泰伯利亚。
 		LaunchSound: ichorseed.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -2113,9 +2114,9 @@
 		Prerequisites: scrt.collector
 		Cursor: ability
 		ChargeInterval: 6000
-		Name: Greater Coalescence
+		Name: 大凝聚
 		ActivationDelay: 1
-		Description: Spawns a controllable biomass which heals nearby allies and sustains itself by feeding off enemies.\n\nFeeding from power plants will shut them down temporarily.
+		Description: 生成可控生物质，治疗附近盟友并通过吞噬敌人维持自身。\n\n从发电厂汲取能量将使其暂时停止运转。
 		LaunchSound: grcl-spawn.aud
 		Weapon: GreaterCoalescenceSpawner
 		AirburstAltitude: 0c0
@@ -2139,8 +2140,8 @@
 		Prerequisites: ~loyalist.allegiance, ~techlevel.high
 		Cursor: ability
 		ChargeInterval: 10500
-		Name: Overlord's Wrath
-		Description: A Tiberium meteor strikes the target location dealing heavy damage and creating a patch of Tiberium.
+		Name: 霸主之怒
+		Description: 泰伯利亚陨石击中目标位置，造成重创并产生一片泰伯利亚。
 		EndChargeSpeechNotification: OverlordsWrathReady
 		EndChargeTextNotification: Overlord's Wrath ready.
 		SelectTargetSpeechNotification: SelectTarget
@@ -2178,9 +2179,9 @@
 		Prerequisites: ~rebel.allegiance, ~techlevel.high
 		Cursor: ability
 		ChargeInterval: 6000
-		Name: Gateway
+		Name: 传送门
 		ActivationDelay: 1
-		Description: Creates a Gateway at the target location. Acts as the exit for any\n   targeted infantry or vehicle production structure.\n\nRequires target location to be within vision.
+		Description: 在目标位置创建传送门。作为任意选中步兵或载具生产建筑的出口。\n\n目标位置需在视野范围内。
 		LaunchSound: wormhole-open.aud
 		IncomingSound: wormhole-open.aud
 		Weapon: GatewaySpawner
@@ -2202,14 +2203,14 @@
 		Icon: anathema
 		IconPalette: chromes
 		ChargeInterval: 3000
-		Name: Anathema
+		Name: 咒逐
 		Condition: anathema
 		Range: 2c0
 		MaxTargets: 1
 		ValidTargets: AnathemaTargetable
 		Duration: 0
 		AllowMultiple: false
-		Description: Targeted vehicle greatly increases in power over time. After 30 seconds the unit explodes.
+		Description: 目标载具的力量随时间急剧增长。30秒后单位自爆。
 		Prerequisites: ~malefic.allegiance, ~techlevel.high
 		OnFireSound: anathema.aud
 		SelectTargetSpeechNotification: SelectTarget
@@ -2231,8 +2232,8 @@
 		OrderName: suppression
 		Icon: spresspower
 		ChargeInterval: 4500
-		Name: Suppression Field
-		Description: Applies a suppression field to the target area, slowing unit movement and rate of fire.
+		Name: 压制场
+		Description: 对目标区域施加压制场，降低单位移动速度和射速。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -2262,8 +2263,8 @@
 		OrderName: suppressionsiphon
 		Icon: spresspower
 		ChargeInterval: 3750
-		Name: Suppression Field
-		Description: Applies a suppression field to the target area, slowing unit movement and rate of fire.
+		Name: 压制场
+		Description: 对目标区域施加压制场，降低单位移动速度和射速。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -2295,9 +2296,9 @@
 		Icon: riftpower
 		Cursor: ability
 		ChargeInterval: 13500
-		Name: Rift
+		Name: 裂隙
 		ActivationDelay: 75
-		Description: Initiate a Rift which deals heavy damage over time to a large area.
+		Description: 发动裂隙，对大范围区域持续造成重创。
 		Weapon: RiftInit
 		AllowMultiple: false
 		CameraActor: camera.dummy
@@ -2332,9 +2333,9 @@
 		Icon: fleetrecall
 		IconPalette: chromes
 		ChargeInterval: 5250
-		Name: Fleet Recall
+		Name: 舰队召回
 		KeepFormation: true
-		Description: Recalls all selected Scrin fleet vessels back to the Signal Transmitter.\n\nApplies to: Mothership, Planetary Assault Carrier, Devastator
+		Description: 将所有选定的思金舰队舰船召回信号发射器。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower

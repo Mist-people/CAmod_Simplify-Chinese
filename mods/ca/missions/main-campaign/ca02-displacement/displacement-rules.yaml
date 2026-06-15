@@ -1,4 +1,5 @@
 
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 
@@ -6,7 +7,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, displacement.lua
 	MissionData:
-		Briefing: The effects of the ruptured Soviet Chronosphere continue to ripple outward.\n\nAlien invaders continue to pour through their portals, but there are reports of even more unbelievable occurrences. Towns disappearing. The landscape itself being transformed. Sightings of military units of unknown origins and allegiances.\n\nWe must regroup. Your mission is to assist in the evacuation of our forces north of the Neris river. Alien forces have occupied the northern bank, cutting off our retreat.\n\nUse the limited resources we have to push back across the river and clear a path for our retreating convoys, then destroy the Alien base to stem the tide of their advance.
+		Briefing: 破损的苏联时空传送仪所产生的效应持续向外扩散。\n\n外星入侵者不断通过其传送门涌入，但还有更难以置信的报道传来。城镇消失不见。地貌本身被改变。目击到来源和所属不明的军事单位。\n\n我们必须重新集结。你的任务是协助撤离内里斯河以北的我方部队。外星部队已占领北岸，切断了我们的退路。\n\n利用我们有限的资源打回河对岸，为撤退的车队清出一条道路，然后摧毁外星人的基地以遏制其进攻势头。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

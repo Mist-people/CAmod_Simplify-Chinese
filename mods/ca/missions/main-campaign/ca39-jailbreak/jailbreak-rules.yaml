@@ -1,4 +1,5 @@
 
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 
@@ -6,12 +7,11 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, jailbreak.lua
 	MissionData:
-		Briefing: We can now expect regular shipments of Chinese equipment and ammunition to bolster our forces, but there is much work still to do.\n\nThe fortuitous interception of GDI transmissions and your subsequent capture of their communications center now leads us to a mission of extreme urgency. The data we retrieved included the whereabouts of our lost comrade Yuri. He is being held by the Allies in a high security prison, and we are now gathering what forces we can muster in the area which you must use to rescue him.\n\nIt goes without saying that Yuri's powers will be invaluable to us. Failure is not an option.
-	MapOptions:
-		ShortGameCheckboxEnabled: False
-	MusicPlaylist:
-		StartingMusic: jank
+		Briefing:  我们现在可以期待中国装备和弹药的定期运送来增强我们的部队，但仍有许多工作要做。
 
+对GDI通信的偶然截获以及你随后夺取他们通讯中心的行动，让我们面临一项极其紧急的任务。我们检索到的数据包括我们失踪同志尤里的下落。他被盟军关押在一所戒备森严的监狱中，我们正在该地区集结所有能够调集的部队，你必须用这些部队去营救他。
+
+不言而喻，尤里的能力对我们来说将是无价之宝。失败不在选项之中。
 Player:
 	PlayerResources:
 		DefaultCash: 6000

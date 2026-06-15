@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 
@@ -5,7 +6,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, conspiracy.lua
 	MissionData:
-		Briefing: The Allied attack on our research facility in North Africa happened more swiftly than anticipated. While most of our assets were safely removed, two highly valued researchers were captured.\n\nWhile I have no reason to doubt their loyalty to the Brotherhood, their captivity is unacceptable. Any information falling into enemy hands jeopardizes our mission.\n\nYour objective is two-fold. A GDI base exists close to where the researchers are currently being held. One of our sleeper cells recently moved into position there and is poised to take control of the base. Take a small force to distract and weaken the GDI forces, and when the time is right our brothers will make their allegiance known.\n\nWith the base under our control, locate our captured brethren and bring them home.\n\nEven if the Allies don't suspect GDI of outright treachery, the fact that they were so deeply compromised will surely make the Allies reconsider how closely they cooperate in future.
+		Briefing: 盟军对我们北非研究设施的攻击比预想中来得更快。虽然我们的大部分资产已被安全转移，但两名高价值研究人员被俘。\n\n虽然我毫不怀疑他们对兄弟会的忠诚，但他们的被俘不可接受。任何情报落入敌手都将危及我们的使命。\n\n你的目标有两重。一座GDI基地距离研究人员目前被关押的地点很近。我们的一名潜伏特工最近已就位，准备夺取该基地的控制权。带领一小股部队分散并削弱GDI兵力，时机成熟时，我们的兄弟将公开他们的身份。\n\n控制基地后，找到我们被俘的同胞，带他们回家。\n\n即使盟军不怀疑GDI有赤裸裸的背叛行为，但他们已被如此深度渗透的事实，必将使盟军重新考虑未来与GDI的合作程度。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

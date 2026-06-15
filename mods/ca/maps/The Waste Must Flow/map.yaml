@@ -2,7 +2,7 @@ MapFormat: 11
 
 RequiresMod: ca
 
-Title: The Waste Must Flow
+Title: "废土奔流"
 
 Author: Violetnred, FRenzy
 
@@ -18,12 +18,12 @@ Categories: Conquest
 
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: england
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: england
 		Enemies: Multi0, Multi1

@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	FlashPostProcessEffect@CHRONO:
 		Type: Chronoshift
@@ -6,7 +7,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, detachment.lua
 	MissionData:
-		Briefing: GDI forces have found themselves scattered and confused in unfamiliar surroundings, confronted by hostile soldiers.\n\nOther GDI units have been in radio contact after finding themselves in the same situation.\n\nGunfire can be heard echoing through the trees, and reports of casualties have already been heard over the radio. There is no time to lose.\n\nTake command, locate these other GDI troops, and find a route to safety.
+		Briefing: 全球防御组织(GDI)部队发现自己散落在陌生的环境中，迷茫困惑，并遭遇了敌对士兵的攻击。\n\n其他GDI单位也已通过无线电联系，他们同样陷入了相同的困境。\n\n枪声在林间回荡，伤亡报告已通过无线电传来。时间紧迫。\n\n接管指挥权，找到其他GDI部队，并开辟一条通往安全地带的路线。
 	-ScriptLobbyDropdown@DIFFICULTY:
 	ScriptLobbyDropdown@PROLOGUEDIFFICULTY:
 		ID: prologuedifficulty

@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 
@@ -5,7 +6,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, subversion.lua
 	MissionData:
-		Briefing: The Allies are now gripped by fear and suspicion. We must seize this opportunity to further destabilize their uneasy alliance with GDI.\n\nVery recently GDI launched one of their orbital weapons platforms. Both groups are being cautious about what information they give each other. The Allies were only partially informed and are predictably concerned, given recent events.\n\nLet us turn their fear into anger. Take control of GDI's Ion Cannon control systems and use the weapon against the Allies.
+		Briefing: 盟军如今陷入恐惧与猜疑之中。我们必须抓住这个机会，进一步动摇他们与GDI之间本就脆弱的同盟关系。\n\n就在不久前，GDI发射了他们的一个轨道武器平台。双方在相互分享情报方面都变得小心翼翼。鉴于近期发生的事件，只得到部分通报的盟军自然忧心忡忡。\n\n让我们将他们的恐惧转化为愤怒。夺取GDI的离子炮控制系统，并用该武器攻击盟军。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	ScriptLobbyDropdown@RESPAWN:

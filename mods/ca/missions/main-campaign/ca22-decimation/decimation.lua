@@ -1,11 +1,12 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca22-decimation"
 
 PowerGrids = {
 	{
 		Providers = { AtomicPower1, AtomicPower2, AtomicPower3, TeslaPower1, TeslaPower2, TeslaPower3, TeslaPower4, TeslaPower5, TeslaPower6 },
 		Consumers = { TeslaCoil1, TeslaCoil2, TeslaCoil3, TeslaCoil4, TeslaCoil5, TeslaCoil6, TeslaCoil7, TeslaCoil8, TeslaCoil9, TeslaCoil10, TeslaCoil11, TeslaCoil12, TeslaCoil13, TeslaCoil14, TeslaCoil15, TeslaCoil16, TeslaCoil17, TeslaCoil18, TeslaCoil19, TeslaCoil20, TeslaCoil21, TeslaCoil22, TeslaCoil23, TeslaCoil24, TeslaCoil25 },
-	},
-}
+		},
+	}
 
 ForwardSAMs = { ForwardSAM1, ForwardSAM2, ForwardSAM3, ForwardSAM4, ForwardSAM5, ForwardSAM6, ForwardSAM7, ForwardSAM8 }
 
@@ -177,13 +178,13 @@ WorldLoaded = function()
 		end)
 	end
 
-	ObjectiveDestroyBases = Scrin.AddObjective("Eliminate Soviet bases.")
-	ObjectiveDestroyUncrewed = Scrin.AddObjective("Destroy all uncrewed Soviet vehicles.")
-	ObjectiveDestroySAMs = Scrin.AddSecondaryObjective("Destroy front line of Soviet SAM Sites.")
+	ObjectiveDestroyBases = Scrin.AddObjective("消灭苏联基地。")
+	ObjectiveDestroyUncrewed = Scrin.AddObjective("摧毁所有未载员的苏联载具。")
+	ObjectiveDestroySAMs = Scrin.AddSecondaryObjective("摧毁前线苏联防空导弹阵地。")
 
 	Trigger.AfterDelay(DateTime.Seconds(5), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("增援已抵达。")
 		Reinforcements.Reinforce(Scrin, { "devo" }, { ScrinReinforce1Spawn.Location, ScrinReinforce1Dest.Location }, 75)
 		Reinforcements.Reinforce(Scrin, { "devo" }, { ScrinReinforce2Spawn.Location, ScrinReinforce2Dest.Location }, 75)
 	end)
@@ -192,7 +193,7 @@ WorldLoaded = function()
 		Utils.Do(MissionPlayers, function(p)
 			Actor.Create("reaperaccess", true, { Owner = p })
 		end)
-		Notification("You have been granted access to Reaper Tripods.")
+		Notification("你已获准使用收割者三足机甲。")
 		MediaCA.PlaySound(MissionDir .. "/s_reaperaccess.aud", 2)
 	end)
 
@@ -204,7 +205,7 @@ WorldLoaded = function()
 				end
 			end)
 			DefensesOffline = true
-			Notification("Soviet power supply neutralized; defenses are now offline.")
+			Notification("苏联电力供应已瘫痪；防御设施现已下线。")
 			MediaCA.PlaySound(MissionDir .. "/s_sovietpoweroffline.aud", 2)
 		end)
 	end)
@@ -228,11 +229,11 @@ WorldLoaded = function()
 			Actor.Create("fleetaccess", true, { Owner = p })
 		end)
 		Scrin.MarkCompletedObjective(ObjectiveDestroySAMs)
-		Notification("Scrin fleet vessels now available.")
+		Notification("思金舰队舰艇现已可用。")
 		MediaCA.PlaySound(MissionDir .. "/s_scrinfleet.aud", 2)
 
 		Trigger.AfterDelay(DateTime.Seconds(5), function()
-			Notification("Reinforcements have arrived.")
+			Notification("增援已抵达。")
 			PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
 			Reinforcements.Reinforce(Scrin, { "pac" }, { ScrinReinforce1Spawn.Location, ScrinReinforce1Dest.Location }, 75)
 			Reinforcements.Reinforce(Scrin, { "pac" }, { ScrinReinforce2Spawn.Location, ScrinReinforce2Dest.Location }, 75)
@@ -251,12 +252,12 @@ WorldLoaded = function()
 		if IsMissionPlayer(a.Owner) and a.Type ~= "camera" then
 			Trigger.RemoveProximityTrigger(id)
 
-			Notification("The entrance to the Soviet equipment holding area has been located.")
+			Notification("已定位苏联装备停放区入口。")
 			MediaCA.PlaySound(MissionDir .. "/s_sovietholdingarea.aud", 2)
 
 			if not DefensesOffline then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(5)), function()
-					Notification("Substantial defenses detected. Recommened neutralizing power before beginning assault.")
+					Notification("侦测到大量防御。建议在进攻前瘫痪电力。")
 					MediaCA.PlaySound(MissionDir .. "/s_neutralizepower.aud", 2)
 				end)
 			end
@@ -379,7 +380,7 @@ end
 
 DevastatorReinforcements = function()
 	Trigger.AfterDelay(DateTime.Seconds(5), function()
-		Notification("Reinforcements have arrived.")
+		Notification("增援已抵达。")
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
 		Reinforcements.Reinforce(Scrin, { "deva" }, { ScrinReinforce1Spawn.Location, ScrinReinforce1Dest.Location }, 75)
 		Reinforcements.Reinforce(Scrin, { "deva" }, { ScrinReinforce2Spawn.Location, ScrinReinforce2Dest.Location }, 75)

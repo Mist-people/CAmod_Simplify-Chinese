@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca12-supremacy"
 
 IonCannonEnabledTime = {
@@ -76,7 +77,7 @@ WorldLoaded = function()
 		table.insert(NodRadarProviders, Actor.Create("radar.dummy", true, { Owner = p }))
 	end)
 
-	ObjectiveReinforce = Nod.AddObjective("Reinforce one of the two Nod bases.")
+	ObjectiveReinforce = Nod.AddObjective("增援两个Nod基地之一。")
 
 	local eastAttackTriggerCells = {}
 	for x = 9, 18 do
@@ -347,7 +348,7 @@ FlipEastBase = function()
 			p.Destroy()
 		end)
 
-		ObjectiveDestroyGDI = Nod.AddObjective("Destroy GDI forces.")
+		ObjectiveDestroyGDI = Nod.AddObjective("消灭GDI部队。")
         Nod.MarkCompletedObjective(ObjectiveReinforce)
 		TransferEastNod()
 
@@ -379,7 +380,7 @@ FlipWestBase = function()
 			p.Destroy()
 		end)
 
-		ObjectiveDestroyGDI = Nod.AddObjective("Destroy GDI forces.")
+		ObjectiveDestroyGDI = Nod.AddObjective("消灭GDI部队。")
         Nod.MarkCompletedObjective(ObjectiveReinforce)
 		TransferWestNod()
 

@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca-prologue-03"
 
 Difficulty = "easy"
@@ -25,8 +26,8 @@ WorldLoaded = function()
 	InitObjectives(GDI)
 	InitUSSR()
 
-	ObjectiveLocateForces = GDI.AddObjective("Locate all GDI forces.")
-	ObjectiveExit = GDI.AddObjective("Find a safe exit route.")
+	ObjectiveLocateForces = GDI.AddObjective("找到所有GDI部队。")
+	ObjectiveExit = GDI.AddObjective("寻找安全撤离路线。")
 
 	SetupReveals({ Reveal1, Reveal3, Reveal4 })
 
@@ -45,7 +46,7 @@ WorldLoaded = function()
 			local camera = Actor.Create("smallcamera", true, { Owner = GDI, Location = Reveal2.Location })
 
 			if UtilsCA.FogEnabled() then
-				Tip("When an enemy structure is destroyed under the fog of war, it won't disappear until its location is revealed again. The explosion sound and screen shake can be used to verify its destruction.")
+				Tip("当敌方建筑在战争迷雾中被摧毁时，其位置不会消失，直到该区域被重新揭示。爆炸音效和画面震动可用于确认摧毁。")
 			end
 
 			Trigger.AfterDelay(DateTime.Seconds(4), function()
@@ -59,12 +60,12 @@ WorldLoaded = function()
 			if IsMissionPlayer(a.Owner) and not GroupsFound[g.Id] then
 				Trigger.RemoveProximityTrigger(id)
 				GroupsFound[g.Id] = true
-				Notification("GDI forces found.")
+				Notification("已找到GDI部队。")
 				MediaCA.PlaySound(MissionDir .. "/gdifound.aud", 2)
 
 				if g.Id == 2 then
 					Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-						Media.DisplayMessage("Thank god! You found us!.", "GDI Soldier", HSLColor.FromHex("F2CF74"))
+						Media.DisplayMessage("谢天谢地！你找到我们了！", "GDI Soldier", HSLColor.FromHex("F2CF74"))
 						MediaCA.PlaySound(MissionDir .. "/thankgod.aud", 1.5)
 					end)
 				end
@@ -87,7 +88,7 @@ WorldLoaded = function()
 					Trigger.AfterDelay(DateTime.Seconds(4), function()
 						Actor.Create("flare", true, { Owner = GDI, Location = SignalFlare.Location })
 						PlaySpeechNotificationToMissionPlayers("SignalFlare")
-						Notification("Signal flare detected. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+						Notification("侦测到信号弹。按 [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
 						Beacon.New(GDI, SignalFlare.CenterPosition)
 					end)
 				end
@@ -96,11 +97,11 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(4), function()
-		Media.DisplayMessage("Commander what's going on, where the hell are we?!", "GDI Soldier", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("指挥官，发生了什么事，我们到底在哪儿？！", "GDI Soldier", HSLColor.FromHex("F2CF74"))
 		Media.PlaySound(MissionDir .. "/wherearewe.aud")
 
 		Trigger.AfterDelay(DateTime.Seconds(20), function()
-			Media.DisplayMessage("Come in, any GDI units, hostile troops have us pinned down.", "Radio", HSLColor.FromHex("F2CF74"))
+			Media.DisplayMessage("呼叫任何GDI单位，敌军火力压制了我们。", "Radio", HSLColor.FromHex("F2CF74"))
 			MediaCA.PlaySoundAtPos(MissionDir .. "/pinned.aud", 2, Camera.Position + WVec.New(2560, 0, 0))
 		end)
 	end)
@@ -149,7 +150,7 @@ OncePerSecondChecks = function()
 					Reinforcements.Reinforce(GDI, { "n1", "n2", "n1", "n2", "n1", "medi", "mtnk", "mtnk" }, { RescueSpawn.Location, RescueRally1.Location, RescueRally2.Location })
 
 					Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-						Media.DisplayMessage("Hold your fire, we're GDI! Damn, we thought we'd lost the whole company! We've got a base not far from here, we'll take you there.", "GDI Soldier", HSLColor.FromHex("F2CF74"))
+						Media.DisplayMessage("停火，我们是GDI！该死，我们还以为全连都完了！我们在离这不远的地方有个基地，我们带你们去。", "GDI Soldier", HSLColor.FromHex("F2CF74"))
 						MediaCA.PlaySound(MissionDir .. "/holdfire.aud", 2)
 
 						Trigger.AfterDelay(DateTime.Seconds(12), function()

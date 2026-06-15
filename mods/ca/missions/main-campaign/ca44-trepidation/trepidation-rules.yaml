@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 		Red: 1
@@ -12,7 +13,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, trepidation.lua
 	MissionData:
-		Briefing: With the Soviet breakthrough pushed back we have a window of opportunity to strike at the Soviet gateway. However, before we proceed we require intel from our espionage team which has been embedded within Soviet forces on the Scrin homeworld for some time.\n\nThe team was awaiting information regarding the state of GDI and Nod following the arrival of the third Scrin faction, however we have not received any transmissions for several days now, which either means they have been discovered or that they have lost the ability to transmit undetected.\n\nIn accordance with contingency procedures, we expect one of our operatives through the Soviet gateway at any moment. We must extract him safely, obtain whatever new information he has, and then Allied High Command can make an informed decision regarding our next steps.\n\nTake a small specialist team and move into position to extract our spy. Hopefully he will be able to safely make contact so that you can coordinate his escape. Once he is safe we will decide whether the situation warrants further action.
+		Briefing: 苏联的突破已被击退，我们有了一个攻击苏联传送门的短暂机会窗口。然而，在行动之前，我们需要从潜伏在思金人母星上苏联部队中的谍报小组获取情报。\n\n该小组一直在等待关于第三个思金人派系抵达后全球防御组织(GDI)和Nod兄弟会状况的信息，但我们已数日未收到任何传输信号，这意味着他们要么已被发现，要么已失去隐蔽传输的能力。\n\n根据应急程序，我们预计有一名特工即将通过苏联传送门抵达。我们必须安全接应他，获取他掌握的任何新情报，然后盟军最高指挥部才能就下一步行动做出明智决策。\n\n带领一支小型特遣队进入位置接应我们的间谍。希望他能安全取得联系，以便你协调他的逃脱。一旦他安全，我们将决定局势是否需要进一步行动。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

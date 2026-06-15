@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca43-dissection"
 
 SuperweaponsEnabledTime = {
@@ -95,12 +96,12 @@ WorldLoaded = function()
 	InitUSSR()
 	SetupChurchMoneyCrates(Neutral)
 
-	ObjectiveEliminateSoviets = Greece.AddObjective("Eliminate the Soviet presence.")
-	ObjectiveNeutralizeDomes = Greece.AddSecondaryObjective("Neutralize Soviet Radar Domes.")
+	ObjectiveEliminateSoviets = Greece.AddObjective("消灭苏联势力。")
+	ObjectiveNeutralizeDomes = Greece.AddSecondaryObjective("瘫痪苏联雷达穹顶。")
 
 	Trigger.AfterDelay(DateTime.Seconds(1), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("增援已抵达。")
 		DoMcvArrival()
 	end)
 
@@ -239,7 +240,7 @@ UpdateMissionText = function()
 	end
 
 	if not AllDomesDisabled then
-		UserInterface.SetMissionText("Soviet bombing run ETA " .. UtilsCA.FormatTimeForGameSpeed(TicksUntilBombingRun), color)
+		UserInterface.SetMissionText("苏联轰炸预计到达：" .. UtilsCA.FormatTimeForGameSpeed(TicksUntilBombingRun), color)
 	else
 		UserInterface.SetMissionText("")
 	end
@@ -281,7 +282,7 @@ AssumeControl = function(player, side)
 
 	AssumedControl = true
 
-	Notification("Command transfer complete.")
+	Notification("指挥权转移完成。")
 	MediaCA.PlaySound(MissionDir .. "/r_transfer.aud", 2)
 
 	Trigger.AfterDelay(DateTime.Seconds(2), function()
@@ -357,7 +358,7 @@ InitBombingRun = function()
 	end
 
 	if #targets > 0 then
-		Notification("Warning, bombing run incoming.")
+		Notification("警告，轰炸即将来临。")
 		MediaCA.PlaySound(MissionDir .. "/r_bombingrun.aud", 2)
 
 		Utils.Do(targets, function(t)
@@ -411,7 +412,7 @@ DomeDisabled = function(d)
 		numDomesDisabled = numDomesDisabled + 1
 	end
 
-	Notification("Radar Dome neutralized, Soviet bombing runs have been delayed.")
+	Notification("雷达穹顶已瘫痪，苏联轰炸被延迟。")
 
 	if numDomesDisabled >= #SovietDomes then
 		AllDomesDisabled = true

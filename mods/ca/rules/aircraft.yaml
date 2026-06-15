@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 BADR:
 	Inherits: ^NeutralPlane
 	Inherits@EMP: ^EmpDisable
@@ -17,7 +18,7 @@ BADR:
 	-Selectable:
 	-Voiced:
 	Tooltip:
-		Name: Badger
+		Name: 獾式轰炸机
 	Contrail@1:
 		Offset: -432,560,0
 	Contrail@2:
@@ -70,7 +71,7 @@ BADR.Bomber:
 	-Selectable:
 	-Voiced:
 	Tooltip:
-		Name: Badger
+		Name: 獾式轰炸机
 	Contrail@1:
 		Offset: -432,560,0
 	Contrail@2:
@@ -164,7 +165,7 @@ B2B:
 	-Selectable:
 	-Voiced:
 	Tooltip:
-		Name: B2 Stealth Bomber
+		Name: B2隐形轰炸机
 	Contrail@1:
 		Offset: -432,560,0
 	Contrail@2:
@@ -219,14 +220,14 @@ MIG:
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 31
 		Prerequisites: afld, ~aircraft.soviet, ~techlevel.medium
-		Description: Multi purpose strike aircraft.
+		Description: 多用途攻击机。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses, Aircraft
-		Weaknesses: • Weak vs Infantry
+		Strengths: • 擅长对付重型装甲, 防御建筑, 飞行器
+		Weaknesses: • 不擅长对付步兵
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: MiG Attack Plane
+		Name: 米格战机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -338,22 +339,22 @@ SUK:
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 80
 		Prerequisites: afld, stek, ~aircraft.soviet, ~!seismic.upgrade, ~techlevel.high
-		Description: Fast ground attack aircraft armed with powerful armor-piercing munitions.
+		Description: 快速对地攻击机，配备强力穿甲弹药。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses, Light Armor
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 防御建筑, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器
 		RequiresCondition: !seismic-upgrade
 	TooltipExtras@SEISMIC:
-		Description: Fast ground attack aircraft armed with powerful explosive munitions.
-		Strengths: • Strong vs Buildings, Heavy Armor, Defenses, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Description: 快速对地攻击机，配备强力爆炸弹药。
+		Strengths: • 擅长对付 建筑, 重型装甲, 防御建筑, 轻型装甲
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器\n• 难以命中移动目标
 		RequiresCondition: seismic-upgrade
 	Valued:
 		Cost: 2000
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Sukhoi Attack Plane
+		Name: 苏霍伊攻击机
 	Health:
 		HP: 18000
 	RevealsShroud:
@@ -470,7 +471,7 @@ SUK.UPG:
 		Image: suk
 	Buildable:
 		Prerequisites: afld, stek, ~aircraft.soviet, ~seismic.upgrade, ~techlevel.high
-		Description: Fast ground attack aircraft armed with powerful explosive munitions.
+		Description: 快速对地攻击机，配备强力爆炸弹药。
 		BuildPaletteOrder: 81
 	-TooltipExtras:
 	TooltipExtras@SEISMIC:
@@ -483,7 +484,7 @@ SUK.UPG:
 		Class: suk
 	-ReplacedInQueue:
 	EncyclopediaExtras:
-		Name: Seismic Sukhoi
+		Name: 地震苏霍伊攻击机
 		VariantOf: SUK
 
 YAK:
@@ -494,14 +495,14 @@ YAK:
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 30
 		Prerequisites: afld, ~aircraft.soviet, ~techlevel.medium
-		Description: Fighter plane armed with dual machine guns
+		Description: 装备双联装机枪的战斗机。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Defenses
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑, 飞行器
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑
 	Valued:
 		Cost: 1200
 	Tooltip:
-		Name: Yak Attack Plane
+		Name: 雅克攻击机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -598,7 +599,7 @@ P51:
 	Inherits: ^NeutralPlane
 	Inherits@EMP: ^EmpDisable
 	Tooltip:
-		Name: P51 Attack Plane
+		Name: P-51攻击机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -674,14 +675,14 @@ TRAN:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 10
 		Prerequisites: aircraft.chinook, ~aircraft.chinookvisible, ~techlevel.medium
-		Description: Fast infantry transport helicopter.
+		Description: 快速步兵运输直升机。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Can carry infantry\n• Can Paradrop infantry (Force Fire)
+		Weaknesses: • 无武装
+		Attributes: • 可装载步兵\n• 可空降 步兵 (强制攻击)
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: Chinook
+		Name: 支努干运输机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -703,8 +704,10 @@ TRAN:
 	ParaDrop:
 		ChuteSound: chute1.aud
 	AmmoPool:
+		Name: primary
 		Ammo: 1
 	ReloadAmmoPool:
+		AmmoPool: primary
 		Delay: 60
 		Count: 1
 		RequiresCondition: cargo
@@ -805,7 +808,7 @@ HALO:
 	RenderSprites:
 		Image: halo
 	Tooltip:
-		Name: Halo
+		Name: 光环运输机
 	Valued:
 		Cost: 1000
 	Cargo:
@@ -882,15 +885,15 @@ NHAW:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 10
 		Prerequisites: ~aircraft.nhaw, ~techlevel.medium
-		Description: Fast infantry transport helicopter armed with a light machine gun.
+		Description: 快速步兵运输直升机，装备一挺轻机枪。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Weak vs Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Can carry infantry\n• Can Paradrop Infantry (HoldFire Stance + Force Fire)
+		Strengths: • 擅长对付步兵
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
+		Attributes: • 可装载步兵\n• 可空降步兵 (停火姿态 + 强制攻击)
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Nighthawk
+		Name: 夜鹰直升机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1082,14 +1085,14 @@ HELI:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 20
 		Prerequisites: ~aircraft.allies, ~techlevel.medium
-		Description: Helicopter gunship armed with multi-purpose missiles.
+		Description: 装备多用途导弹的武装直升机。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses, Aircraft
-		Weaknesses: • Weak vs Infantry
+		Strengths: • 擅长对付重型装甲, 防御建筑, 飞行器
+		Weaknesses: • 不擅长对付步兵
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Longbow
+		Name: 长弓武装直升机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1204,14 +1207,14 @@ HIND:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 32
 		Prerequisites: afld, ~aircraft.soviet, ~techlevel.medium
-		Description: Durable helicopter gunship armed with a chaingun and rockets.
+		Description: 耐用型武装直升机，装备链式机炮和火箭弹。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 1600
 	Tooltip:
-		Name: Hind
+		Name: 雌鹿武装直升机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1342,7 +1345,7 @@ U2:
 	Health:
 		HP: 200000
 	Tooltip:
-		Name: Spy Plane
+		Name: 侦察机
 	Aircraft:
 		CruiseAltitude: 2560
 		TurnSpeed: 28
@@ -1415,7 +1418,7 @@ SMIG:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Supersonic Bomber
+		Name: 超音速轰炸机
 	Armor:
 		Type: Aircraft
 	Aircraft:
@@ -1452,6 +1455,7 @@ SMIG:
 	Armament:
 		Weapon: SMIGBomb
 	AmmoPool:
+		Name: primary
 		Ammo: 1
 	AirstrikeSlave:
 	SpawnActorOnDeath:
@@ -1496,14 +1500,14 @@ A10:
 		BuildPaletteOrder: 41
 		Prerequisites: afld.gdi, ~aircraft.gdi, ~!sidewinders.upgrade, ~!avenger.upgrade, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Attack aircraft armed with incendiary bombs.
+		Description: 装备燃烧弹的攻击机。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付 建筑, 步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Warthog
+		Name: 疣猪攻击机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1663,11 +1667,11 @@ A10.SW:
 		Image: a10
 	Buildable:
 		Prerequisites: afld.gdi, ~aircraft.gdi, ~sidewinders.upgrade, ~techlevel.medium
-		Description: Attack aircraft armed with incendiary bombs and air-to-air missiles.
+		Description: 装备燃烧弹和空对空导弹的攻击机。
 		BuildPaletteOrder: 42
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Infantry, Light Armor, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Defenses
+		Strengths: • 擅长对付 建筑, 步兵, 轻型装甲, 飞行器
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑
 	Armament@SECONDARY:
 		Name: secondary
 		Weapon: Sidewinder
@@ -1709,7 +1713,7 @@ A10.SW:
 		ValidTargets: Air, AirSmall
 		InvalidTargets: NoAutoTarget
 	EncyclopediaExtras:
-		Name: Sidewinder Warthog
+		Name: 响尾蛇疣猪攻击机
 		VariantOf: A10
 
 A10.GAU:
@@ -1730,11 +1734,11 @@ A10.GAU:
 	-ReplacedInQueue:
 	Buildable:
 		Prerequisites: afld.gdi, ~aircraft.gdi, ~avenger.upgrade, ~techlevel.medium
-		Description: Attack aircraft armed with a rotary cannon and rockets.
+		Description: 装备转管炮和火箭弹的攻击机。
 		BuildPaletteOrder: 42
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft
+		Strengths: • 擅长对付 建筑, 步兵, 轻型装甲
+		Weaknesses: • 无法攻击飞行器
 	Rearmable:
 		AmmoPools: primary, secondary
 	RenderSprites:
@@ -1788,7 +1792,7 @@ A10.GAU:
 		FullSequence: pip-red
 	WithMuzzleOverlay:
 	EncyclopediaExtras:
-		Name: Avenger Warthog
+		Name: 复仇者疣猪攻击机
 		VariantOf: A10
 
 A10.bomber:
@@ -1796,7 +1800,7 @@ A10.bomber:
 	Inherits@EMP: ^EmpDisable
 	Inherits@TDPAL: ^TDPalette
 	Tooltip:
-		Name: Warthog
+		Name: 疣猪攻击机
 	Health:
 		HP: 36000
 	Armament:
@@ -1879,7 +1883,7 @@ C17:
 	-Selectable:
 	-Voiced:
 	Tooltip:
-		Name: Supply Aircraft
+		Name: 补给机
 	Contrail@1:
 		Offset: -261,-650,0
 		TrailLength: 15
@@ -1978,7 +1982,7 @@ GALX:
 	RenderSprites:
 		Image: galx
 	Tooltip:
-		Name: Heavy Transport Aircraft
+		Name: 重型运输机
 	Health:
 		HP: 90000
 	Aircraft:
@@ -2009,7 +2013,7 @@ ANTO:
 		Image: anto
 		PlayerPalette: player
 	Tooltip:
-		Name: Heavy Transport Aircraft
+		Name: 重型运输机
 	Health:
 		HP: 90000
 	Aircraft:
@@ -2065,7 +2069,7 @@ APCH:
 	Valued:
 		Cost: 1400
 	Tooltip:
-		Name: Apache
+		Name: 阿帕奇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -2074,10 +2078,10 @@ APCH:
 		BuildPaletteOrder: 50
 		Prerequisites: ~aircraft.apch, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Helicopter gunship armed with a chaingun.
+		Description: 装备链式机炮的武装直升机。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Defenses
+		Strengths: • 擅长对付步兵, 轻型装甲, 飞行器
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑
 	Aircraft:
 		AltitudeVelocity: 0c100
 		TurnSpeed: 22
@@ -2179,7 +2183,7 @@ ORCA:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Orca
+		Name: 奥卡
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -2188,10 +2192,10 @@ ORCA:
 		BuildPaletteOrder: 40
 		Prerequisites: afld.gdi, ~aircraft.gdi, ~techlevel.medium
 		IconPalette: chrometd
-		Description: VTOL gunship armed with multi-purpose missiles.
+		Description: 装备多用途导弹的垂直起降武装直升机。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses, Aircraft
-		Weaknesses: • Weak vs Infantry
+		Strengths: • 擅长对付重型装甲, 防御建筑, 飞行器
+		Weaknesses: • 不擅长对付步兵
 	Aircraft:
 		AltitudeVelocity: 0c100
 		TurnSpeed: 22
@@ -2333,16 +2337,16 @@ ORCB:
 		BuildPaletteOrder: 90
 		Prerequisites: afld.gdi, ~aircraft.gdi, gtek, ~techlevel.high
 		IconPalette: chrometd
-		Description: Heavy VTOL bomber armed with EMP bombs.
+		Description: 装备电磁脉冲炸弹的重型垂直起降轰炸机。
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Disables vehicles, defenses and buildings
+		Strengths: • 擅长对付 防御建筑, 重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
+		Attributes: • 禁用 载具, 防御建筑
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Orca Bomber
-		GenericName: Aircraft
+		Name: 奥卡轰炸机
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2496,7 +2500,7 @@ UAV:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Recon Drone
+		Name: 侦察无人机
 	Armor:
 		Type: Aircraft
 	Aircraft:
@@ -2553,14 +2557,14 @@ RAH:
 		BuildPaletteOrder: 52
 		IconPalette: chrometd
 		Prerequisites: tmpl, ~aircraft.nod, ~techlevel.high
-		Description: Stealth attack helicopter with powerful anti-personnel rockets.
+		Description: 隐形攻击直升机，配备强力反人员火箭弹。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Comanche
+		Name: 科曼奇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2703,16 +2707,16 @@ KIRO:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 82
 		Prerequisites: afld, stek, ~aircraft.kiro, ~techlevel.high
-		Description: Heavily armored airship armed with specialised bombs.
+		Description: 重甲空艇，装备特种炸弹。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets\n• Takes +33% damage when dropping bombs
-		Attributes: • Self repairs to 75% out of combat
+		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
+		Weaknesses: • 无法攻击飞行器\n• 难以命中移动目标\n• 造成 +33% 投弹时伤害
+		Attributes: • 自我修复 至 75% 脱离战斗
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Kirov Airship
-		GenericName: Airship
+		Name: 基洛夫空艇
+		GenericName: 空艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2905,8 +2909,8 @@ OCAR:
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: Orca Carryall
-		GenericName: Aircraft
+		Name: 奥卡运输机
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -2915,9 +2919,9 @@ OCAR:
 		BuildPaletteOrder: 43
 		Prerequisites: afld.gdi, rep, ~aircraft.gdi, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Fast VTOL Vehicle Transporter.
+		Description: 快速垂直起降载具运输机。
 	TooltipExtras:
-		Weaknesses: • Unarmed
+		Weaknesses: • 无武装
 	Aircraft:
 		CruiseAltitude: 2048
 		AltitudeVelocity: 0c100
@@ -3130,15 +3134,15 @@ HARR:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 70
 		Prerequisites: atek, ~aircraft.allies, ~techlevel.high
-		Description: Fast VTOL ground attack aircraft armed with powerful explosive missiles.
+		Description: 快速垂直起降对地攻击机，配备强力爆炸导弹。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Buildings, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses
+		Strengths: • 擅长对付飞行器, 建筑, 步兵, 轻型装甲
+		Weaknesses: • 不擅长对付重型装甲, 防御建筑
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Harrier
-		GenericName: Aircraft
+		Name: 鹞式战机
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3255,15 +3259,15 @@ SCRN:
 		BuildPaletteOrder: 100
 		IconPalette: chrometd
 		Prerequisites: tmpl, ~aircraft.nod, ~techlevel.high
-		Description: Fast VTOL attack craft armed with powerful plasma cannons.
+		Description: 快速垂直起降攻击机，配备强力等离子炮。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses, Aircraft
-		Weaknesses: • Weak vs Infantry
+		Strengths: • 擅长对付重型装甲, 防御建筑, 飞行器
+		Weaknesses: • 不擅长对付步兵
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Banshee
-		GenericName: Aircraft
+		Name: 女妖战机
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3411,7 +3415,7 @@ HORN:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: Hornet
+		Name: 大黄蜂
 	Health:
 		HP: 22000
 	RevealsShroud:
@@ -3487,7 +3491,7 @@ YF23.Bomber:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Black Widow
+		Name: 黑寡妇
 	Health:
 		HP: 36000
 	Armament:
@@ -3568,7 +3572,7 @@ POD:
 	Valued:
 		Cost: 10
 	Tooltip:
-		Name: Drop Pod
+		Name: 空降舱
 	Health:
 		HP: 7200
 	Armor:
@@ -3622,7 +3626,7 @@ VENM:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Venom
+		Name: 毒液
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -3631,10 +3635,10 @@ VENM:
 		BuildPaletteOrder: 51
 		Prerequisites: ~aircraft.marked, ~techlevel.medium
 		IconPalette: chrometd
-		Description: VTOL gunship armed with laser.
+		Description: 装备激光的垂直起降武装直升机。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Aircraft
-		Weaknesses: • Weak vs Defenses
+		Strengths: • 擅长对付步兵, 轻型装甲, 飞行器
+		Weaknesses: • 不擅长对付 防御建筑
 	Aircraft:
 		AltitudeVelocity: 0c100
 		TurnSpeed: 24
@@ -3759,15 +3763,15 @@ AURO:
 		BuildPaletteOrder: 91
 		Prerequisites: afld.gdi, ~aircraft.eagle, gtek, ~techlevel.high
 		IconPalette: chrometd
-		Description: Supersonic bomber armed with a MOAB.
+		Description: 装备巨型燃料空气炸弹的超音速轰炸机。
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Uses afterburner on approach to target
+		Strengths: • 擅长对付 防御建筑, 重型装甲, 轻型装甲, 步兵
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 使用 接近目标时使用加力
 	Valued:
 		Cost: 2300
 	Tooltip:
-		Name: Aurora
+		Name: 曙光战机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3930,15 +3934,15 @@ PMAK:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 71
 		Prerequisites: alhq, ~aircraft.allies, ~techlevel.high
-		Description: Heavy VTOL bomber with powerful armor penetrating bombs.
+		Description: 装备强力穿甲炸弹的重型垂直起降轰炸机。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Defenses, Light Armor, Buildings
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 防御建筑, 轻型装甲, 建筑
+		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Peacemaker
-		GenericName: Aircraft
+		Name: 和平使者
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4077,16 +4081,16 @@ BEAG:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 72
 		Prerequisites: alhq, ~korea.coalition, ~aircraft.allies, ~techlevel.high
-		Description: Air superiority fighter with range/vision reducing missiles.
+		Description: 装备射程/视野削弱导弹的制空战斗机。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Buildings
-		Attributes: • Reduces range and vision of targets
+		Strengths: • 擅长对付飞行器, 重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 建筑
+		Attributes: • 减少 目标的射程和视野
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Black Eagle
-		GenericName: Aircraft
+		Name: 黑鹰战机
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4204,16 +4208,16 @@ PHAN:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 200
 		Prerequisites: anyradar, ~aircraft.phan
-		Description: Air superiority fighter with incapacitating missiles.
+		Description: 装备致瘫导弹的制空战斗机。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Buildings
-		Attributes: • Disables weapons and vision of enemy vehicles and aircraft
+		Strengths: • 擅长对付飞行器, 重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 建筑
+		Attributes: • 禁用 敌方载具和飞行器的武器和视野
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Phantom
-		GenericName: Aircraft
+		Name: 鬼怪战机
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4340,14 +4344,14 @@ KAMV:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 201
 		Prerequisites: ~aircraft.kamv
-		Description: Durable helicopter gunship armed with long range anti-tank rockets with concussive warheads.
+		Description: 耐用型武装直升机，配备远程反坦克震荡火箭弹。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: • 擅长对付重型装甲, 轻型装甲
+		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器\n• 难以命中移动目标
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Kamov
+		Name: 卡莫夫直升机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4464,15 +4468,15 @@ SHDE:
 		BuildPaletteOrder: 202
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~aircraft.shde
-		Description: Fast VTOL ground attack aircraft armed with EMP weaponry.
+		Description: 快速垂直起降对地攻击机，装备电磁脉冲武器。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
+		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Shade
-		GenericName: Aircraft
+		Name: 暗影
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4595,16 +4599,16 @@ VERT:
 		BuildPaletteOrder: 203
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~aircraft.vert
-		Description: Stealth bomber loaded with a single powerful bomb.
+		Description: 搭载单枚强力炸弹的隐形轰炸机。
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Bomb disrupts cloaking in a large area
+		Strengths: • 擅长对付 防御建筑, 重型装甲, 轻型装甲, 步兵
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 炸弹干扰大片区域的隐身
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Vertigo
-		GenericName: Aircraft
+		Name: 眩晕轰炸机
+		GenericName: 飞行器
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4745,7 +4749,7 @@ MCOR:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Manticore
+		Name: 蝎尾狮
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -4754,10 +4758,10 @@ MCOR:
 		BuildPaletteOrder: 204
 		Prerequisites: anyradar, ~stolentech.grav
 		IconPalette: chrometd
-		Description: Long ranged air-to-air craft with dual plasma cannons.
+		Description: 装备双联等离子炮的远程空战机。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft
-		Weaknesses: • Cannot attack ground units
+		Strengths: • 擅长对付飞行器
+		Weaknesses: • 无法攻击地面单位
 	Aircraft:
 		CruiseAltitude: 2560
 		AltitudeVelocity: 0c100
@@ -4826,7 +4830,7 @@ DISC:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Floating Disc
+		Name: 浮游碟
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -4834,10 +4838,10 @@ DISC:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 83
 		Prerequisites: afld, stek, ~aircraft.yuri, ~techlevel.high
-		Description: Heavily armored attack craft.
+		Description: 重甲攻击机。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Attributes: • Special Ability: Power Drain\n• Special Ability: Resource Drain
+		Strengths: • 擅长对付 建筑, 防御建筑, 轻型装甲
+		Attributes: • 特殊能力： 电力 吸取\n• 特殊能力： 资源吸取
 	Health:
 		HP: 65000
 	RevealsShroud:
@@ -4983,7 +4987,7 @@ JACK:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Jackknife
+		Name: 折刀
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -4991,10 +4995,10 @@ JACK:
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 44
 		Prerequisites: afld.gdi, anyradar, ~aircraft.arc, ~techlevel.medium
-		Description: Loitering munition that dives at targets and explodes.
+		Description: 可在目标上空盘旋并俯冲爆炸的游荡弹药。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry, Defenses
-		Weaknesses: • Weak vs Buildings\n• Cannot attack Aircraft
+		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵, 防御建筑
+		Weaknesses: • 不擅长对付 建筑\n• 无法攻击飞行器
 	Aircraft:
 		AltitudeVelocity: 0c100
 		TurnSpeed: 20

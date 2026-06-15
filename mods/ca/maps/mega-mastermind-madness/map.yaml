@@ -2,7 +2,7 @@ MapFormat: 12
 
 RequiresMod: ca
 
-Title: Mega Mastermind Madness
+Title: "超级主脑狂潮"
 
 Author: Darkademic
 
@@ -18,12 +18,12 @@ Categories: Minigame
 
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: england
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: england
 		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7

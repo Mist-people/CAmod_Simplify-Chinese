@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca14-treachery"
 
 
@@ -87,7 +88,7 @@ WorldLoaded = function()
 	HaloDropper = Actor.Create("powerproxy.halodrop", false, { Owner = USSR })
 	ShockDropper = Actor.Create("powerproxy.shockdrop", false, { Owner = USSR })
 
-	ObjectiveKillTraitor = USSR.AddObjective("Find and kill the traitor General Yegorov.")
+	ObjectiveKillTraitor = USSR.AddObjective("找到并杀死叛徒叶戈罗夫将军。")
 	ObjectiveFindSovietBase = USSR.AddSecondaryObjective("Take control of abandoned Soviet base.")
 
 	AbandonedHalo.ReturnToBase(AbandonedHelipad)
@@ -150,7 +151,7 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(Boris, function(self, killer)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Notification("Boris has been killed.")
+			Notification("鲍里斯已被击杀。")
 			MediaCA.PlaySound(MissionDir .. "/r2_boriskilled.aud", 2)
 		end)
 	end)
@@ -194,7 +195,7 @@ WorldLoaded = function()
 			end
 			USSR.MarkCompletedObjective(ObjectiveCaptureTraitorTechCenter)
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
-				Notification("The traitor's tech center is ours! Let us rain down V3 rockets on the traitor, or perhaps crush him under the tracks of a Mammoth Tank!")
+				Notification("叛徒的科技中心是我们的了！让我们用V3火箭雨覆盖叛徒，或者用猛犸坦克的履带碾碎他！")
 			end)
 		end
 	end)

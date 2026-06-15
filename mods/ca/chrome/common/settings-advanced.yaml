@@ -1,0 +1,198 @@
+# Simplified Chinese translation by lsxy, 2026.06.
+Container@ADVANCED_PANEL:
+	Logic: AdvancedSettingsLogic
+	Width: PARENT_WIDTH
+	Height: PARENT_HEIGHT
+	Children:
+		ScrollPanel@SETTINGS_SCROLLPANEL:
+			Width: PARENT_WIDTH
+			Height: PARENT_HEIGHT
+			CollapseHiddenChildren: True
+			TopBottomSpacing: 5
+			ItemSpacing: 10
+			Children:
+				Background@NETWORK_SECTION_HEADER:
+					X: 5
+					Width: PARENT_WIDTH - 24 - 10
+					Height: 13
+					Background: separator
+					ClickThrough: True
+					Children:
+						Label@LABEL:
+							Width: PARENT_WIDTH
+							Height: PARENT_HEIGHT
+							Font: TinyBold
+							Align: Center
+							Text: 网络
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 20
+					Children:
+						Container@NAT_DISCOVERY_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@NAT_DISCOVERY:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 启用 UPnP/NAT-PMP 发现
+						Container@FETCH_NEWS_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@FETCH_NEWS_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 获取社区新闻
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 20
+					Children:
+						Container@PERFGRAPH_CHECKBOX_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@PERFGRAPH_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 显示性能图表
+						Container@CHECK_VERSION_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@CHECK_VERSION_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 检查更新
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 50
+					Children:
+						Container@PERFTEXT_CHECKBOX_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@PERFTEXT_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 显示性能文本
+						Container@SENDSYSINFO_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@SENDSYSINFO_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 发送系统信息
+								Label@SENDSYSINFO_DESC:
+									Y: 30
+									Width: PARENT_WIDTH
+									Height: 30
+									Font: Tiny
+									WordWrap: True
+									Text: 你的操作系统、OpenGL 和 .NET 运行时版本以及语言设置将与匿名ID一起发送，以帮助确定未来开发优先级。
+				Container@SPACER:
+				Background@DEBUG_SECTION_HEADER:
+					X: 5
+					Width: PARENT_WIDTH - 24 - 10
+					Height: 13
+					Background: separator
+					ClickThrough: True
+					Children:
+						Label@LABEL:
+							Width: PARENT_WIDTH
+							Height: PARENT_HEIGHT
+							Font: TinyBold
+							Align: Center
+							Text: 开发者
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 40
+					Children:
+						Container@DEBUG_HIDDEN_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH - 10
+							Children:
+								Label@A:
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: 可以通过以下方式启用其他开发者专属选项：
+									Align: Center
+								Label@B:
+									Y: 20
+									Width: PARENT_WIDTH
+									Height: 20
+									Text: Debug.DisplayDeveloperSettings 设置或启动参数
+									Align: Center
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 20
+					Children:
+						Container@BOTDEBUG_CHECKBOX_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@BOTDEBUG_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 显示AI调试消息
+						Container@CHECKBOTSYNC_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@CHECKBOTSYNC_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 检查 BotModule 代码同步
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 20
+					Children:
+						Container@LUADEBUG_CHECKBOX_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@LUADEBUG_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 显示地图调试消息
+						Container@CHECKUNSYNCED_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@CHECKUNSYNCED_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 检查非同步代码同步
+				Container@ROW:
+					Width: PARENT_WIDTH - 24
+					Height: 20
+					Children:
+						Container@REPLAY_COMMANDS_CHECKBOX_CONTAINER:
+							X: 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@REPLAY_COMMANDS_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 在录像中启用调试命令
+						Container@PERFLOGGING_CHECKBOX_CONTAINER:
+							X: PARENT_WIDTH / 2 + 10
+							Width: PARENT_WIDTH / 2 - 20
+							Children:
+								Checkbox@PERFLOGGING_CHECKBOX:
+									Width: PARENT_WIDTH
+									Height: 20
+									Font: Regular
+									Text: 启用 Tick 性能日志

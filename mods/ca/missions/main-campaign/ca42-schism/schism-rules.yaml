@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	PaletteFromFile@terrain-temperat:
 		Filename: alien.pal
@@ -27,7 +28,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, schism.lua
 	MissionData:
-		Briefing: The Overlord sends his gratitude and is consolidating his forces for a new offensive.\n\nThe device that Kane has been using to deform Tiberium for his own nefarious ends has been located in a rebel stronghold. Its purification waves have been growing more powerful with each use, affecting a progressively larger area of the planet and resulting in countless Scrin joining the deceiver Kane. The rebels will soon be unstoppable.\n\nThe Overlord cannot risk bringing his armies too close to the device, but we have a plan. We have discovered that our Iron Curtain protects against the purification energy in a way that the Scrin shields do not. With this in mind, the Overlord will provide us with one of his few remaining Exterminator Tripods with which to assault the rebel fortress. Our Iron Curtain will be synchronized with the purification waves, which should allow the Exterminator to breach the rebel defenses, reach the device, and extract it using a Scrin wormhole.\n\nThis was the prize that Kane came to this world to claim, and we believe its power goes far beyond what we have seen. Such power cannot be left in his hands. The Overlord must have the device so that its power can be used to restore order. Kane will surely have to draw a line in the sand here, or all of his efforts will be for naught, so expect heavy resistance.\n\nWe have assembled what forces we can, but our initial attempts to establish a base stalled due to constant attacks. There is no time for additional preparations. Launch the attack, escort the Exterminator to the device and secure it for the Overlord.
+		Briefing: 主宰致以谢意，并正在集结部队准备新一轮攻势。\n\n凯恩用来扭曲泰伯利亚以谋私利的设备已被定位在反抗军据点内。其净化波每次使用都变得更加强大，影响范围不断扩大，导致无数思金人投靠了欺骗者凯恩。反抗军很快将势不可挡。\n\n主宰不敢将大军过于靠近该设备，但我们有一个计划。我们发现铁幕装置能够抵御净化能量，而思金人的护盾却无法做到。因此，主宰将提供给我们一台他仅存的灭世者三足机甲，用以攻击反抗军要塞。铁幕装置将与净化波同步，使灭世者能够突破反抗军防线，抵达设备处，并使用思金人虫洞将其提取。\n\n这就是凯恩来到这个世界想要夺取的宝物，我们相信其力量远超我们所見。如此强大的力量绝不能落入他手。主宰必须得到该设备，以恢复秩序。凯恩势必在此孤注一掷，否则一切努力将付诸东流，预计会遇到顽强抵抗。\n\n我们已尽可能集结部队，但建立基地的初步尝试因持续攻击而受阻。没有时间进行更多准备了。发动进攻，护送灭世者抵达设备处，为主宰夺取它。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

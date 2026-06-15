@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	PaletteFromFile@terrain-temperat:
 		Filename: ca|missions/main-campaign/ca19-proliferation/charred.pal
@@ -16,7 +17,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, singularity.lua
 	MissionData:
-		Briefing: We have reached the main Scrin stronghold. A huge craft hovers in the sky above it and is channeling some kind of energy into the ground below. This must be how the gateway is being opened. We don't know how much time we have, but this mothership must be destroyed before its task is complete.\n\nYour first obstacle will be the human armies that have been enslaved. The Scrin are using Allied, Soviet and Nod forces as a first line of defense. Destroy them if necessary, but we may be able to release them from Scrin control the same way we did for our own forces.\n\nThe defenses surrounding the main stronghold are being empowered and are consuming enormous amounts of energy. It is unlikely we'll be able to break these defenses unless we can inflict significant damage to the Scrin power infrastructure.\n\nThe mothership itself is protected by an energy shield; we don't yet know how effective our weapons will be against it. Satellite images also show a large number of cyborgs guarding it, which will make a ground assault extremely difficult.\n\nTo that end, a squadron of our advanced interceptors is prepared to strike the mothership. We believe they will be able to evade the Scrin air defenses for long enough to launch a single volley of missiles. We can only hope this will be enough to break through the shields.\n\nIf all else fails, use whatever means necessary to bring the shields down and destroy the mothership. The entire GDI arsenal is at your disposal.\n\nGood luck commander.
+		Briefing: 我们已经抵达思金人的主要大本营。一艘巨大的飞行器悬停在其上空，正将某种能量输送到下方的地面。这一定就是传送门开启的方式。我们不知道还有多少时间，但这艘母舰必须在它的任务完成之前被摧毁。\n\n你的第一个障碍将是那些被奴役的人类军队。思金人正在使用盟军、苏联和Nod兄弟会的部队作为第一道防线。如有必要可摧毁它们，但我们也可能用解救自己部队的同样方式将他们从思金人的控制中释放出来。\n\n主基地周围的防御工事正在被强化，消耗着巨大的能量。除非我们能对思金人的电力基础设施造成重大破坏，否则我们很可能无法突破这些防御。\n\n母舰本身由一道能量护盾保护；我们还不知道武器对其效果如何。卫星图像还显示有大量生化人守卫母舰，这将使地面进攻变得极其困难。\n\n为此，一个先进截击机中队已准备好攻击母舰。我们相信他们能够躲避思金人的防空火力足够长时间，以发射一轮齐射导弹。我们只能希望这足以突破护盾。\n\n如果一切手段都失败了，使用任何必要的方法摧毁护盾并击沉母舰。整个全球防御组织(GDI)的军火库都听凭你调遣。\n\n祝你好运，指挥官。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

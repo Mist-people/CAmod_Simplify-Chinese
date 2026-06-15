@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 ^Palettes:
 	TintPostProcessEffect:
 
@@ -5,7 +6,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, awakening.lua
 	MissionData:
-		Briefing: The first warriors of our new army are almost ready. Our efforts to drive a wedge between GDI and the Allies were successful enough to keep them from interfering, however Soviet forces now march towards the Temple Prime complex.\n\nOnce our new army is unleashed the Soviets will not stand a chance, however their preparation cannot be hastened. Protect the temple at all costs.
+		Briefing: 我们新军团的首批战士已准备就绪。我们在全球防御组织(GDI)与盟军之间制造分歧的努力卓有成效，足以阻止他们干涉，但苏联军队正朝神殿核心建筑群推进。\n\n一旦我们的新军团出击，苏联人将毫无胜算，但准备进程无法加快。不惜一切代价保卫神殿。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

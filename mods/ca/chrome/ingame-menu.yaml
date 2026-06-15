@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 Container@INGAME_MENU:
 	Width: WINDOW_WIDTH
 	Height: WINDOW_HEIGHT
@@ -37,7 +38,7 @@ Container@INGAME_MENU:
 					Y: 20
 					Width: 200
 					Height: 30
-					Text: label-menu-buttons-title
+					Text: 选项
 					Align: Center
 					Font: Bold
 				Button@BUTTON_TEMPLATE:

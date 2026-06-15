@@ -1,6 +1,6 @@
 MapFormat: 11
 RequiresMod: ca
-Title: Tropic Thunder
+Title: "热带雷霆"
 Author: Inq
 Tileset: JUNGLE
 MapSize: 66,66
@@ -9,12 +9,12 @@ Visibility: Lobby
 Categories: Conquest
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: allies
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: allies
 		Enemies: Multi0, Multi1, Multi2, Multi3

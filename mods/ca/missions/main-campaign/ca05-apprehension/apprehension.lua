@@ -1,3 +1,4 @@
+-- Simplified Chinese translation by lsxy, 2026.06.
 MissionDir = "ca|missions/main-campaign/ca05-apprehension"
 
 SAMs = {
@@ -57,9 +58,9 @@ WorldLoaded = function()
 		Actor.Create("radar.dummy", true, { Owner = p })
 	end)
 
-    ObjectiveDestroySAMSites = Greece.AddObjective("Destroy Nod SAM Sites.")
-	ObjectiveClearBase = Greece.AddObjective("Clear the Nod naval base.")
-	ObjectiveApprehendTransports = Greece.AddObjective("Secure Nod transports.")
+    ObjectiveDestroySAMSites = Greece.AddObjective("摧毁Nod防空导弹阵地。")
+	ObjectiveClearBase = Greece.AddObjective("清除Nod海军基地。")
+	ObjectiveApprehendTransports = Greece.AddObjective("控制Nod运输船。")
 
 	UpdateMissionText()
 
@@ -157,7 +158,7 @@ WorldLoaded = function()
 		else
 			rangersDesc = "Ranger is"
 		end
-		Tip("Your " .. rangersDesc .. " equipped with the Advanced Optics upgrade. Press [" .. UtilsCA.Hotkey("Deploy") .. "] (deploy) to activate for increased vision for a limited time.")
+		Tip("你的" .. rangersDesc .. " equipped with the Advanced Optics upgrade. Press [" .. UtilsCA.Hotkey("Deploy") .. "] (deploy) to activate for increased vision for a limited time.")
 	end)
 
 	AfterWorldLoaded()
@@ -226,7 +227,7 @@ end
 
 UpdateMissionText = function()
 	if SAMCount > 0 then
-		UserInterface.SetMissionText(SAMCount .. " SAM sites remaining.", HSLColor.Yellow)
+		UserInterface.SetMissionText(SAMCount .. " 处防空导弹阵地未摧毁。", HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end
@@ -253,7 +254,7 @@ end
 
 InitLongbows = function()
 	PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-	Notification("Air support inbound.")
+	Notification("空中支援即将抵达。")
 	local targets = { Obelisk3, Obelisk1, Obelisk2, Turret1, Turret2 }
 	local delay = DateTime.Seconds(2)
 

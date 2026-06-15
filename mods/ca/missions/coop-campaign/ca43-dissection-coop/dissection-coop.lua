@@ -1,4 +1,5 @@
 
+-- Simplified Chinese translation by lsxy, 2026.06.
 SideAssumedControl = {}
 
 SetupPlayers = function()
@@ -96,7 +97,7 @@ AssumeControl = function(player, side)
 	SideAssumedControl[side] = true
 
 	if player.IsLocalPlayer then
-		Notification("Command transfer complete.")
+		Notification("指挥权转移完成。")
 		MediaCA.PlaySound(MissionDir .. "/r_transfer.aud", 2)
 	end
 

@@ -1,4 +1,5 @@
-ra-origin: C&C Ultimate Collection RA (Origin version, English)
+# Simplified Chinese translation by lsxy, 2026.06.
+ra-origin: C&C 终极合集 红色警戒（Origin版，英文）
 	Type: RegistryDirectory
 	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
 	RegistryKey: EA Games\Command and Conquer Red Alert
@@ -221,7 +222,7 @@ ra-origin: C&C Ultimate Collection RA (Origin version, English)
 					^SupportDir|Content/ca/movies/cronfail.vqa: cronfail.vqa
 				Delete: ^SupportDir|Content/ca/movies2.mix
 
-cnc-origin: C&C Ultimate Collection TD (Origin version, English)
+cnc-origin: C&C 终极合集 泰伯利亚黎明（Origin版，英文）
 	Type: RegistryDirectory
 	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
 	RegistryKey: EA Games\CNC and The Covert Operations
@@ -242,7 +243,7 @@ cnc-origin: C&C Ultimate Collection TD (Origin version, English)
 				Copy: .
 					^SupportDir|Content/ca/cnc/scores.mix: covert/SCORES.MIX
 
-cncr-origin: C&C Remastered Collection (Origin version, English)
+cncr-origin: C&C 重制版合集（Origin版，英文）
 	Type: RegistryDirectory
 	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
 	RegistryKey: Petroglyph\CnCRemastered
@@ -417,7 +418,7 @@ cncr-origin: C&C Remastered Collection (Origin version, English)
 				Copy: Data/CNCDATA/TIBERIAN_DAWN/CD3
 					^SupportDir|Content/ca/cnc/scores.mix: SCORES.MIX
 
-ts-origin: C&C Ultimate Collection TS (Origin version, English)
+ts-origin: C&C 终极合集 泰伯利亚之日（Origin版，英文）
 	Type: RegistryDirectory
 	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
 	RegistryKey: EA Games\Command and Conquer Tiberian Sun
@@ -448,7 +449,7 @@ ts-origin: C&C Ultimate Collection TS (Origin version, English)
 					^SupportDir|Content/ca/firestorm/slavesys.aud: slavesys.aud
 				Delete: ^SupportDir|Content/ca/firestorm/scores01.mix
 
-ra2-origin: C&C Ultimate Collection RA2 (Origin version, English)
+ra2-origin: C&C 终极合集 红色警戒2（Origin版，英文）
 	Type: RegistryDirectory
 	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
 	RegistryKey: EA Games\Command and Conquer Red Alert II

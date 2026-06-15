@@ -2,7 +2,7 @@ MapFormat: 12
 
 RequiresMod: ca
 
-Title: Shellmap
+Title: "主菜单展示图"
 
 Author: Darkademic & Inq
 
@@ -18,12 +18,12 @@ Categories: Shellmap
 
 Players:
 	PlayerReference@Neutral:
-		Name: Neutral
+		Name: 中立
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: Random
 	PlayerReference@Creeps:
-		Name: Creeps
+		Name: 野生生物
 		NonCombatant: True
 		Faction: Random
 		Enemies: Greece, USSR, GDI, Nod, Scrin, Civilian
@@ -54,13 +54,13 @@ Players:
 		Color: FE1100
 		Enemies: GDI, Greece, USSR, Scrin, Civilian, Creeps
 	PlayerReference@Scrin:
-		Name: Scrin
+		Name: 思金
 		Bot: campaign
 		Faction: scrin
 		Color: 7700FF
 		Enemies: GDI, Greece, USSR, Nod, Civilian, Creeps
 	PlayerReference@Civilian:
-		Name: Civilian
+		Name: 平民
 		Bot: campaign
 		Faction: england
 		Color: FFFFFF

@@ -1,3 +1,4 @@
+# Simplified Chinese translation by lsxy, 2026.06.
 SS:
 	Inherits: ^Submarine
 	Inherits@AUTOTARGET: ^AutoTargetNavalAssaultMove
@@ -7,15 +8,15 @@ SS:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 30
 		Prerequisites: ~spen, ~techlevel.low
-		Description: Submerged anti-ship unit armed with torpedoes.
+		Description: 装备鱼雷的潜航反舰单位。
 	TooltipExtras:
-		Strengths: • Strong vs Naval Units
-		Weaknesses: • Cannot attack Ground Units, Aircraft
-		Attributes: • Detects other submarines
+		Strengths: • 擅长对付 海军单位
+		Weaknesses: • 无法攻击 地面单位, 飞行器
+		Attributes: • 探测潜艇
 	Valued:
 		Cost: 950
 	Tooltip:
-		Name: Submarine
+		Name: 潜艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -77,15 +78,15 @@ MSUB:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 60
 		Prerequisites: ~spen, stek, ~techlevel.high
-		Description: Submerged anti-ground siege unit.
+		Description: 潜航对地攻城单位。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Ground Units
-		Weaknesses: • Weak vs Naval Units\n• Cannot attack Aircraft
-		Attributes: • Detects other submarines
+		Strengths: • 擅长对付 建筑, 地面单位
+		Weaknesses: • 不擅长对付 海军单位\n• 无法攻击飞行器
+		Attributes: • 探测潜艇
 	Valued:
 		Cost: 1650
 	Tooltip:
-		Name: Missile Submarine
+		Name: 弹道导弹潜艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -129,15 +130,15 @@ DD:
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 40
 		Prerequisites: ~syrd, anyradar, ~techlevel.medium
-		Description: Fast multi-role ship.
+		Description: 快速多用途舰艇。
 	TooltipExtras:
-		Strengths: • Strong vs Naval Units, Vehicles, Aircraft
-		Weaknesses: • Weak vs Infantry
-		Attributes: • Detects submarines
+		Strengths: • 擅长对付 海军单位, 载具, 飞行器
+		Weaknesses: • 不擅长对付步兵
+		Attributes: • 探测 潜艇
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Destroyer
+		Name: 导弹驱逐舰
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -204,14 +205,14 @@ CA:
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 50
 		Prerequisites: ~syrd, atek, ~techlevel.high
-		Description: Very slow long-range bombardment ship.
+		Description: 极慢的远程炮击舰。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Ground Units
-		Weaknesses: • Weak vs Naval Units\n• Cannot attack Aircraft
+		Strengths: • 擅长对付 建筑, 地面单位
+		Weaknesses: • 不擅长对付 海军单位\n• 无法攻击飞行器
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Cruiser
+		Name: 重型巡洋舰
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -276,14 +277,14 @@ LST:
 		Queue: ShipSQ, ShipMQ
 		BuildPaletteOrder: 10
 		Prerequisites: ~techlevel.low
-		Description: General-purpose naval transport.
+		Description: 通用海军运输船。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Can carry vehicles and infantry
+		Weaknesses: • 无武装
+		Attributes: • 可装载 载具 和 步兵
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Transport
+		Name: 运兵船
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -352,15 +353,15 @@ PT:
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 20
 		Prerequisites: ~syrd, ~techlevel.low
-		Description: Light scout & support ship.
+		Description: 轻型侦察支援艇。
 	TooltipExtras:
-		Strengths: • Strong vs Naval Units
-		Weaknesses: • Weak vs Ground Units\n• Cannot attack Aircraft
-		Attributes: • Detects submarines
+		Strengths: • 擅长对付 海军单位
+		Weaknesses: • 不擅长对付 地面单位\n• 无法攻击飞行器
+		Attributes: • 探测 潜艇
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Gunboat
+		Name: 猎潜艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -414,15 +415,15 @@ PT2:
 		BuildPaletteOrder: 20
 		Prerequisites: ~syrd.gdi, ~techlevel.low
 		IconPalette: chrometd
-		Description: Light scout & support ship armed with guided missiles.
+		Description: 装备制导导弹的轻型侦察支援艇。
 	TooltipExtras:
-		Strengths: • Strong vs Submarines, Aircraft
-		Weaknesses: • Weak vs Ground Units
-		Attributes: • Detects submarines
+		Strengths: • 擅长对付 潜艇, 飞行器
+		Weaknesses: • 不擅长对付 地面单位
+		Attributes: • 探测 潜艇
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Patrol Boat
+		Name: 巡逻艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -489,15 +490,15 @@ DD2:
 		BuildPaletteOrder: 40
 		IconPalette: chrometd
 		Prerequisites: ~syrd.gdi, anyradar, ~techlevel.medium
-		Description: Advanced warship armed with a powerful railgun.
+		Description: 装备强力轨道炮的先进战舰。
 	TooltipExtras:
-		Strengths: • Strong vs Naval Units, Vehicles
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Detects submarines
+		Strengths: • 擅长对付 海军单位, 载具
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 探测 潜艇
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Frigate
+		Name: 护卫舰
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -589,15 +590,15 @@ SS2:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 30
 		Prerequisites: ~spen.nod, ~techlevel.low
-		Description: Submerged anti-ship unit armed with torpedoes.
+		Description: 装备鱼雷的潜航反舰单位。
 	TooltipExtras:
-		Strengths: • Strong vs Naval Units
-		Weaknesses: • Cannot attack Ground Units, Aircraft
-		Attributes: • Detects other submarines
+		Strengths: • 擅长对付 海军单位
+		Weaknesses: • 无法攻击 地面单位, 飞行器
+		Attributes: • 探测潜艇
 	Valued:
 		Cost: 950
 	Tooltip:
-		Name: Attack Submarine
+		Name: 攻击潜艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -659,15 +660,15 @@ ISUB:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 30
 		Prerequisites: ~spen.nod, tmpl, ~techlevel.high
-		Description: Submerged unit armed with extreme long-range missiles.
+		Description: 装备极限远程导弹的潜航单位。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Ground Units
-		Weaknesses: • Weak vs Naval Units\n• Cannot attack Aircraft
-		Attributes: • Missiles can be shot down by static anti-air defenses\n• Detects other submarines
+		Strengths: • 擅长对付 建筑, 地面单位
+		Weaknesses: • 不擅长对付 海军单位\n• 无法攻击飞行器
+		Attributes: • 导弹 可被击落 击落 增加 固定 反-空中 防御建筑\n• 探测潜艇
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: ICBM Submarine
+		Name: 洲际导弹潜艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -727,7 +728,7 @@ ICBM:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: ICBM
+		Name: 洲际弹道导弹
 	Health:
 		HP: 7500
 	BallisticMissile:
@@ -763,15 +764,15 @@ CV:
 		Queue: ShipSQ, ShipMQ
 		BuildPaletteOrder: 60
 		Prerequisites: ~syrd.gdi, gtek, ~techlevel.high
-		Description: Carrier that launches a squadron of Hornet drone aircraft.
+		Description: 可发射一队大黄蜂无人机飞行器的航母。
 	TooltipExtras:
-		Strengths: • Strong vs Ground Units, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Hornets only targetable by static anti-air defenses
+		Strengths: • 擅长对付 地面单位, 建筑
+		Weaknesses: • 无法攻击飞行器
+		Attributes: • 大黄蜂 专属 目标可 增加 固定 反-空中 防御建筑
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Drone Carrier
+		Name: 无人机母舰
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -840,14 +841,14 @@ SB:
 		BuildPaletteOrder: 20
 		IconPalette: chrometd
 		Prerequisites: ~spen.nod, ~techlevel.low
-		Description: Fast scout boat, armed with rockets.
+		Description: 装备火箭弹的快速侦察艇。
 	TooltipExtras:
-		Strengths: • Strong vs Naval Units, Ground Vehicles, Aircraft
-		Weaknesses: • Weak vs Infantry
+		Strengths: • 擅长对付 海军单位, 地面载具, 飞行器
+		Weaknesses: • 不擅长对付步兵
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Recon Boat
+		Name: 侦察艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -897,15 +898,15 @@ SEAS:
 		Queue: ShipSQ, ShipMQ
 		BuildPaletteOrder: 20
 		Prerequisites: ~spen, ~techlevel.low
-		Description: Light scout & support ship.
+		Description: 轻型侦察支援艇。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Infantry
-		Weaknesses: • Weak vs Naval Units, Vehicles
-		Attributes: • Detects submarines
+		Strengths: • 擅长对付飞行器, 步兵
+		Weaknesses: • 不擅长对付 海军单位, 载具
+		Attributes: • 探测 潜艇
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Sea Scorpion
+		Name: 海蝎
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:

@@ -1,0 +1,26 @@
+--- /tmp/orig_WidgetUtils.cs	2026-06-15 16:25:26
++++ /Users/xiaokeyin/Desktop/CAmod_Simplify-Chinese/engine/OpenRA.Mods.Common/Widgets/WidgetUtils.cs	2026-06-15 15:55:48
+@@ -273,6 +273,23 @@
+ 						lines[i] = line[..(start - 1)];
+ 						lines.Insert(i + 1, line[start..]);
+ 					}
++					else
++					{
++						// No spaces found — wrap at character boundary for CJK or long unbroken strings
++						var charBreak = 0;
++						for (var j = 1; j <= line.Length; j++)
++						{
++							if (font.Measure(line[..j]).X > width)
++								break;
++							charBreak = j;
++						}
++
++						if (charBreak > 0 && charBreak < line.Length)
++						{
++							lines[i] = line[..charBreak];
++							lines.Insert(i + 1, line[charBreak..]);
++						}
++					}
+ 				}
+ 
+ 				return string.Join("\n", lines);

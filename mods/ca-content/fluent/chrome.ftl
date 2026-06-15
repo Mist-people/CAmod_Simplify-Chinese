@@ -1,3 +1,4 @@
+## Simplified Chinese translation by lsxy, 2026.06.
 modcontent-installprompt =
     Combined Arms requires artwork and audio from the original games.
 
@@ -26,3 +27,25 @@ modcontent-package-music-ts = Tiberian Sun Music
 modcontent-package-music-fs = Firestorm Music
 modcontent-package-music-ra2 = Red Alert 2 Music
 modcontent-package-music-yr = Yuri's Revenge Music
+
+label-content-panel-title = 资源管理
+
+label-package-template-required = 必需
+
+button-package-template-download = 下载
+
+label-package-template-installed = 已安装
+
+label-package-template-requires-source = 需要光盘
+
+button-content-panel-check-source = 检测光盘或安装
+
+label-source-tooltip-description = 内容来源：
+
+button-package-download-panel-retry = 重试
+
+label-content-prompt-panel-title = 安装内容
+
+button-content-prompt-panel-advanced = 高级安装
+
+button-content-prompt-panel-quick = 快速安装
