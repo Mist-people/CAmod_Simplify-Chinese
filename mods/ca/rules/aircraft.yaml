@@ -885,7 +885,7 @@ NHAW:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 10
 		Prerequisites: ~aircraft.nhaw, ~techlevel.medium
-		Description: 快速步兵运输直升机，装备一挺轻机枪。
+		Description: 快速步兵运输直升机，\n装备一挺轻机枪。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵
 		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
@@ -1207,7 +1207,7 @@ HIND:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 32
 		Prerequisites: afld, ~aircraft.soviet, ~techlevel.medium
-		Description: 耐用型武装直升机，装备链式机炮和火箭弹。
+		Description: 耐用型武装直升机，\n装备链式机炮和火箭弹。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 重型装甲, 轻型装甲
 		Weaknesses: • 不擅长对付 防御建筑\n• 无法攻击飞行器
@@ -2557,7 +2557,7 @@ RAH:
 		BuildPaletteOrder: 52
 		IconPalette: chrometd
 		Prerequisites: tmpl, ~aircraft.nod, ~techlevel.high
-		Description: 隐形攻击直升机，配备强力反人员火箭弹。
+		Description: 隐形攻击直升机，\n配备强力反人员火箭弹。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
 		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
@@ -3134,7 +3134,7 @@ HARR:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 70
 		Prerequisites: atek, ~aircraft.allies, ~techlevel.high
-		Description: 快速垂直起降对地攻击机，配备强力爆炸导弹。
+		Description: 快速垂直起降对地攻击机，\n配备强力爆炸导弹。
 	TooltipExtras:
 		Strengths: • 擅长对付飞行器, 建筑, 步兵, 轻型装甲
 		Weaknesses: • 不擅长对付重型装甲, 防御建筑
@@ -3259,7 +3259,7 @@ SCRN:
 		BuildPaletteOrder: 100
 		IconPalette: chrometd
 		Prerequisites: tmpl, ~aircraft.nod, ~techlevel.high
-		Description: 快速垂直起降攻击机，配备强力等离子炮。
+		Description: 快速垂直起降攻击机，\n配备强力等离子炮。
 	TooltipExtras:
 		Strengths: • 擅长对付重型装甲, 防御建筑, 飞行器
 		Weaknesses: • 不擅长对付步兵
@@ -4197,7 +4197,7 @@ BEAG:
 	Encyclopedia:
 		Category: Allies/Aircraft
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Korea Coalition.
+		AdditionalInfo: 需要与韩国结盟。
 
 PHAN:
 	Inherits: ^Helicopter
@@ -4344,7 +4344,7 @@ KAMV:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 201
 		Prerequisites: ~aircraft.kamv
-		Description: 耐用型武装直升机，配备远程反坦克震荡火箭弹。
+		Description: 耐用型武装直升机，\n配备远程反坦克震荡火箭弹。
 	TooltipExtras:
 		Strengths: • 擅长对付重型装甲, 轻型装甲
 		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器\n• 难以命中移动目标
@@ -4468,7 +4468,7 @@ SHDE:
 		BuildPaletteOrder: 202
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~aircraft.shde
-		Description: 快速垂直起降对地攻击机，装备电磁脉冲武器。
+		Description: 快速垂直起降对地攻击机，\n装备电磁脉冲武器。
 	TooltipExtras:
 		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
 		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器

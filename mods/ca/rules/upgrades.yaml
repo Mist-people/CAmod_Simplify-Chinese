@@ -21,7 +21,7 @@ hazmat.upgrade:
 		BuildPaletteOrder: 19
 		Prerequisites: anyradar, infantry.any, ~!player.soviet, ~!player.zocom, ~!player.scrin, ~techlevel.medium
 		IconPalette: chrometd
-		Description: 步兵配备防化服，可抵御泰伯利亚和辐射伤害。
+		Description: 步兵配备防化服，\n可抵御泰伯利亚和辐射伤害。
 	TooltipExtras:
 		Strengths: + 泰伯利亚 免疫\n+ 50% 抗性 至 辐射地形
 	Valued:
@@ -43,7 +43,7 @@ flakarmor.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: techcenter.any, infantry.any, ~!player.nod, ~!player.scrin, ~techlevel.high
-		Description: 步兵配备高级防破片护甲，可抵御爆炸伤害。
+		Description: 步兵配备高级防破片护甲，\n可抵御爆炸伤害。
 	TooltipExtras:
 		Strengths: + 40% 减少 伤害 来自 爆炸物\n+ 20% 减少 伤害 来自 燃烧 爆炸物
 	Valued:
@@ -80,7 +80,7 @@ bombard.strat:
 		BuildPaletteOrder: 7
 		Prerequisites: ~player.gdi, anyradar, ~!seek.strat, ~!hold.strat, ~techlevel.medium
 		IconPalette: chrometd
-		Description: 侧重火力的战略，以下内容需要该战略：
+		Description: 侧重火力的战略，\n以下内容需要该战略：
 	TooltipExtras:
 		Strengths: + 增加 火力 和 速率 的 射击 的 载具 和 飞行器 增加 3%
 		Attributes: \n(!) 仅限一个 战术 可选.
@@ -144,7 +144,7 @@ seek.strat:
 		BuildPaletteOrder: 9
 		Prerequisites: ~player.gdi, anyradar, ~!bombard.strat, ~!hold.strat, ~techlevel.medium
 		IconPalette: chrometd
-		Description: 侧重速度和武器射程的战略，以下内容需要该战略：
+		Description: 侧重速度和武器射程的战略，\n以下内容需要该战略：
 	TooltipExtras:
 		Strengths: + 增加 速度 和 武器 射程 的 载具 和 飞行器 增加 5%
 		Attributes: \n(!) 仅限一个 战术 可选.
@@ -354,7 +354,7 @@ avenger.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: avenger.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: 需要火力轰炸战略。
 
 sidewinders.upgrade:
 	Inherits: ^GDIUpgrade
@@ -374,7 +374,7 @@ sidewinders.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: sidewinders.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: 需要搜索歼敌战略。
 
 ceramic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -394,7 +394,7 @@ ceramic.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: ceramic.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: 需要坚守防线战略。
 
 strategic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -432,7 +432,7 @@ thwk.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: thwk.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: 需要火力轰炸战略。
 
 tow.upgrade:
 	Inherits: ^GDIUpgrade
@@ -452,7 +452,7 @@ tow.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: tow.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: 需要搜索歼敌战略。
 
 pointdef.upgrade:
 	Inherits: ^GDIUpgrade
@@ -462,7 +462,7 @@ pointdef.upgrade:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: 为多个单位装备点防御护盾和/或点防御激光，抵御敌方火力。\n\n升级：战斗坦克（护盾和激光）\n升级：战斗无人机（护盾和激光）\n升级：悍马（护盾）\n升级：守护者无人机（护盾）\n升级：采矿车（护盾）\n升级：护卫舰（激光）
+		Description: 为多个单位装备点防御护盾和/或点防御激光，\n抵御敌方火力。\n\n升级：战斗坦克（护盾和激光）\n升级：战斗无人机（护盾和激光）\n升级：悍马（护盾）\n升级：守护者无人机（护盾）\n升级：采矿车（护盾）\n升级：护卫舰（激光）
 	TooltipExtras:
 		Strengths: + 添加点防御护盾\n+ 添加点防御激光
 	Valued:
@@ -472,7 +472,7 @@ pointdef.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: pointdef.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: 需要坚守防线战略。
 
 stratmiss.upgrade:
 	Inherits: ^GDIUpgrade
@@ -510,7 +510,7 @@ hailstorm.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hailstorm.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: 需要火力轰炸战略。
 
 hypersonic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -531,7 +531,7 @@ hypersonic.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hypersonic.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: 需要搜索歼敌战略。
 
 hammerhead.upgrade:
 	Inherits: ^GDIUpgrade
@@ -552,7 +552,7 @@ hammerhead.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hammerhead.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: 需要坚守防线战略。
 
 sonic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -717,7 +717,7 @@ gyro.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.talon, upgc, ~techlevel.high
 		IconPalette: chrometd
-		Description: 允许机甲单位启动陀螺稳定器，提高射程但降低射速。
+		Description: 允许机甲单位启动陀螺稳定器，\n提高射程但降低射速。
 	TooltipExtras:
 		Strengths: + 添加陀螺稳定器 能力 (增加 射程, 减少 速率 的 射击)\n+ 增加 主宰 射程 增加 50%.
 	Valued:
@@ -858,7 +858,7 @@ decoy.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.nod, anyradar, ~techlevel.medium
-		Description: 赋予沙漠突击车投射两辆诱饵火焰坦克的能力。诱饵在被摧毁后短时间内提供小范围视野。\n\n升级：沙漠突击车\n升级：突袭者沙漠突击车
+		Description: 赋予沙漠突击车投射两辆诱饵火焰坦克的能力。\n诱饵在被摧毁后短时间内提供小范围视野。\n\n升级：沙漠突击车\n升级：突袭者沙漠突击车
 	TooltipExtras:
 		Strengths: + 诱饵 投射 能力
 	Valued:
@@ -1113,7 +1113,7 @@ cyborgdmg.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgdmg.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: 需要愤怒誓约。
 
 cyborgprod.upgrade:
 	Inherits: ^NodUpgrade
@@ -1123,7 +1123,7 @@ cyborgprod.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, covenant.level3, ~unity.covenant, ~techlevel.high
 		IconPalette: chrometd
-		Description: 利用CABAL AI从阵亡生化人回收零件以补充新单位
+		Description: 利用CABAL AI从阵亡生化人回收零件以补\n充新单位
 	TooltipExtras:
 		Strengths: + 15% 的 损失生化人 价值回收用于生产新 生化人 来自 主神殿
 	Valued:
@@ -1133,7 +1133,7 @@ cyborgprod.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgprod.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: 需要团结誓约。
 
 cyborgspeed.upgrade:
 	Inherits: ^NodUpgrade
@@ -1153,7 +1153,7 @@ cyborgspeed.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgspeed.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: 需要热忱誓约。
 
 #########################SOVIET#########
 ########################################
@@ -1230,7 +1230,7 @@ hazmatsoviet.upgrade:
 	Buildable:
 		BuildPaletteOrder: 19
 		Prerequisites: ~player.soviet, ~!player.iraq, anyradar, infantry.any, ~techlevel.medium
-		Description: 步兵装备重型防化服，提供泰伯利亚和辐射防护。\n\n升级：步兵
+		Description: 步兵装备重型防化服，\n提供泰伯利亚和辐射防护。\n\n升级：步兵
 	TooltipExtras:
 		Strengths: + 泰伯利亚 免疫\n+ 高 抗性 至 辐射地形
 		Weaknesses: – 33% 更慢 移动 穿越 资源 和 崎岖地形
@@ -1266,7 +1266,7 @@ lasher.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.yuri, anyradar, ~techlevel.medium
-		Description: 为重/犀牛坦克升级步兵碾压装置，以装甲和火力为代价。\n\n取代：重型坦克\n取代：犀牛坦克
+		Description: 为重/犀牛坦克升级步兵碾压装置，\n以装甲和火力为代价。\n\n取代：重型坦克\n取代：犀牛坦克
 	TooltipExtras:
 		Strengths: + 25% 更快 移动\n+ 改进 碾压性能
 		Weaknesses: – 减少 生命值\n– 减少 火力
@@ -1417,7 +1417,7 @@ imppara.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: imppara.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: 需要步兵专精学说。
 
 impstorm.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1436,7 +1436,7 @@ impstorm.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: impstorm.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: 需要步兵专精学说。
 
 impmuta.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1455,7 +1455,7 @@ impmuta.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: impmuta.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: 需要步兵专精学说。
 
 reactive.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1474,7 +1474,7 @@ reactive.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: reactive.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: 需要装甲专精学说。
 
 rocketpods.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1493,7 +1493,7 @@ rocketpods.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: rocketpods.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: 需要火炮专精学说。
 
 atomicengines.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1626,7 +1626,7 @@ economy.policy:
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-		Description: 推行经济政策。\n\n• 1级：精炼厂、采矿车及MCV造价-15%\n• 2级：精炼厂、采矿车及MCV造价-25%，MCV移动速度+20%\n• 3级：免费超时空矿车升级，采矿车耐久度+15%，矿石精炼器收入+50%
+		Description: 推行经济政策。\n\n• 1级：精炼厂、采矿车及MCV造价-15%\n• 2级：精炼厂、采矿车及MCV造价-25%\n  MCV移动速度+20%\n• 3级：免费超时空矿车升级\n  采矿车耐久度+15%\n  矿石精炼器收入+50%
 	TooltipExtras:
 		Attributes: (!) 仅限一个 战略 可选.
 	Valued:
@@ -1649,7 +1649,7 @@ defense.policy:
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-		Description: 推行防御政策。\n\n• 1级：+15%建筑生命值，+25%建筑工厂建造半径\n• 2级：+30%建筑生命值，+40%建筑维修速率，+20%防御维修速率\n• 3级：+25%建筑/防御视野半径，+15%防御武器伤害
+		Description: 推行防御政策。\n\n• 1级：+15%建筑生命值\n  +25%建筑工厂建造半径\n• 2级：+30%建筑生命值\n  +40%建筑维修速率\n  +20%防御维修速率\n• 3级：+25%建筑/防御视野半径\n  +15%防御武器伤害
 	TooltipExtras:
 		Attributes: (!) 仅限一个 战略 可选.
 	Valued:
@@ -1666,7 +1666,7 @@ development.policy:
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-		Description: 推行发展政策。\n\n• 1级：+20%单位经验获取\n• 2级：+40%单位经验获取，科技中心及所有升级享受10%折扣\n• 3级：+60%单位经验获取，3级单位获得额外生命值和伤害
+		Description: 推行发展政策。\n\n• 1级：+20%单位经验获取\n• 2级：+40%单位经验获取\n  科技中心及所有升级享受10%折扣\n• 3级：+60%单位经验获取\n  3级单位获得额外生命值和伤害
 	TooltipExtras:
 		Attributes: (!) 仅限一个 战略 可选.
 	Valued:
@@ -1763,7 +1763,7 @@ optics.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.allies, anyradar, ~techlevel.medium
-		Description: 为游骑兵装备先进光学设备，可临时扩展视野和侦测范围。\n\n升级：游骑兵
+		Description: 为游骑兵装备先进光学设备，\n可临时扩展视野和侦测范围。\n\n升级：游骑兵
 	TooltipExtras:
 		Strengths: + 游骑兵 可临时增加 红外 视野 & 探测 射程
 	Valued:
@@ -1799,7 +1799,7 @@ cryw.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.allies, atek, ~techlevel.high
-		Description: 为特定火箭单位装备冷冻弹头，使目标减速并受到更多伤害。\n\n升级：火箭兵\n升级：长弓\n升级：守护者重装兵（仅美国）\n升级：夜鹰（仅美国）
+		Description: 为特定火箭单位装备冷冻弹头，\n使目标减速并受到更多伤害。\n\n升级：火箭兵\n升级：长弓\n升级：守护者重装兵（仅美国）\n升级：夜鹰（仅美国）
 	TooltipExtras:
 		Strengths: + 装备 需 冷冻弹头 减速 移动 和 增加受到伤害n
 	Valued:
@@ -1836,7 +1836,7 @@ apb.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.england, atek, ~techlevel.high
-		Description: 为狙击手升级劳福斯穿甲弹，可震晕并伤害载具。\n\n升级：狙击手
+		Description: 为狙击手升级劳福斯穿甲弹，\n可震晕并伤害载具。\n\n升级：狙击手
 	TooltipExtras:
 		Strengths: + 可伤害 载具 需 AP 弹药 减速 移动 和 速率 的 射击
 		Weaknesses: – 减少 射程
@@ -1855,7 +1855,7 @@ airborne.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.usa, atek, ~techlevel.high
-		Description: 改进空降部队的训练和后勤，提高战斗力并加速准备。\n\n升级：空降：守护者重装兵\n升级：空降：灰熊坦克
+		Description: 改进空降部队的训练和后勤，\n提高战斗力并加速准备。\n\n升级：空降：守护者重装兵\n升级：空降：灰熊坦克
 	TooltipExtras:
 		Strengths: + 空中单位 拥有老兵等级\n+ 空中单位 承受 25% 更少 时间 至 准备
 	Valued:
@@ -1873,7 +1873,7 @@ tflx.upgrade:
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.germany, pdox, ~techlevel.high
-		Description: 为时空监狱升级时间传送能力，并改进时空坦克的超时空传送。\n\n升级：时空监狱\n升级：超时空坦克
+		Description: 为时空监狱升级时间传送能力，\n并改进时空坦克的超时空传送。\n\n升级：时空监狱\n升级：超时空坦克
 	TooltipExtras:
 		Strengths: + 超时空监狱 获得传送能力\n+ 超时空监狱 武器 射程 增加\n+ 超时空坦克 充能前可传送两次
 	Valued:
@@ -1985,7 +1985,7 @@ hyper.upgrade:
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.scrin, anyradar, ~techlevel.medium
-		Description: 搜寻者和撕裂者获得超载充能能力，可在限定时间内连续不间断射击。激活期间受到伤害增加。使用后短时间武器伤害和速度降低
+		Description: 搜寻者和撕裂者获得超载充能能力，\n可在限定时间内连续不间断射击。\n激活期间受到伤害增加。\n使用后短时间武器伤害和速度降低
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: + 超充能 能力
@@ -2132,7 +2132,7 @@ blink.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, ~techlevel.high
-		Description: 为入侵者和监视者装备瞬移背包，使其能够传送。\n\n升级：入侵者\n升级：掠夺者\n升级：监视者
+		Description: 为入侵者和监视者装备瞬移背包，\n使其能够传送。\n\n升级：入侵者\n升级：掠夺者\n升级：监视者
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: + 传送 能力
@@ -2150,7 +2150,7 @@ resconv.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, ~techlevel.high
-		Description: 特定单位武器获得泰伯利亚和其他资源的强化。收割者三足机甲获得额外充能。\n\n升级：吞噬者\n升级：毁灭者\n升级：收割者三足机甲\n升级：剔骨者
+		Description: 特定单位武器获得泰伯利亚和其他资源的强化。\n收割者三足机甲获得额外充能。\n\n升级：吞噬者\n升级：毁灭者\n升级：收割者三足机甲\n升级：剔骨者
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: + 增加 伤害 当 充能后\n+ 双倍 充能容量 (收割者三足机甲 专属)
@@ -2168,7 +2168,7 @@ ioncon.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, ~techlevel.high
-		Description: 允许风暴柱和风暴爬行者储存离子能量并释放到大气中，制造局部离子风暴。\n\n升级：风暴柱\n升级：风暴爬行者
+		Description: 允许风暴柱和风暴爬行者储存离子能量并释放到大气中，\n制造局部离子风暴。\n\n升级：风暴柱\n升级：风暴爬行者
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: + 增加 伤害 和 射程 超过 时间 当 激活\n+ 减少 受到 伤害 超过 时间 当 激活\n+ 离子风暴 可伤害敌方 单位 和 建筑
@@ -2223,7 +2223,7 @@ coalescence.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.collector, scrt, ~techlevel.high
-		Description: 汲取者在死亡或部署时会转变为生物质球体，治疗附近盟友并最终凝聚成新的汲取者。\n\n升级：汲取者
+		Description: 汲取者在死亡或部署时会转变为生物质球体，\n治疗附近盟友并最终凝聚成新的汲取者。\n\n升级：汲取者
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: + 吸血者 可复活\n+ 治疗 在融合范围内时治疗友军 

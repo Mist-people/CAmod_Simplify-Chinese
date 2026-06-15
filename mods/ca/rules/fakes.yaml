@@ -7,7 +7,7 @@ FPWR:
 		BuildPaletteOrder: 900
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: anypower, ~structures.england, ~techlevel.low
-		Description: 看起来像发电厂。内部装满炸药。
+		Description: 看起来像发电厂。\n内部装满炸药。
 		Icon: fake-icon
 	Tooltip:
 		Name: 假发电厂
@@ -45,7 +45,7 @@ FREF:
 		BuildPaletteOrder: 910
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: proc, ~structures.england, ~techlevel.low
-		Description: 看起来像精炼厂。内部装满炸药。
+		Description: 看起来像精炼厂。\n内部装满炸药。
 		Icon: fake-icon
 	Tooltip:
 		Name: 假精炼厂
@@ -105,7 +105,7 @@ WEAF:
 		BuildPaletteOrder: 920
 		Prerequisites: weap, ~structures.england, ~techlevel.low
 		Queue: DefenseSQ, DefenseMQ
-		Description: 看起来像战车工厂。内部装满炸药。
+		Description: 看起来像战车工厂。\n内部装满炸药。
 		Icon: fake-icon
 	Tooltip:
 		Name: 假战车工厂
@@ -154,7 +154,7 @@ DOMF:
 		BuildPaletteOrder: 930
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: dome, ~structures.england, ~techlevel.medium
-		Description: 看起来像雷达站。内部装满炸药。
+		Description: 看起来像雷达站。\n内部装满炸药。
 		Icon: fake-icon
 	Building:
 		Footprint: xx xx ==
@@ -181,7 +181,7 @@ FACF:
 		BuildPaletteOrder: 1000
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: ~structures.england
-		Description: 看起来像建筑工厂。内部装满炸药。
+		Description: 看起来像建筑工厂。\n内部装满炸药。
 		Icon: fake-icon
 	Tooltip:
 		Name: 假建筑工厂
@@ -226,7 +226,7 @@ SYRF:
 		BuildPaletteOrder: 1100
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: syrd, ~structures.england, ~techlevel.navy, ~techlevel.low
-		Description: 看起来像海军船坞。内部装满炸药。
+		Description: 看起来像海军船坞。\n内部装满炸药。
 		Icon: fake-icon
 	Tooltip:
 		Name: 假海军船坞

@@ -1436,7 +1436,7 @@
 		TargetTypes: NoCrew
 		RequiresCondition: driver-dead
 	TooltipDescription@DRIVER_DEAD:
-		Description: 无乘员。可被步兵占领。
+		Description: 无乘员。\n可被步兵占领。
 		RequiresCondition: driver-dead
 
 ^CanCaptureDriverlessVehicles:
@@ -3231,7 +3231,7 @@
 		Notification: AirUnitLost
 		TextNotification: Airborne unit lost.
 	Tooltip:
-		GenericName: 飞机
+		GenericName: 飞行器
 	WithShadow:
 		Offset: 43, 128, 0
 		ZOffset: -129
@@ -4175,7 +4175,7 @@
 		Offset: 43, 128, 0
 		ZOffset: -129
 	Tooltip:
-		GenericName: 被毁飞机
+		GenericName: 被毁飞行器
 	Aircraft:
 	FallsToEarth:
 		MaximumSpinSpeed: 0

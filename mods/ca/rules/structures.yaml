@@ -70,7 +70,7 @@ GAP:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 110
 		Prerequisites: atek, ~structures.allies, ~techlevel.high
-		Description: 恢复附近黑幕，遮蔽敌人视野。可引导效果降低敌人武器射程和视野。
+		Description: 恢复附近黑幕，遮蔽敌人视野。\n可引导效果降低敌人武器射程和视野。
 	TooltipExtras:
 		Attributes: • 需要电力才能运作
 	Selectable:
@@ -1465,7 +1465,7 @@ PROC:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 60
 		Prerequisites: anypower, ~structures.ra
-		Description: 精炼泰伯利亚矿、矿石和宝石，将其转化为资金。
+		Description: 精炼泰伯利亚矿、矿石和宝石，\n将其转化为资金。
 		BuildDuration: 1400
 	Valued:
 		Cost: 1800
@@ -2584,25 +2584,25 @@ VEHICLES.ANY:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: 车辆生产
+		Name: 战车生产
 	Buildable:
-		Description: 车辆生产
+		Description: 战车生产
 
 VEHICLES.TD:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: 车辆生产
+		Name: 战车生产
 	Buildable:
-		Description: 车辆生产
+		Description: 战车生产
 
 VEHICLES.NOD:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: 车辆生产
+		Name: 战车生产
 	Buildable:
-		Description: 车辆生产
+		Description: 战车生产
 
 AIRCRAFT.CHINOOK:
 	AlwaysVisible:
@@ -2632,9 +2632,9 @@ ANYPOWER:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: 发电厂
+		Name: 电力建筑
 	Buildable:
-		Description: 发电厂
+		Description: 电力建筑
 
 ANYREFINERY:
 	AlwaysVisible:
@@ -2690,7 +2690,7 @@ OBLIORTMPL:
 	Tooltip:
 		Name: 光明石碑或Nod大神宫
 	Buildable:
-		Description: 光明石碑或无d大神宫
+		Description: 光明石碑或Nod大神宫
 
 TTURORSTEK:
 	AlwaysVisible:
@@ -3076,7 +3076,7 @@ AIRS:
 		BuildPaletteOrder: 80
 		Prerequisites: anyrefinery, ~structures.airs, ~techlevel.low
 		IconPalette: chrometd
-		Description: 提供载具增援空投区。
+		Description: 提供载具增援空投区。\n（后续可建造维修设施）
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -4335,7 +4335,7 @@ PROC.TD:
 		Prerequisites: anypower, ~structures.td
 		Queue: BuildingSQ, BuildingMQ
 		IconPalette: chrometd
-		Description: 精炼泰伯利亚矿、矿石和宝石，将其转化为资金。
+		Description: 精炼泰伯利亚矿、矿石和宝石，\n将其转化为资金。
 		BuildDuration: 1400
 	Building:
 		Footprint: _x_ xxx +++ ===
@@ -4655,7 +4655,7 @@ TMPL:
 		BuildPaletteOrder: 140
 		Prerequisites: vehicles.any, anyradar, ~structures.nod, ~techlevel.high
 		IconPalette: chrometd
-		Description: 提供无d先进科技。
+		Description: 提供Nod先进科技。\n（后续可建造化学导弹发射井）
 	TooltipExtras:
 		Attributes: • 需要电力才能运作\n• 特殊能力：集束导弹
 	Building:
@@ -5674,7 +5674,7 @@ INDP:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.soviet, stek, playerxp.level3, ~armor.doctrine, ~techlevel.high
-		Description: 载具和飞行器生产速度提升15%，成本降低10%。
+		Description: 载具和飞行器生产速度提升15%，\n成本降低10%。
 		BuildLimit: 1
 	TooltipExtras:
 		Attributes: • 最多建造1个\n• 无法被占领或黑客入侵
@@ -5746,7 +5746,7 @@ MUNP:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.soviet, stek, playerxp.level3, ~arty.doctrine, ~techlevel.high
-		Description: 载具和飞行器生产速度提升15%。载具装填时间减少15%。
+		Description: 载具和飞行器生产速度提升15%。\n载具装填时间减少15%。
 		BuildLimit: 1
 	TooltipExtras:
 		Attributes: • 最多建造1个\n• 无法被占领或黑客入侵
@@ -5834,7 +5834,7 @@ OREP:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.allies, alhq, ~techlevel.high
-		Description: 精炼矿石、宝石和泰伯利亚，收入提升10%。
+		Description: 精炼矿石、宝石和泰伯利亚，\n收入提升10%。
 		BuildLimit: 1
 	TooltipExtras:
 		Attributes: • 最多建造1个\n• 无法被占领或黑客入侵

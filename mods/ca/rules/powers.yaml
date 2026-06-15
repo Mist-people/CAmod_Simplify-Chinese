@@ -54,7 +54,7 @@
 		ChargeInterval: 125
 		StartFullyCharged: true
 		Name: 时间跳跃
-		Description: 分配资金进行精确的时间操控，以推进盟军的科技与组织进步。\n\n推进影响力进度1:00。
+		Description: 分配资金进行精确的时间操控，\n以推进盟军的科技与组织进步。\n\n推进影响力进度1:00。
 		Actors: timeskip
 		SupportPowerPaletteOrder: 0
 		SelectProducer: false
@@ -71,7 +71,7 @@
 		ChargeInterval: 7500
 		LifeTime: -1
 		Name: 战争帷幕
-		Description: 生成一片不断扩张的黑幕，降低敌方单位与防御建筑的视野和武器射程。
+		Description: 生成一片不断扩张的黑幕，\n降低敌方单位与防御建筑的视野和武器射程。
 		LaunchSound: sscrambl.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -125,7 +125,7 @@
 		ChargeInterval: 7500
 		Name: 时空突袭
 		ActivationDelay: 25
-		Description: 从未来召唤增援。单位会在短时间后返回原本的时间线。
+		Description: 从未来召唤增援。\n单位会在短时间后返回原本的时间线。
 		Weapon: TemporalIncursion
 		AirburstAltitude: 0c0
 		AllowMultiple: false
@@ -259,7 +259,7 @@
 		Cursor: ability
 		ChargeInterval: 4500
 		Name: 时间扭曲
-		Description: 受影响的单位与建筑会被冻结在时间中，无法行动，但免疫伤害。
+		Description: 受影响的单位与建筑会被冻结在时间中，\n无法行动，但免疫伤害。
 		ExplosionWeapon: TimeWarp
 		Condition: being-warped
 		Duration: 375
@@ -296,7 +296,7 @@
 		ChargeInterval: 8250
 		LifeTime: -1
 		Name: 冷冻风暴
-		Description: 制造一片极度寒冷的湍流区域，降低移动速度并增加受到伤害。
+		Description: 制造一片极度寒冷的湍流区域，\n降低移动速度并增加受到伤害。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -330,7 +330,7 @@
 		IconPalette: caneon
 		ChargeInterval: 10500
 		Name: 赫利俄斯炸弹
-		Description: 呼叫轰炸机投下赫利俄斯炸弹，使大范围单位致盲。
+		Description: 呼叫轰炸机投下赫利俄斯炸弹，\n使大范围单位致盲。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: HeliosBombReady
@@ -364,7 +364,7 @@
 		IconPalette: chrome
 		ChargeInterval: 9000
 		Name: 黑天打击
-		Description: 向多个地面目标发射远程制导导弹，按价值排序。若目标移动过远，跟踪可能丢失。
+		Description: 向多个地面目标发射远程制导导弹，\n按价值排序。\n若目标移动过远，跟踪可能丢失。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: BlackSkyStrikeReady
@@ -399,7 +399,7 @@
 		Icon: chrono
 		ChargeInterval: 4500
 		Name: 超时空传送
-		Description: 将最多9个选中的载具传送到目标位置，短时间后返回原位。\n\n• 如果被摧毁，单位以20%生命值返回\n• 生命值更高的单位会受到额外伤害\n• 乘员无法卸载\n• 敌方单位传送持续时间更短
+		Description: 将最多9个选中的载具传送到目标位置，\n短时间后返回原位。\n\n• 如果被摧毁，单位以20%生命值返回\n• 生命值更高的单位会受到额外伤害\n• 乘员无法卸载\n• 敌方单位传送持续时间更短
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -434,7 +434,7 @@
 		ChargeInterval: 7000
 		Name: 超时空传送
 		ActivationDelay: 25
-		Description: 将最多9个选中的载具传送到目标位置，短时间后返回原位。\n\n• 如果被摧毁，单位以20%生命值返回\n• 生命值更高的单位会受到额外伤害\n• 乘员无法卸载\n• 敌方单位传送持续时间更短
+		Description: 将最多9个选中的载具传送到目标位置，\n短时间后返回原位。\n\n• 如果被摧毁，单位以20%生命值返回\n• 生命值更高的单位会受到额外伤害\n• 乘员无法卸载\n• 敌方单位传送持续时间更短
 		Weapon: ChronoAI
 		AirburstAltitude: 0c0
 		AllowMultiple: false
@@ -528,7 +528,7 @@
 		Icon: paratroopers
 		ChargeInterval: 7500
 		Name: 伞兵
-		Description: 派遣 Halo 运输机，将一队步兵空降到地图任意位置。
+		Description: 派遣 Halo 运输机，\n将一队步兵空降到地图任意位置。
 		SquadSize: 1
 		SquadOffset: 0,1792,0
 		DropItems: E1,E1,E2,E3,E3,E1,E1,E1
@@ -685,7 +685,7 @@
 		IconPalette: chromes
 		ChargeInterval: 6750
 		Name: 基因突变炸弹
-		Description: 呼叫獾式轰炸机在目标上投下基因突变炸弹，将步兵变为受你控制的狂兽人。
+		Description: 呼叫獾式轰炸机在目标上投下基因突变炸弹，\n将步兵变为受你控制的狂兽人。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: GeneticMutationBombReady
@@ -766,7 +766,7 @@
 		ValidTargets: Vehicle
 		Duration: 1
 		AllowMultiple: false
-		Description: 为坦克提供有限数量的原子炮弹，并且只持续一段时间。
+		Description: 为坦克提供有限数量的原子炮弹，\n并且只持续一段时间。
 		OnFireSound: atomshell.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -797,7 +797,7 @@
 		ValidTargets: Vehicle
 		Duration: 1
 		AllowMultiple: false
-		Description: 为坦克提供有限数量的原子炮弹，并且只持续一段时间。
+		Description: 为坦克提供有限数量的原子炮弹，\n并且只持续一段时间。
 		OnFireSound: atomshell.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -829,7 +829,7 @@
 		ValidTargets: HeroOfUnionTargetable
 		Duration: 0
 		AllowMultiple: false
-		Description: 目标基础步兵会成为联盟英雄，大幅提升伤害、速度、射程和生存能力。
+		Description: 目标基础步兵会成为联盟英雄，\n大幅提升伤害、速度、射程和生存能力。
 		Prerequisites: ~infantry.doctrine, playerxp.level2
 		OnFireSound: heroes.aud
 		SelectTargetSpeechNotification: SelectTarget
@@ -961,7 +961,7 @@
 		Icon: abomb
 		ChargeInterval: 13500
 		Name: 原子弹
-		Description: 向目标位置发射毁灭性的原子弹，对大范围区域造成重创。
+		Description: 向目标位置发射毁灭性的原子弹，\n对大范围区域造成重创。
 		BeginChargeSpeechNotification: AbombPrepping
 		EndChargeSpeechNotification: AbombReady
 		EndChargeTextNotification: A-bomb ready.
@@ -1135,7 +1135,7 @@
 		Icon: airsupport
 		ChargeInterval: 10500
 		Name: 截击机
-		Description: 一队截击机在目标区域提供空中掩护，与范围内的敌方飞行器交战。
+		Description: 一队截击机在目标区域提供空中掩护，\n与范围内的敌方飞行器交战。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		EndChargeSpeechNotification: InterceptorsReady
@@ -1285,7 +1285,7 @@
 		Icon: empmissile
 		ChargeInterval: 4500
 		Name: 电磁脉冲导弹
-		Description: 发射一枚战斧导弹，命中时瘫痪所有机械单位与建筑。
+		Description: 发射一枚战斧导弹，\n命中时瘫痪所有机械单位与建筑。
 		BeginChargeSpeechNotification: EMMissilePrepping
 		EndChargeSpeechNotification: EMMissileReady
 		EndChargeTextNotification: E.M. Missile ready.
@@ -1318,7 +1318,7 @@
 		WeaponDelay: 3
 		Name: 外科打击
 		EffectPalette: tdeffect-ignore-lighting-alpha85
-		Description: 发动精确离子炮打击，对小范围区域造成瞬间伤害。
+		Description: 发动精确离子炮打击，\n对小范围区域造成瞬间伤害。
 		EndChargeSpeechNotification: SurgicalStrikeReady
 		EndChargeTextNotification: Surgical Strike ready.
 		IncomingSound: ion2.aud
@@ -1595,7 +1595,7 @@
 		Icon: shadteam
 		ChargeInterval: 6750
 		Name: 暗影小组
-		Description: 呼叫暗影小队；三名装备手榴弹和冲锋手枪的隐形步兵通过滑翔机抵达。\n\n可通过部署命令命令特工降落。
+		Description: 呼叫暗影小队；\n三名装备手榴弹和冲锋手枪的隐形步兵通过滑翔机抵达。\n\n可通过部署命令命令特工降落。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		LaunchSpeechNotification: ReinforcementsArrived
@@ -1693,7 +1693,7 @@
 		Icon: techhack
 		ChargeInterval: 18000
 		Name: 技术劫持
-		Description: 骇入敌方生产建筑，获取使用敌方技术开发的单位。\n\n步兵、载具和飞行器生产建筑分别对应：\n\n• 盟军：冷冻迫击炮、清算者、幽灵\n• 苏联：赛博格犬、独眼巨人、卡莫夫\n• GDI：声波迫击炮、蛇怪、暗影\n• 无d：化学迫击炮、螳螂、眩晕\n• 思金：赛博思金、蝰蛇、狮蝎
+		Description: 骇入敌方生产建筑，\n获取使用敌方技术开发的单位。\n\n步兵、载具和飞行器生产建筑分别对应：\n\n• 盟军：冷冻迫击炮、清算者、幽灵\n• 苏联：电子军犬、独眼巨人、卡莫夫\n• GDI：声波迫击炮、蛇怪、暗影\n• Nod：化学迫击炮、螳螂、眩晕\n• 思金：电子思金、蝰蛇、狮蝎
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -1772,7 +1772,7 @@
 		SelectTargetTextNotification: Select target.
 		ChargeInterval: 6000
 		Name: 忏悔者集团
-		Description: 部署忏悔者密谋团，可建造凯恩神像，为盟友提供增益并为敌人施加减益。\n\n目标为步兵生产建筑以进行部署。
+		Description: 部署忏悔者密谋团，可建造凯恩神像，\n为盟友提供增益并为敌人施加减益。\n\n目标为步兵生产建筑以进行部署。
 		Actors: conf, conf, conf
 		LaunchSound: conf-create.aud
 		EndChargeSpeechNotification: ConfessorCabalReady
@@ -1786,7 +1786,7 @@
 		Type: ParadropInfantry
 		ChargeInterval: 6000
 		Name: Confessor Cabal (AI)
-		Description: 部署忏悔者密谋团，可建造凯恩神像，为盟友提供增益并为敌人施加减益。
+		Description: 部署忏悔者密谋团，可建造凯恩神像，\n为盟友提供增益并为敌人施加减益。
 		Actors: conf, conf, conf
 		SupportPowerPaletteOrder: 50
 		SelectProducer: false
@@ -1805,7 +1805,7 @@
 		Duration: 600
 		MaxAltitude: 1
 		AllowMultiple: false
-		Description: 使选中的载具和建筑暂时隐形。\n\n警告：对非生化人步兵有害。\n\n防化服升级使盟友免疫伤害，敌人受到50%伤害。
+		Description: 使选中的载具和建筑暂时隐形。\n\n警告：对非生化人步兵有害。\n\n防化服升级使盟友免疫伤害，\n敌人受到50%伤害。
 		OnFireSound: cloak6.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
@@ -1831,7 +1831,7 @@
 		Cursor: chemmissile
 		ChargeInterval: 13500
 		Name: 化学导弹
-		Description: 发射致命的化学导弹。造成大量伤害并制造对步兵极有害的有毒云团。
+		Description: 发射致命的化学导弹。\n造成大量伤害并制造对步兵极有害的有毒云团。
 		EndChargeSpeechNotification: ChemMissileReady
 		EndChargeTextNotification: Chemical Missile ready.
 		SelectTargetSpeechNotification: SelectTarget
@@ -1875,7 +1875,7 @@
 		ChargeInterval: 6000
 		Name: 灵液尖塔
 		ActivationDelay: 1
-		Description: 在目标位置创建灵液尖刺。影响范围内的资源生长和扩散速度加快。\n\n同时强化具有资源转换升级的单位。
+		Description: 在目标位置创建灵液尖刺。\n影响范围内的资源生长和扩散速度加快。\n\n同时强化具有资源转换升级的单位。
 		LaunchSound: scrinbuild.aud
 		Weapon: IchorSpikeSpawner
 		AirburstAltitude: 0c0
@@ -1900,7 +1900,7 @@
 		ChargeInterval: 7500
 		Name: 殖民尖塔
 		ActivationDelay: 1
-		Description: 在目标位置创建殖民尖刺。允许生产非防御建筑。\n\n完全充能后允许在附近建造非防御建筑。\n\n必须在殖民平台的范围内建造。
+		Description: 在目标位置创建殖民尖刺。\n允许生产非防御建筑。\n\n完全充能后允许在附近建造非防御建筑。\n\n必须在殖民平台的范围内建造。
 		LaunchSound: cspk.aud
 		IncomingSound: cspk.aud
 		Weapon: ColonySpikeSpawner
@@ -1927,7 +1927,7 @@
 		ChargeInterval: 6000
 		Name: 虚空尖塔
 		ActivationDelay: 1
-		Description: 在目标位置创建虚空尖刺。逐渐将附近的资源转化为失去了大部分有用属性的黑色泰伯利亚。\n\n伤害附近的敌方单位。
+		Description: 在目标位置创建虚空尖刺。\n逐渐将附近的资源转化为失去了大部分有用属性的黑色泰伯利亚。\n\n伤害附近的敌方单位。
 		LaunchSound: scrinbuild.aud
 		Weapon: VoidSpikeSpawner
 		AirburstAltitude: 0c0
@@ -1998,7 +1998,7 @@
 		ChargeInterval: 7500
 		Name: 蜂群
 		ActivationDelay: 1
-		Description: 生成一群可控蜂群，致盲并伤害附近一切；对步兵尤为致命。
+		Description: 生成一群可控蜂群，\n致盲并伤害附近一切；对步兵尤为致命。
 		LaunchSound: buzzers-create.aud
 		Weapon: BuzzerSpawner
 		AirburstAltitude: 0c0
@@ -2020,7 +2020,7 @@
 		ChargeInterval: 7500
 		Name: Buzzer Swarm (AI)
 		ActivationDelay: 1
-		Description: 生成可控虫群，伤害附近一切目标；对步兵尤其致命。
+		Description: 生成可控虫群，\n伤害附近一切目标；对步兵尤其致命。
 		LaunchSound: buzzers-create.aud
 		Weapon: BuzzerSpawnerAI
 		AirburstAltitude: 0c0
@@ -2116,7 +2116,7 @@
 		ChargeInterval: 6000
 		Name: 大凝聚
 		ActivationDelay: 1
-		Description: 生成可控生物质，治疗附近盟友并通过吞噬敌人维持自身。\n\n从发电厂汲取能量将使其暂时停止运转。
+		Description: 生成可控生物质，\n治疗附近盟友并通过吞噬敌人维持自身。\n\n从发电厂汲取能量将使其暂时停止运转。
 		LaunchSound: grcl-spawn.aud
 		Weapon: GreaterCoalescenceSpawner
 		AirburstAltitude: 0c0
@@ -2141,7 +2141,7 @@
 		Cursor: ability
 		ChargeInterval: 10500
 		Name: 霸主之怒
-		Description: 泰伯利亚陨石击中目标位置，造成重创并产生一片泰伯利亚。
+		Description: 泰伯利亚陨石击中目标位置，\n造成重创并产生一片泰伯利亚。
 		EndChargeSpeechNotification: OverlordsWrathReady
 		EndChargeTextNotification: Overlord's Wrath ready.
 		SelectTargetSpeechNotification: SelectTarget
@@ -2181,7 +2181,7 @@
 		ChargeInterval: 6000
 		Name: 传送门
 		ActivationDelay: 1
-		Description: 在目标位置创建传送门。作为任意选中步兵或载具生产建筑的出口。\n\n目标位置需在视野范围内。
+		Description: 在目标位置创建传送门。\n作为任意选中步兵或载具生产建筑的出口。\n\n目标位置需在视野范围内。
 		LaunchSound: wormhole-open.aud
 		IncomingSound: wormhole-open.aud
 		Weapon: GatewaySpawner
@@ -2210,7 +2210,7 @@
 		ValidTargets: AnathemaTargetable
 		Duration: 0
 		AllowMultiple: false
-		Description: 目标载具的力量随时间急剧增长。30秒后单位自爆。
+		Description: 目标载具的力量随时间急剧增长。\n30秒后单位自爆。
 		Prerequisites: ~malefic.allegiance, ~techlevel.high
 		OnFireSound: anathema.aud
 		SelectTargetSpeechNotification: SelectTarget
@@ -2233,7 +2233,7 @@
 		Icon: spresspower
 		ChargeInterval: 4500
 		Name: 压制场
-		Description: 对目标区域施加压制场，降低单位移动速度和射速。
+		Description: 对目标区域施加压制场，\n降低单位移动速度和射速。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -2264,7 +2264,7 @@
 		Icon: spresspower
 		ChargeInterval: 3750
 		Name: 压制场
-		Description: 对目标区域施加压制场，降低单位移动速度和射速。
+		Description: 对目标区域施加压制场，\n降低单位移动速度和射速。
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.
 		InsufficientPowerSpeechNotification: InsufficientPower

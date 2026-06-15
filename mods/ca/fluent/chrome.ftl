@@ -1133,7 +1133,7 @@ encyclopedia-category-Allies = 盟军
 encyclopedia-category-Soviets = 苏联
 encyclopedia-category-GDI = GDI
 encyclopedia-category-Nod = Nod
-encyclopedia-category-Scrin = 思金人
+encyclopedia-category-Scrin = 思金
 encyclopedia-category-Other = 其他
 
 encyclopedia-category-Infantry = 步兵

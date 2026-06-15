@@ -210,17 +210,17 @@ Background@ENCYCLOPEDIA_PANEL:
 										Label@STRENGTHS:
 											X: 0
 											Width: PARENT_WIDTH
-											Font: Regular
+											Font: TinyBold
 											TextColor: 33DD33
 										Label@WEAKNESSES:
 											X: 0
 											Width: PARENT_WIDTH
-											Font: Regular
+											Font: TinyBold
 											TextColor: EE5555
 										LinkableLabel@ATTRIBUTES:
 											X: 0
 											Width: PARENT_WIDTH
-											Font: Regular
+											Font: TinyBold
 											TextColor: FFFF00
 											LinkColor: A3C5FF
 											LinkHoverColor: 76F9FF

@@ -27,9 +27,9 @@ VEHICLES.SCRIN:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: 车辆生产
+		Name: 战车生产
 	Buildable:
-		Description: 车辆生产
+		Description: 战车生产
 
 ^OnResourceConditions:
 	ExternalCondition@RESCONVTIB:
@@ -943,7 +943,7 @@ EVIS:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Loyalist Allegiance.
+		AdditionalInfo: 需要效忠霸主派。
 
 IMPL:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -955,7 +955,7 @@ IMPL:
 		BuildPaletteOrder: 122
 		Prerequisites: anyradar, ~infantry.scrin, ~impl.upgrade, ~techlevel.medium
 		IconPalette: chromes
-		Description: 高爆发伤害的突击步兵。穿刺目标，降低其移动速度。
+		Description: 高爆发伤害的突击步兵。\n穿刺目标，降低其移动速度。
 	Selectable:
 		DecorationBounds: 640, 896, -32, -256
 	Valued:
@@ -990,7 +990,7 @@ IMPL:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Rebel Allegiance.
+		AdditionalInfo: 需要效忠叛军派。
 
 STLK:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1002,7 +1002,7 @@ STLK:
 		BuildPaletteOrder: 123
 		Prerequisites: anyradar, ~infantry.scrin, ~stlk.upgrade, ~techlevel.medium
 		IconPalette: chromes
-		Description: 快速反人员步兵，可暂时隐身并伏击目标。
+		Description: 快速反人员步兵，\n可暂时隐身并伏击目标。
 	Selectable:
 		DecorationBounds: 640, 896, -32, -256
 	Valued:
@@ -1088,7 +1088,7 @@ STLK:
 	TakeCover:
 		PauseOnCondition: being-warped || phaseshield
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Malefic Allegiance.
+		AdditionalInfo: 需要效忠灾厄派。
 
 SMEDI:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1281,7 +1281,7 @@ MAST:
 		Prerequisites: scrt, ~infantry.scrin, ~techlevel.high
 		BuildLimit: 1
 		IconPalette: chrome
-		Description: 能够心灵控制敌方单位的精英专家步兵（最多 3 个，随老练等级提升）。
+		Description: 能够心灵控制敌方单位的精英专家步兵\n（最多 3 个，随老练等级提升）。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 载具, 防御建筑, 建筑
 		Weaknesses: • 无法攻击飞行器
@@ -2121,7 +2121,7 @@ LCHR.Orb:
 	Tooltip:
 		Name: 汲取者球体
 	TooltipExtras:
-		Description: 治疗附近盟友。若未被摧毁将复活为汲取者。
+		Description: 治疗附近盟友。\n若未被摧毁将复活为汲取者。
 	RenderSprites:
 		Image: lchr.orb
 		Palette: caneon
@@ -2444,7 +2444,7 @@ DARK:
 	Encyclopedia:
 		Category: Scrin/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Malefic Allegiance.
+		AdditionalInfo: 需要效忠灾厄派。
 
 RUIN:
 	Inherits: ^Vehicle
@@ -2550,7 +2550,7 @@ RUIN:
 	Encyclopedia:
 		Category: Scrin/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Loyalist Allegiance.
+		AdditionalInfo: 需要效忠霸主派。
 
 ATMZ:
 	Inherits: ^Vehicle
@@ -2572,7 +2572,7 @@ ATMZ:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 285
 		Prerequisites: scrt, ~vehicles.collector, ~techlevel.high
-		Description: 轻甲远程反坦克单位，可使载具和防御建筑原子化。
+		Description: 轻甲远程反坦克单位，\n可使载具和防御建筑原子化。
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
@@ -2827,7 +2827,7 @@ OBLT:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 283
 		Prerequisites: scrt, ~vehicles.harbinger, ~techlevel.high
-		Description: 重型火炮，制造带电粒子流并投射强力能量脉冲，摧毁沿途一切。
+		Description: 重型火炮，\n制造带电粒子流并投射强力能量脉冲，\n摧毁沿途一切。
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: • 擅长对付 建筑, 防御建筑, 轻型装甲, 步兵
@@ -3007,7 +3007,7 @@ NULL:
 	Encyclopedia:
 		Category: Scrin/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Rebel Allegiance.
+		AdditionalInfo: 需要效忠叛军派。
 
 SMCV:
 	Inherits: ^Vehicle-NOUPG
@@ -4755,7 +4755,7 @@ PROC.SCRIN:
 		Prerequisites: anypower, ~建筑s.scrin
 		Queue: BuildingSQ, BuildingMQ
 		IconPalette: chromes
-		Description: 精炼泰伯利亚矿、矿石和宝石，将其转化为资金。
+		Description: 精炼泰伯利亚矿、矿石和宝石，\n将其转化为资金。
 		BuildDuration: 1400
 	Building:
 		Footprint: _x_ xxx +++ ===
@@ -5020,7 +5020,7 @@ NERV:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 90
 		Prerequisites: proc.scrin, ~建筑s.scrin, ~techlevel.medium
-		Description: 提供战场视野。
+		Description: 提供战场视野。\n（后续可建造碎片发射器）
 		IconPalette: chromes
 	TooltipExtras:
 		Attributes: • 需要电力才能运作\n• 在战争迷雾中探测附近敌方载具、飞行器和建筑
@@ -6032,7 +6032,7 @@ ISPK:
 		Name: 灵液尖塔
 	TooltipExtras:
 		Attributes: • 富集 泰伯利亚树\n• 强化 单位 需 资源转换 升级
-		Description: 滋养附近的泰伯利亚树，使其更快播撒泰伯利亚。
+		Description: 滋养附近的泰伯利亚树，\n使其更快播撒泰伯利亚。
 	RevealsShroud:
 		MinRange: 6c0
 		Range: 8c0

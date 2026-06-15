@@ -1516,9 +1516,9 @@ influence.level3:
 covenant.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: 誓约等级 1（摧毁/占领/渗透1座敌方建筑或摧毁1辆采矿车）
+		Name: 誓约等级 1\n（摧毁/占领/渗透1座敌方建筑或摧毁1辆采矿车）
 	Buildable:
-		Description: 誓约等级 1（摧毁/占领/渗透1座敌方建筑或摧毁1辆采矿车）
+		Description: 誓约等级 1\n（摧毁/占领/渗透1座敌方建筑或摧毁1辆采矿车）
 	RenderSprites:
 
 covenant.level2:

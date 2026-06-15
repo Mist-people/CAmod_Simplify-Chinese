@@ -173,7 +173,7 @@ GRAD:
 		Prerequisites: rocketpods.upgrade
 		Condition: rocketpods-upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: 需要火炮专精学说。
 
 NUKC:
 	Inherits: ^Tank
@@ -370,7 +370,7 @@ NUKC:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
 		RenderPreviewActor: nukc.preview
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: 需要火炮专精学说。
 
 NUKC.Preview:
 	Inherits: ^PreviewDummy
@@ -1172,7 +1172,7 @@ GTNK.squad:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
 		Name: 犀牛坦克
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: 需要装甲专精学说。
 
 3TNK.RHINO.ATOMIC:
 	Inherits: 3TNK.RHINO
@@ -2416,7 +2416,7 @@ AAPC:
 	-Upgradeable@Archer:
 	-WithDecoration@UpgradeOverlay:
 	EncyclopediaExtras:
-		Name: 弓手装甲运兵车
+		Name: 弓箭手装甲运兵车
 
 APC.AI:
 	Inherits: APC
@@ -2583,7 +2583,7 @@ MGG:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 301
 		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
-		Description: 恢复附近黑幕，遮蔽敌人视野。可引导效果降低敌人武器射程和视野。
+		Description: 恢复附近黑幕，遮蔽敌人视野。\n可引导效果降低敌人武器射程和视野。
 	TooltipExtras:
 		Attributes: • 特殊能力： 切换裂缝产生器
 	Valued:
@@ -3584,7 +3584,7 @@ RBUG:
 	-WithDecoration@UpgradeOverlay:
 	-WithEjectedCasings:
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: 需要热忱誓约。
 
 ^DecoyUnit:
 	Inherits@selection: ^SelectableSupportUnit
@@ -4939,7 +4939,7 @@ MSAM:
 		Prerequisites: anyradar, ~vehicles.msam, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: 多管火箭系统。具备防空能力的远程制导火炮。
+		Description: 多管火箭系统。\n具备防空能力的远程制导火炮。
 	TooltipExtras:
 		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
 		Weaknesses: • 不擅长对付重型装甲
@@ -5874,7 +5874,7 @@ BTR.YURI:
 		Strengths: • 擅长对付步兵, 轻型装甲, 飞行器
 		Weaknesses: • 不擅长对付重型装甲, 建筑, 防御建筑
 	Tooltip:
-		Name: 盖特机炮BTR
+		Name: 盖特机炮装甲车
 	Armament@AIR:
 		Weapon: MGatt
 		LocalOffset: 320,50,350, 320,-50,350
@@ -6144,7 +6144,7 @@ TRPC:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: 需要步兵专精学说。
 
 IFV:
 	Inherits: ^Tank
@@ -7816,7 +7816,7 @@ HSAM:
 		Prerequisites: anyradar, ~vehicles.eagle, ~techlevel.medium
 		Queue: VehicleSQ, VehicleMQ
 		IconPalette: chrometd
-		Description: 原型悬浮多管火箭系统。具备防空能力的远程制导火炮。
+		Description: 原型悬浮多管火箭系统。\n具备防空能力的远程制导火炮。
 	TooltipExtras:
 		Strengths: • 擅长对付 建筑, 防御建筑, 步兵, 轻型装甲
 		Weaknesses: • 不擅长对付重型装甲
@@ -8280,7 +8280,7 @@ MSAR:
 		BuildPaletteOrder: 321
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~vehicles.gdi, ~techlevel.medium
-		Description: 部署后探测大范围内的敌方载具、飞行器和建筑。
+		Description: 部署后探测大范围内的敌方载具、\n飞行器和建筑。
 	TooltipExtras:
 		Weaknesses: • 无武装
 		Attributes: • 探测隐形单位 (当 部署ed)\n• 增加 附近 地面单位视野范围 (当 部署ed)\n• 特殊能力： 激活传感器阵列
@@ -8791,7 +8791,7 @@ MEMP:
 		BuildPaletteOrder: 410
 		IconPalette: chrometd
 		Prerequisites: gtek, ~vehicles.gdi, ~techlevel.high
-		Description: 遥控车辆，部署后可瘫痪附近载具和建筑。
+		Description: 遥控车辆，\n部署后可瘫痪附近载具和建筑。
 	TooltipExtras:
 		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑, 建筑
 		Weaknesses: • 不擅长对付步兵\n• 无法攻击飞行器
@@ -8918,7 +8918,7 @@ CDRN:
 		BuildPaletteOrder: 311
 		IconPalette: chrometd
 		Prerequisites: stek, ~vehicles.yuri, ~techlevel.high
-		Description: 搭载混乱毒气的无人机，会使单位陷入狂乱并无差别攻击。
+		Description: 搭载混乱毒气的无人机，\n会使单位陷入狂乱并无差别攻击。
 	TooltipExtras:
 		Strengths: • 擅长对付重型装甲, 轻型装甲, 步兵
 		Weaknesses: • 无法攻击飞行器, 建筑, 防御建筑
@@ -9181,7 +9181,7 @@ CRYO:
 	Encyclopedia:
 		Category: Allies/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Sweden Coalition.
+		AdditionalInfo: 需要与瑞典结盟。
 
 PBUL:
 	Inherits: ^VehicleTD
@@ -9193,7 +9193,7 @@ PBUL:
 		BuildPaletteOrder: 252
 		IconPalette: chrometd
 		Prerequisites: gtek, ~vehicles.eagle, ~techlevel.high
-		Description: 快速侦察车，火箭弹可扰乱武器和视野。可标记目标，揭示其位置并增加受到的伤害。
+		Description: 快速侦察车，火箭弹可扰乱武器和视野。\n可标记目标，揭示其位置并增加受到的伤害。
 	TooltipExtras:
 		Strengths: • 擅长对付轻型装甲, 飞行器
 		Weaknesses: • 不擅长对付步兵, 建筑, 防御建筑
@@ -9631,7 +9631,7 @@ XO:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 251
 		Prerequisites: gtek, ~vehicles.zocom, ~techlevel.medium
-		Description: 配备激光和线圈炮的轻型战斗机甲，可使用跳跃背包进行短距离跳跃。
+		Description: 配备激光和线圈炮的轻型战斗机甲，\n可使用跳跃背包进行短距离跳跃。
 	TooltipExtras:
 		Strengths: • 擅长对付轻型装甲, 重型装甲, 建筑
 		Weaknesses: • 不擅长对付 防御建筑\n• 无法攻击飞行器
@@ -9870,7 +9870,7 @@ APOC:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: 需要装甲专精学说。
 
 APOC.ATOMIC:
 	Inherits: APOC
@@ -10114,7 +10114,7 @@ OVLD:
 	Encyclopedia:
 		Category: Soviets/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: 需要步兵专精学说。
 
 OVLD.ATOMIC:
 	Inherits: OVLD
@@ -10311,7 +10311,7 @@ THWK:
 	Encyclopedia:
 		Category: GDI/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: 需要火力轰炸战略。
 
 TH:
 	Inherits: ^ShootableMissile
@@ -10453,7 +10453,7 @@ ZEUS:
 	Encyclopedia:
 		Category: Allies/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Greece Coalition.
+		AdditionalInfo: 需要与希腊结盟。
 
 MOLE:
 	Inherits: ^Vehicle-NOUPG
@@ -10706,7 +10706,7 @@ AVTR:
 	Encyclopedia:
 		Category: Nod/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: 需要愤怒誓约。
 
 CUST:
 	Inherits: ^Tank
@@ -10824,4 +10824,4 @@ CUST:
 	Encyclopedia:
 		Category: Nod/Vehicles
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: 需要团结誓约。

@@ -107,7 +107,7 @@ TDOG:
 	Inherits@SELECTION: ^SelectableSupportUnit
 	Buildable:
 		Prerequisites: kenn, ~infantry.dog, ~tdog.upgrade
-		Description: 绑有炸药的侦察单位，接触目标时会引爆。
+		Description: 绑有炸药的侦察单位，\n接触目标时会引爆。
 	Tooltip:
 		Name: 恐怖军犬
 	TooltipExtras:
@@ -737,7 +737,7 @@ SPY:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 82
 		Prerequisites: ~tent, anyradar, ~techlevel.medium
-		Description: 渗透敌方建筑以获取情报或实施破坏。效果取决于被渗透的建筑。
+		Description: 渗透敌方建筑以获取情报或实施破坏。\n效果取决于被渗透的建筑。
 	TooltipExtras:
 		Weaknesses: • 无武装
 		Attributes: • 伪装 通过右键点击伪装成敌方步兵\n• 探测 隐形地面单位 和 间谍\n • 渗透 效果s:\n    • 电力 放置: 电力 中断\n    • 兵营/工厂: 步兵/载具 以老兵等级生产\n    • 超级武器: 重置 时间r\n    • 雷达: 重置 黑幕\n    • 直升机坪: 单一-一次性伞兵\n    • 机场/重力稳定器: 单一- 空中strike
@@ -1192,7 +1192,7 @@ HACK:
 	TooltipExtras:
 		Strengths: • 擅长对付 建筑, 防御建筑, 无人机
 		Weaknesses: • 无法攻击 步兵, 飞行器, 载具 (除 无人机)
-		Attributes: • 控制 以下情况失去：  黑客 死亡\n• 生成 在网络中心内时生成收入 网络中心\n• 入侵 生产 建筑 至 窃取科技\n    • 盟军: 冰冻迫击炮, 清算者, 幽灵\n    • 苏联: 电子狗, 独眼巨人, 卡莫夫\n    • GDI: 声波迫击炮, 蛇妖, 暗影\n    • 无d: 化学迫击炮, 螳螂, 眩晕\n    • 思金人: 电子思金人, 蝰蛇, 蝎尾狮
+		Attributes: • 控制 以下情况失去：  黑客 死亡\n• 生成 在网络中心内时生成收入 网络中心\n• 入侵 生产 建筑 至 窃取科技\n    • 盟军: 冰冻迫击炮, 清算者, 幽灵\n    • 苏联: 电子军犬, 独眼巨人, 卡莫夫\n    • GDI: 声波迫击炮, 蛇怪, 暗影\n    • Nod: 化学迫击炮, 螳螂, 眩晕\n    • 思金: 电子思金, 蝰蛇, 蝎尾狮
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1290,7 +1290,7 @@ HACK:
 		HideBuildable: True
 	EncyclopediaExtras:
 		RenderPreviewActor: hack.preview
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: 需要团结誓约。
 
 HACK.Preview:
 	Inherits: ^PreviewDummy
@@ -2369,7 +2369,7 @@ SAB:
 	TooltipExtras:
 		Strengths: • 擅长对付步兵
 		Weaknesses: • 只能攻击步兵
-		Attributes: • 探测 隐形地面单位 和 间谍\n• 有限 隐形 (移动时消耗)\n• 渗透 生产 建筑 至 窃取科技\n    • 盟军: 冰冻迫击炮, 清算者, 幽灵\n    • 苏联: 电子狗, 独眼巨人, 卡莫夫\n    • GDI: 声波迫击炮, 蛇妖, 暗影\n    • 无d: 化学迫击炮, 螳螂, 眩晕\n    • 思金人: 电子思金人, 蝰蛇, 蝎尾狮\n• 渗透 雷达s/科技中心 至 锁定 科技\n• 渗透 任何 建筑 可 视野
+		Attributes: • 探测 隐形地面单位 和 间谍\n• 有限 隐形 (移动时消耗)\n• 渗透 生产 建筑 至 窃取科技\n    • 盟军: 冰冻迫击炮, 清算者, 幽灵\n    • 苏联: 电子军犬, 独眼巨人, 卡莫夫\n    • GDI: 声波迫击炮, 蛇怪, 暗影\n    • Nod: 化学迫击炮, 螳螂, 眩晕\n    • 思金: 电子思金, 蝰蛇, 蝎尾狮\n• 渗透 雷达s/科技中心 至 锁定 科技\n• 渗透 任何 建筑 可 视野
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -2562,7 +2562,7 @@ ASSA:
 		Category: Nod/Infantry
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: 需要愤怒誓约。
 
 CONF:
 	Inherits: ^Soldier
@@ -2573,7 +2573,7 @@ CONF:
 		Attributes: • 特殊能力： 偶像 的 凯恩 (每名忏悔者最多1个)\n• 免疫心灵控制
 	Buildable:
 		Queue: ConfessorCabal
-		Description: 狂热精英步兵，可部署凯恩神像激励盟友并瓦解敌人士气。
+		Description: 狂热精英步兵，\n可部署凯恩神像激励盟友并瓦解敌人士气。
 		IconPalette: chrometd
 	Valued:
 		Cost: 750
@@ -2643,7 +2643,7 @@ CONF:
 		Category: Nod/Infantry
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: 需要热忱誓约。
 
 ACOL:
 	Inherits: ^Cyborg
@@ -4010,7 +4010,7 @@ YURI:
 		BuildPaletteOrder: 206
 		Prerequisites: ~barr, stek, ~infantry.yuri, ~techlevel.high
 		BuildLimit: 1
-		Description: 能够心灵控制敌方单位的精英专家步兵（最多 3 个，随老练等级提升）。
+		Description: 能够心灵控制敌方单位的精英专家步兵\n（最多 3 个，随老练等级提升）。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 载具, 防御建筑, 建筑
 		Weaknesses: • 无法攻击飞行器
@@ -4439,7 +4439,7 @@ ENLI:
 	Encyclopedia:
 		Category: Nod/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: 需要热忱誓约。
 
 ^MortarInfantryBase:
 	Inherits: ^Soldier
@@ -4566,7 +4566,7 @@ MORT.Chem:
 	Buildable:
 		BuildPaletteOrder: 253
 		Prerequisites: ~stolentech.hand
-		Description: 装备化学迫击炮的步兵，发射对生化人特别有效的腐蚀性弹药。
+		Description: 装备化学迫击炮的步兵，\n发射对生化人特别有效的腐蚀性弹药。
 	Tooltip:
 		Name: 化学迫击炮兵
 	FireWarheadsOnDeath:
@@ -4645,7 +4645,7 @@ CMSR:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 140
 		Prerequisites: stek, ~barr, ~techlevel.high
-		Description: 率领普通步兵投入战斗，激励他们移动更快、作战更勇猛。
+		Description: 率领普通步兵投入战斗，\n激励他们移动更快、作战更勇猛。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵
 		Weaknesses: • 不擅长对付轻型装甲, 重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
@@ -4815,7 +4815,7 @@ ZTRP:
 	Encyclopedia:
 		Category: GDI/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: 需要火力轰炸战略。
 
 ZRAI:
 	Inherits: ZTRP
@@ -4845,7 +4845,7 @@ ZRAI:
 		MaxDistance: 10
 		Speed: 200
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: 需要搜索歼敌战略。
 
 ZDEF:
 	Inherits: ZTRP
@@ -4907,7 +4907,7 @@ ZDEF:
 		RequiresCondition: shield-active && !passenger
 		AffectsParent: true
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: 需要坚守防线战略。
 
 ENFO:
 	Inherits: ^Soldier
@@ -4986,7 +4986,7 @@ HOPL:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 132
 		Prerequisites: ~tent, alhq, ~greece.coalition, ~techlevel.high
-		Description: 装备棱镜步枪的精英步兵，可周期性发射充能射击致盲敌人。
+		Description: 装备棱镜步枪的精英步兵，\n可周期性发射充能射击致盲敌人。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲
 		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
@@ -5065,7 +5065,7 @@ HOPL:
 	Encyclopedia:
 		Category: Allies/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Greece Coalition.
+		AdditionalInfo: 需要与希腊结盟。
 
 TIGR:
 	Inherits: ^Soldier
@@ -5138,7 +5138,7 @@ TIGR:
 	Encyclopedia:
 		Category: Allies/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Korea Coalition.
+		AdditionalInfo: 需要与韩国结盟。
 
 CRYT:
 	Inherits: ^Soldier
@@ -5213,7 +5213,7 @@ CRYT:
 	Encyclopedia:
 		Category: Allies/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Sweden Coalition.
+		AdditionalInfo: 需要与瑞典结盟。
 
 REAP:
 	Inherits: ^Cyborg
@@ -5229,7 +5229,7 @@ REAP:
 		BuildPaletteOrder: 231
 		IconPalette: chrometd
 		Prerequisites: ~infantry.nod, tmpp, covenant.level3, ~unity.covenant, ~techlevel.high
-		Description: 重型生化人，装备双联导弹发射器和致瘫榴弹发射器。
+		Description: 重型生化人，\n装备双联导弹发射器和致瘫榴弹发射器。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
 		Weaknesses: • 不擅长对付重型装甲
@@ -5334,4 +5334,4 @@ REAP:
 	Encyclopedia:
 		Category: Nod/Infantry
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: 需要团结誓约。

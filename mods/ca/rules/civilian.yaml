@@ -116,12 +116,12 @@ HOSP:
 	Tooltip:
 		Name: 医院
 	TooltipExtras:
-		Description: 治疗附近步兵，每两分钟训练两名医疗兵/复苏者。
+		Description: 治疗附近步兵，\n每两分钟训练两名医疗兵/复苏者。
 	TooltipDescription@ally:
-		Description: 治疗附近步兵，每两分钟训练两名医疗兵/复苏者。
+		Description: 治疗附近步兵，\n每两分钟训练两名医疗兵/复苏者。
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: 占领后治疗附近步兵，每两分钟训练两名医疗兵/复苏者。
+		Description: 占领后治疗附近步兵，\n每两分钟训练两名医疗兵/复苏者。
 		ValidRelationships: Neutral, Enemy
 	RevealsShroud:
 		Range: 4c0
@@ -212,12 +212,12 @@ MACS:
 	Tooltip:
 		Name: 机械维修厂
 	TooltipExtras:
-		Description: 维修附近载具，每两分钟训练两名机械师/工匠。
+		Description: 维修附近载具，\n每两分钟训练两名机械师/工匠。
 	TooltipDescription@ally:
-		Description: 维修附近载具，每两分钟训练两名机械师/工匠。
+		Description: 维修附近载具，\n每两分钟训练两名机械师/工匠。
 		ValidRelationships: Ally
 	TooltipDescription@other:
-		Description: 占领后维修附近载具，每两分钟训练两名机械师/工匠。
+		Description: 占领后维修附近载具，\n每两分钟训练两名机械师/工匠。
 		ValidRelationships: Neutral, Enemy
 	RevealsShroud:
 		Range: 4c0

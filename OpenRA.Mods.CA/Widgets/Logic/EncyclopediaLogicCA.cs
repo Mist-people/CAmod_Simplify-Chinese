@@ -79,6 +79,9 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 		// Prerequisite provider lookup - maps faction -> prerequisite name -> actor name
 		readonly Dictionary<string, Dictionary<string, string>> prerequisiteProvidersByFaction = new(StringComparer.OrdinalIgnoreCase);
 
+		// Tracks faction specificity per (faction, prereq) pair — lower count = more faction-specific
+		readonly Dictionary<string, Dictionary<string, int>> prerequisiteProviderSpecificity = new(StringComparer.OrdinalIgnoreCase);
+
 		// Subfaction widgets
 		readonly LabelWidget subfactionLabel;
 		readonly ImageWidget subfactionFlagImage;
@@ -351,17 +354,27 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 					var factions = GetFactionsFromCategory(encyclopedia.Category);
 					var providesPrereqs = actor.TraitInfos<ProvidesPrerequisiteInfo>();
 
+					var actorFactionCount = factions.Count();
 					foreach (var faction in factions)
 					{
 						if (!prerequisiteProvidersByFaction.ContainsKey(faction))
+						{
 							prerequisiteProvidersByFaction[faction] = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+							prerequisiteProviderSpecificity[faction] = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+						}
 
 						foreach (var provides in providesPrereqs)
 						{
-							if (!string.IsNullOrEmpty(provides.Prerequisite) &&
-								!prerequisiteProvidersByFaction[faction].ContainsKey(provides.Prerequisite))
+							if (!string.IsNullOrEmpty(provides.Prerequisite))
 							{
-								prerequisiteProvidersByFaction[faction][provides.Prerequisite] = actor.Name;
+								var exists = prerequisiteProviderSpecificity[faction].TryGetValue(provides.Prerequisite, out var existingCount);
+								// Prefer the provider that is more faction-specific (lower faction count).
+								// This ensures e.g. AIRS (Nod-only) beats WEAP.TD (GDI+Nod) for the Nod faction.
+								if (!exists || actorFactionCount < existingCount)
+								{
+									prerequisiteProvidersByFaction[faction][provides.Prerequisite] = actor.Name;
+									prerequisiteProviderSpecificity[faction][provides.Prerequisite] = actorFactionCount;
+								}
 							}
 						}
 					}
@@ -412,7 +425,22 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			var categoryPath = encyclopedia.Category;
 			if (!string.IsNullOrEmpty(categoryPath))
 			{
-				var topCategory = categoryPath.Split('/')[0];
+				var categoryPaths = ParseCategoryPaths(categoryPath);
+				var topCategory = categoryPaths[0].Split('/')[0];
+
+				// If the actor belongs to multiple factions, prefer to stay in the current tab
+				if (!string.IsNullOrEmpty(selectedTopLevelCategory) && categoryPaths.Length > 1)
+				{
+					foreach (var catPath in categoryPaths)
+					{
+						if (catPath.Split('/')[0] == selectedTopLevelCategory)
+						{
+							topCategory = selectedTopLevelCategory;
+							categoryPath = catPath;
+							break;
+						}
+					}
+				}
 
 				// Find and activate the correct tab
 				foreach (var tab in categoryTabs)
