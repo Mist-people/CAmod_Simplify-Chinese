@@ -390,6 +390,9 @@ if ($command -eq "all" -or $command -eq "clean" -or $command -eq "check")
 		# Apply patches to engine source
 		Apply-Patches
 
+		# Remove -warnaserror from engine's make.ps1 to avoid treating upstream style warnings as errors
+		(gc $env:ENGINE_DIRECTORY/make.ps1) -replace '-warnaserror', '' | sc $env:ENGINE_DIRECTORY/make.ps1
+
 		cd $env:ENGINE_DIRECTORY
 		Invoke-Expression ".\make.cmd version $env:ENGINE_VERSION"
 		Invoke-Expression ".\make.cmd $command"

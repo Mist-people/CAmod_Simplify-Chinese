@@ -222,7 +222,7 @@ encyclopedia.power.spyplane:
 encyclopedia.power.伞兵:
 	Inherits: ^SupportPowerPreview
 	Buildable:
-		Icon: 伞兵
+		Icon: paratroopers
 		Prerequisites: anyradar
 		BuildDuration: 7500
 	Tooltip:
