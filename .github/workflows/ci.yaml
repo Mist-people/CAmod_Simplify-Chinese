@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: read  #  to fetch code (actions/checkout)
+  actions: write  #  to upload artifacts
 
 jobs:
   linux:
@@ -40,19 +41,21 @@ jobs:
           make check-scripts
           make test || true
 
+      - name: Build Mod
+        run: make all
+
       - name: Package AppImage
         run: |
           sudo apt-get install -y desktop-file-utils
+          mkdir -p build/linux
           ./packaging/linux/buildpackage.sh "git-${GITHUB_SHA:0:7}" "${PWD}/build/linux"
-        continue-on-error: true
 
       - name: Upload AppImage
         uses: actions/upload-artifact@v5
         with:
           name: CombinedArms-Linux-x86_64.AppImage
           path: build/linux/*.AppImage
-          if-no-files-found: ignore
-        continue-on-error: true
+          if-no-files-found: error
 
   linux-mono:
     name: Linux (mono)
