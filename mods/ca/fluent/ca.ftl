@@ -453,65 +453,65 @@ label-unrevealed-terrain = 未揭示地形
 
 ## DownloadPackageLogic
 
-label-downloading = 正在下载 { $title }
+label-downloading = Downloading { $title }
 
-label-fetching-mirror-list = 正在获取镜像列表...
+label-fetching-mirror-list = Fetching list of mirrors...
 
-label-downloading-from = 正在从 { $host } 下载 { $received } { $suffix }
+label-downloading-from = Downloading from { $host } { $received } { $suffix }
 
-label-downloading-from-progress = 正在从 { $host } 下载 { $received } / { $total } { $suffix } ({ $progress }%)
+label-downloading-from-progress = Downloading from { $host } { $received } / { $total } { $suffix } ({ $progress }%)
 
-label-unknown-host = 未知主机
+label-unknown-host = unknown host
 
-label-download-failed = 下载失败
+label-download-failed = Download failed
 
-label-verifying-archive = 正在验证压缩包...
+label-verifying-archive = Verifying archive...
 
-label-archive-validation-failed = 压缩包验证失败
+label-archive-validation-failed = Archive validation failed
 
-label-extracting-archive = 正在解压...
+label-extracting-archive = Extracting...
 
-label-extracting-archive-entry = 正在解压 { $entry }
+label-extracting-archive-entry = Extracting { $entry }
 
-label-archive-extraction-failed = 压缩包解压失败
+label-archive-extraction-failed = Archive extraction failed
 
-label-mirror-selection-failed = 在线镜像不可用，请使用原始光盘安装。
+label-mirror-selection-failed = Online mirror is not available. Please install from an original disc.
 
 ## InstallFromSourceLogic
 
-label-detecting-sources = 正在检测驱动器
+label-detecting-sources = Detecting drives
 
-label-checking-sources = 正在检查源
+label-checking-sources = Checking Sources
 
-label-searching-source-for = 正在搜索 { $title }
+label-searching-source-for = Searching for { $title }
 
-label-content-package-installation = 选择要安装的内容包：
+label-content-package-installation = Select which content packages you want to install:
 
-label-game-sources = 游戏源
+label-game-sources = Game Sources
 
-label-digital-installs = 数字安装
+label-digital-installs = Digital Installs
 
-label-game-content-not-found = 未找到游戏内容
+label-game-content-not-found = Game Content Not Found
 
-label-alternative-content-sources = 请插入或安装以下内容源之一：
+label-alternative-content-sources = Please insert or install one of the following content sources:
 
-label-installing-content = 正在安装内容
+label-installing-content = Installing Content
 
-label-copying-filename = 正在复制 { $filename }
+label-copying-filename = Copying { $filename }
 
-label-copying-filename-progress = 正在复制 { $filename } ({ $progress }%)
+label-copying-filename-progress = Copying { $filename } ({ $progress }%)
 
-label-installation-failed = 安装失败
+label-installation-failed = Installation Failed
 
-label-check-install-log = 详情请查看日志目录中的 install.log。
+label-check-install-log = Refer to install.log in the logs directory for details.
 
-label-extracting-filename = 正在解压 { $filename }
+label-extracting-filename = Extracting { $filename }
 
-label-extracting-filename-progress = 正在解压 { $filename } ({ $progress }%)
+label-extracting-filename-progress = Extracting { $filename } ({ $progress }%)
 
 ## ModContentLogic
 
-button-manual-install = 手动安装
+button-manual-install = Manual Install
 
 ## KickClientLogic
 
@@ -565,7 +565,7 @@ label-downloading-map = 正在下载 { $size } kB
 
 label-downloading-map-progress = 正在下载 { $size } kB ({ $progress }%)
 
-button-retry-install = 重试安装
+button-retry-install = Retry Install
 
 button-retry-search = 重试搜索
 ## also MapChooserLogic
