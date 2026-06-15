@@ -28,7 +28,7 @@ namespace OpenRA.Mods.CA.Traits
 		public override object Create(ActorInitializer init) { return new GrantConditionWhileProducing(init, this); }
 	}
 
-	public class GrantConditionWhileProducing : ConditionalTrait<ConditionalTraitInfo>, ITick, INotifyOwnerChanged, INotifyCreated
+	public class GrantConditionWhileProducing : ConditionalTrait<ConditionalTraitInfo>, ITick, INotifyOwnerChanged
 	{
 		readonly GrantConditionWhileProducingInfo info;
 		readonly Actor self;
@@ -44,9 +44,10 @@ namespace OpenRA.Mods.CA.Traits
 			self = init.Self;
 		}
 
-		void INotifyCreated.Created(Actor self)
+		protected override void Created(Actor self)
 		{
 			FindQueue();
+			base.Created(self);
 		}
 
 		void FindQueue()

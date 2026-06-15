@@ -56,7 +56,7 @@ namespace OpenRA.Mods.CA.Traits
 		public override object Create(ActorInitializer init) { return new ProvidesPrerequisitesOnTimeline(init, this); }
 	}
 
-	public class ProvidesPrerequisitesOnTimeline : PausableConditionalTrait<ProvidesPrerequisitesOnTimelineInfo>, ITechTreePrerequisite, INotifyCreated, ITick
+	public class ProvidesPrerequisitesOnTimeline : PausableConditionalTrait<ProvidesPrerequisitesOnTimelineInfo>, ITechTreePrerequisite, ITick
 	{
 		public readonly ProvidesPrerequisitesOnTimelineInfo info;
 		readonly Actor self;
@@ -118,7 +118,7 @@ namespace OpenRA.Mods.CA.Traits
 
 		IEnumerable<string> ITechTreePrerequisite.ProvidesPrerequisites => prerequisitesGranted;
 
-		void INotifyCreated.Created(Actor self)
+		protected override void Created(Actor self)
 		{
 			// Special case handling is required for the Player actor.
 			// Created is called before Player.PlayerActor is assigned,
@@ -128,6 +128,7 @@ namespace OpenRA.Mods.CA.Traits
 			techTree = playerActor.Trait<TechTree>();
 			techTree.ActorChanged(self);
 			upgradesManager = playerActor.Trait<UpgradesManager>();
+			base.Created(self);
 		}
 
 		void HandlePrerequisiteThreshold(int tick)

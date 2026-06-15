@@ -42,7 +42,7 @@ namespace OpenRA.Mods.CA.Traits
 		public override object Create(ActorInitializer init) { return new UpdatesCount(this); }
 	}
 
-	public class UpdatesCount : ConditionalTrait<UpdatesCountInfo>, INotifyCreated, INotifyActorDisposing, INotifyOwnerChanged,
+	public class UpdatesCount : ConditionalTrait<UpdatesCountInfo>, INotifyActorDisposing, INotifyOwnerChanged,
 		INotifyKilled, INotifySold, INotifyDamage, INotifyCapture, INotifyInfiltrated
 	{
 		public readonly UpdatesCountInfo info;
@@ -61,17 +61,10 @@ namespace OpenRA.Mods.CA.Traits
 			countManager = owner.PlayerActor.Trait<CountManager>();
 		}
 
-		void INotifyCreated.Created(Actor self)
+		protected override void Created(Actor self)
 		{
 			UpdateCounter(self.Owner);
-
-			if (!info.UpdateOn.HasFlag(UpdateOnType.Owned))
-				return;
-
-			if (IsTraitDisabled)
-				return;
-
-			countManager.Increment(info.Type);
+			base.Created(self);
 		}
 
 		protected override void TraitEnabled(Actor self)

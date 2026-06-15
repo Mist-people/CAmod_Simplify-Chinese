@@ -20,13 +20,14 @@ namespace OpenRA.Mods.CA.Traits
 		public override object Create(ActorInitializer init) { return new InitiallyHunts(this); }
 	}
 
-	public class InitiallyHunts : ConditionalTrait<InitiallyHuntsInfo>, INotifyCreated
+	public class InitiallyHunts : ConditionalTrait<InitiallyHuntsInfo>
 	{
 		public InitiallyHunts(InitiallyHuntsInfo info)
 			: base(info) { }
 
-		void INotifyCreated.Created(Actor self)
+		protected override void Created(Actor self)
 		{
+			base.Created(self);
 			self.QueueActivity(new Hunt(self));
 		}
 	}

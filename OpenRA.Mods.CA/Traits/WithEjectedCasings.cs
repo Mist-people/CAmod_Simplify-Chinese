@@ -65,7 +65,7 @@ namespace OpenRA.Mods.CA.Traits
 		}
 	}
 
-	public class WithEjectedCasings : PausableConditionalTrait<WithEjectedCasingsInfo>, INotifyCreated, INotifyAttack, ITick
+	public class WithEjectedCasings : PausableConditionalTrait<WithEjectedCasingsInfo>, INotifyAttack, ITick
 	{
 		BodyOrientation coords;
 		Turreted[] turrets;
@@ -76,7 +76,7 @@ namespace OpenRA.Mods.CA.Traits
 		public WithEjectedCasings(ActorInitializer init, WithEjectedCasingsInfo info)
 			: base(info) { }
 
-		void INotifyCreated.Created(Actor self)
+		protected override void Created(Actor self)
 		{
 			coords = self.Trait<BodyOrientation>();
 			turrets = self.TraitsImplementing<Turreted>().ToArray();
@@ -89,6 +89,8 @@ namespace OpenRA.Mods.CA.Traits
 				if (turret != null)
 					turretsByArmament[armament.Info.Name] = turret;
 			}
+
+			base.Created(self);
 		}
 
 		void INotifyAttack.PreparingAttack(Actor self, in Target target, Armament a, Barrel barrel) { }

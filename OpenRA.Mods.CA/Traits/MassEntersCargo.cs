@@ -33,7 +33,7 @@ namespace OpenRA.Mods.CA.Traits
 		public override object Create(ActorInitializer init) { return new MassEntersCargo(init, this); }
 	}
 
-	public class MassEntersCargo : ConditionalTrait<MassEntersCargoInfo>, INotifyCreated, IIssueOrder, IResolveOrder, IOrderVoice
+	public class MassEntersCargo : ConditionalTrait<MassEntersCargoInfo>, IIssueOrder, IResolveOrder, IOrderVoice
 	{
 		private readonly MassEntersCargoInfo info;
 		private Passenger passenger;
@@ -46,9 +46,10 @@ namespace OpenRA.Mods.CA.Traits
 			this.info = info;
 		}
 
-		void INotifyCreated.Created(Actor self)
+		protected override void Created(Actor self)
 		{
-			passenger = self.Trait<Passenger>();;
+			passenger = self.Trait<Passenger>();
+			base.Created(self);
 		}
 
 		IEnumerable<IOrderTargeter> IIssueOrder.Orders

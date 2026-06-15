@@ -40,6 +40,20 @@ jobs:
           make check-scripts
           make test || true
 
+      - name: Package AppImage
+        run: |
+          sudo apt-get install -y desktop-file-utils
+          ./packaging/linux/buildpackage.sh "git-${GITHUB_SHA:0:7}" "${PWD}/build/linux"
+        continue-on-error: true
+
+      - name: Upload AppImage
+        uses: actions/upload-artifact@v5
+        with:
+          name: CombinedArms-Linux-x86_64.AppImage
+          path: build/linux/*.AppImage
+          if-no-files-found: ignore
+        continue-on-error: true
+
   linux-mono:
     name: Linux (mono)
     runs-on: ubuntu-22.04
