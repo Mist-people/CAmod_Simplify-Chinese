@@ -1,5 +1,5 @@
---- /tmp/orig_WidgetUtils.cs	2026-06-15 16:25:26
-+++ /Users/xiaokeyin/Desktop/CAmod_Simplify-Chinese/engine/OpenRA.Mods.Common/Widgets/WidgetUtils.cs	2026-06-15 15:55:48
+--- a/OpenRA.Mods.Common/Widgets/WidgetUtils.cs
++++ b/OpenRA.Mods.Common/Widgets/WidgetUtils.cs
 @@ -273,6 +273,23 @@
  						lines[i] = line[..(start - 1)];
  						lines.Insert(i + 1, line[start..]);
@@ -22,5 +22,5 @@
 +						}
 +					}
  				}
- 
+
  				return string.Join("\n", lines);

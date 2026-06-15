@@ -248,6 +248,22 @@ function InvokeCommand
 	}
 }
 
+function Apply-Patches
+{
+	Push-Location $env:ENGINE_DIRECTORY
+	if (Test-Path "$templateDir\engine-cjk-wrap.patch") {
+		Write-Host "Applying CJK line-wrapping patch..."
+		Get-Content "$templateDir\engine-cjk-wrap.patch" | & patch -p1
+		if ($lastexitcode -ne 0) { Pop-Location; throw "CJK line-wrapping patch failed" }
+	}
+	if (Test-Path "$templateDir\engine-net6-build-fix.patch") {
+		Write-Host "Applying .NET build compatibility patch..."
+		Get-Content "$templateDir\engine-net6-build-fix.patch" | & patch -p1
+		if ($lastexitcode -ne 0) { Pop-Location; throw ".NET build fix patch failed" }
+	}
+	Pop-Location
+}
+
 ###############################################################
 ############################ Main #############################
 ###############################################################
@@ -370,6 +386,9 @@ if ($command -eq "all" -or $command -eq "clean" -or $command -eq "check")
 		# HACK: Remove bogus lint check that the Example mod can't possibly pass
 		# because to do so it would need to define a lot of excess things surrounding resources.
 		rm $env:ENGINE_DIRECTORY/OpenRA.Mods.Common/Lint/CheckFluentReferences.cs
+
+		# Apply patches to engine source
+		Apply-Patches
 
 		cd $env:ENGINE_DIRECTORY
 		Invoke-Expression ".\make.cmd version $env:ENGINE_VERSION"

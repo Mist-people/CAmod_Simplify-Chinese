@@ -78,13 +78,17 @@ if [ "${AUTOMATIC_ENGINE_MANAGEMENT}" = "True" ]; then
 	# because to do so it would need to define a lot of excess things surrounding resources.
 	rm ${ENGINE_DIRECTORY}/OpenRA.Mods.Common/Lint/CheckFluentReferences.cs
 
-	# Simplified Chinese localization: Apply CJK line-wrapping patch
+	# Apply patches to engine source
+	cd "${ENGINE_DIRECTORY}" || exit 1
 	if [ -f "${TEMPLATE_ROOT}/engine-cjk-wrap.patch" ]; then
 		echo "Applying CJK line-wrapping patch..."
-		cd "${ENGINE_DIRECTORY}" || exit 1
 		patch -p1 < "${TEMPLATE_ROOT}/engine-cjk-wrap.patch" || exit 1
-		cd "${TEMPLATE_ROOT}" || exit 1
 	fi
+	if [ -f "${TEMPLATE_ROOT}/engine-net6-build-fix.patch" ]; then
+		echo "Applying .NET build compatibility patch..."
+		patch -p1 < "${TEMPLATE_ROOT}/engine-net6-build-fix.patch" || exit 1
+	fi
+	cd "${TEMPLATE_ROOT}" || exit 1
 
 	echo "Compiling engine..."
 	cd "${ENGINE_DIRECTORY}" || exit 1
@@ -95,4 +99,3 @@ fi
 echo "Automatic engine management is disabled."
 echo "Please manually update the engine to version ${ENGINE_VERSION}."
 exit 1
-
