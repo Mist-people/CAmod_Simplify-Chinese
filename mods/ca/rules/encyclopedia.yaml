@@ -716,7 +716,7 @@ encyclopedia.power.confessorcabal:
 	Encyclopedia:
 		Category: Nod/Support Powers
 	EncyclopediaExtras:
-		Description: 部署告解师密谋团，可建造凯恩神像，为盟友提供增益并为敌人施加减益。\n\n目标为步兵生产建筑以进行部署。
+		Description: 部署忏悔者密谋团，可建造凯恩神像，为盟友提供增益并为敌人施加减益。\n\n目标为步兵生产建筑以进行部署。
 		AdditionalInfo: Requires Zeal Covenant.
 
 encyclopedia.power.clustermissile:
@@ -1068,7 +1068,7 @@ encyclopedia.ifv.med:
 		Description: 步兵战车搭载医疗兵。治疗附近友军步兵。
 	TooltipExtras:
 		Weaknesses: • 无武装
-		Attributes: • 治疗 友军步兵\n• 乘员: 医护兵
+		Attributes: • 治疗 友军步兵\n• 乘员: 医疗兵
 	-WithSpriteTurret:
 	WithIdleOverlay@MEDIC:
 		Sequence: medic
@@ -1133,7 +1133,7 @@ encyclopedia.ifv.enfo:
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲
 		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
-		Attributes: • 乘员: 执法官
+		Attributes: • 乘员: 执法者
 
 encyclopedia.ifv.ggi:
 	Inherits: ^IFVVariantPreview
@@ -1144,11 +1144,11 @@ encyclopedia.ifv.ggi:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: 步兵战车搭载守护者重装兵。发射强力反装甲弹。
+		Description: 步兵战车搭载守护大兵。发射强力反装甲弹。
 	TooltipExtras:
 		Strengths: • 擅长对付飞行器, 重型装甲
 		Weaknesses: • 不擅长对付步兵
-		Attributes: • 乘员: 守护者 GI
+		Attributes: • 乘员: 守护大兵
 
 encyclopedia.ifv.seal:
 	Inherits: ^IFVVariantPreview
@@ -1163,7 +1163,7 @@ encyclopedia.ifv.seal:
 	TooltipExtras:
 		Strengths: • 擅长对付步兵
 		Weaknesses: • 无法攻击飞行器, 载具, 建筑
-		Attributes: • 乘员: 海豹部队
+		Attributes: • 乘员: 海豹突击队
 
 encyclopedia.ifv.cryo:
 	Inherits: ^IFVVariantPreview
@@ -1174,7 +1174,7 @@ encyclopedia.ifv.cryo:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: 步兵战车搭载冷冻士兵。发射冷冻冲击。
+		Description: 步兵战车搭载冷冻兵。发射冷冻冲击。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲
 		Weaknesses: • 不擅长对付 建筑, 防御建筑\n• 无法攻击飞行器
@@ -1249,7 +1249,7 @@ encyclopedia.ifv.flame:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: 步兵战车搭载火焰喷射兵。喷射毁灭烈焰。
+		Description: 步兵战车搭载火焰兵。喷射毁灭烈焰。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
 		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
@@ -1283,7 +1283,7 @@ encyclopedia.ifv.rad:
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲
 		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
-		Attributes: • 乘员: 辐射工兵, 辐射兵
+		Attributes: • 乘员: 辐射工兵
 
 encyclopedia.ifv.ivan:
 	Inherits: ^IFVVariantPreview
@@ -1296,7 +1296,7 @@ encyclopedia.ifv.ivan:
 	TooltipExtras:
 		Strengths: • 擅长对付 一切
 		Weaknesses: • 自毁
-		Attributes: • 乘员: 疯狂伊文, 爆裂者, 恐怖狗
+		Attributes: • 乘员: 疯狂伊文, 爆裂体, 恐怖军犬
 	-WithSpriteTurret:
 	WithIdleOverlay@IVAN:
 		Sequence: nuke
@@ -1313,7 +1313,7 @@ encyclopedia.ifv.tes:
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 重型装甲, 轻型装甲
 		Weaknesses: • 无法攻击飞行器
-		Attributes: • 乘员: 震击兵, 磁暴步兵
+		Attributes: • 乘员: 震电突击兵, 磁暴步兵
 	-WithSpriteTurret:
 	WithIdleOverlay@TESLA:
 		Sequence: tesla
@@ -1363,11 +1363,11 @@ encyclopedia.ifv.laser:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: 步兵战车搭载侍僧或圣殿骑士。发射强力激光束。
+		Description: 步兵战车搭载侍僧或圣殿武士。发射强力激光束。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲
 		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
-		Attributes: • 乘员: 侍僧, 圣殿骑士
+		Attributes: • 乘员: 侍僧, 圣殿武士
 
 encyclopedia.ifv.enli:
 	Inherits: ^IFVVariantPreview
@@ -1389,7 +1389,7 @@ encyclopedia.ifv.rmbc:
 	WithSpriteTurret:
 		Sequence: turret-rmbc
 	Tooltip:
-		Name: 半机械精英IFV
+		Name: 精英生化人IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
@@ -1418,11 +1418,11 @@ encyclopedia.ifv.conf:
 	WithSpriteTurret:
 		Sequence: turret-conf
 	Tooltip:
-		Name: 告解者IFV
+		Name: 忏悔者IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: 步兵战车搭载告解师。发射致幻弹。
+		Description: 步兵战车搭载忏悔者。发射致幻弹。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲
 		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
@@ -1483,41 +1483,41 @@ encyclopedia.ifv.ztrp:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: 步兵战车搭载区域突击兵。发射强力轨道炮弹。
+		Description: 步兵战车搭载区域装甲兵。发射强力轨道炮弹。
 	TooltipExtras:
 		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
 		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器
-		Attributes: • 乘员: 区域兵
+		Attributes: • 乘员: 区域装甲兵
 
 encyclopedia.ifv.zdef:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-zdef
 	Tooltip:
-		Name: 区域防御者IFV
+		Name: 区域防卫兵IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: 步兵战车搭载区域防御者。发射离子爆破。
+		Description: 步兵战车搭载区域防卫兵。发射离子爆破。
 	TooltipExtras:
 		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
 		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器
-		Attributes: • 乘员: 区域防御兵
+		Attributes: • 乘员: 区域防卫兵
 
 encyclopedia.ifv.zrai:
 	Inherits: ^IFVVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-zrai
 	Tooltip:
-		Name: 区域突袭者IFV
+		Name: 区域突击兵IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: 步兵战车搭载区域突袭者。发射声波榴弹。
+		Description: 步兵战车搭载区域突击兵。发射声波榴弹。
 	TooltipExtras:
 		Strengths: • 擅长对付轻型装甲, 建筑
 		Weaknesses: • 无法攻击飞行器
-		Attributes: • 乘员: 区域突袭兵
+		Attributes: • 乘员: 区域突击兵
 
 encyclopedia.ifv.disin:
 	Inherits: ^IFVVariantPreview
@@ -1708,7 +1708,7 @@ encyclopedia.reck.med:
 		Description: 清算者搭载医疗兵。治疗附近友军步兵。
 	TooltipExtras:
 		Weaknesses: • 无武装
-		Attributes: • 治疗 友军步兵\n• 乘员: 医护兵
+		Attributes: • 治疗 友军步兵\n• 乘员: 医疗兵
 	-WithSpriteTurret:
 	WithIdleOverlay@MEDIC:
 		Sequence: medic
@@ -1773,7 +1773,7 @@ encyclopedia.reck.enfo:
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲
 		Weaknesses: • 不擅长对付重型装甲, 防御建筑\n• 无法攻击飞行器
-		Attributes: • 乘员: 执法官
+		Attributes: • 乘员: 执法者
 
 encyclopedia.reck.ggi:
 	Inherits: ^ReckonerVariantPreview
@@ -1784,11 +1784,11 @@ encyclopedia.reck.ggi:
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: 清算者搭载守护者重装兵。发射强力反装甲弹。
+		Description: 清算者搭载守护大兵。发射强力反装甲弹。
 	TooltipExtras:
 		Strengths: • 擅长对付飞行器, 重型装甲
 		Weaknesses: • 不擅长对付步兵
-		Attributes: • 乘员: 守护者 GI
+		Attributes: • 乘员: 守护大兵
 
 encyclopedia.reck.seal:
 	Inherits: ^ReckonerVariantPreview
@@ -1803,7 +1803,7 @@ encyclopedia.reck.seal:
 	TooltipExtras:
 		Strengths: • 擅长对付步兵
 		Weaknesses: • 无法攻击飞行器, 载具, 建筑
-		Attributes: • 乘员: 海豹部队
+		Attributes: • 乘员: 海豹突击队
 
 encyclopedia.reck.cryo:
 	Inherits: ^ReckonerVariantPreview
@@ -1814,7 +1814,7 @@ encyclopedia.reck.cryo:
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: 清算者搭载冷冻士兵。发射冷冻冲击。
+		Description: 清算者搭载冷冻兵。发射冷冻冲击。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲
 		Weaknesses: • 不擅长对付 建筑, 防御建筑\n• 无法攻击飞行器
@@ -1889,7 +1889,7 @@ encyclopedia.reck.flame:
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载火焰喷射兵。喷射毁灭烈焰。
+		Description: 清算者搭载火焰兵。喷射毁灭烈焰。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲, 建筑
 		Weaknesses: • 不擅长对付重型装甲\n• 无法攻击飞行器
@@ -1923,7 +1923,7 @@ encyclopedia.reck.rad:
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲
 		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
-		Attributes: • 乘员: 辐射工兵, 辐射兵
+		Attributes: • 乘员: 辐射工兵
 
 encyclopedia.reck.ivan:
 	Inherits: ^ReckonerVariantPreview
@@ -1936,7 +1936,7 @@ encyclopedia.reck.ivan:
 	TooltipExtras:
 		Strengths: • 擅长对付 一切
 		Weaknesses: • 自毁
-		Attributes: • 乘员: 疯狂伊文, 爆裂者, 恐怖狗
+		Attributes: • 乘员: 疯狂伊文, 爆裂体, 恐怖军犬
 	-WithSpriteTurret:
 	WithIdleOverlay@IVAN:
 		Sequence: nuke
@@ -1953,7 +1953,7 @@ encyclopedia.reck.tes:
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 重型装甲, 轻型装甲
 		Weaknesses: • 无法攻击飞行器
-		Attributes: • 乘员: 震击兵, 磁暴步兵
+		Attributes: • 乘员: 震电突击兵, 磁暴步兵
 	-WithSpriteTurret:
 	WithIdleOverlay@TESLA:
 		Sequence: tesla
@@ -2003,11 +2003,11 @@ encyclopedia.reck.laser:
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载侍僧或圣殿骑士。发射强力激光束。
+		Description: 清算者搭载侍僧或圣殿武士。发射强力激光束。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲
 		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
-		Attributes: • 乘员: 侍僧, 圣殿骑士
+		Attributes: • 乘员: 侍僧, 圣殿武士
 
 encyclopedia.reck.enli:
 	Inherits: ^ReckonerVariantPreview
@@ -2029,7 +2029,7 @@ encyclopedia.reck.rmbc:
 	WithSpriteTurret:
 		Sequence: turret-rmbc
 	Tooltip:
-		Name: 半机械精英运兵车
+		Name: 精英生化人运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2058,11 +2058,11 @@ encyclopedia.reck.conf:
 	WithSpriteTurret:
 		Sequence: turret-conf
 	Tooltip:
-		Name: 告解者运兵车
+		Name: 忏悔者运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载告解师。发射致幻弹。
+		Description: 清算者搭载忏悔者。发射致幻弹。
 	TooltipExtras:
 		Strengths: • 擅长对付步兵, 轻型装甲
 		Weaknesses: • 不擅长对付重型装甲, 防御建筑, 建筑\n• 无法攻击飞行器
@@ -2123,41 +2123,41 @@ encyclopedia.reck.ztrp:
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载区域突击兵。发射强力轨道炮弹。
+		Description: 清算者搭载区域装甲兵。发射强力轨道炮弹。
 	TooltipExtras:
 		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
 		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器
-		Attributes: • 乘员: 区域兵
+		Attributes: • 乘员: 区域装甲兵
 
 encyclopedia.reck.zdef:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-zdef
 	Tooltip:
-		Name: 区域防御者运兵车
+		Name: 区域防卫兵运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载区域防御者。发射离子爆破。
+		Description: 清算者搭载区域防卫兵。发射离子爆破。
 	TooltipExtras:
 		Strengths: • 擅长对付重型装甲, 轻型装甲, 防御建筑
 		Weaknesses: • 不擅长对付步兵, 建筑\n• 无法攻击飞行器
-		Attributes: • 乘员: 区域防御兵
+		Attributes: • 乘员: 区域防卫兵
 
 encyclopedia.reck.zrai:
 	Inherits: ^ReckonerVariantPreview
 	WithSpriteTurret:
 		Sequence: turret-zrai
 	Tooltip:
-		Name: 区域突袭者运兵车
+		Name: 区域突击兵运兵车
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载区域突袭者。发射声波榴弹。
+		Description: 清算者搭载区域突击兵。发射声波榴弹。
 	TooltipExtras:
 		Strengths: • 擅长对付轻型装甲, 建筑
 		Weaknesses: • 无法攻击飞行器
-		Attributes: • 乘员: 区域突袭兵
+		Attributes: • 乘员: 区域突击兵
 
 encyclopedia.reck.disin:
 	Inherits: ^ReckonerVariantPreview
@@ -2309,7 +2309,7 @@ encyclopedia.buffs.defensematrix:
 	Encyclopedia:
 		Category: Other/Buffs
 	EncyclopediaExtras:
-		Description: GDI区域防御者赋予附近友军步兵。提升其有效生命值。
+		Description: GDI区域防卫兵赋予附近友军步兵。提升其有效生命值。
 	TooltipExtras:
 		Strengths: • 每层增加1250有效生命值（最多6层）
 	WithIdleOverlay@ZoneDefenderShield:

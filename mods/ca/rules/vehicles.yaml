@@ -6211,7 +6211,7 @@ IFV:
 		Name: 磁暴IFV
 		RequiresCondition: testurr
 	Tooltip@rmbcturr:
-		Name: 半机械精英IFV
+		Name: 精英生化人IFV
 		RequiresCondition: rmbcturr
 	Tooltip@enliturr:
 		Name: 启蒙者IFV
@@ -6280,7 +6280,7 @@ IFV:
 		Name: 黑客IFV
 		RequiresCondition: hackturr
 	Tooltip@confturr:
-		Name: 告解者IFV
+		Name: 忏悔者IFV
 		RequiresCondition: confturr
 	Tooltip@reapturr:
 		Name: 收割者IFV
@@ -7355,7 +7355,7 @@ RECK:
 	Tooltip@testurr:
 		Name: 磁暴运兵车
 	Tooltip@rmbcturr:
-		Name: 半机械精英运兵车
+		Name: 精英生化人运兵车
 	Tooltip@enliturr:
 		Name: 启蒙者运兵车
 	Tooltip@bhturr:
@@ -7399,7 +7399,7 @@ RECK:
 	Tooltip@hackturr:
 		Name: 黑客运兵车
 	Tooltip@confturr:
-		Name: 告解者运兵车
+		Name: 忏悔者运兵车
 	Tooltip@reapturr:
 		Name: 收割者运兵车
 	ReloadDelayMultiplier@CyborgElite:

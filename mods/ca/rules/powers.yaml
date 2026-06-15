@@ -1772,7 +1772,7 @@
 		SelectTargetTextNotification: Select target.
 		ChargeInterval: 6000
 		Name: 忏悔者集团
-		Description: 部署告解师密谋团，可建造凯恩神像，为盟友提供增益并为敌人施加减益。\n\n目标为步兵生产建筑以进行部署。
+		Description: 部署忏悔者密谋团，可建造凯恩神像，为盟友提供增益并为敌人施加减益。\n\n目标为步兵生产建筑以进行部署。
 		Actors: conf, conf, conf
 		LaunchSound: conf-create.aud
 		EndChargeSpeechNotification: ConfessorCabalReady
@@ -1786,7 +1786,7 @@
 		Type: ParadropInfantry
 		ChargeInterval: 6000
 		Name: Confessor Cabal (AI)
-		Description: 部署告解师密谋团，可建造凯恩神像，为盟友提供增益并为敌人施加减益。
+		Description: 部署忏悔者密谋团，可建造凯恩神像，为盟友提供增益并为敌人施加减益。
 		Actors: conf, conf, conf
 		SupportPowerPaletteOrder: 50
 		SelectProducer: false
