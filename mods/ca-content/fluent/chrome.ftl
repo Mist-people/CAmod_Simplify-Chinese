@@ -28,24 +28,24 @@ modcontent-package-music-fs = Firestorm Music
 modcontent-package-music-ra2 = Red Alert 2 Music
 modcontent-package-music-yr = Yuri's Revenge Music
 
-label-content-panel-title = 资源管理
+label-content-panel-title = Content Manager
 
-label-package-template-required = 必需
+label-package-template-required = Required
 
-button-package-template-download = 下载
+button-package-template-download = Download
 
-label-package-template-installed = 已安装
+label-package-template-installed = Installed
 
-label-package-template-requires-source = 需要光盘
+label-package-template-requires-source = Requires Disc
 
-button-content-panel-check-source = 检测光盘或安装
+button-content-panel-check-source = Check Disc or Installation
 
-label-source-tooltip-description = 内容来源：
+label-source-tooltip-description = Content Source:
 
-button-package-download-panel-retry = 重试
+button-package-download-panel-retry = Retry
 
-label-content-prompt-panel-title = 安装内容
+label-content-prompt-panel-title = Install Content
 
-button-content-prompt-panel-advanced = 高级安装
+button-content-prompt-panel-advanced = Advanced Install
 
-button-content-prompt-panel-quick = 快速安装
+button-content-prompt-panel-quick = Quick Install
