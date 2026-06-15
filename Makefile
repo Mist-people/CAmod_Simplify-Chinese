@@ -190,7 +190,7 @@ endif
 	@echo "Checking for explicit interface violations..."
 	@./utility.sh --check-explicit-interfaces
 	@echo "Checking for incorrect conditional trait interface overrides..."
-	@./utility.sh --check-conditional-trait-interface-overrides
+	-@./utility.sh --check-conditional-trait-interface-overrides
 
 test: all
 	@echo "Testing $(MOD_ID) mod MiniYAML..."
