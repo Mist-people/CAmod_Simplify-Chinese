@@ -496,19 +496,19 @@ label-map-incompatible-status-a = 此地图不兼容
 
 label-map-incompatible-status-b = 此版本的 OpenRA
 
-label-map-validating-status = 正在验证...
+label-map-validating-status = Validating...
 
-button-map-download-available-install = 安装地图
+button-map-download-available-install = Install Map
 
 button-map-preview-update = 更新地图
 
-button-map-update-download-available-install = 安装地图
+button-map-update-download-available-install = Install Map
 
-label-map-preview-searching = 正在搜索 OpenRA 资源中心...
+label-map-preview-searching = Searching OpenRA Resource Center...
 
-label-map-unavailable-a = 在以下位置未找到此地图：
+label-map-unavailable-a = Map not found at:
 
-label-map-unavailable-b = OpenRA 资源中心
+label-map-unavailable-b = OpenRA Resource Center
 
 label-map-preview-error = 安装过程中发生错误
 

@@ -77,7 +77,7 @@ notification-observer-disconnected = { $player }（观战者）已断开连接�
 
 notification-unknown-map = 服务器上未找到该地图。
 
-notification-searching-map = 正在资源中心搜索地图...
+notification-searching-map = Searching for maps on the Resource Center...
 
 notification-admin-change-configuration = 只有房主可以更改配置。
 
@@ -559,15 +559,15 @@ options-lobby-slot =
 
 ## MapPreviewLogic
 
-label-connecting = 正在连接...
+label-connecting = Connecting...
 
-label-downloading-map = 正在下载 { $size } kB
+label-downloading-map = Downloading { $size } kB
 
-label-downloading-map-progress = 正在下载 { $size } kB ({ $progress }%)
+label-downloading-map-progress = Downloading { $size } kB ({ $progress }%)
 
 button-retry-install = Retry Install
 
-button-retry-search = 重试搜索
+button-retry-search = Retry Search
 ## also MapChooserLogic
 
 label-created-by = 作者：{ $author }
@@ -658,13 +658,13 @@ dialog-settings-reset =
 
 ## AssetBrowserLogic
 
-label-all-packages = 所有资源包
+label-all-packages = All Packages
 
 label-length-in-seconds = { $length } 秒
 
 ## ConnectionLogic
 
-label-connecting-to-endpoint = 正在连接到 { $endpoint }...
+label-connecting-to-endpoint = Connecting to { $endpoint }...
 
 label-could-not-connect-to-target = 无法连接到 { $target }
 
@@ -933,7 +933,7 @@ label-search-status-no-games = 未找到游戏，请尝试更改筛选条件。
 label-no-server-selected = 未选择服务器
 
 
-label-map-status-searching = 正在搜索...
+label-map-status-searching = Searching...
 
 label-map-classification-unknown = 未知地图
 
