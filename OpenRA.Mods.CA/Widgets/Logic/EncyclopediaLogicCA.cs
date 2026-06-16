@@ -53,6 +53,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 		readonly Widget tabContainer;
 		readonly ButtonWidget tabTemplate;
 		readonly List<ButtonWidget> categoryTabs = new();
+		readonly Dictionary<string, ButtonWidget> categoryTabByName = new(StringComparer.OrdinalIgnoreCase);
 
 		readonly SpriteWidget portraitWidget;
 		readonly Sprite portraitSprite;
@@ -442,18 +443,46 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 					}
 				}
 
-				// Find and activate the correct tab
-				foreach (var tab in categoryTabs)
+				// Expand folders along the category path so the target item is visible
+				ExpandCategoryPath(categoryPath);
+
+				// Switch tab and rebuild tree if needed
+				if (topCategory != selectedTopLevelCategory)
 				{
-					if (tab.Text == topCategory)
-					{
-						tab.OnClick();
-						break;
-					}
+					selectedTopLevelCategory = topCategory;
+					actorList.RemoveChildren();
+					firstItem = null;
+					CreateFolderStructure();
+				}
+				else
+				{
+					// Rebuild tree to show newly expanded folders
+					actorList.RemoveChildren();
+					firstItem = null;
+					CreateFolderStructure();
 				}
 			}
 
 			SelectActor(actor, categoryPath);
+			actorList.ScrollToSelectedItem();
+		}
+
+		void ExpandCategoryPath(string categoryPath)
+		{
+			if (string.IsNullOrEmpty(categoryPath))
+				return;
+
+			var parts = categoryPath.Split('/');
+			if (parts.Length <= 1)
+				return;
+
+			var currentPath = parts[0];
+			for (var i = 1; i < parts.Length; i++)
+			{
+				currentPath = $"{currentPath}/{parts[i]}";
+				if (folderNodes.ContainsKey(currentPath))
+					folderExpanded[currentPath] = true;
+			}
 		}
 
 		void BuildFolderHierarchy()
@@ -1600,6 +1629,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 				tabContainer.AddChild(tabButton);
 				categoryTabs.Add(tabButton);
+				categoryTabByName[category.Name] = tabButton;
 
 				tabX += tabWidth;
 			}
