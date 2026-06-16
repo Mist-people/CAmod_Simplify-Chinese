@@ -1,5 +1,5 @@
 # Simplified Chinese translation by lsxy, 2026.06.
-quickinstall: 快速安装包
+quickinstall: Quick Install Package
 	Type: ZipFile
 	SHA1: 44241f68e69db9511db82cf83c174737ccda300b
 	MirrorList: http://www.openra.net/packages/ra-quickinstall-mirrors.txt
@@ -44,7 +44,7 @@ quickinstall: 快速安装包
 		^SupportDir|Content/ca/expand/myes1.aud: expand/myes1.aud
 		^SupportDir|Content/ca/cnc/desert.mix: cnc/desert.mix
 
-basefiles: 基础免费内容
+basefiles: Base Free Content
 	Type: ZipFile
 	SHA1: aa022b208a3b45b4a45c00fdae22ccf3c6de3e5c
 	MirrorList: http://www.openra.net/packages/ra-base-mirrors.txt
@@ -61,7 +61,7 @@ basefiles: 基础免费内容
 		^SupportDir|Content/ca/speech.mix: speech.mix
 		^SupportDir|Content/ca/temperat.mix: temperat.mix
 
-aftermath: 绝地反击扩展文件
+aftermath: Aftermath Expansion Files
 	Type: ZipFile
 	SHA1: d511d4363b485e11c63eecf96d4365d42ec4ef5e
 	MirrorList: http://www.openra.net/packages/ra-aftermath-mirrors.txt
@@ -94,32 +94,32 @@ aftermath: 绝地反击扩展文件
 		^SupportDir|Content/ca/expand/myeehaw1.aud: expand/myeehaw1.aud
 		^SupportDir|Content/ca/expand/myes1.aud: expand/myes1.aud
 
-cncdesert: C&C 沙漠地形集
+cncdesert: C&C Desert Tileset
 	Type: ZipFile
 	SHA1: 039849f16e39e4722e8c838a393c8a0d6529fd59
 	MirrorList: http://www.openra.net/packages/ra-cncdesert-mirrors.txt
 	Extract:
 		^SupportDir|Content/ca/cnc/desert.mix: cnc/desert.mix
 
-music-cnc: C&C 音乐
+music-cnc: C&C Music
 	Type: ZipFile
 	URL: https://openra.baxxster.no/openra/cnc-music.zip
 	Extract:
 		^SupportDir|Content/ca/cnc/scores.mix: scores.mix
 
-music-ra: 红色警戒音乐
+music-ra: Red Alert Music
 	Type: ZipFile
 	URL: https://openra.baxxster.no/openra/ra-music.zip
 	Extract:
 		^SupportDir|Content/ca/ra/scores.mix: scores.mix
 
-music-ts: 泰伯利亚之日音乐
+music-ts: Tiberian Sun Music
 	Type: ZipFile
 	URL: https://openra.baxxster.no/openra/ts-music.zip
 	Extract:
 		^SupportDir|Content/ca/ts/scores.mix: scores.mix
 
-music-fs: 扩展免费音乐
+music-fs: Firestorm Music
 	Type: ZipFile
 	SHA1: 74b1ec47ea8c9815fb85c998963229aa0a8f8619
 	URL: https://openra.baxxster.no/openra/ts-fsmusic.zip

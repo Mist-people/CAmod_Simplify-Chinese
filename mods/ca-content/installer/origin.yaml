@@ -1,5 +1,5 @@
 # Simplified Chinese translation by lsxy, 2026.06.
-ra-origin: C&C 终极合集 红色警戒（Origin版，英文）
+ra-origin: C&C Ultimate Collection Red Alert (Origin, English)
 	Type: RegistryDirectory
 	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
 	RegistryKey: EA Games\Command and Conquer Red Alert
@@ -222,7 +222,7 @@ ra-origin: C&C 终极合集 红色警戒（Origin版，英文）
 					^SupportDir|Content/ca/movies/cronfail.vqa: cronfail.vqa
 				Delete: ^SupportDir|Content/ca/movies2.mix
 
-cnc-origin: C&C 终极合集 泰伯利亚黎明（Origin版，英文）
+cnc-origin: C&C Ultimate Collection Tiberian Dawn (Origin, English)
 	Type: RegistryDirectory
 	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
 	RegistryKey: EA Games\CNC and The Covert Operations
@@ -243,7 +243,7 @@ cnc-origin: C&C 终极合集 泰伯利亚黎明（Origin版，英文）
 				Copy: .
 					^SupportDir|Content/ca/cnc/scores.mix: covert/SCORES.MIX
 
-cncr-origin: C&C 重制版合集（Origin版，英文）
+cncr-origin: C&C Remastered Collection (Origin, English)
 	Type: RegistryDirectory
 	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
 	RegistryKey: Petroglyph\CnCRemastered
@@ -418,7 +418,7 @@ cncr-origin: C&C 重制版合集（Origin版，英文）
 				Copy: Data/CNCDATA/TIBERIAN_DAWN/CD3
 					^SupportDir|Content/ca/cnc/scores.mix: SCORES.MIX
 
-ts-origin: C&C 终极合集 泰伯利亚之日（Origin版，英文）
+ts-origin: C&C Ultimate Collection Tiberian Sun (Origin, English)
 	Type: RegistryDirectory
 	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
 	RegistryKey: EA Games\Command and Conquer Tiberian Sun
@@ -449,7 +449,7 @@ ts-origin: C&C 终极合集 泰伯利亚之日（Origin版，英文）
 					^SupportDir|Content/ca/firestorm/slavesys.aud: slavesys.aud
 				Delete: ^SupportDir|Content/ca/firestorm/scores01.mix
 
-ra2-origin: C&C 终极合集 红色警戒2（Origin版，英文）
+ra2-origin: C&C Ultimate Collection Red Alert 2 (Origin, English)
 	Type: RegistryDirectory
 	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
 	RegistryKey: EA Games\Command and Conquer Red Alert II
